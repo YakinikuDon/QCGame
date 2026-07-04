@@ -15,9 +15,9 @@ const STORY_DATA = {
             en: "Katsuda-senpai"
         },
         dialogue: {
-            zh: "小Q，欢迎来到品质管理部！我是你的导师胜田。从今天起，你将作为项目质量经理（PQCM）接手新项目。项目千头万绪，但只要牢记我们的【QC 7 Golden Rules】，你就一定能克服困难，成为一名伟大的质量经理！现在，让我们开始第一项工作吧！",
-            ja: "小Q（キューちゃん）、品質管理部へようこそ！私は君の指導員、勝田だ。今日から君はプロジェクト品質管理マネージャー（PQCM）として新プロジェクトを担当してもらう。色々と大変なこともあるが、我々の【QC 7 Golden Rules】をしっかりと胸に刻んでおけば、どんな困難も乗り越え、偉大なクオリティマネージャーになれるはずだ！さあ、最初の業務に取り掛かろう！",
-            en: "Q-chan, welcome to the Quality Control Department! I am your mentor Katsuda. From today, you will take over the new project as the Project QC Manager (PQCM). A project is complex, but as long as you remember our 【QC 7 Golden Rules】, you will overcome any difficulties and become a great QC Manager! Now, let's start our first task!"
+            zh: "小Q，欢迎来到品质管理部！我是你的导师胜田。从今天起，你将作为 QC Engineer 接手新项目。项目千头万绪，但只要牢记我们的【QC 7 Golden Rules】，你就一定能克服困难，成为一名伟大的质量经理！现在，让我们开始第一项工作吧！",
+            ja: "小Q（キューちゃん）、品質管理部へようこそ！私は君の指導員、勝田だ。今日から君はQCエンジニアとして新プロジェクトを担当してもらう。色々と大変なこともあるが、我々の【QC 7 Golden Rules】をしっかりと胸に刻んでおけば、どんな困難も乗り越え、偉大なクオリティマネージャーになれるはずだ！さあ、最初の業務に取り掛かろう！",
+            en: "Q-chan, welcome to the Quality Control Department! I am your mentor Katsuda. From today, you will take over the new project as a Project QC Engineer. A project is complex, but as long as you remember our 【QC 7 Golden Rules】, you will overcome any difficulties and become a great QC Manager! Now, let's start our first task!"
         },
         choices: [
             {
@@ -40,15 +40,15 @@ ch1_intro: {
             en: 'Narrator'
         },
         dialogue: {
-            zh: '【第一关：技术评估 (Technical Evaluation)】\n你收到动设备部（回転機チーム）发送的 critical 泵 Requisition。因工期非常紧张，制造厂（Vendor）提出的焊接材料标准与项目 specs 不符，但专业设计人员认为没问题，说直接同意就行。PM 李经理在一旁催促你赶紧签字放行。你会怎么做？',
-            ja: '【第1章：技術評価 (Technical Evaluation)】\n回転機チームから重要なポンプの Requisition が届きました。工期が非常に逼迫している中、メーカー（Vendor）が提案した溶接材料の規格がプロジェクト仕様書（Specs）と一致していません。しかし、設計担当者は「問題ないからそのまま同意してくれ」と言っています。PMの李マネージャーからも早く承認してサインするよう急かされています。どうしますか？',
+            zh: '【第一关：技术评估 (Technical Evaluation)】\n你收到动设备部发送的 critical 泵 Requisition。因工期非常紧张，制造厂（Vendor）提出的焊接材料标准与项目 specs 不符，但专业设计人员认为没问题，说直接同意就行。PM 李经理在一旁催促你赶紧签字放行。你会怎么做？',
+            ja: '【第1章：技術評価 (Technical Evaluation)】\n回転機チームから重要なポンプの Requisition が届きました。スケジュールが非常に逼迫している中、メーカー（Vendor）が提案した溶接材料の規格がプロジェクト仕様書（Specs）と一致していません。しかし、設計担当者は「問題ないからそのまま同意してくれ」と言っています。PMの李マネージャーからも早く承認してサインするよう急かされています。どうしますか？',
             en: "【Chapter 1: Technical Evaluation】\nYou received a Requisition for a critical pump from the Rotating Equipment Team (回転機チーム). The schedule is extremely tight, and the vendor's proposed welding material standard deviates from the project specs. However, the design engineer says 'It's fine, just approve it.' PM Mr. Li is urging you to sign off immediately. What will you do?"
         },
         choices: [
             {
                 text: {
                     zh: '向进度妥协：因工期特别紧张，省去协调直接同意设计人员的意见。',
-                    ja: '工期を優先する：工期が非常に厳しいため、調整を省き设计担当者の意見にそのまま同意する。',
+                    ja: 'スケジュールを優先する：スケジュールが非常に厳しいため、調整を省き設計担当者の意見にそのまま同意する。',
                     en: "Compromise for schedule: Since the timeline is tight, agree with the design engineer's opinion directly."
                 },
                 nextId: 'ch1_bad'
@@ -56,7 +56,7 @@ ch1_intro: {
             {
                 text: {
                     zh: '主动参与澄清会议：携带相关资料与 QC 专家讨论，联合设计部与制造厂形成合理结论。',
-                    ja: 'クラリフィケーション会議に参画：資料を持参してQC専門家と協議し、設計部門・メーカーと合理的な结论を出す。',
+                    ja: 'クラリフィケーション会議に参画：資料を持参してQC専門家と協議し、設計部門・メーカーと合理的な結論を出す。',
                     en: "Actively coordinate: Bring references to discuss with QC experts, and work with Engineering and the vendor to reach a reasonable conclusion."
                 },
                 nextId: 'ch2_intro'
@@ -74,12 +74,12 @@ ch1_intro: {
         },
         dialogue: {
             zh: '【Bad Ending 1: 现场重熔惨剧】\n制造厂按照偏低的标准进行了焊接。结果在设备运抵工地后，被业主史密斯抓到焊缝严重开裂！整批设备必须全部刨开重新熔焊，现场补焊费用高昂，反而导致了数百万美元的损失以及更严重的工期延误……',
-            ja: '【Bad Ending 1: 現場での溶接割れ惨劇】\nメーカーはレベルの低い規格で溶接を完了させました。しかし、機器が建設現場に到着した後、客先の史密ス氏から溶接部の深刻な割れを指摘されてしまいました！結果、現場ですべて溶接部を削り取って再溶接する羽目になり、莫大な補修費用とさらなる工期遅延が発生しました……',
+            ja: '【Bad Ending 1: 現場での溶接割れ惨劇】\nメーカーはレベルの低い規格で溶接を完了させました。しかし、機器が建設現場に到着した後、客先のSmith氏から溶接部の深刻な割れを指摘されてしまいました！結果、現場ですべて溶接部を除去して再溶接する羽目になり、莫大な補修費用とさらなるスケジュール遅延が発生しました……',
             en: "【Bad Ending 1: Site Re-welding Calamity】\nThe vendor carried out welding using the lower standard. After the equipment arrived at the site, Client Mr. Smith discovered severe weld cracking! The entire batch of equipment had to be gouged out and re-welded on-site, incurring astronomical repair costs and even worse schedule delays..."
         },
         tip: {
             zh: '💡 胜田前辈的提示：QC 黄金法则①——PQCM 应对所有调达品的质量负责。作为质量经理，我们不是简单的检验员，必须早期介入，带上专业资料和部门专家讨论，寻求合理且合规的质量方案，绝不能在未确认时因工期盲从设计意见！',
-            ja: '💡 勝田先輩のアドバイス：QCゴールデンルール①――PQCMは担当プロジェクトの全調達資機材の品質に責任を持つ。我々は単なる検査調整員ではない。早期に関与し、専門資料を持って部門内エキスパートと協議し、合理的かつ適合した品質ソリューションを見出すべきだ。工期を理由に未確認のまま設計意見に盲従してはならない！',
+            ja: '💡 勝田先輩のアドバイス：QCゴールデンルール①――PQCMは担当プロジェクトの全調達資機材の品質に責任を持つ。我々は単なる検査調整員ではない。早期に関与し、専門資料を持って部門内エキスパートと協議し、合理的かつ適合した品質ソリューションを見出すべきだ。スケジュールを理由に未確認のまま設計意見に盲従してはならない！',
             en: "💡 Katsuda-senpai's Hint: QC Golden Rule 1 - The PQCM is responsible for the quality of all procured materials. We are not simple inspectors; we must get involved early, bring reference materials to discuss with department experts, and reach a reasonable and compliant quality solution. Never blindly follow engineering's opinion to rush the schedule!"
         },
         isEnding: true,
@@ -97,7 +97,7 @@ ch2_intro: {
         },
         dialogue: {
             zh: '【第二关：启动会议 (KOM & PIM)】\n订单已发，需要与 Vendor 召开启动会。PM 李经理极力催促称工期极其紧迫且预算经费受限，要求省去单独的 Pre-Inspection Meeting (PIM)，直接在 KOM 中顺带提及即可。你该怎么做？',
-            ja: '【第2章：キックオフ会議 (KOM & PIM)】\n発注が完了し、メーカーとキックオフ会議を開催します。PMの李マネージャーは「工期が非常に厳しく予算も限られているため、個別の Pre-Inspection Meeting (PIM) は省略し、KOMのついでに軽く説明するだけで済ませてくれ」と強く要求しています。どうしますか？',
+            ja: '【第2章：キックオフ会議 (KOM & PIM)】\n発注が完了し、メーカーとキックオフ会議を開催します。PMの李マネージャーは「スケジュールが非常に厳しく予算も限られているため、個別の Pre-Inspection Meeting (PIM) は省略し、KOMのついでに軽く説明するだけで済ませてくれ」と強く要求しています。どうしますか？',
             en: "【Chapter 2: Kick-Off Meeting (KOM & PIM)】\nThe purchase order has been placed. PM Mr. Li is pushing you hard, claiming that both schedule and budget are extremely tight. He wants to skip the dedicated Pre-Inspection Meeting (PIM) and just briefly cover it in the KOM."
         },
         choices: [
@@ -130,12 +130,12 @@ ch2_intro: {
         },
         dialogue: {
             zh: "【Bad Ending 2: 现场返工泥潭】\n缺少针对性的质量事故交底，Vendor 遗漏了核心见证点，擅自将后续部件盖板封闭。现场 QC 发现后，被迫将已经完成的管道焊缝全部铲掉重新焊接返工。这一折腾导致进度彻底崩溃，损失远超省下的差旅费！",
-            ja: "【Bad Ending 2: 現場手戻りの泥沼】\n適切な品質事故の周知が欠けていたため、メーカーは重要な見証点（Witness Point）を漏らし、無断で後続部品のカバーを閉じてしまいました。現場QCに指摘され、すでに行われた配管溶接部をすべて鏟り落として再溶接する手戻りが発生。工期は完全に崩壊し、出張費を節約した以上の損失を出してしまいました！",
+            ja: "【Bad Ending 2: 現場手戻りの泥沼】\n適切な品質事故の周知が欠けていたため、メーカーは重要な見証点（Witness Point）を漏らし、無断で後続部品のカバーを閉じてしまいました。現場QCに指摘され、すでに行われた配管溶接部をすべて鏟り落として再溶接する手戻りが発生。スケジュールは完全に崩壊し、出張費を節約した以上の損失を出してしまいました！",
             en: "【Bad Ending 2: Reworking Quagmire】\nDue to the lack of dedicated quality accident orientation, the vendor missed critical witness points and enclosed the assembly. The Site QC discovered it and forced them to gouge out all finished welds and rework. This completely wrecked the schedule, costing far more than the saved travel budget!"
         },
         tip: {
             zh: "💡 胜田前辈的提示：PIM 是向 Vendor 传递协调规则与质量底线的核心屏障，绝对不能因为暂时的预算或进度而妥协省略。预防（Pro-active QC）比事后纠正（Rework）更省 Man-hour！",
-            ja: "💡 勝田先輩のアドバイス：PIMはメーカーに調整ルールと品質のデッドラインを伝える極めて重要な防壁だ。一時的な予算や工期のために省略してはならない。予防（Pro-active QC）は、事後の手戻り（Rework）よりもはるかにマンアワーを節約できる！",
+            ja: "💡 勝田先輩のアドバイス：PIMはメーカーに調整ルールと品質のデッドラインを伝える極めて重要な防壁だ。一時的な予算やスケジュールのために省略してはならない。予防（Pro-active QC）は、事後の手戻り（Rework）よりもはるかにマンアワーを節約できる！",
             en: "💡 Katsuda-senpai's Hint: The PIM is a critical gatekeeper to align coordination rules and quality baselines with the vendor. It must never be skipped for minor budget or schedule constraints. Preventive action (Pro-active QC) saves far more man-hours than rework!"
         },
         isEnding: true,
@@ -191,7 +191,7 @@ ch3_intro: {
         },
         tip: {
             zh: "💡 胜田前辈的提示：绝不能因工期妥协质量底线！低温压力容器的冲击性能是防范脆性断裂（脆断）的红线，属于一票否决指标。任何时候都不能用“先批开工再补报告”的形式妥协质量规范！",
-            ja: "💡 勝田先輩のアドバイス：工期を理由に品質のデッドラインを妥協してはならない！低温圧力容器の衝撃試験値は、脆性破壊を防ぐための超重要管理項目であり、一発アウトのレッドラインだ。いかなる場合も「未承認で着手させ、後から報告書を出す」ような妥協をしてはならない！",
+            ja: "💡 勝田先輩のアドバイス：スケジュールを理由に品質のデッドラインを妥協してはならない！低温圧力容器の衝撃試験値は、脆性破壊を防ぐための超重要管理項目であり、一発アウトのレッドラインだ。いかなる場合も「未承認で着手させ、後から報告書を出す」ような妥協をしてはならない！",
             en: "💡 Katsuda-senpai's Hint: Never compromise the quality baseline for the schedule! Low-temperature impact properties are a critical safeguard against brittle fracture. They are a non-negotiable metric. You must never compromise quality specifications by allowing start-work under 'conditional' approvals."
         },
         isEnding: true,
@@ -302,7 +302,7 @@ ch5_intro: {
             en: "【Bad Ending 5: Mud-Splattered QC】\nThe secretly repaired weld cracked during pressure testing and was caught by the client, who filed an angry complaint. To save his own skin, the PM immediately backstabbed you, complaining that 'QC failed to inspect and allowed unauthorized repairs.' You took the entire blame and became a mud-splattered scapegoat!"
         },
         tip: {
-            zh: "💡 胜田前辈的提示：QC 黄金法则③——不合格决不能隐瞒。出现质量问题开具 NCR，要求提供正式的 Repair Procedure 是国家安全、项目质量和保护你自身利益的最佳盾牌。我们不怕泥，但必须主动控制泥的走向！",
+            zh: "💡 胜田前辈的提示：QC 黄金法则③——不合格决不能隐瞒。出现质量问题开具 NCR，要求提供正式的 Repair Procedure 是国家安全、项目质量和保护你自身利益的最佳盾牌。我们不怕背锅，但要先明确背的是什么锅！",
             ja: "💡 勝田先輩のアドバイス：QCゴールデンルール③――不適合管理は決して隠蔽してはならない。品質問題に対してNCRを発行し、正式な修補要領書（Repair Procedure）を求めることは、プラントの安全、品質、そして君自身を守る最大の盾だ。我々は泥をかぶる覚悟はあっても、その泥の出所はコントロールしなければならない！",
             en: "💡 Katsuda-senpai's Hint: QC Golden Rule 3 - Nonconformities must never be hidden. Issuing an NCR and demanding a formal Repair Procedure is your strongest shield to protect plant safety, project quality, and yourself. We are not afraid of mud, but we must actively control where the mud lands!"
         },
@@ -384,7 +384,7 @@ ch7_intro: {
             {
                 text: {
                     zh: '多方协同主动施压：给制造厂发函提醒，同时联合采购部门（Procurement），以扣留最后 5% 尾款为杠杆，敦促厂家补齐。',
-                    ja: '多角的に協同し能動的に施圧する：メーカーに督促状を送ると同時に、調達部（Procurement）と連携し、残り5%の尾款の保留を交渉材料にして速やかな提出をメーカーに促す。',
+                    ja: '多角的に協同し能動的に施圧する：メーカーに督促状を送ると同時に、調達部（Procurement）と連携し、残り5%の支払いの保留を交渉材料にして速やかな提出をメーカーに促す。',
                     en: 'Leverage other teams: Send a notice to the vendor and coordinate with Procurement to hold the remaining 5% retention payment as leverage to urge submission.'
                 },
                 nextId: 'happy_clear'
