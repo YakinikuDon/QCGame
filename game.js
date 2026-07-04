@@ -129,8 +129,8 @@ ch2_intro: {
             en: "Katsuda-senpai"
         },
         dialogue: {
-            zh: "【Bad Ending 2: 现场返工泥潭】\n缺少针对性的质量事故交底，Vendor 遗漏了核心见证点，擅自将后续部件盖板封闭。现场 QC 发现后，被迫将已经完成的管道焊缝全部铲掉重新焊接返工。这一折腾导致进度彻底崩溃，损失远超省下的差旅费！",
-            ja: "【Bad Ending 2: 現場手戻りの泥沼】\n適切な品質事故の周知が欠けていたため、メーカーは重要な見証点（Witness Point）を漏らし、無断で後続部品のカバーを閉じてしまいました。現場QCに指摘され、すでに行われた配管溶接部をすべて鏟り落として再溶接する手戻りが発生。スケジュールは完全に崩壊し、出張費を節約した以上の損失を出してしまいました！",
+            zh: "【Bad Ending 2: 现场返工泥潭】\n缺少针对性的质量事故交底，Vendor 遗漏了核心见证点，擅自将后续部件盖板封闭。现场 QC 发现后，被迫将已经完成的焊缝全部铲掉重新焊接返工。这一折腾导致进度彻底崩溃，损失远超省下的差旅费！",
+            ja: "【Bad Ending 2: 現場手戻りの泥沼】\n適切な品質事故の周知が欠けていたため、メーカーは重要な立会（Witness Point）を漏らし、無断で後続部品のカバーを閉じてしまいました。現場QCに指摘され、すでに行われた溶接部をすべて削り落として再溶接する手戻りが発生。スケジュールは完全に崩壊し、出張費を節約した以上の損失を出してしまいました！",
             en: "【Bad Ending 2: Reworking Quagmire】\nDue to the lack of dedicated quality accident orientation, the vendor missed critical witness points and enclosed the assembly. The Site QC discovered it and forced them to gouge out all finished welds and rework. This completely wrecked the schedule, costing far more than the saved travel budget!"
         },
         tip: {
