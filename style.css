@@ -700,31 +700,79 @@ body {
     .game-container {
         width: 100vw;
         height: 100vh;
+        height: 100dvh;
         max-height: none;
         border: none;
         border-radius: 0;
         box-shadow: none;
     }
     .top-bar {
+        height: 48px;
         padding: 0 10px;
+        border-bottom: 3px solid var(--color-manga-border);
+    }
+    .logo-emoji {
+        font-size: 1.3rem;
     }
     .logo-text {
-        font-size: 1.15rem;
+        font-size: 1.05rem;
+    }
+    .controls {
+        gap: 6px;
     }
     .header-btn {
-        padding: 6px 12px;
-        font-size: 0.85rem;
+        padding: 4px 8px;
+        font-size: 0.8rem;
+    }
+    .lang-btn {
+        padding: 3px 6px;
+        font-size: 0.8rem;
+    }
+    .game-stage {
+        border-bottom: 3px solid var(--color-manga-border);
+    }
+    .character-container {
+        padding: 0 15px;
+    }
+    .character-sprite {
+        width: 120px;
+        height: 85%;
+        max-height: 200px;
+    }
+    .dialogue-panel {
+        padding: 8px 12px;
+        min-height: 90px;
+    }
+    .character-name-tag {
+        top: -14px;
+        left: 20px;
+        font-size: 0.9rem;
+        padding: 2px 10px;
+    }
+    .dialogue-box {
+        padding: 10px 12px;
+        border: 2px solid var(--color-manga-border);
+        border-radius: 12px;
+    }
+    .dialogue-text {
+        font-size: 0.92rem;
+        line-height: 1.45;
+    }
+    .options-panel {
+        padding: 8px 12px;
+        min-height: 75px;
+        border-top: 2px dashed var(--color-manga-border);
     }
     .options-list {
         grid-template-columns: 1fr;
-        gap: 8px;
+        gap: 6px;
     }
-    .character-container {
-        padding: 0 10px;
-    }
-    .character-sprite {
-        width: 130px;
-        max-height: 220px;
+    .option-btn {
+        padding: 8px 15px;
+        font-size: 0.88rem;
+        border: 2px solid var(--color-manga-border);
+        border-radius: 12px;
+        line-height: 1.35;
     }
     
     /* Mobile Split Ending Layout (Overlapping depth style) */
