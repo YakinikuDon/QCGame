@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大话QC：伟大质量经理的诞生 | Great PQCM Adventure</title>
+    <meta name="description" content="一个为品质管理部门新人设计的趣味AVG冒险游戏，熟悉QC的核心业务流程。">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=ZCOOL+KuaiLe&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fullscreen Canvas for Confetti -->
+    <canvas id="confettiCanvas"></canvas>
+
+    <!-- Main Game Container -->
+    <main class="game-container">
+        <!-- Top Control Bar -->
+        <header class="top-bar">
+            <div class="logo">
+                <span class="logo-emoji">👷‍♀️</span>
+                <span class="logo-text" id="logoText">Great PQCM Adventure</span>
+            </div>
+            <div class="controls">
+                <!-- Language Selector -->
+                <div class="lang-selector">
+                    <button class="lang-btn active" data-lang="zh" title="中文">CN</button>
+                    <button class="lang-btn" data-lang="ja" title="日本語">JP</button>
+                    <button class="lang-btn" data-lang="en" title="English">EN</button>
+                </div>
+                <!-- Plot Tree Trigger -->
+                <button id="treeBtn" class="action-btn header-btn" title="查看剧情树">
+                    <span class="btn-icon">🌳</span> <span id="treeBtnText">剧情树</span>
+                </button>
+                <!-- Restart Button -->
+                <button id="restartBtn" class="action-btn header-btn danger-btn" title="重新开始">
+                    <span class="btn-icon">🔄</span> <span id="restartBtnText">重启</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Display Panel (Stage) -->
+        <section class="game-stage" id="gameStage">
+            <!-- Stage Background -->
+            <div class="stage-bg" id="stageBg"></div>
+
+            <!-- Characters Overlay -->
+            <div class="character-container">
+                <!-- Left: Q-chan -->
+                <div class="character-sprite sprite-left hidden" id="qchanSprite">
+                    <img src="assets/qchan_normal.jpg" alt="Q-chan" id="qchanImg">
+                </div>
+                <!-- Right: Katsuda-senpai / Other NPC -->
+                <div class="character-sprite sprite-right hidden" id="npcSprite">
+                    <img src="assets/katsuda_strict.jpg" alt="NPC" id="npcImg">
+                </div>
+            </div>
+            
+            <!-- Interstitial Ending Card (Shows Bad Ending / Happy Ending illustrations) -->
+            <div class="ending-card hidden" id="endingCard">
+                <img src="assets/ending_bad_generic.jpg" alt="Ending Image" id="endingCardImg">
+            </div>
+        </section>
+
+        <!-- Speech & Dialogue Box -->
+        <section class="dialogue-panel" id="dialoguePanel">
+            <div class="character-name-tag" id="charNameTag">
+                <span id="charName">胜田前辈</span>
+            </div>
+            <div class="dialogue-box">
+                <p class="dialogue-text" id="dialogueText">
+                    欢迎来到品质管理部！我是你的导师胜田。从今天起，你将作为质量经理（PQCM）接手新项目。记住QC黄金法则，做出正确的质量决定！
+                </p>
+            </div>
+        </section>
+
+        <!-- Interactive Options Area -->
+        <section class="options-panel" id="optionsPanel">
+            <div class="options-list" id="optionsList">
+                <!-- Dynamically populated choices -->
+                <button class="option-btn">选项 A</button>
+                <button class="option-btn">选项 B</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Custom Native Dialog: Plot Tree Modal -->
+    <dialog id="treeDialog" class="comic-modal">
+        <div class="modal-header">
+            <h2 id="modalTitle">🌳 剧情回忆树 (Story Memory Tree)</h2>
+            <button id="closeTreeBtn" class="close-btn">&times;</button>
+        </div>
+        <div class="modal-body scroll-custom">
+            <p class="modal-tip" id="modalTip">您可以点击任何已解锁的节点，时光倒流回到那个时刻重新进行决策！</p>
+            <div class="tree-wrapper">
+                <!-- SVG lines connecting plot points -->
+                <svg class="tree-svg-connections" id="treeSvg"></svg>
+                <!-- HTML nodes laid out in chapters -->
+                <div class="tree-nodes-container" id="treeNodesContainer">
+                    <!-- Nodes will be dynamically injected here -->
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- JS script -->
+    <script src="game.js"></script>
+</body>
+</html>
