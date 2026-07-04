@@ -496,7 +496,7 @@ function renderGameStep() {
 
     // B. Character Avatars & Styles
     if (node.avatar && node.avatar !== 'hidden') {
-        els.qchanImg.src = `assets/qchan_${node.avatar}.jpg`;
+        els.qchanImg.src = `assets/qchan_${node.avatar}.png`;
         els.qchanSprite.classList.remove("hidden");
         setTimeout(() => els.qchanSprite.classList.add("active"), 50);
 
@@ -510,7 +510,7 @@ function renderGameStep() {
 
     // NPC (Katsuda-senpai)
     if (node.npcAvatar && node.npcAvatar !== 'hidden') {
-        els.npcImg.src = `assets/katsuda_${node.npcAvatar}.jpg`;
+        els.npcImg.src = `assets/katsuda_${node.npcAvatar}.png`;
         els.npcSprite.classList.remove("hidden");
         setTimeout(() => els.npcSprite.classList.add("active"), 50);
     }
