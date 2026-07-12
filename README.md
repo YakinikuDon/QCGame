@@ -1,41 +1,45 @@
-# 🎮 大话 QC：伟大质量经理的诞生 
-### *The Birth of a QC Manager - An Interactive AVG Game for Quality Control Onboarding*
+# 🎮 QC Quest：伟大质量经理的诞生 (QC Quest: Birth of a Quality Manager)
+### *An Interactive JRPG-style AVG Game for Quality Control Onboarding*
 
 [![Language Support: CN/JA/EN](https://img.shields.io/badge/Language-CN%20%7C%20JA%20%7C%20EN-ff7ea5.svg)](#-language-switching)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Platform: Web / Mobile](https://img.shields.io/badge/Platform-Web%20%7C%20Mobile%20Portrait-green.svg)](#-mobile-friendliness)
 
-一款专为**品质管理（QC/QA）部门新人**量身定制的日系可爱漫画风 AVG（视觉小说）培训游戏。游戏旨在通过生动有趣、带有业务对抗的情境模拟，帮助新人快速熟悉国际工程项目中从技术评估（Technical Evaluation）到 MDRB 归档审查的完整 QC 工作流与最佳实践。
+一款专为**品质管理（QC/QA）部门新人**量身定制的日系 JRPG 风格 AVG（视觉小说）培训游戏。游戏旨在通过生动有趣、带有业务对抗的情境模拟，帮助新人快速熟悉国际工程项目中从技术评估（Technical Evaluation）到 MDRB 归档审查的完整 QC 工作流与最佳实践。
 
 ---
 
 ## 🌟 核心特色 (Key Features)
 
 1. **📚 真实业务场景 AVG 叙事**
-   游戏包含 7 大核心关卡，完整对应 QC 的真实核心工作节点，并在剧情中融入了进度（Schedule）与经费（Budget）冲突等逼真对抗场景。
-   * **关卡 1**: 技术评估 (Technical Evaluation)
-   * **关卡 2**: 启动会议 (KOM & PIM)
-   * **关卡 3**: 图书审查 (Document Review - WPS/PQR)
-   * **关卡 4**: 检验协调 (Inspection Coordination)
-   * **关卡 5**: 不符合项处理 (NCR Handling)
-   * **关卡 6**: IRC 发行 (IRC Issuance)
-   * **关卡 7**: 竣工资料审查 (MDRB Review)
+   游戏包含 43 个核心关卡（共 119 行剧情故事线），完整对应 QC 的真实核心工作节点，并在剧情中融入了进度（Schedule）与经费（Budget）冲突等逼真对抗场景。
+   * **关卡 1**: 契约与预算 (Contract & Budget)
+   * **关卡 2**: 质量方针 (Quality Policy)
+   * **关卡 3**: 技术评估与启动会议 (Technical Evaluation & KOM)
+   * **关卡 4**: 检验前会议与检验协调 (PIM & Inspection Coordination)
+   * **关卡 5**: 不符合项、放行证发行与竣工资料审查 (NCR, IRC & MDRB Review)
 
-2. **🌲 动态互动剧情树 (SVG Interactive Plot Tree & Time Travel)**
-   集成自适应绘制的 SVG 剧情结构树，清晰呈现玩家的解锁足迹。玩家可以点击任何已访问的节点进行**“时空倒流 (Time Travel)”**，快速回到之前的分叉点重新做出正确抉择。
+2. **⚔️ JRPG 像素风开屏页 (Dragon Quest Style Title Screen)**
+   开屏页采用经典勇者斗恶龙（Dragon Quest）风格的 3D 立体大标题“QC Quest”，配有象征质量法则的晶莹蓝色水晶剑插图，背景为黄昏下充满科技感的精细化工厂装置群画作，展现高品质的 JRPG 视听仪式感。
 
-3. **🎨 搞笑画风与导师指导 (Funny Endings & Mentor System)**
-   选错选项会触发极具戏剧冲突的坏结局（如*“纸糊的安全帽与打瞌睡检验员”*、*“冷凝器爆裂惨剧”*），并由严格的 **胜田前辈 (Katsuda-senpai)** 给出富有针对性的质量提示（QC 黄金法则）。
+3. **🌲 动态互动剧情树 (SVG Interactive Plot Tree & Time Travel)**
+   集成自适应绘制的 SVG 剧情结构树，清晰呈现玩家的解锁足迹。玩家可以点击任何已访问的节点进行**“时空倒流 (Time Travel)”**，快速回到之前的分叉点重新做出正确抉择。若出现多支线并发，将按字母顺序依次触发，并且多支线关卡得分进行平均计算。
 
-4. **🌐 三语无缝切换 (CN / JA / EN)**
-   支持**中文、日本語、English**三种语言的一键即时切换。保留国际工程项目中的核心专业缩写（如 *ITP, WPS, NCR, MDRB*），提升沉浸感。
+4. **📜 结算荣誉证书与本地分享 (Settlement Certificate & PNG Share Card)**
+   通关或达成结局时，将根据最终得分（最高 150 分）生成不同级别的**品质管理经理荣誉证书**。点击“生成分享图”即可将证书容器渲染为高分辨率的 PNG 格式图片，自动触发本地文件下载，方便玩家保存并分享成就。
 
-5. **📱 完美的移动端竖屏适配 (Mobile Portrait Responsiveness)**
+5. **🎨 搞笑画风与导师指导 (Funny Endings & Mentor System)**
+   选错选项会触发极具戏剧冲突的坏结局（如*“纸糊的安全帽与打瞌睡检验员”*、*“冷凝器爆裂惨剧”*、*“触犯职业操守直接解雇”*），并由严格的 **胜田前辈 (Katsuda-senpai)** 给出富有针对性的质量提示（QC 黄金法则）。
+
+6. **🌐 三语无缝切换 (CN / JA / EN)**
+   支持**中文、日本語、English**三种语言的一键即时切换。保留国际工程项目中的核心专业术语与规范性汉化（如 *Vendor, Subvendor, WPS/PQR, NCR, MDRB, ASME R-Stamp* 等），大幅度提升行业沉浸感。
+
+7. **📱 完美的移动端竖屏适配 (Mobile Portrait Responsiveness)**
    * **叠层景深效果**：移动端结局展示自动切换为叠层布局，大图清晰，立绘交错重叠，具备动漫镜头感。
    * **单列触控操作**：选项折叠为垂直单列，大尺寸高灵敏度，单手握持点选舒适。
 
-6. **🎉 精致的视听仪式感**
-   通关将触发 Canvas 七彩落花漫天飞舞特效、扫光黄金荣誉证书，极具仪式感。
+8. **🎉 精致的视听仪式感**
+   完美通关将触发 Canvas 七彩落花漫天飞舞特效、扫光黄金荣誉证书，极具仪式感。
 
 ---
 
