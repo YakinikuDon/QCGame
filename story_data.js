@@ -1360,7 +1360,7 @@ const STORY_DATA = {
         "desc": {
           "ja": "要求事項なのでそのまま運用する",
           "zh": "因为是合同要求，所以必须遵守。跟我方见证人员与供货商强调，必须提前30天提交检验通知。",
-          "en": "Provide comments and request improvements, and remind the inspector to check if they have been rectified when dispatching them."
+          "en": "Since it is a contract requirement, we must comply with it. Emphasize to our witness inspectors and the vendor that the inspection notice must be submitted 30 days in advance."
         },
         "influence": {
           "ja": "大きなスケジュールインパクトが発生しプロジェクト管理部（PMT）からクレームを受ける",
@@ -1751,12 +1751,12 @@ const STORY_DATA = {
         "desc": {
           "ja": "検査員に強引に入場させ検査を実施する",
           "zh": "供货商瞒着我方，肯定是做了违规操作，强行让检验员进入厂房实施检验。",
-          "en": "Cooperate with the Project Management Team (PMT) and Procurement department to issue a formal letter demanding the vendor allow our inspector entry."
+          "en": "The vendor is hiding things from us, which means they must have performed non-conforming operations. Force the inspector to enter and conduct the inspection."
         },
         "influence": {
           "ja": "検査員がShopでケガをする",
           "zh": "检验员因强行进入厂房，在车间内意外受伤。",
-          "en": "Although we managed to witness the inspection and ship it, we subsequently received heavy complaints from the Project Management Team."
+          "en": "The inspector was unexpectedly injured in the shop while forcing entry for inspection."
         },
         "flags": [
           "Game Over"
@@ -1768,12 +1768,12 @@ const STORY_DATA = {
         "desc": {
           "ja": "プロジェクト管理部（PMT）/プロキュアと協力してVendorマネジメントを通して検査を実施してもらう",
           "zh": "与项目管理部（PMT）、采购部门配合，通过对供应商的高层管理施压来实施检验。",
-          "en": "The vendor is hiding things from us, which means they must have performed non-conforming operations. Force the inspector to enter and conduct the inspection."
+          "en": "Cooperate with the Project Management Team (PMT) and Procurement department to conduct the inspection through vendor management."
         },
         "influence": {
           "ja": "何とか検査を実施するがプロジェクト管理部（PMT）から大きなクレームを受ける",
           "zh": "虽然最终在我方检验员见证下完成了检验并出货，但事后收到了项目管理部（PMT）的强烈投诉。",
-          "en": "We manage to conduct the test, but receive a big complaint from Project Management Team (PMT)."
+          "en": "Although we managed to witness the inspection and ship it, we subsequently received heavy complaints from the Project Management Team."
         },
         "flags": [],
         "score": 7
