@@ -595,7 +595,7 @@ const STORY_DATA = {
         "id": "3.2.3",
         "desc": {
           "ja": "大きくコストに影響する項目なので、技術評価（Technical Evaluation）Meetingで直接確認した",
-          "zh": "由于这是一个对成本影响很大的项目，所以我们直接在技术评估（Technical Evaluation）会议上确认了这一点。",
+          "zh": "由于这是对成本影响极大的条款，所以我们直接在技术评估（Technical Evaluation）会议上确认了这一点。",
           "en": "Since this is an item that greatly affects costs, we confirmed it directly at the Technical Evaluation Meeting."
         },
         "influence": {
@@ -740,7 +740,7 @@ const STORY_DATA = {
         "id": "3.3.1",
         "desc": {
           "ja": "代替の有力Subvendorに切り替えさせた",
-          "zh": "相信分包商的实力，并维持现状。",
+          "zh": "让供应商换一家更有能力的分包商。",
           "en": "Switched to a powerful alternative Subvendor"
         },
         "influence": {
@@ -841,7 +841,7 @@ const STORY_DATA = {
         "id": "3.4-A.3",
         "desc": {
           "ja": "クレームが来たVendorと個別にコメントReview Meetingを開催し合意を得る",
-          "zh": "作为领导亲自下场跟发起投诉的分包商好好谈谈，确认哪些修改意见是合理的，哪些是不合理的。",
+          "zh": "作为领导亲自下场跟发起投诉的供货商（Vendor）好好谈谈，确认哪些修改意见是合理的，哪些是不合理的。",
           "en": "As a leader, personally hold a meeting with the complaining sub-vendor to confirm which comments are reasonable and which are not."
         },
         "influence": {
@@ -947,7 +947,7 @@ const STORY_DATA = {
         "id": "3.5.1",
         "desc": {
           "ja": "未経験の検査員を採用し指導する",
-          "zh": "从我们公司的其他地区调配经验丰富的检验员派遣。",
+          "zh": "招聘无经验的检验员并进行指导培训。",
           "en": "Hire and train inexperienced inspectors"
         },
         "influence": {
@@ -1359,7 +1359,7 @@ const STORY_DATA = {
         "id": "4.2-A.1",
         "desc": {
           "ja": "要求事項なのでそのまま運用する",
-          "zh": "提出意见并要求供货商改进，派检验员（inspector）的时候提醒检验员确认是否已按意见整改。",
+          "zh": "因为是合同要求，所以必须遵守。跟我方见证人员与供货商强调，必须提前30天提交检验通知。",
           "en": "Provide comments and request improvements, and remind the inspector to check if they have been rectified when dispatching them."
         },
         "influence": {
@@ -1750,12 +1750,12 @@ const STORY_DATA = {
         "id": "4.2-G.2",
         "desc": {
           "ja": "検査員に強引に入場させ検査を実施する",
-          "zh": "通过项目管理部（PMT）和采购部门合作，正式向供货商发函，要求他们配合允许我方检验员进厂检验。",
+          "zh": "供货商瞒着我方，肯定是做了违规操作，强行让检验员进入厂房实施检验。",
           "en": "Cooperate with the Project Management Team (PMT) and Procurement department to issue a formal letter demanding the vendor allow our inspector entry."
         },
         "influence": {
           "ja": "検査員がShopでケガをする",
-          "zh": "虽然最终在我方检验员见证下检验合格并完成发货，但事后受到了项目管理团队的强烈抱怨。",
+          "zh": "检验员因强行进入厂房，在车间内意外受伤。",
           "en": "Although we managed to witness the inspection and ship it, we subsequently received heavy complaints from the Project Management Team."
         },
         "flags": [
@@ -1767,12 +1767,12 @@ const STORY_DATA = {
         "id": "4.2-G.3",
         "desc": {
           "ja": "プロジェクト管理部（PMT）/プロキュアと協力してVendorマネジメントを通して検査を実施してもらう",
-          "zh": "供货商瞒着我方，肯定是做了违规操作，让检验员强行进入厂房实施检验。",
+          "zh": "与项目管理部（PMT）、采购部门配合，通过对供应商的高层管理施压来实施检验。",
           "en": "The vendor is hiding things from us, which means they must have performed non-conforming operations. Force the inspector to enter and conduct the inspection."
         },
         "influence": {
           "ja": "何とか検査を実施するがプロジェクト管理部（PMT）から大きなクレームを受ける",
-          "zh": "我们设法进行了测试，但收到了 项目管理部（PMT） 的强烈投诉。",
+          "zh": "虽然最终在我方检验员见证下完成了检验并出货，但事后收到了项目管理部（PMT）的强烈投诉。",
           "en": "We manage to conduct the test, but receive a big complaint from Project Management Team (PMT)."
         },
         "flags": [],
@@ -2370,7 +2370,7 @@ const STORY_DATA = {
         "id": "5.2.1",
         "desc": {
           "ja": "Vendorが提出するのを待つ",
-          "zh": "等待卖家提交",
+          "zh": "等待供应商提交。",
           "en": "Wait for vendor to submit"
         },
         "influence": {
@@ -2400,7 +2400,7 @@ const STORY_DATA = {
         "id": "5.2.3",
         "desc": {
           "ja": "これまでの検査記録からMRBを自主制作する",
-          "zh": "根据过去收集 of 检验记录，尝试自己编制竣工资料（MRB）。",
+          "zh": "根据过去收集的检验记录，尝试自行编制竣工资料（MRB）。",
           "en": "Independently create MRB from past inspection records."
         },
         "influence": {
@@ -2452,7 +2452,7 @@ const STORY_DATA = {
         "id": "5.3-A.2",
         "desc": {
           "ja": "現場でサブコンが補修しR Stampを押す",
-          "zh": "让现场的承包商（subcontractor）代替供货商（vendor）修补容器，并根据合同向vendor索赔付款。",
+          "zh": "安排现场分包商（subcontractor）修补容器并重新打上 R Stamp 钢印，且事后向供货商索赔费用。",
           "en": "Have the subcontractor on site repair the vessel instead of the vendor, and back-charge the vendor for the cost."
         },
         "influence": {
