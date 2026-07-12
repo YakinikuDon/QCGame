@@ -988,22 +988,28 @@ body {
 }
 
 .cert-score-area {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+    display: inline-block;
     font-family: var(--font-heading);
     background-color: var(--color-pastel-blue);
     border: 3px solid var(--color-manga-border);
     border-radius: 10px;
     padding: 6px 16px;
     box-shadow: var(--manga-shadow-active);
+    text-align: center;
+    white-space: nowrap;
 }
 
 .score-label {
+    display: inline-block;
+    vertical-align: middle;
     font-size: 1rem;
+    margin-right: 8px;
+    color: var(--color-manga-border);
 }
 
 .score-value {
+    display: inline-block;
+    vertical-align: middle;
     font-size: 1.3rem;
     color: var(--color-pastel-pink);
     text-shadow: 1px 1px 0 var(--color-manga-border);
