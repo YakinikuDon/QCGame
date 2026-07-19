@@ -6,8 +6,8 @@ const STORY_DATA = {
     "chapter": "1.1",
     "desc": {
       "ja": "プロジェクトQCセットアップの第一歩、契約図書のReview時に検査申請の30日前Noticeの要求を見つけた",
-      "zh": "【项目质量策划第一步】【项目质量策划第一步】在审查合同时，我发现要求在检验前30天通知。",
-      "en": "[The First Step of Project QC Setup] [The First Step of Project QC Setup] When design review and revisioning the contract, I found a request for a notice 30 days before the inspection."
+      "zh": "【项目质量策划第一步】在审查合同时，我发现要求在检验前30天通知。",
+      "en": "[The First Step of Project QC Setup] When design review and revisioning the contract, I found a request for a notice 30 days before the inspection."
     },
     "selections": [
       {
@@ -103,8 +103,8 @@ const STORY_DATA = {
         "id": "1.2.2",
         "desc": {
           "ja": "新規のProject契約のエンジニアをドンドン入れてもらう",
-          "zh": "尽快找些新的外包。",
-          "en": "Hiring new outsourcing team to attend the project."
+          "zh": "尽快招募新的项目契约工程师。",
+          "en": "Bring in new project-contract engineers as soon as possible."
         },
         "influence": {
           "ja": "チームの質が下がってミスが出る",
@@ -123,8 +123,8 @@ const STORY_DATA = {
         "id": "1.2.3",
         "desc": {
           "ja": "グループ会社（MOC/COC）や、過去一緒に業務したプロジェクト契約のエンジニアへ声をかけて探す",
-          "zh": "联系MOC或COC，或之前合作过的外包。",
-          "en": "Search by asking MOC or COC or outsource you have worked with in the past."
+          "zh": "联系集团公司（MOC/COC），或之前合作过的项目契约工程师。",
+          "en": "Search by asking group companies (MOC/COC) or project-contract engineers we worked with in the past."
         },
         "influence": {
           "ja": "何とかQC遂行できるチームを組織できた",
@@ -165,7 +165,7 @@ const STORY_DATA = {
         },
         "influence": {
           "ja": "プロジェクトマネジメントチームと合意にこぎつけ、必要な工数でジョブを開始できた",
-          "zh": "与项目管理部（PMT）达成协议，并在有充足预算的情况下开始项目。",
+          "zh": "与项目管理部（PMT）达成协议，并在确保所需工时的情况下启动了项目。",
           "en": "Reach agreement with Project Management Team (PMT) and start JOB with required man-hours"
         },
         "flags": [],
@@ -207,8 +207,8 @@ const STORY_DATA = {
     "chapter": "2.1",
     "desc": {
       "ja": "セットアップは完成しました。これからチームを運営するにあたって、Quality Policyとして何に重きを置きますか？",
-      "zh": "【项目质量策划完成】在今后运营团队时，【项目质量策划完成】在今后运营团队时，您想要强调什么质量方针？",
-      "en": "[Project Setup Completed] When running the team from now on, [Project Setup Completed] When running the team from now on, What do you place emphasis on as a quality policy?"
+      "zh": "【项目质量策划完成】在今后运营团队时， 您想要强调什么质量方针？",
+      "en": "[Project Setup Completed] When running the team from now on, What do you place emphasis on as a quality policy?"
     },
     "selections": [
       {
@@ -220,8 +220,8 @@ const STORY_DATA = {
         },
         "influence": {
           "ja": "素晴らしいPolicyです、高品質のQC遂行を目指しましょう！",
-          "zh": "",
-          "en": ""
+          "zh": "非常优秀的方针，让我们以高质量的 QC 执行为目标吧！",
+          "en": "Excellent policy, let's aim for high-quality QC execution!"
         },
         "flags": [],
         "score": 10
@@ -235,8 +235,8 @@ const STORY_DATA = {
         },
         "influence": {
           "ja": "素晴らしいPolicyです、高品質のQC遂行を目指しましょう！",
-          "zh": "",
-          "en": ""
+          "zh": "非常优秀的方针，让我们以高质量的 QC 执行为目标吧！",
+          "en": "Excellent policy, let's aim for high-quality QC execution!"
         },
         "flags": [],
         "score": 10
@@ -250,8 +250,8 @@ const STORY_DATA = {
         },
         "influence": {
           "ja": "素晴らしいPolicyです、高品質のQC遂行を目指しましょう！",
-          "zh": "",
-          "en": ""
+          "zh": "非常优秀的方针，让我们以高质量的 QC 执行为目标吧！",
+          "en": "Excellent policy, let's aim for high-quality QC execution!"
         },
         "flags": [],
         "score": 10
@@ -274,8 +274,8 @@ const STORY_DATA = {
     "chapter": "3.1-A",
     "desc": {
       "ja": "プロジェクトの序盤です。設計から引き合い要求書 Reviewが来たがチーム員不足で対応できない",
-      "zh": "【项目初期阶段】【项目初期阶段】由于团队成员不足而无法及时回复设计团队发起的询价要求书审查要求。",
-      "en": "[Early Stage of Project] [Early Stage of Project] Requisition Review came from the design team, but it could not be responded to due to lack of team members."
+      "zh": "【项目初期阶段】由于团队成员不足而无法及时回复设计团队发起的询价要求书审查要求。",
+      "en": "[Early Stage of Project] Requisition Review came from the design team, but it could not be responded to due to lack of team members."
     },
     "selections": [
       {
@@ -344,8 +344,8 @@ const STORY_DATA = {
     "chapter": "3.1",
     "desc": {
       "ja": "プロジェクトの序盤です。早速設計から引き合い要求書 Reviewが来始めたが、社内標準のままでProject固有の要求が取り込まれていない",
-      "zh": "【项目初期阶段】【项目初期阶段】其他部门已经开始让我们审批询价书了，但询价书上并没有反映项目要求。仅采用了我们公司的标准格式。",
-      "en": "[Early Stage of Project] [Early Stage of Project] Requisition Reviews have started coming in, but the company standard remains the same and project-specific requests are not incorporated."
+      "zh": "【项目初期阶段】其他部门已经开始让我们审批询价书了，但询价书上并没有反映项目要求。仅采用了我们公司的标准格式。",
+      "en": "[Early Stage of Project] Requisition Reviews have started coming in, but the company standard remains the same and project-specific requests are not incorporated."
     },
     "selections": [
       {
@@ -553,8 +553,8 @@ const STORY_DATA = {
     "chapter": "3.2",
     "desc": {
       "ja": "技術評価（Technical Evaluation）が始まり、本プロジェクトでは耐圧部材のType-3.2の素材要求があることを認識していた",
-      "zh": "【技术评估已开始】【技术评估已开始】技术评估（Technical Evaluation） 已经开始，该项目认识到耐压构件需要 Type-3.2 材料。",
-      "en": "[Technical Evaluation Begun] [Technical Evaluation Begun] Technical Evaluation has begun, and this project recognizes that there is a requirement for Type-3.2 materials for pressure-resistant members."
+      "zh": "【技术评估已开始】技术评估（Technical Evaluation） 已经开始，该项目认识到耐压构件需要 Type-3.2 材料。",
+      "en": "[Technical Evaluation Begun] Technical Evaluation has begun, and this project recognizes that there is a requirement for Type-3.2 materials for pressure-resistant members."
     },
     "selections": [
       {
@@ -939,8 +939,8 @@ const STORY_DATA = {
     "chapter": "3.5",
     "desc": {
       "ja": "今後の検査に向けて品質管理検査員を配員しますが、対象POのカテゴリーでベンダー 工場のエリアにCapableな検査員が見つからない",
-      "zh": "【为后续检验做准备】在为后续检验调配检验员时，【为后续检验做准备】在为后续检验调配检验员时，在目标 采购订单 类别的供应商制造厂区域中找不到有能力的检验员。",
-      "en": "[Preparing for Future Inspections] Although we are assigning inspectors for future inspections, [Preparing for Future Inspections] Although we are assigning inspectors for future inspections, Capable inspectors cannot be found in the Vendor Shop area in the target Purchase Order (PO) category."
+      "zh": "【为后续检验做准备】在为后续检验调配检验员时， 在目标 采购订单 类别的供应商制造厂区域中找不到有能力的检验员。",
+      "en": "[Preparing for Future Inspections] Although we are assigning inspectors for future inspections, Capable inspectors cannot be found in the Vendor Shop area in the target Purchase Order (PO) category."
     },
     "selections": [
       {
@@ -1008,8 +1008,8 @@ const STORY_DATA = {
     "chapter": "4.1-A",
     "desc": {
       "ja": "（3.1-A.1）プロジェクトの最盛期で検査前打合せ（PIM）が始まりました。引き合い要求書に盛り込み忘れた要求事項を協議するも、ベンダーから追加だとクレームを受けた",
-      "zh": "(3.1-A.1)【项目高峰期，PIM已启动】【项目高峰期，PIM已启动】我们跟供应商讨论了一些忘了加在询价要求书（Requisition）里面的项目要求。供货商说可以满足，但是必须要加钱。",
-      "en": "(3.1-A.1)[Peak of Project, PIM Begun] [Peak of Project, PIM Begun] We discussed some project requirements forgotten to be included in the Requisition with the vendor. The vendor said they could meet them, but additional costs would be required."
+      "zh": "(3.1-A.1)【项目高峰期，PIM已启动】我们跟供应商讨论了一些忘了加在询价要求书（Requisition）里面的项目要求。供货商说可以满足，但是必须要加钱。",
+      "en": "(3.1-A.1)[Peak of Project, PIM Begun] We discussed some project requirements forgotten to be included in the Requisition with the vendor. The vendor said they could meet them, but additional costs would be required."
     },
     "selections": [
       {
@@ -1077,8 +1077,8 @@ const STORY_DATA = {
     "chapter": "4.1-B",
     "desc": {
       "ja": "（3.2.1/3.2.2）プロジェクトの最盛期で検査前打合せ（PIM）が始まりました。その場で技術評価（Technical Evaluation）不足でType-3.2の素材要求の見逃しが発覚した",
-      "zh": "(3.2.1/3.2.2)【项目高峰期，PIM已启动】【项目高峰期，PIM已启动】因为在技术评估（Technical Evaluation）阶段没有提醒供货商，导致供货商没有采购符合Type-3.2材质证明书（MTC）要求的材料。",
-      "en": "(3.2.1/3.2.2)[Peak of Project, PIM Begun] [Peak of Project, PIM Begun] Because the vendor was not reminded during the Technical Evaluation, the vendor failed to purchase materials with Type-3.2 Material Test Certificates (MTC)."
+      "zh": "(3.2.1/3.2.2)【项目高峰期，PIM已启动】因为在技术评估（Technical Evaluation）阶段没有提醒供货商，导致供货商没有采购符合Type-3.2材质证明书（MTC）要求的材料。",
+      "en": "(3.2.1/3.2.2)[Peak of Project, PIM Begun] Because the vendor was not reminded during the Technical Evaluation, the vendor failed to purchase materials with Type-3.2 Material Test Certificates (MTC)."
     },
     "selections": [
       {
@@ -1146,8 +1146,8 @@ const STORY_DATA = {
     "chapter": "4.1-C",
     "desc": {
       "ja": "（3.3-B.1）プロジェクトの最盛期で検査前打合せ（PIM）の時期が来ましたが、技術評価（Technical Evaluation）不足からベンダー図書が固まらず、いつまで経っても検査前打合せ（PIM）が開催できない",
-      "zh": "(3.3-B.1)【项目高峰期，PIM已到期】【项目高峰期，PIM已到期】由于技术评估（Technical Evaluation）进行得不充分，导致在项目正式进行时，供应商提交了好几版图纸（vendor document）也没法满足项目要求，检验前会议（PIM）迟迟无法召开。",
-      "en": "(3.3-B.1)[Peak of Project, PIM Due] [Peak of Project, PIM Due] Because the Technical Evaluation was insufficient, the vendor submitted multiple revisions of vendor documents (V-Docs) but still could not satisfy the project requirements, and the Pre-Inspection Meeting (PIM) could not be held."
+      "zh": "(3.3-B.1)【项目高峰期，PIM已到期】由于技术评估（Technical Evaluation）进行得不充分，导致在项目正式进行时，供应商提交了好几版图纸（vendor document）也没法满足项目要求，检验前会议（PIM）迟迟无法召开。",
+      "en": "(3.3-B.1)[Peak of Project, PIM Due] Because the Technical Evaluation was insufficient, the vendor submitted multiple revisions of vendor documents (V-Docs) but still could not satisfy the project requirements, and the Pre-Inspection Meeting (PIM) could not be held."
     },
     "selections": [
       {
@@ -1213,8 +1213,8 @@ const STORY_DATA = {
     "chapter": "4.1-D",
     "desc": {
       "ja": "（3.4-A.1）プロジェクトの最盛期で検査前打合せ（PIM）の時期が来ましたが、ベンダー図書 Review時からベンダーとの関係が悪化し、検査前打合せ（PIM）でも非協力的な態度を取られた",
-      "zh": "(3.4-A.1)【项目高峰期，PIM已到期】【项目高峰期，PIM已到期】在供应商图纸审核（Vendor Document Review）阶段，和供货商的关系搞得很差，导致供货商修改文件不积极，马上要赶不上召开检验前会议（PIM）了。",
-      "en": "(3.4-A.1)[Peak of Project, PIM Due] [Peak of Project, PIM Due] During the Vendor Document Review stage, the relationship with the vendor became very poor, leading to a lack of active document revision by the vendor, making it almost impossible to hold the Pre-Inspection Meeting (PIM) on schedule."
+      "zh": "(3.4-A.1)【项目高峰期，PIM已到期】在供应商图纸审核（Vendor Document Review）阶段，和供货商的关系搞得很差，导致供货商修改文件不积极，马上要赶不上召开检验前会议（PIM）了。",
+      "en": "(3.4-A.1)[Peak of Project, PIM Due] During the Vendor Document Review stage, the relationship with the vendor became very poor, leading to a lack of active document revision by the vendor, making it almost impossible to hold the Pre-Inspection Meeting (PIM) on schedule."
     },
     "selections": [
       {
@@ -1282,8 +1282,8 @@ const STORY_DATA = {
     "chapter": "4.1",
     "desc": {
       "ja": "プロジェクトの最盛期で検査前打合せ（PIM）が始まりました。検査前打合せ（PIM）の工場 Visit時に、溶接棒が適切に管理されていない状況が確認された",
-      "zh": "【项目高峰期，PIM已启动】【项目高峰期，PIM已启动】在走访 检验前会议（PIM） 车间期间，证实焊条没有得到妥善管理。",
-      "en": "[Peak of Project, PIM Begun] [Peak of Project, PIM Begun] During a Pre-Inspection Meeting (PIM) shop visit, it was confirmed that welding rods were not being managed properly."
+      "zh": "【项目高峰期，PIM已启动】在走访 检验前会议（PIM） 车间期间，证实焊条没有得到妥善管理。",
+      "en": "[Peak of Project, PIM Begun] During a Pre-Inspection Meeting (PIM) shop visit, it was confirmed that welding rods were not being managed properly."
     },
     "selections": [
       {
@@ -1351,8 +1351,8 @@ const STORY_DATA = {
     "chapter": "4.2-A",
     "desc": {
       "ja": "（1.1.1）検査コーディネーションにおいて、ベンダーが30日前の検査申請を出せず、立会検査がたびたび客先からRejectされた",
-      "zh": "(1.1.1)【检验协调阶段】【检验协调阶段】在检验前会议（PIM）期间参观供货商厂房，发现供货商没有妥善地管理焊条。",
-      "en": "(1.1.1)[Inspection Coordination Stage] [Inspection Coordination Stage] During the Pre-Inspection Meeting (PIM) shop visit, we found that the vendor did not manage welding rods properly."
+      "zh": "(1.1.1)【检验协调阶段】由于供应商未能提前30天提交检验申请，立会检验屡次被业主驳回。",
+      "en": "(1.1.1)[Inspection Coordination Stage] The vendor failed to submit the inspection notice 30 days prior, and the witness inspections were repeatedly rejected by the client."
     },
     "selections": [
       {
@@ -1418,8 +1418,8 @@ const STORY_DATA = {
     "chapter": "4.2-B",
     "desc": {
       "ja": "（1.1.3）検査コーディネーションにおいて、契約要求に反して2週間前の検査申請を出していたため客先から不適合報告書（NCR）が発行された",
-      "zh": "(1.1.3)【检验协调阶段】【检验协调阶段】因为未按合同要求在检验日前一个月提交检验通知，业主开具了不符合项报告（NCR），要求我方整改。",
-      "en": "(1.1.3)[Inspection Coordination Stage] [Inspection Coordination Stage] A Non-Conformance Report (NCR) was issued by the client because we failed to submit the inspection notice one month prior to the inspection date as contractually required, demanding our rectification."
+      "zh": "(1.1.3)【检验协调阶段】由于违反合同要求在检验前2周才提交检验申请，业主开具了不符合项报告（NCR）。",
+      "en": "(1.1.3)[Inspection Coordination Stage] An NCR was issued by the client because the inspection application was submitted only 2 weeks prior, in violation of the contract requirements."
     },
     "selections": [
       {
@@ -1754,7 +1754,7 @@ const STORY_DATA = {
           "en": "The vendor is hiding things from us, which means they must have performed non-conforming operations. Force the inspector to enter and conduct the inspection."
         },
         "influence": {
-          "ja": "検査員が工場でケガをした　←直ちにGame Over",
+          "ja": "検査員が工場でケガをした",
           "zh": "检验员因强行进入厂房，在车间内意外受伤。",
           "en": "The inspector was unexpectedly injured in the shop while forcing entry for inspection."
         },
@@ -1796,8 +1796,8 @@ const STORY_DATA = {
     "chapter": "4.2-H",
     "desc": {
       "ja": "（4.1.2）ベンダー 工場での溶接棒管理不全から、終盤のRTフィルムReviewで多数の欠陥が見つかる",
-      "zh": "(4.1.2)在设备最终检验时，无损检测中发现了多处不合格缺陷，该设备本不能被判定为完全合格的设备。",
-      "en": "(4.1.2)During the final equipment inspection, multiple non-conforming defects were found during NDE, and the equipment could not be judged as fully conforming."
+      "zh": "(4.1.2)由于供应商制造厂的焊条管理不善，在后期的射线检测（RT）胶片审查中发现了大量不合格缺陷。",
+      "en": "(4.1.2)Due to poor welding rod management in the vendor shop, a large number of defects were found during the RT film review in the final stage."
     },
     "selections": [
       {
@@ -1865,8 +1865,8 @@ const STORY_DATA = {
     "chapter": "4.2",
     "desc": {
       "ja": "検査コーディネーションにおいて、ベンダーによるSubvendor管理不足でタイムリーに検査申請が出ない",
-      "zh": "【检验协调阶段】【检验协调阶段】由于供应商缺乏对转包商的管理，未及时提交验货申请。",
-      "en": "[Inspection Coordination Stage] [Inspection Coordination Stage] Inspection applications are not submitted in a timely manner due to lack of subvendor management by the vendor."
+      "zh": "【检验协调阶段】由于供应商缺乏对转包商的管理，未及时提交验货申请。",
+      "en": "[Inspection Coordination Stage] Inspection applications are not submitted in a timely manner due to lack of subvendor management by the vendor."
     },
     "selections": [
       {
@@ -1960,8 +1960,8 @@ const STORY_DATA = {
         },
         "influence": {
           "ja": "抜き取り漏れがあり、現場でさらに不適合報告書（NCR）発生（5.3）",
-          "zh": "一旦供应商发出检验申请，就立即进行检验工作。",
-          "en": "Perform the inspection immediately when the inspection request is issued."
+          "zh": "存在漏检情况，导致在施工现场进一步开具了不符合项报告（NCR）（见 5.3）。",
+          "en": "There was a sampling omission, leading to further Non-Conformance Reports (NCR) on site (see 5.3)."
         },
         "flags": [
           "5.3-C"
@@ -1999,8 +1999,8 @@ const STORY_DATA = {
         },
         "influence": {
           "ja": "Deviationは否認され、官庁立会を実施し大きなスケジュールインパクトが発生した",
-          "zh": "业主拒绝了该偏离申请。在讨论该提案时耗费了大量时间，对项目进度造成了负面影响。",
-          "en": "The deviation request was rejected by the client. Extensive time was wasted discussing this proposal, causing negative impacts on the project schedule."
+          "zh": "业主拒绝了该偏离申请，我方必须执行政府见证，对项目进度造成了严重影响。",
+          "en": "The deviation request was rejected by the client, forcing us to conduct the government witnessing and causing a significant schedule impact."
         },
         "flags": [],
         "score": 4
@@ -2053,8 +2053,8 @@ const STORY_DATA = {
     "chapter": "4.3-C",
     "desc": {
       "ja": "（3.3.2）未経験のSubvendorに主要機器製作を丸投げしたので、材質間違い、寸法間違い、ワークマンシップなど不適合報告書（NCR）が多発した",
-      "zh": "(3.3.2)（3.3.2）由于主要装备完全委托缺乏经验的转包商生产，存在材料不正确、尺寸不正确、工艺不正确等诸多问题。",
-      "en": "(3.3.2)Because the production of major equipment was completely entrusted to an inexperienced subvendor, there were many Non-Conformance Report (NCR)s such as incorrect materials, incorrect dimensions, and workmanship."
+      "zh": "(3.3.2)由于将主要设备制造完全转包给缺乏经验的分包商，导致材料错误、尺寸错误、工艺不良等不符合项报告（NCR）频发。",
+      "en": "(3.3.2)Because the production of major equipment was completely outsourced to an inexperienced subvendor, Non-Conformance Reports (NCRs) occurred frequently due to incorrect materials, incorrect dimensions, and poor workmanship."
     },
     "selections": [
       {
@@ -2243,8 +2243,8 @@ const STORY_DATA = {
     "chapter": "5.1-A",
     "desc": {
       "ja": "（1.2.2）プロジェクトも終盤ですが、新規エンジニアの経験不足で、バルク材の材質証明書（MTC）が無いままIRCだけ発行した",
-      "zh": "(1.2.2)【项目已进入尾声】【项目已进入尾声】由于新外包团队人员经验不足，在未收到材质证明书（MTC）的情况下，他就发行了检验放行证（IRC），放行了这批材料。",
-      "en": "(1.2.2)[The Project is in its Final Stages] [The Project is in its Final Stages] Due to the lack of experience of the new outsourcing team, they issued the Inspection Release Certificate (IRC) without receiving the Material Test Certificate (MTC) for the bulk materials."
+      "zh": "(1.2.2)【项目已进入尾声】由于新外包团队人员经验不足，在未收到材质证明书（MTC）的情况下，他就发行了检验放行证（IRC），放行了这批材料。",
+      "en": "(1.2.2)[The Project is in its Final Stages] Due to the lack of experience of the new outsourcing team, they issued the Inspection Release Certificate (IRC) without receiving the Material Test Certificate (MTC) for the bulk materials."
     },
     "selections": [
       {
@@ -2297,8 +2297,8 @@ const STORY_DATA = {
     "chapter": "5.1",
     "desc": {
       "ja": "プロジェクトも終盤ですが、IRC発行直前のFinal Inspectionで大量のパンチがついた",
-      "zh": "【项目已进入尾声】【项目已进入尾声】在发行检验放行证（IRC）之前的最终检查（final inspection）中，发现了很多待整改的问题（punch）。",
-      "en": "[The Project is in its Final Stages] [The Project is in its Final Stages] During the final inspection just before issuing the Inspection Release Certificate (IRC), we found many pending punch list items."
+      "zh": "【项目已进入尾声】在发行检验放行证（IRC）之前的最终检查（final inspection）中，发现了很多待整改的问题（punch）。",
+      "en": "[The Project is in its Final Stages] During the final inspection just before issuing the Inspection Release Certificate (IRC), we found many pending punch list items."
     },
     "selections": [
       {
@@ -2431,8 +2431,8 @@ const STORY_DATA = {
     "chapter": "5.3-A",
     "desc": {
       "ja": "（4.2-F.3）現場サポートもPQCMの仕事です。IR Review不足により現場に届いたVesselにClipが取り付けられていない事例が散見された",
-      "zh": "(4.2-F.3)【现场支持也是PQCM的职责】【现场支持也是PQCM的职责】由于检验报告（Inspection Report）审批得不够充分，导致某些压力容器（vessel）运抵施工现场后，发现上面缺少了支撑管卡（clip）。",
-      "en": "(4.2-F.3)[Site Support is also PQCM's Job] [Site Support is also PQCM's Job] Due to insufficient review of the Inspection Report (IR), there were cases where clips were not attached to the vessels that arrived at the construction site."
+      "zh": "(4.2-F.3)【现场支持也是PQCM的职责】由于检验报告（Inspection Report）审批得不够充分，导致某些压力容器（vessel）运抵施工现场后，发现上面缺少了支撑管卡（clip）。",
+      "en": "(4.2-F.3)[Site Support is also PQCM's Job] Due to insufficient review of the Inspection Report (IR), there were cases where clips were not attached to the vessels that arrived at the construction site."
     },
     "selections": [
       {
@@ -2498,8 +2498,8 @@ const STORY_DATA = {
     "chapter": "5.3-B",
     "desc": {
       "ja": "（4.2-G.1）現場サポートもPQCMの仕事です。検査の無いまま出荷したので、現場でルーズパーツなどがどこにあるか分からない",
-      "zh": "(4.2-G.1)【现场支持也是PQCM的职责】【现场支持也是PQCM的职责】由于发货前未进行检验，导致在施工现场不清楚散供件（loose parts）的具体位置。",
-      "en": "(4.2-G.1)[Site Support is also PQCM's Job] [Site Support is also PQCM's Job] Since it was shipped without inspection, it is unclear where the loose parts are located on site."
+      "zh": "(4.2-G.1)【现场支持也是PQCM的职责】由于发货前未进行检验，导致在施工现场不清楚散供件（loose parts）的具体位置。",
+      "en": "(4.2-G.1)[Site Support is also PQCM's Job] Since it was shipped without inspection, it is unclear where the loose parts are located on site."
     },
     "selections": [
       {
@@ -2565,8 +2565,8 @@ const STORY_DATA = {
     "chapter": "5.3-C",
     "desc": {
       "ja": "（4.3-A.3）現場サポートもPQCMの仕事です。バルク品の不適合報告書（NCR）が出荷前に処理しきれず、現場でも同様に発見される",
-      "zh": "(4.3-A.3)【现场支持也是PQCM的职责】【现场支持也是PQCM的职责】散装材料的不符合项报告（NCR）在出厂发货前未能处理完毕，在施工现场同样被发现了。",
-      "en": "(4.3-A.3)[Site Support is also PQCM's Job] [Site Support is also PQCM's Job] The Non-Conformance Report (NCR) for bulk materials could not be fully resolved before shipment, and the same issues were discovered on site."
+      "zh": "(4.3-A.3)【现场支持也是PQCM的职责】散装材料的不符合项报告（NCR）在出厂发货前未能处理完毕，在施工现场同样被发现了。",
+      "en": "(4.3-A.3)[Site Support is also PQCM's Job] The Non-Conformance Report (NCR) for bulk materials could not be fully resolved before shipment, and the same issues were discovered on site."
     },
     "selections": [
       {
@@ -2632,8 +2632,8 @@ const STORY_DATA = {
     "chapter": "5.3-D",
     "desc": {
       "ja": "（4.3.2）現場サポートもPQCMの仕事です。偽造材質証明書（MTC）に関して現場客先担当者から材料のTraceabiltyに関してコメントを受ける",
-      "zh": "(4.3.2)【现场支持也是PQCM的职责】【现场支持也是PQCM的职责】收到现场业主代表关于伪造材质证明书（MTC）材料追溯性的质疑意见。",
-      "en": "(4.3.2)[Site Support is also PQCM's Job] [Site Support is also PQCM's Job] Received comments from the on-site client representative regarding material traceability concerns due to the forged Material Test Certificate (MTC)."
+      "zh": "(4.3.2)【现场支持也是PQCM的职责】收到现场业主代表关于伪造材质证明书（MTC）材料追溯性的质疑意见。",
+      "en": "(4.3.2)[Site Support is also PQCM's Job] Received comments from the on-site client representative regarding material traceability concerns due to the forged Material Test Certificate (MTC)."
     },
     "selections": [
       {
@@ -2684,8 +2684,8 @@ const STORY_DATA = {
     "chapter": "5.3-E",
     "desc": {
       "ja": "（5.1-A.1）現場サポートもPQCMの仕事です。いつまで経っても材質証明書（MTC）が来ないので、現場でサブコンに配管材料を払い出せない",
-      "zh": "(5.1-A.1)【现场支持也是PQCM的职责】【现场支持也是PQCM的职责】无论过了多久，材质证明书（MTC）都没有送达，所以我们无法在现场向分包商（Subcontractor）发放管道材料。",
-      "en": "(5.1-A.1)[Site Support is also PQCM's Job] [Site Support is also PQCM's Job] No matter how much time passes, the Material Test Certificate (MTC) does not arrive, so we cannot release piping materials to the subcontractor on site."
+      "zh": "(5.1-A.1)【现场支持也是PQCM的职责】无论过了多久，材质证明书（MTC）都没有送达，所以我们无法在现场向分包商（Subcontractor）发放管道材料。",
+      "en": "(5.1-A.1)[Site Support is also PQCM's Job] No matter how much time passes, the Material Test Certificate (MTC) does not arrive, so we cannot release piping materials to the subcontractor on site."
     },
     "selections": [
       {
@@ -2736,8 +2736,8 @@ const STORY_DATA = {
     "chapter": "5.3",
     "desc": {
       "ja": "現場サポートもPQCMの仕事です。現場受入時に機器のノズルの曲がりが報告される",
-      "zh": "【现场支持也是PQCM的职责】【现场支持也是PQCM的职责】现场开箱检验（Material Receipt Inspection）时，发现设备的接管（nozzle）弯曲偏位。",
-      "en": "[Site Support is also PQCM's Job] [Site Support is also PQCM's Job] During Material Receipt Inspection at site, a bent nozzle was reported."
+      "zh": "【现场支持也是PQCM的职责】现场开箱检验（Material Receipt Inspection）时，发现设备的接管（nozzle）弯曲偏位。",
+      "en": "[Site Support is also PQCM's Job] During Material Receipt Inspection at site, a bent nozzle was reported."
     },
     "selections": [
       {
