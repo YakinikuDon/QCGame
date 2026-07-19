@@ -5,9 +5,9 @@ const STORY_DATA = {
   "1.1": {
     "chapter": "1.1",
     "desc": {
-      "ja": "契約のReview時、検査の30日前Noticeの要求を見つけた",
-      "zh": "在审查合同时，我发现要求在检验前30天通知。",
-      "en": "When design review and revisioning the contract, I found a request for a notice 30 days before the inspection."
+      "ja": "プロジェクトQCセットアップの第一歩、契約図書のReview時に検査申請の30日前Noticeの要求を見つけた",
+      "zh": "【项目质量策划第一步】在审查合同时，我发现要求在检验前30天通知。",
+      "en": "[The First Step of Project QC Setup] When design review and revisioning the contract, I found a request for a notice 30 days before the inspection."
     },
     "selections": [
       {
@@ -30,7 +30,7 @@ const STORY_DATA = {
       {
         "id": "1.1.2",
         "desc": {
-          "ja": "検査日2週間前の申請期間でチャレンジする",
+          "ja": "2週間前の申請期間でチャレンジする",
           "zh": "试着问问业主能不能接受【检验日两周前提交申请】。",
           "en": "Try asking the client if they can accept submitting the request \"2 weeks before the inspection date\"."
         },
@@ -45,7 +45,7 @@ const STORY_DATA = {
       {
         "id": "1.1.3",
         "desc": {
-          "ja": "弊社標準の2週間前を適用する",
+          "ja": "JGC標準の2週間前を適用する",
           "zh": "按我方的标准，指示厂家在检验日两周前发通知。",
           "en": "Apply company standard \"2 weeks in advance\""
         },
@@ -76,7 +76,7 @@ const STORY_DATA = {
   "1.2": {
     "chapter": "1.2",
     "desc": {
-      "ja": "他JOBの影響もあり、部内の人財不足で思うようにチームが組織できない",
+      "ja": "プロジェクトをやり切れる強いQCチームを組織したいが、他ジョブの影響もあり、部内の人財不足で思うようにチームができない",
       "zh": "由于其他工作的影响，部门内部人力资源匮乏，无法按预期组建团队。",
       "en": "Due to the influence of other jobs, it is not possible to organize the team as expected due to a lack of human resources within the department."
     },
@@ -84,7 +84,7 @@ const STORY_DATA = {
       {
         "id": "1.2.1",
         "desc": {
-          "ja": "部門が人を配員するのを待つ",
+          "ja": "部門が良い人を配員するのを待つ",
           "zh": "等待部门指派工作人员。",
           "en": "Waiting for department to arrange staff."
         },
@@ -102,7 +102,7 @@ const STORY_DATA = {
       {
         "id": "1.2.2",
         "desc": {
-          "ja": "新規の外部委託（outsourcing）をドンドン入れてもらう",
+          "ja": "新規のProject契約のエンジニアをドンドン入れてもらう",
           "zh": "尽快找些新的外包。",
           "en": "Hiring new outsourcing team to attend the project."
         },
@@ -122,12 +122,12 @@ const STORY_DATA = {
       {
         "id": "1.2.3",
         "desc": {
-          "ja": "MOC/COCや過去一緒に業務した外部委託へ声をかけて探す",
+          "ja": "グループ会社(MOC/COC)や、過去一緒に業務したプロジェクト契約のエンジニアへ声をかけて探す",
           "zh": "联系MOC或COC，或之前合作过的外包。",
           "en": "Search by asking MOC or COC or outsource you have worked with in the past."
         },
         "influence": {
-          "ja": "何とか遂行できるチームを組織した",
+          "ja": "何とかQC遂行できるチームを組織できた",
           "zh": "我组织了一个可以以某种方式实现项目目标的团队。",
           "en": "I organized a team that could somehow carry it out."
         },
@@ -151,7 +151,7 @@ const STORY_DATA = {
   "1.3": {
     "chapter": "1.3",
     "desc": {
-      "ja": "プロジェクト管理部（PMT）から見積の90%のBudgetが配賦される",
+      "ja": "プロジェクトマネジメントチームから見積り時の90%のBudgetが配賦された",
       "zh": "项目管理部（PMT）（Project Management Team）分给我们的预算，只有我们通过计算得出的预算的90%。",
       "en": "90% of the estimated budget will be allocated by Project Management Team (PMT)"
     },
@@ -159,12 +159,12 @@ const STORY_DATA = {
       {
         "id": "1.3.1",
         "desc": {
-          "ja": "Budgetを見直して、必要な追加分をプロジェクト管理部（PMT）と合意する",
+          "ja": "Budgetを見直して、必要な追加分をプロジェクトマネジメントチームと合意する",
           "zh": "审查预算并与 项目管理部（PMT） 就任何必要的补充达成一致",
           "en": "Review the budget and agree on any necessary additions with the Project Management Team (PMT)"
         },
         "influence": {
-          "ja": "プロジェクト管理部（PMT）と合意にこぎつけ、必要な工数でJOBを開始する",
+          "ja": "プロジェクトマネジメントチームと合意にこぎつけ、必要な工数でジョブを開始できた",
           "zh": "与项目管理部（PMT）达成协议，并在有充足预算的情况下开始项目。",
           "en": "Reach agreement with Project Management Team (PMT) and start JOB with required man-hours"
         },
@@ -174,7 +174,7 @@ const STORY_DATA = {
       {
         "id": "1.3.2",
         "desc": {
-          "ja": "見直す時間が無いので、そのまま始める",
+          "ja": "見直す時間が無いので、そのままジョブを開始する",
           "zh": "既然是上游项目部给定的预算，应按项目部给定的预算执行。出了事让项目部承担责任。",
           "en": "Since it is the budget set by the upper project management team, we should execute it accordingly. If anything goes wrong, the management team will take responsibility."
         },
@@ -206,9 +206,9 @@ const STORY_DATA = {
   "2.1": {
     "chapter": "2.1",
     "desc": {
-      "ja": "Quality Policyとして何に重きを置くか？",
-      "zh": "您想要强调什么质量方针？",
-      "en": "What do you place emphasis on as a quality policy?"
+      "ja": "セットアップは完成しました。これからチームを運営するにあたって、Quality Policyとして何に重きを置きますか？",
+      "zh": "【项目质量策划完成】在今后运营团队时，您想要强调什么质量方针？",
+      "en": "[Project Setup Completed] When running the team from now on, What do you place emphasis on as a quality policy?"
     },
     "selections": [
       {
@@ -219,7 +219,7 @@ const STORY_DATA = {
           "en": "Quality of products and services"
         },
         "influence": {
-          "ja": "",
+          "ja": "素晴らしいPolicyです、高品質のQC遂行を目指しましょう！",
           "zh": "",
           "en": ""
         },
@@ -234,7 +234,7 @@ const STORY_DATA = {
           "en": "QC execution with cost/schedule in mind"
         },
         "influence": {
-          "ja": "",
+          "ja": "素晴らしいPolicyです、高品質のQC遂行を目指しましょう！",
           "zh": "",
           "en": ""
         },
@@ -249,7 +249,7 @@ const STORY_DATA = {
           "en": "Developing team members"
         },
         "influence": {
-          "ja": "",
+          "ja": "素晴らしいPolicyです、高品質のQC遂行を目指しましょう！",
           "zh": "",
           "en": ""
         },
@@ -273,9 +273,9 @@ const STORY_DATA = {
   "3.1-A": {
     "chapter": "3.1-A",
     "desc": {
-      "ja": "(1.2.1)設計から引き合い要求書レビューが来たがチーム員不足で対応できない",
-      "zh": "【危机发生！】由于团队成员不足而无法及时回复设计团队发起的询价要求书审查要求。",
-      "en": "(1.2.1)Requisition Review came from the design team, but it could not be responded to due to lack of team members."
+      "ja": "プロジェクトの序盤です。設計から引き合い要求書 Reviewが来たがチーム員不足で対応できない",
+      "zh": "【项目初期阶段】由于团队成员不足而无法及时回复设计团队发起的询价要求书审查要求。",
+      "en": "[Early Stage of Project] Requisition Review came from the design team, but it could not be responded to due to lack of team members."
     },
     "selections": [
       {
@@ -304,7 +304,7 @@ const STORY_DATA = {
           "en": "Even if it means working overtime, we will get through it with our current strength."
         },
         "influence": {
-          "ja": "引き合い遅れで設計/プロキュアからのクレームとチーム員のデモチ",
+          "ja": "引き合い遅れで設計/プロキュアからのクレームとチーム員のデモチベーションが発生した",
           "zh": "因团队人员回复不及时而引起设计、采购部门的投诉。",
           "en": "Complaints from design/procure due to delay in inquiries and demonstration of team members"
         },
@@ -314,7 +314,7 @@ const STORY_DATA = {
       {
         "id": "3.1-A.3",
         "desc": {
-          "ja": "直ちにチームの増員をかけ、濃淡を付けて引き合い要求書レビュー",
+          "ja": "直ちにチームの増員をかけ、濃淡を付けて引き合い要求書 Reviewを実施する",
           "zh": "立即增加团队人员的数量，并根据询价询价要求书的轻重缓急来按顺序返回文件。",
           "en": "Immediately increase team staff, and return documents sequentially based on the priority of the Requisitions."
         },
@@ -343,9 +343,9 @@ const STORY_DATA = {
   "3.1": {
     "chapter": "3.1",
     "desc": {
-      "ja": "引き合い要求書レビューが来始めたが、社内標準のままでプロジェクト固有の要求が取り込まれていない",
-      "zh": "其他部门已经开始让我们审批询价书了，但询价书上并没有反映项目要求。仅采用了我们公司的标准格式。",
-      "en": "Requisition Reviews have started coming in, but the company standard remains the same and project-specific requests are not incorporated."
+      "ja": "プロジェクトの序盤です。早速設計から引き合い要求書 Reviewが来始めたが、社内標準のままでProject固有の要求が取り込まれていない",
+      "zh": "【项目初期阶段】其他部门已经开始让我们审批询价书了，但询价书上并没有反映项目要求。仅采用了我们公司的标准格式。",
+      "en": "[Early Stage of Project] Requisition Reviews have started coming in, but the company standard remains the same and project-specific requests are not incorporated."
     },
     "selections": [
       {
@@ -368,7 +368,7 @@ const STORY_DATA = {
       {
         "id": "3.1.2",
         "desc": {
-          "ja": "引き合い要求書（Requisition）の標準Check Listを作成し、各チーム員が個別にプロジェクト要求を盛り込んで返却する",
+          "ja": "引き合い要求書の標準Check Listを作成し、各チーム員が個別にプロジェクト要求を盛り込んで返却する",
           "zh": "为询价书创建标准检查清单，让团队成员根据需要在每个询价书上反映项目要求。",
           "en": "Create a standard check list for Requisition, and each team member individually includes their project requests and returns it."
         },
@@ -383,7 +383,7 @@ const STORY_DATA = {
       {
         "id": "3.1.3",
         "desc": {
-          "ja": "設計に引き合い要求書（Requisition）のBlank Formにプロジェクト要求を盛り込んでもらい、チーム内のCheck Listを用いてReviewを実施する",
+          "ja": "設計に引き合い要求書のBlank Formにプロジェクト要求を盛り込んでもらい、チーム内のCheck Listを用いてReviewを実施する",
           "zh": "指示上游人员修改询价书的空白表格，在空白表格上反映项目的要求。并在收到询价书审核通知时，审查询价书是否反映了项目要求。",
           "en": "Have Design incorporate project requirements into the Requisition blank form, and conduct reviews using the team's internal checklist."
         },
@@ -413,8 +413,8 @@ const STORY_DATA = {
     "chapter": "3.2-A",
     "desc": {
       "ja": "(1.2.1)技術評価（Technical Evaluation）を担当する品質管理エンジニアが足りずQuality分だけ進まない",
-      "zh": "【危机发生！】由于负责Technical Evaluation（技术评估）的质量控制工程师人手不足，导致技术评估返回时间赶不上项目进度要求。",
-      "en": "【Crisis Warning!】 Due to a shortage of Quality Control Engineers in charge of Technical Evaluation, the return of Technical Evaluation cannot keep up with the project schedule requirements."
+      "zh": "(1.2.1)由于负责Technical Evaluation（技术评估）的质量控制工程师人手不足，导致技术评估返回时间赶不上项目进度要求。",
+      "en": "(1.2.1)Due to a shortage of Quality Control Engineers in charge of Technical Evaluation, the return of Technical Evaluation cannot keep up with the project schedule requirements."
     },
     "selections": [
       {
@@ -425,7 +425,7 @@ const STORY_DATA = {
           "en": "Immediately increase staffing and conduct Technical Evaluation with support from senior engineers."
         },
         "influence": {
-          "ja": "追加の工数は発生するが、何とか乗り切る",
+          "ja": "追加の工数は発生するが、何とか技術評価（Technical Evaluation）を乗り切った",
           "zh": "虽然产生了额外的工时，但是好歹度过了危机。",
           "en": "Although additional man-hours occurred, we managed to get through it."
         },
@@ -457,7 +457,7 @@ const STORY_DATA = {
           "en": "Even if it means working overtime, we will get through it with our current strength."
         },
         "influence": {
-          "ja": "購買発注（PO）.遅れで設計/プロキュアからのクレームとチーム員のデモチ",
+          "ja": "PO.遅れで設計/プロキュアからのクレームとチーム員のデモチベーションが発生した",
           "zh": "团队成员收到很多来自采购部门和设计部门投诉，导致团队士气下降。",
           "en": "Purchase Order (PO).Delayed design/complaints from Procure and demo of team members"
         },
@@ -481,9 +481,9 @@ const STORY_DATA = {
   "3.2-B": {
     "chapter": "3.2-B",
     "desc": {
-      "ja": "【危機発生！】技術評価（Technical Evaluation）の質が低く設計からクレームをもらい、彼らの照査時間を大幅に増やしてしまった",
-      "zh": "【危机发生！】由于Technical Evaluation（技术评估）的水平太差，设计人员向我方投诉，这极大地增加了他们审核图纸的时间。",
-      "en": "【Crisis Warning!】 The quality of Technical Evaluation was so poor that the design team complained to us, which significantly increased their review time."
+      "ja": "(1.2.2)技術評価（Technical Evaluation）の質が低く設計からコメントをもらう",
+      "zh": "(1.2.2)由于Technical Evaluation（技术评估）的水平太差，设计人员向我方投诉，这极大地增加了他们审核图纸的时间。",
+      "en": "(1.2.2)The quality of Technical Evaluation was so poor that the design team complained to us, which significantly increased their review time."
     },
     "selections": [
       {
@@ -494,7 +494,7 @@ const STORY_DATA = {
           "en": "Hold Technical Evaluation study sessions within the team to raise standards."
         },
         "influence": {
-          "ja": "何とか乗り切る",
+          "ja": "何とか技術評価（Technical Evaluation）を乗り切った",
           "zh": "勉强度过了难关。",
           "en": "somehow survive"
         },
@@ -521,7 +521,7 @@ const STORY_DATA = {
       {
         "id": "3.2-B.3",
         "desc": {
-          "ja": "キックオフミーティング（KOM）ですべてのプロジェクト要求を確認することとし、技術評価（Technical Evaluation）はミニマムにする",
+          "ja": "KOMですべてのプロジェクト要求を確認することとし、技術評価（Technical Evaluation）はミニマムにする",
           "zh": "为了避免延误，跟设计部门商量，不在technical evaluation 时做太多澄清，而在kickoff meeting澄清所有项目要求。",
           "en": "All project requests will be confirmed by Kick-off Meeting (KOM), and Technical Evaluation will be kept to a minimum."
         },
@@ -552,15 +552,15 @@ const STORY_DATA = {
   "3.2": {
     "chapter": "3.2",
     "desc": {
-      "ja": "技術評価（Technical Evaluation）が始まり、本プロジェクトでは耐圧部材のType-3.2の素材要求があることを認識している",
-      "zh": "技术评估（Technical Evaluation） 已经开始，该项目认识到耐压构件需要 Type-3.2 材料。",
-      "en": "Technical Evaluation has begun, and this project recognizes that there is a requirement for Type-3.2 materials for pressure-resistant members."
+      "ja": "技術評価（Technical Evaluation）が始まり、本プロジェクトでは耐圧部材のType-3.2の素材要求があることを認識していた",
+      "zh": "【技术评估已开始】技术评估（Technical Evaluation） 已经开始，该项目认识到耐压构件需要 Type-3.2 材料。",
+      "en": "[Technical Evaluation Begun] Technical Evaluation has begun, and this project recognizes that there is a requirement for Type-3.2 materials for pressure-resistant members."
     },
     "selections": [
       {
         "id": "3.2.1",
         "desc": {
-          "ja": "関連図書は引き合い要求書（Requisition）に含まれており、Bidderは知ってるはずなので、改めて確認する必要はない",
+          "ja": "関連図書は引き合い要求書に含まれており、Bidderは知ってるはずなので、改めて確認する必要はない",
           "zh": "确认了相关要求已经写在了询价书上。无论发生什么事，起码我们是占理的。",
           "en": "The relevant documents are included in the Requisition and the Bidder should know them, so there is no need to confirm again."
         },
@@ -577,7 +577,7 @@ const STORY_DATA = {
       {
         "id": "3.2.2",
         "desc": {
-          "ja": "技術評価（Technical Evaluation）での確認で、Bidderは\"Noted\"と回答してきたので理解してると判断した",
+          "ja": "技術評価（Technical Evaluation）での確認で、Bidderは\"Noted\"と回答してきたので理解してると判断する",
           "zh": "厂家在Technical Evaluation的表格中对这项回复Noted，所以我认为他已经理解了。",
           "en": "When I checked with Technical Evaluation, Bidder replied \"Noted\", so I assumed that he understood it."
         },
@@ -594,7 +594,7 @@ const STORY_DATA = {
       {
         "id": "3.2.3",
         "desc": {
-          "ja": "大きくコストに影響する項目なので、技術評価（Technical Evaluation）Meetingで直接確認した",
+          "ja": "大きくコストに影響する項目なので、技術評価（Technical Evaluation）Meetingで直接確認する",
           "zh": "由于这是对成本影响极大的条款，所以我们直接在技术评估（Technical Evaluation）会议上确认了这一点。",
           "en": "Since this is an item that greatly affects costs, we confirmed it directly at the Technical Evaluation Meeting."
         },
@@ -623,15 +623,15 @@ const STORY_DATA = {
   "3.3-A": {
     "chapter": "3.3-A",
     "desc": {
-      "ja": "(3.1-A.1)キックオフミーティング（KOM）でプロジェクト要求を確認しようとしたが、引き合い要求書（Requisition）に記載が無いのでVendorと紛糾、Full Complyだと見積もりベースと異なるのでChangeだと主張される",
-      "zh": "我尝试在开工会上要求供应商（vendor）执行项目独有的要求，但是供应商说：【因为询价书（Requisition）里面没写，所以报价时没考虑这一点，如果需要完全满足项目要求，必须要加钱】",
-      "en": "I tried to ask the vendor to execute project-specific requirements during the Kick-off Meeting, but the vendor said: 'Since it was not specified in the Requisition, we did not consider it in our quotation. If we need to fully satisfy the project requirements, additional costs will be required.'"
+      "ja": "(3.1-A.1)KOMでプロジェクト要求を確認しようとしたが、引き合い要求書に記載が無いのでベンダーと紛糾、Full Complyだと見積もりベースと異なるのでChangeだと主張された",
+      "zh": "(3.1-A.1)我尝试在开工会上要求供应商（vendor）执行项目独有的要求，但是供应商说：【因为询价书（Requisition）里面没写，所以报价时没考虑这一点，如果需要完全满足项目要求，必须要加钱】",
+      "en": "(3.1-A.1)I tried to ask the vendor to execute project-specific requirements during the Kick-off Meeting, but the vendor said: 'Since it was not specified in the Requisition, we did not consider it in our quotation. If we need to fully satisfy the project requirements, additional costs will be required.'"
     },
     "selections": [
       {
         "id": "3.3-A.1",
         "desc": {
-          "ja": "引き合い要求書（Requisition）で要求してないので、Vendor標準で進める",
+          "ja": "引き合い要求書で要求してないので、ベンダー標準で進める",
           "zh": "由于询价书中没有要求，因此按照供应商标准进行。",
           "en": "Since it is not requested in Requisition, proceed with Vendor standard."
         },
@@ -648,12 +648,12 @@ const STORY_DATA = {
       {
         "id": "3.3-A.2",
         "desc": {
-          "ja": "個別に議論を重ね、必要な分は追加を払ってVendorに適用させる",
+          "ja": "個別に議論を重ね、必要な分は追加を払ってベンダーに適用させる",
           "zh": "在公司内部讨论哪些要求必须实现，哪一些要求可以缓和。对于必须实现的要求，支付额外费用让供应商（Vendor）实现该要求。",
           "en": "Discuss internally within the company which requirements are mandatory and which can be relaxed. For mandatory ones, pay additional fees to have the vendor implement them."
         },
         "influence": {
-          "ja": "追加コストでプロジェクトの採算に影響を与える",
+          "ja": "追加コストでプロジェクトの採算に影響を与えた",
           "zh": "产生追加费用，对项目的收益率造成了负面影响。",
           "en": "Additional costs were incurred, impacting the project profitability."
         },
@@ -677,15 +677,15 @@ const STORY_DATA = {
   "3.3-B": {
     "chapter": "3.3-B",
     "desc": {
-      "ja": "(3.2-B.3)キックオフミーティング（KOM）でプロジェクト要求を確認しようとしたが、技術評価（Technical Evaluation）不足でVendorと紛糾、Full Complyだと見積もりベースとことなるのでChangeだと主張される",
-      "zh": "我在开工会（启动会议KOM）上让供应商确认是否能满足项目特有的要求，供应商说你在技术评估（Technical Evaluation）阶段没有提出来，因此这个要求应算作项目变更，需要额外追加预算。",
-      "en": "During the Kick-off Meeting (KOM), I asked the vendor to confirm if they could meet the project-specific requirements. The vendor replied that since we did not specify it during the Technical Evaluation, this requirement should be treated as a project change, and additional budget would be required."
+      "ja": "(3.2-B.3)KOMでプロジェクト要求を確認しようとしたが、技術評価（Technical Evaluation）不足でベンダーと紛糾、Full Complyだと見積もりベースとことなるのでChangeだと主張された",
+      "zh": "(3.2-B.3)我在开工会（启动会议KOM）上让供应商确认是否能满足项目特有的要求，供应商说你在技术评估（Technical Evaluation）阶段没有提出来，因此这个要求应算作项目变更，需要额外追加预算。",
+      "en": "(3.2-B.3)During the Kick-off Meeting (KOM), I asked the vendor to confirm if they could meet the project-specific requirements. The vendor replied that since we did not specify it during the Technical Evaluation, this requirement should be treated as a project change, and additional budget would be required."
     },
     "selections": [
       {
         "id": "3.3-B.1",
         "desc": {
-          "ja": "すべての要求は引き合い要求書（Requisition）のApplicable図書になってことを理由に、すべてVendorに適用させる",
+          "ja": "すべての要求は引き合い要求書のApplicable図書になってことを理由に、すべてベンダーに適用させる",
           "zh": "告诉供应商，我方已经在询价书（Requisition）里面写了，满足询价书的要求是供货商应尽的责任。",
           "en": "Tell the vendor that our company has already specified it in the Requisition, and meeting the Requisition requirements is the vendor's obligation."
         },
@@ -702,12 +702,12 @@ const STORY_DATA = {
       {
         "id": "3.3-B.2",
         "desc": {
-          "ja": "個別に議論を重ね、必要な分は追加を払ってVendorに適用させる",
+          "ja": "個別に議論を重ね、必要な分は追加を払ってベンダーに適用させる",
           "zh": "针对每一个特殊要求，在公司内部讨论。对于某些必须实现的要求，付一些钱，让供货商实现这些要求。",
           "en": "Discuss each special requirement internally within the company. For certain mandatory requirements, pay some fees to have the vendor implement them."
         },
         "influence": {
-          "ja": "追加コストでプロジェクトの採算に影響を与える",
+          "ja": "追加コストでプロジェクトの採算に影響を与えた",
           "zh": "产生追加费用，对项目的收益率造成了负面影响。",
           "en": "Additional costs were incurred, impacting the project profitability."
         },
@@ -731,7 +731,7 @@ const STORY_DATA = {
   "3.3": {
     "chapter": "3.3",
     "desc": {
-      "ja": "キックオフミーティング（KOM）で、Vendorが未経験のSubvendorで主要機器の製作を計画していることが分かった",
+      "ja": "KOMで、ベンダーが未経験のSubvendorで主要機器の製作を計画していることが分かった",
       "zh": "在 启动会议（KOM），据悉该供应商正计划与缺乏经验的转包商一起制造主要设备。",
       "en": "At Kick-off Meeting (KOM), it was learned that the vendor was planning to manufacture major equipment with inexperienced subvendors."
     },
@@ -739,7 +739,7 @@ const STORY_DATA = {
       {
         "id": "3.3.1",
         "desc": {
-          "ja": "代替の有力Subvendorに切り替えさせた",
+          "ja": "代替の有力Subvendorに切り替えさせる",
           "zh": "让供应商换一家更有能力的分包商。",
           "en": "Switched to a powerful alternative Subvendor"
         },
@@ -754,7 +754,7 @@ const STORY_DATA = {
       {
         "id": "3.3.2",
         "desc": {
-          "ja": "Vendorの提案を受け入れた",
+          "ja": "ベンダーの提案を受け入れる",
           "zh": "接受供应商建议",
           "en": "Accepted Vendor's proposal"
         },
@@ -771,7 +771,7 @@ const STORY_DATA = {
       {
         "id": "3.3.3",
         "desc": {
-          "ja": "直ちに関連部門によるショップサーベイを実施し、条件付きで認めた",
+          "ja": "直ちに関連部門によるショップサーベイを実施し、条件付きで認める",
           "zh": "立即组织关联部门进行制造厂考察（Shop Survey），并给予有条件批准。",
           "en": "Immediately organize relevant departments to conduct a shop survey and grant conditional approval."
         },
@@ -800,15 +800,15 @@ const STORY_DATA = {
   "3.4-A": {
     "chapter": "3.4-A",
     "desc": {
-      "ja": "(1.2.2)新人品質管理エンジニアが多くV-Doc.にPoorなコメントが多いとVendorからクレームが出る",
-      "zh": "很多经验不足的质量控制工程师在供应商图纸（vendor document）上提了很多不合理的修改意见，导致供货商向我们公司抱怨。",
-      "en": "Many inexperienced Quality Control Engineers raised unreasonable comments on vendor documents, leading to complaints from the vendor."
+      "ja": "(1.2.2)新人品質管理エンジニアが多くベンダー図書にPoorなコメントが多いとベンダーからクレームが出た",
+      "zh": "(1.2.2)很多经验不足的质量控制工程师在供应商图纸（vendor document）上提了很多不合理的修改意见，导致供货商向我们公司抱怨。",
+      "en": "(1.2.2)Many inexperienced Quality Control Engineers raised unreasonable comments on vendor documents, leading to complaints from the vendor."
     },
     "selections": [
       {
         "id": "3.4-A.1",
         "desc": {
-          "ja": "PoorでもコメントはコメントとしてVendorにFollowさせる",
+          "ja": "PoorでもコメントはコメントとしてベンダーにFollowさせる",
           "zh": "考虑到自家工程师的士气，跟供货商说他们是无理取闹。让供货商按照修改意见修改文件。",
           "en": "Considering the morale of our own engineers, tell the vendor that they are making trouble out of nothing. Force the vendor to modify the documents according to the comments."
         },
@@ -830,7 +830,7 @@ const STORY_DATA = {
           "en": "Take some time to educate the young engineers within the team, telling them which comments are reasonable and which are not."
         },
         "influence": {
-          "ja": "クレームも減り、何とかV-Doc. Reviewが軌道に乗る",
+          "ja": "クレームも減り、何とかベンダー図書 Reviewが軌道に乗る",
           "zh": "投诉减少了，而且不知何故 V-Doc 也减少了。审查重回正轨。",
           "en": "Complaints have decreased, and somehow V-Doc. Review is back on track."
         },
@@ -840,7 +840,7 @@ const STORY_DATA = {
       {
         "id": "3.4-A.3",
         "desc": {
-          "ja": "クレームが来たVendorと個別にコメントReview Meetingを開催し合意を得る",
+          "ja": "クレームが来たベンダーと個別にコメントReview Meetingを開催し合意を得る",
           "zh": "作为领导亲自下场跟发起投诉的供货商（Vendor）好好谈谈，确认哪些修改意见是合理的，哪些是不合理的。",
           "en": "As a leader, personally hold a meeting with the complaining sub-vendor to confirm which comments are reasonable and which are not."
         },
@@ -869,7 +869,7 @@ const STORY_DATA = {
   "3.4": {
     "chapter": "3.4",
     "desc": {
-      "ja": "V-Doc. Reviewのピークがきて、各チーム員のバックログが溜まり出した",
+      "ja": "ベンダー図書 Reviewのピークがきて、各チーム員のバックログが溜まり出した",
       "zh": "项目进入高峰期，每个团队成员都积压了很多未审批的供应商图纸及技术文件。",
       "en": "V-Doc. Review has reached its peak, and each team member's backlog has accumulated."
     },
@@ -882,7 +882,7 @@ const STORY_DATA = {
           "en": "Bring in short-term support to clear the document backlog."
         },
         "influence": {
-          "ja": "若干の追加工数は発生したが、何とかV-Docを捌いた",
+          "ja": "若干の追加工数は発生したが、何とかベンダー図書を捌いた",
           "zh": "虽然产生了一些额外的工时，但总算把供应商图纸处理完毕。",
           "en": "Although some additional man-hours occurred, we managed to process the vendor drawings."
         },
@@ -897,7 +897,7 @@ const STORY_DATA = {
           "en": "Rely on the current team working overtime, as adding more members will affect the budget."
         },
         "influence": {
-          "ja": "検査前打合せ（PIM）遅れでプロジェクトメンバーからのクレームとチーム員のデモチ",
+          "ja": "検査前打合せ（PIM）遅れでプロジェクトメンバーからのクレームとチーム員のデモチベーションが発生した",
           "zh": "因为处理不了项目文件，延误了检验前会议（PIM）。遭到其他部门投诉，且团队成员士气下降。",
           "en": "The Pre-Inspection Meeting (PIM) was delayed because project documents could not be processed in time. We received complaints from other departments, and the team's morale declined."
         },
@@ -938,9 +938,9 @@ const STORY_DATA = {
   "3.5": {
     "chapter": "3.5",
     "desc": {
-      "ja": "対象購買発注（PO）のカテゴリーでVendor ShopのエリアにCapableな検査員が見つからない",
-      "zh": "在目标 采购订单 类别的供应商制造厂区域中找不到有能力的检验员。",
-      "en": "Capable inspectors cannot be found in the Vendor Shop area in the target Purchase Order (PO) category."
+      "ja": "今後の検査に向けて品質管理検査員を配員しますが、対象POのカテゴリーでベンダー 工場のエリアにCapableな検査員が見つからない",
+      "zh": "【为后续检验做准备】在为后续检验调配检验员时，在目标 采购订单 类别的供应商制造厂区域中找不到有能力的检验员。",
+      "en": "[Preparing for Future Inspections] Although we are assigning inspectors for future inspections, Capable inspectors cannot be found in the Vendor Shop area in the target Purchase Order (PO) category."
     },
     "selections": [
       {
@@ -1007,9 +1007,9 @@ const STORY_DATA = {
   "4.1-A": {
     "chapter": "4.1-A",
     "desc": {
-      "ja": "(3.1-A.1)引き合い要求書（Requisition）に盛り込み忘れた要求事項を協議するも、Vendorから追加だとクレームを受ける",
-      "zh": "我们跟供应商讨论了一些忘了加在询价要求书（Requisition）里面的项目要求。供货商说可以满足，但是必须要加钱。",
-      "en": "We discussed some project requirements forgotten to be included in the Requisition with the vendor. The vendor said they could meet them, but additional costs would be required."
+      "ja": "(3.1-A.1)プロジェクトの最盛期で検査前打合せ（検査前打合せ（PIM））が始まりました。引き合い要求書に盛り込み忘れた要求事項を協議するも、ベンダーから追加だとクレームを受けた",
+      "zh": "(3.1-A.1)【项目高峰期，PIM已启动】我们跟供应商讨论了一些忘了加在询价要求书（Requisition）里面的项目要求。供货商说可以满足，但是必须要加钱。",
+      "en": "(3.1-A.1)[Peak of Project, PIM Begun] We discussed some project requirements forgotten to be included in the Requisition with the vendor. The vendor said they could meet them, but additional costs would be required."
     },
     "selections": [
       {
@@ -1030,7 +1030,7 @@ const STORY_DATA = {
       {
         "id": "4.1-A.2",
         "desc": {
-          "ja": "Vendor標準のまま進める",
+          "ja": "ベンダー標準のまま進める",
           "zh": "考虑到预算，让供应商按照供应商标准执行。",
           "en": "Considering the budget, allow the vendor to execute according to vendor standards."
         },
@@ -1047,12 +1047,12 @@ const STORY_DATA = {
       {
         "id": "4.1-A.3",
         "desc": {
-          "ja": "客先のDeviaitionを出してVendor標準を認めてもらう",
+          "ja": "客先のDeviaitionを出してベンダー標準を認めてもらう",
           "zh": "向业主提出【项目偏离（deviation）】，让业主接受供应商按供应商标准执行。",
           "en": "Submit a project deviation request to the client to accept the vendor executing according to vendor standards."
         },
         "influence": {
-          "ja": "いくつかは認めてもらえたが、否認された分は追加コストを払って履行する",
+          "ja": "いくつかは認めてもらえたが、否認された分は追加コストを払って履行させた",
           "zh": "业主同意了一些项目偏离（deviation），但对于被否决的偏离，最终还是追加了预算，让供应商按项目要求执行。",
           "en": "The client approved some project deviations, but for the rejected ones, additional costs were paid to have the vendor execute them."
         },
@@ -1076,15 +1076,15 @@ const STORY_DATA = {
   "4.1-B": {
     "chapter": "4.1-B",
     "desc": {
-      "ja": "技術評価（Technical Evaluation）における確認不足のため、Type-3.2 of 素材要求の見逃しが発生し、ベンダーが材料を調達していないことが発覚した",
-      "zh": "因为在技术评估（Technical Evaluation）阶段没有提醒供货商，导致供货商没有采购符合Type-3.2材质证明书（MTC）要求的材料。",
-      "en": "Because the vendor was not reminded during the Technical Evaluation, the vendor failed to purchase materials with Type-3.2 Material Test Certificates (MTC)."
+      "ja": "(3.2.1/3.2.2)プロジェクトの最盛期で検査前打合せ（検査前打合せ（PIM））が始まりました。その場で技術評価（Technical Evaluation）不足でType-3.2の素材要求の見逃しが発覚した",
+      "zh": "(3.2.1/3.2.2)【项目高峰期，PIM已启动】因为在技术评估（Technical Evaluation）阶段没有提醒供货商，导致供货商没有采购符合Type-3.2材质证明书（MTC）要求的材料。",
+      "en": "(3.2.1/3.2.2)[Peak of Project, PIM Begun] Because the vendor was not reminded during the Technical Evaluation, the vendor failed to purchase materials with Type-3.2 Material Test Certificates (MTC)."
     },
     "selections": [
       {
         "id": "4.1-B.1",
         "desc": {
-          "ja": "引き合い要求書（Requisition）には盛り込まれてるので、Vendorの落ち度として素材を再調達した",
+          "ja": "引き合い要求書には盛り込まれてるので、ベンダーの落ち度として素材を再調達させる",
           "zh": "因为询价书（Requisition）里面写明了该项要求，所以这完全是供货商的错，坚决要求他们重新采购符合Type-3.2要求的材料。",
           "en": "Since it was specified in the Requisition, it is entirely the vendor's fault. Force them to procure Type-3.2 materials immediately."
         },
@@ -1145,20 +1145,20 @@ const STORY_DATA = {
   "4.1-C": {
     "chapter": "4.1-C",
     "desc": {
-      "ja": "(3.3-B.1)技術評価（Technical Evaluation）不足からV-Doc.が固まらず、いつまで経っても検査前打合せ（PIM）が開催できない",
-      "zh": "由于技术评估（Technical Evaluation）进行得不充分，导致在项目正式进行时，供应商提交了好几版图纸（vendor document）也没法满足项目要求，检验前会议（PIM）迟迟无法召开。",
-      "en": "Because the Technical Evaluation was insufficient, the vendor submitted multiple revisions of vendor documents (V-Docs) but still could not satisfy the project requirements, and the Pre-Inspection Meeting (PIM) could not be held."
+      "ja": "(3.3-B.1)プロジェクトの最盛期で検査前打合せ（検査前打合せ（PIM））の時期が来ましたが、技術評価（Technical Evaluation）不足からベンダー図書が固まらず、いつまで経っても検査前打合せ（PIM）が開催できない",
+      "zh": "(3.3-B.1)【项目高峰期，PIM已到期】由于技术评估（Technical Evaluation）进行得不充分，导致在项目正式进行时，供应商提交了好几版图纸（vendor document）也没法满足项目要求，检验前会议（PIM）迟迟无法召开。",
+      "en": "(3.3-B.1)[Peak of Project, PIM Due] Because the Technical Evaluation was insufficient, the vendor submitted multiple revisions of vendor documents (V-Docs) but still could not satisfy the project requirements, and the Pre-Inspection Meeting (PIM) could not be held."
     },
     "selections": [
       {
         "id": "4.1-C.1",
         "desc": {
-          "ja": "時間が無いので、V-Doc.が固まらないまま検査前打合せ（PIM）を実施",
+          "ja": "時間が無いので、ベンダー図書が固まらないまま検査前打合せ（PIM）を実施する",
           "zh": "因为时间不够，在供应商图纸（vendor document）未冻结的情况下先召开检验前会议（PIM），以符合项目的进度计划。",
           "en": "Due to lack of time, hold the Pre-Inspection Meeting (PIM) before the vendor documents are finalized to meet the project schedule."
         },
         "influence": {
-          "ja": "客先からLetterをもらい信頼を損ねる",
+          "ja": "客先からLetterをもらい信頼を損ねた",
           "zh": "收到客户的来信而失去信任",
           "en": "Losing trust by receiving letters from customers"
         },
@@ -1168,7 +1168,7 @@ const STORY_DATA = {
       {
         "id": "4.1-C.2",
         "desc": {
-          "ja": "V-Doc.が固まるまで議論を続ける",
+          "ja": "ベンダー図書が固まるまで議論を続ける",
           "zh": "继续讨论，直到供应商图纸（vendor document）符合项目要求并冻结。",
           "en": "Continue the discussion until the vendor documents meet the project requirements and are finalized."
         },
@@ -1183,7 +1183,7 @@ const STORY_DATA = {
       {
         "id": "4.1-C.3",
         "desc": {
-          "ja": "Vendorに乗り込んでF2FでV-Doc. Review Meetingを開催し、承認してから検査前打合せ（PIM）を実施",
+          "ja": "ベンダーに乗り込んでF2Fでベンダー図書 Review Meetingを開催し、承認してから検査前打合せ（PIM）を実施する",
           "zh": "在执行检验前会议（PIM）之前，让负责的质量控制工程师出差去供货商办公室，尽快冻结供应商图纸（vendor document）。",
           "en": "Before conducting the Pre-Inspection Meeting (PIM), have the engineer travel to the vendor's office to finalize the vendor documents as soon as possible."
         },
@@ -1212,9 +1212,9 @@ const STORY_DATA = {
   "4.1-D": {
     "chapter": "4.1-D",
     "desc": {
-      "ja": "(3.4-A.1)V-Doc. Review時からVendorとの関係が悪化し、検査前打合せ（PIM）でも非協力的な態度を取られた",
-      "zh": "在供应商图纸审核（Vendor Document Review）阶段，和供货商的关系搞得很差，导致供货商修改文件不积极，马上要赶不上召开检验前会议（PIM）了。",
-      "en": "During the Vendor Document Review stage, the relationship with the vendor became very poor, leading to a lack of active document revision by the vendor, making it almost impossible to hold the Pre-Inspection Meeting (PIM) on schedule."
+      "ja": "(3.4-A.1)プロジェクトの最盛期で検査前打合せ（検査前打合せ（PIM））の時期が来ましたが、ベンダー図書 Review時からベンダーとの関係が悪化し、検査前打合せ（PIM）でも非協力的な態度を取られた",
+      "zh": "(3.4-A.1)【项目高峰期，PIM已到期】在供应商图纸审核（Vendor Document Review）阶段，和供货商的关系搞得很差，导致供货商修改文件不积极，马上要赶不上召开检验前会议（PIM）了。",
+      "en": "(3.4-A.1)[Peak of Project, PIM Due] During the Vendor Document Review stage, the relationship with the vendor became very poor, leading to a lack of active document revision by the vendor, making it almost impossible to hold the Pre-Inspection Meeting (PIM) on schedule."
     },
     "selections": [
       {
@@ -1242,7 +1242,7 @@ const STORY_DATA = {
           "en": "Hold an alignment meeting before the Pre-Inspection Meeting (PIM) to reflect on the lack of communication on the project and try to improve relations with the vendor."
         },
         "influence": {
-          "ja": "何とか関係を改善し、検査前打合せ（PIM）も実施して機器製作に繋げる",
+          "ja": "何とか関係を改善し、検査前打合せ（PIM）も実施して機器製作に繋げた",
           "zh": "改善了和供货商的关系，成功按项目进度要求举行了检验前会议（PIM）。 产生了一些额外的工时。",
           "en": "Improved relations with the vendor and successfully held the Pre-Inspection Meeting (PIM) according to the project schedule. Some additional man-hours occurred."
         },
@@ -1281,9 +1281,9 @@ const STORY_DATA = {
   "4.1": {
     "chapter": "4.1",
     "desc": {
-      "ja": "検査前打合せ（PIM）のShop Visit時に、溶接棒が適切に管理されていない状況が確認された",
-      "zh": "在走访 检验前会议（PIM） 车间期间，证实焊条没有得到妥善管理。",
-      "en": "During a Pre-Inspection Meeting (PIM) shop visit, it was confirmed that welding rods were not being managed properly."
+      "ja": "プロジェクトの最盛期で検査前打合せ（検査前打合せ（PIM））が始まりました。検査前打合せ（PIM）の工場 Visit時に、溶接棒が適切に管理されていない状況が確認された",
+      "zh": "【项目高峰期，PIM已启动】在走访 检验前会议（PIM） 车间期间，证实焊条没有得到妥善管理。",
+      "en": "[Peak of Project, PIM Begun] During a Pre-Inspection Meeting (PIM) shop visit, it was confirmed that welding rods were not being managed properly."
     },
     "selections": [
       {
@@ -1304,7 +1304,7 @@ const STORY_DATA = {
       {
         "id": "4.1.2",
         "desc": {
-          "ja": "Vendor内での管理方法を尊重する",
+          "ja": "ベンダー内での管理方法を尊重する",
           "zh": "尊重供应商内部的管理方法",
           "en": "Respect management methods within Vendors"
         },
@@ -1326,7 +1326,7 @@ const STORY_DATA = {
           "en": "Since the client was also present, to demonstrate our commitment to quality, we issued a Non-Conformance Report (NCR) on the spot."
         },
         "influence": {
-          "ja": "VendorはFollowするが関係が悪化する",
+          "ja": "ベンダーはFollowするが関係が悪化した",
           "zh": "供应商紧随其后，但关系恶化",
           "en": "Vendor follows, but relationship deteriorates"
         },
@@ -1350,9 +1350,9 @@ const STORY_DATA = {
   "4.2-A": {
     "chapter": "4.2-A",
     "desc": {
-      "ja": "(1.1.1)Vendorが30日前の検査申請を出せず、立会検査がたびたび客先からRejectされる",
-      "zh": "在检验前会议（PIM）期间参观供货商厂房，发现供货商没有妥善地管理焊条。",
-      "en": "During the Pre-Inspection Meeting (PIM) shop visit, we found that the vendor did not manage welding rods properly."
+      "ja": "(1.1.1)検査コーディネーションにおいて、ベンダーが30日前の検査申請を出せず、立会検査がたびたび客先からRejectされた",
+      "zh": "(1.1.1)【检验协调阶段】在检验前会议（PIM）期间参观供货商厂房，发现供货商没有妥善地管理焊条。",
+      "en": "(1.1.1)[Inspection Coordination Stage] During the Pre-Inspection Meeting (PIM) shop visit, we found that the vendor did not manage welding rods properly."
     },
     "selections": [
       {
@@ -1363,7 +1363,7 @@ const STORY_DATA = {
           "en": "Since it is a contract requirement, we must comply with it. Emphasize to our witness inspectors and the vendor that the inspection notice must be submitted 30 days in advance."
         },
         "influence": {
-          "ja": "大きなスケジュールインパクトが発生しプロジェクト管理部（PMT）からクレームを受ける",
+          "ja": "検査コーディネーションが混乱しベンダーからクレームを受けた",
           "zh": "发生了重大的进度影响，并收到了 项目管理部（PMT） 的投诉。",
           "en": "A major schedule impact occurred and a complaint was received from the Project Management Team (PMT)."
         },
@@ -1388,7 +1388,7 @@ const STORY_DATA = {
       {
         "id": "4.2-A.3",
         "desc": {
-          "ja": "Vendorに駐在検査員を派遣するなど機器製作を徹底管理する",
+          "ja": "ベンダーに駐在検査員を派遣するなど機器製作を徹底管理する",
           "zh": "让检验员驻场，这样不管什么时候检验，都有人在。",
           "en": "Station the inspector at the vendor's shop so that someone is always present whenever inspections occur."
         },
@@ -1417,9 +1417,9 @@ const STORY_DATA = {
   "4.2-B": {
     "chapter": "4.2-B",
     "desc": {
-      "ja": "(1.1.3)契約要求に反して2週間前の検査申請を出していたため客先から不適合報告書（NCR）が発行される",
-      "zh": "因为未按合同要求在检验日前一个月提交检验通知，业主开具了不符合项报告（NCR），要求我方整改。",
-      "en": "A Non-Conformance Report (NCR) was issued by the client because we failed to submit the inspection notice one month prior to the inspection date as contractually required, demanding our rectification."
+      "ja": "(1.1.3)検査コーディネーションにおいて、契約要求に反して2週間前の検査申請を出していたため客先から不適合報告書（NCR）が発行された",
+      "zh": "(1.1.3)【检验协调阶段】因为未按合同要求在检验日前一个月提交检验通知，业主开具了不符合项报告（NCR），要求我方整改。",
+      "en": "(1.1.3)[Inspection Coordination Stage] A Non-Conformance Report (NCR) was issued by the client because we failed to submit the inspection notice one month prior to the inspection date as contractually required, demanding our rectification."
     },
     "selections": [
       {
@@ -1430,7 +1430,7 @@ const STORY_DATA = {
           "en": "Switch to the contractually required 'submitting inspection notice one month in advance' and notify all subcontractors to execute it."
         },
         "influence": {
-          "ja": "検査コーディネーションが混乱しVendorからクレームを受ける",
+          "ja": "検査コーディネーションが混乱しベンダーからクレームを受けた",
           "zh": "检查协调受到干扰，并收到了供应商的投诉。",
           "en": "Inspection coordination was disrupted and complaints were received from vendors."
         },
@@ -1470,8 +1470,8 @@ const STORY_DATA = {
     "chapter": "4.2-C",
     "desc": {
       "ja": "(1.2.2)新規品質管理エンジニアの検査コーディネーションミスで、立会検査(H)に検査員を派遣できない",
-      "zh": "因质量控制工程师的协调错误，导致没有及时派遣检验员参加Hold（必须见证）试验。",
-      "en": "Due to a coordination error by the Quality Control Engineer (QCE), we failed to dispatch an inspector to attend a mandatory witness (Hold) point."
+      "zh": "(1.2.2)因质量控制工程师的协调错误，导致没有及时派遣检验员参加Hold（必须见证）试验。",
+      "en": "(1.2.2)Due to a coordination error by the Quality Control Engineer (QCE), we failed to dispatch an inspector to attend a mandatory witness (Hold) point."
     },
     "selections": [
       {
@@ -1482,7 +1482,7 @@ const STORY_DATA = {
           "en": "Ask the vendor to reschedule the inspection date."
         },
         "influence": {
-          "ja": "出荷に影響しロジからクレームを受ける",
+          "ja": "出荷に影響しロジからクレームを受けた",
           "zh": "这影响了发货，并收到了我们公司物流部门的投诉。",
           "en": "Affected shipment and received complaints from our company's logistics department."
         },
@@ -1497,7 +1497,7 @@ const STORY_DATA = {
           "en": "Considering the impact on the project schedule, waive this witness point (Hold point)."
         },
         "influence": {
-          "ja": "Hポイントの急なWaiveで客先から不適合報告書（NCR）を受ける",
+          "ja": "Hポイントの急なWaiveで客先から不適合報告書（NCR）を受けた",
           "zh": "因为没有按项目要求执行见证点（Hold point），我司收到了业主开具的不符合项报告（NCR）。",
           "en": "Received a Non-Conformance Report (NCR) from the client because the Hold point was not executed in accordance with the project requirements."
         },
@@ -1537,19 +1537,19 @@ const STORY_DATA = {
     "chapter": "4.2-D",
     "desc": {
       "ja": "(1.3.2)カットされたBudgetで運営していたため、検査工数が枯渇した",
-      "zh": "在项目后期发现，检验工时（man-hour）预算不够了。",
-      "en": "Discovered in the late stage of the project that the inspection man-hour budget has run out."
+      "zh": "(1.3.2)在项目后期发现，检验工时（man-hour）预算不够了。",
+      "en": "(1.3.2)Discovered in the late stage of the project that the inspection man-hour budget has run out."
     },
     "selections": [
       {
         "id": "4.2-D.1",
         "desc": {
-          "ja": "プロジェクト管理部（PMT）から指摘されるまで検査を続ける",
+          "ja": "プロジェクト管理部から指摘されるまで検査を続ける",
           "zh": "反正是项目管理部（PMT）强加给我的工时预算，他们应该知道已经超支了，不需要我另外告诉他们，继续进行检验工作。",
           "en": "Since the man-hour budget was imposed on me by the Project Management Team (PMT), they should already know it has run out. There is no need for me to inform them separately; just continue the inspections."
         },
         "influence": {
-          "ja": "プロジェクト管理部（PMT）からクレームを受けて大きく信頼を損ねる",
+          "ja": "プロジェクト管理部からクレームを受けて大きく信頼を損ねた",
           "zh": "收到项目管理部（PMT）投诉，极大失去信任",
           "en": "Receive complaints from Project Management Team (PMT) and lose trust greatly"
         },
@@ -1559,12 +1559,12 @@ const STORY_DATA = {
       {
         "id": "4.2-D.2",
         "desc": {
-          "ja": "直ちにプロジェクト管理部（PMT）に追加検査工数を申請する",
+          "ja": "直ちにプロジェクト管理部に追加検査工数を申請する",
           "zh": "立即向项目管理部（PMT）申请追加检验工时。",
           "en": "Immediately apply to the Project Management Team (PMT) for additional inspection man-hours."
         },
         "influence": {
-          "ja": "突然の工数増加に莫大な説明を求められるが、何とか追加は認めてもらえる",
+          "ja": "突然の工数増加に莫大な説明を求められるが、何とか追加は認めてもらえた",
           "zh": "工时的突然增加需要向项目管理部进行大量解释说明，但最终还是同意了追加申请。",
           "en": "We had to provide extensive explanations for the sudden increase in man-hours, but we managed to get the additional budget approved."
         },
@@ -1588,9 +1588,9 @@ const STORY_DATA = {
   "4.2-E": {
     "chapter": "4.2-E",
     "desc": {
-      "ja": "(3.1.1/3.3-A.1/4.1-A.2)SNT-TC-1Aの資格が認められないプロジェクト要求を引き合い要求書（Requisition）に盛り込み忘れたままNDEを実施し、記録Review時に発見される",
-      "zh": "在供应商已经做完无损检测（NDE）的情况下，发现项目不允许仅持有SNT-TC-1A资格的技术人员执行无损检测。且在审查检验报告（Inspection Report）时发现相关人员仅有SNT-TC-1A资格。回头核对询价书，发现里面漏写了这一条。",
-      "en": "After the vendor completed the NDE, it was discovered that the project does not permit technicians holding only SNT-TC-1A qualifications to perform NDE. Upon reviewing the Inspection Report, it was confirmed that the personnel only held SNT-TC-1A. Checking the Requisition, we found this clause was missed."
+      "ja": "(3.1.1/3.3-A.1/4.1-A.2)SNT-TC-1Aの資格が認められないプロジェクト要求を引き合い要求書に盛り込み忘れたままNDEを実施し、記録Review時に発見される",
+      "zh": "(3.1.1/3.3-A.1/4.1-A.2)在供应商已经做完无损检测（NDE）的情况下，发现项目不允许仅持有SNT-TC-1A资格的技术人员执行无损检测。且在审查检验报告（Inspection Report）时发现相关人员仅有SNT-TC-1A资格。回头核对询价书，发现里面漏写了这一条。",
+      "en": "(3.1.1/3.3-A.1/4.1-A.2)After the vendor completed the NDE, it was discovered that the project does not permit technicians holding only SNT-TC-1A qualifications to perform NDE. Upon reviewing the Inspection Report, it was confirmed that the personnel only held SNT-TC-1A. Checking the Requisition, we found this clause was missed."
     },
     "selections": [
       {
@@ -1601,7 +1601,7 @@ const STORY_DATA = {
           "en": "SNT-TC-1A qualification is also a formal qualification. Considering the impact on schedule and cost, approve the inspection report results."
         },
         "influence": {
-          "ja": "客先に発見され不適合報告書（NCR）を出されるとともに信頼を損ねる",
+          "ja": "客先に発見され不適合報告書（NCR）を出されるとともに信頼を損ねた",
           "zh": "最终业主发现了这一点，开具了不符合项报告（NCR）并要求我司整改，从此我司失去了业主的信任。",
           "en": "Ultimately the client discovered this, issued a Non-Conformance Report (NCR) demanding our rectification, and we lost the client's trust."
         },
@@ -1616,7 +1616,7 @@ const STORY_DATA = {
           "en": "Instruct the vendor to find ISO 9712 qualified technicians to perform the NDE again."
         },
         "influence": {
-          "ja": "Vendorに追加コストをクレームされた",
+          "ja": "ベンダーに追加コストをクレームされた",
           "zh": "供应商虽然照做了，但在之后提交了合同变更，要求我们公司支付这笔费用。",
           "en": "The vendor complied, but subsequently submitted a contract variation demanding our company pay for this cost."
         },
@@ -1631,7 +1631,7 @@ const STORY_DATA = {
           "en": "Submit a project deviation request to the client to accept the validity of the inspection reports under the SNT-TC-1A system."
         },
         "influence": {
-          "ja": "Deviationは否認され、ISO9712の検査員による再NDEを実施し、Vendorからクレームされた",
+          "ja": "Deviationは否認され、ISO9712の検査員による再NDEを実施し、ベンダーからクレームされた",
           "zh": "业主拒绝了该项目偏离申请。结果还是让供货商找了ISO 9712的检验员重新进行检测，最后供货商提交了合同变更，要求我们公司支付这笔钱。",
           "en": "The deviation request was rejected by the client. We had to ask the vendor to perform the NDE again with ISO 9712 inspectors, and subsequently the vendor submitted a contract variation demanding our company cover this expense."
         },
@@ -1656,8 +1656,8 @@ const STORY_DATA = {
     "chapter": "4.2-F",
     "desc": {
       "ja": "(3.5.1)検査員の力量不足により、IRがPoorで実際の検査状況が分からない",
-      "zh": "由于派驻检验人员的能力不足，检验报告（Inspection Report）写得不够清楚，无法判断实际检验的具体情况。",
-      "en": "Due to the lack of capability of the dispatched inspector, the Inspection Report (IR) is not written clearly enough to judge the actual inspection status."
+      "zh": "(3.5.1)由于派驻检验人员的能力不足，检验报告（Inspection Report）写得不够清楚，无法判断实际检验的具体情况。",
+      "en": "(3.5.1)Due to the lack of capability of the dispatched inspector, the Inspection Report (IR) is not written clearly enough to judge the actual inspection status."
     },
     "selections": [
       {
@@ -1683,7 +1683,7 @@ const STORY_DATA = {
           "en": "Personally guide the inspector on how to write the Inspection Report."
         },
         "influence": {
-          "ja": "IRが改善され検査状況が関係者で共有できる",
+          "ja": "IRが改善され検査状況がプロジェクト関係者で共有できた",
           "zh": "IR 已得到改进，检查状态可以与相关方共享",
           "en": "IR has been improved and inspection status can be shared with related parties"
         },
@@ -1698,7 +1698,7 @@ const STORY_DATA = {
           "en": "Considering man-hours and cost, maintain the current inspector and ask the inspection agency to provide more guidance."
         },
         "influence": {
-          "ja": "検査状況が分からないまま出荷し、現場でトラブル多発",
+          "ja": "検査状況が分からないまま出荷し、現場でトラブル多発(5.3)",
           "zh": "在不了解检验情况的状态下直接发货，导致现场问题频发。",
           "en": "Shipped without clear understanding of the inspection status, leading to frequent issues at the site."
         },
@@ -1724,9 +1724,9 @@ const STORY_DATA = {
   "4.2-G": {
     "chapter": "4.2-G",
     "desc": {
-      "ja": "(4.1-D.1)Vendorとの関係が悪化し、弊社検査員の工場への入場が拒否された",
-      "zh": "(4.1-D.1) 与供应商的关系恶化，我方 检查员被拒绝进入工厂。",
-      "en": "(4.1-D.1) The relationship with the vendor deteriorated and our inspectors were refused entry to the factory."
+      "ja": "(4.1-D.1)ベンダーとの関係が悪化し、立会検査時にJGC検査員の工場への入場が拒否された",
+      "zh": "(4.1-D.1)与供应商的关系恶化，我方 检查员被拒绝进入工厂。",
+      "en": "(4.1-D.1)The relationship with the vendor deteriorated and our inspectors were refused entry to the factory."
     },
     "selections": [
       {
@@ -1737,7 +1737,7 @@ const STORY_DATA = {
           "en": "Since it is not a Hold point, waive the requirement for inspection witness here."
         },
         "influence": {
-          "ja": "検査をしないまま出荷して、現場でトラブル発生",
+          "ja": "検査をしないまま出荷して、現場でトラブル発生(5.3)",
           "zh": "因为发货前未进行检验，导致在安装现场出现状况。",
           "en": "Because no inspection was performed before shipment, problems arose at the construction site."
         },
@@ -1754,7 +1754,7 @@ const STORY_DATA = {
           "en": "The vendor is hiding things from us, which means they must have performed non-conforming operations. Force the inspector to enter and conduct the inspection."
         },
         "influence": {
-          "ja": "検査員がShopでケガをする",
+          "ja": "検査員が工場でケガをした　←直ちにGame Over",
           "zh": "检验员因强行进入厂房，在车间内意外受伤。",
           "en": "The inspector was unexpectedly injured in the shop while forcing entry for inspection."
         },
@@ -1766,12 +1766,12 @@ const STORY_DATA = {
       {
         "id": "4.2-G.3",
         "desc": {
-          "ja": "プロジェクト管理部（PMT）/プロキュアと協力してVendorマネジメントを通して検査を実施してもらう",
+          "ja": "プロジェクト管理部/プロキュアと協力してベンダーマネジメントを通して検査を実施してもらう",
           "zh": "与项目管理部（PMT）、采购部门配合，通过对供应商的高层管理施压来实施检验。",
           "en": "Cooperate with the Project Management Team (PMT) and Procurement department to conduct the inspection through vendor management."
         },
         "influence": {
-          "ja": "何とか検査を実施するがプロジェクト管理部（PMT）から大きなクレームを受ける",
+          "ja": "何とか検査を実施するがプロジェクト管理部から大きなクレームを受ける",
           "zh": "虽然最终在我方检验员见证下完成了检验并出货，但事后收到了项目管理部（PMT）的强烈投诉。",
           "en": "Although we managed to witness the inspection and ship it, we subsequently received heavy complaints from the Project Management Team."
         },
@@ -1795,9 +1795,9 @@ const STORY_DATA = {
   "4.2-H": {
     "chapter": "4.2-H",
     "desc": {
-      "ja": "(4.1.2)溶接棒管理不全から終盤のRTフィルムReviewで多数の欠陥が見つかる",
-      "zh": "在设备最终检验时，无损检测中发现了多处不合格缺陷，该设备本不能被判定为完全合格的设备。",
-      "en": "During the final equipment inspection, multiple non-conforming defects were found during NDE, and the equipment could not be judged as fully conforming."
+      "ja": "(4.1.2)ベンダー 工場での溶接棒管理不全から、終盤のRTフィルムReviewで多数の欠陥が見つかる",
+      "zh": "(4.1.2)在设备最终检验时，无损检测中发现了多处不合格缺陷，该设备本不能被判定为完全合格的设备。",
+      "en": "(4.1.2)During the final equipment inspection, multiple non-conforming defects were found during NDE, and the equipment could not be judged as fully conforming."
     },
     "selections": [
       {
@@ -1808,7 +1808,7 @@ const STORY_DATA = {
           "en": "We repair everything by welding and ship healthy equipment."
         },
         "influence": {
-          "ja": "スケジュールインパクトはあったが何とか出荷する",
+          "ja": "スケジュールインパクトはあったが何とか出荷した",
           "zh": "虽然进度受到影响，但我们还是成功发货了。",
           "en": "Although there was a schedule impact, we managed to ship it."
         },
@@ -1818,16 +1818,18 @@ const STORY_DATA = {
       {
         "id": "4.2-H.2",
         "desc": {
-          "ja": "時間が無いからそのまま出荷",
+          "ja": "時間が無いからそのまま出荷する",
           "zh": "由于项目的工期非常紧，且一定的缺陷是ASME标准允许的，因此决定先发货再说。",
           "en": "Due to the extremely tight project schedule and because certain defects are permissible under ASME standards, we decided to ship it as is."
         },
         "influence": {
-          "ja": "客先に発見され不適合報告書（NCR）を出されるとともに信頼を損ねる",
-          "zh": "业主在审查检验报告时发现了该问题，开具了正式的不符合项报告（NCR），要求我司和供货商整改。从此你失去了业主对你的信任。",
-          "en": "The client found this issue while reviewing the inspection reports, issued a formal Non-Conformance Report (NCR) demanding rectification by both our company and the vendor, and you lost the client's trust."
+          "ja": "客先に発見され不適合報告書（NCR）を出されるとともにDisqualify",
+          "zh": "被业主发现并开具不符合项报告（NCR），且我方被业主直接撤换（Disqualify）。",
+          "en": "Discovered by the client, who issued an NCR and disqualified our company."
         },
-        "flags": [],
+        "flags": [
+          "Game Over"
+        ],
         "score": 1
       },
       {
@@ -1862,9 +1864,9 @@ const STORY_DATA = {
   "4.2": {
     "chapter": "4.2",
     "desc": {
-      "ja": "VendorによるSubvendor管理不足でタイムリーに検査申請が出ない",
-      "zh": "由于供应商缺乏对转包商的管理，未及时提交验货申请。",
-      "en": "Inspection applications are not submitted in a timely manner due to lack of subvendor management by the vendor."
+      "ja": "検査コーディネーションにおいて、ベンダーによるSubvendor管理不足でタイムリーに検査申請が出ない",
+      "zh": "【检验协调阶段】由于供应商缺乏对转包商的管理，未及时提交验货申请。",
+      "en": "[Inspection Coordination Stage] Inspection applications are not submitted in a timely manner due to lack of subvendor management by the vendor."
     },
     "selections": [
       {
@@ -1875,7 +1877,7 @@ const STORY_DATA = {
           "en": "Dispatch inspectors/Expeditors to manage production status and submit inspection requests"
         },
         "influence": {
-          "ja": "追加工数は発生したがスケジュールは守り、後日VendorにBack Chargeした",
+          "ja": "追加工数は発生したがスケジュールは守り、後日ベンダーにBack Chargeした",
           "zh": "虽然产生了额外的工时，但保证了项目进度，并在事后向供应商索赔（Back-charge）。",
           "en": "Although additional man-hours occurred, the schedule was maintained, and we back-charged the vendor later."
         },
@@ -1890,7 +1892,7 @@ const STORY_DATA = {
           "en": "Perform the inspection immediately when the inspection request is issued."
         },
         "influence": {
-          "ja": "スケジュールインパクトが発生し建設からクレーム",
+          "ja": "スケジュールインパクトが発生し建設からクレームを受けた",
           "zh": "因影响进度而受到施工投诉",
           "en": "Complaint from construction due to schedule impact"
         },
@@ -1916,7 +1918,7 @@ const STORY_DATA = {
     "desc": {
       "ja": "(1.3.2)バルク品の不適合報告書（NCR）が発生し、水平展開で膨大なバックチェックが必要となるが工数不足で対応できない",
       "zh": "(1.3.2)大宗产品出现不符合项报告（NCR），横向部署需要大量回查，但因缺乏工时而无法处理",
-      "en": "(1.3.2) Non-Conformance Report (NCR) of bulk products occurs, and a huge amount of back-checking is required for horizontal deployment, but it cannot be handled due to lack of man-hours"
+      "en": "(1.3.2)Non-Conformance Report (NCR) of bulk products occurs, and a huge amount of back-checking is required for horizontal deployment, but it cannot be handled due to lack of man-hours"
     },
     "selections": [
       {
@@ -1927,7 +1929,7 @@ const STORY_DATA = {
           "en": "Work extra overtime and try our best to complete it."
         },
         "influence": {
-          "ja": "バックチェックに時間を要し、大きなスケジュールインパクトとチーム員のデモチ",
+          "ja": "バックチェックに時間を要し、大きなスケジュールインパクトとチーム員のデモチベーションが発生した",
           "zh": "回溯需要时间，对进度造成很大影响，并破坏团队成员。",
           "en": "Back-checking takes time, causing a big impact on the schedule and demolishing team members."
         },
@@ -1957,7 +1959,7 @@ const STORY_DATA = {
           "en": "Since it was a sampling inspection, many Non-Conformance Reports (NCRs) occurred on site."
         },
         "influence": {
-          "ja": "抜き取り漏れがあり、現場でさらに不適合報告書（NCR）発生",
+          "ja": "抜き取り漏れがあり、現場でさらに不適合報告書（NCR）発生(5.3)",
           "zh": "一旦供应商发出检验申请，就立即进行检验工作。",
           "en": "Perform the inspection immediately when the inspection request is issued."
         },
@@ -1983,9 +1985,9 @@ const STORY_DATA = {
   "4.3-B": {
     "chapter": "4.3-B",
     "desc": {
-      "ja": "(3.2-A.2/3.2-B.2)技術評価（Technical Evaluation）不足により、出荷前に官庁立会を実施していない不適合報告書（NCR）発生",
-      "zh": "因为在技术评估（Technical Evaluation）阶段没有提醒供货商，导致供货商忘记在出货前进行政府办公室见证。我们向供货商发了不符合项报告（NCR）。之后应该怎么处理？",
-      "en": "Because the vendor was not reminded during the Technical Evaluation stage, they forgot to conduct the government office witnessing before shipment. We issued a Non-Conformance Report (NCR) to the vendor. What should be done next?"
+      "ja": "(3.2-A.2/3.2-B.2)技術評価（Technical Evaluation）不足により、出荷前に官庁立会を実施していない不適合報告書（NCR）が発生した",
+      "zh": "(3.2-A.2/3.2-B.2)因为在技术评估（Technical Evaluation）阶段没有提醒供货商，导致供货商忘记在出货前进行政府办公室见证。我们向供货商发了不符合项报告（NCR）。之后应该怎么处理？",
+      "en": "(3.2-A.2/3.2-B.2)Because the vendor was not reminded during the Technical Evaluation stage, they forgot to conduct the government office witnessing before shipment. We issued a Non-Conformance Report (NCR) to the vendor. What should be done next?"
     },
     "selections": [
       {
@@ -2051,14 +2053,14 @@ const STORY_DATA = {
     "chapter": "4.3-C",
     "desc": {
       "ja": "(3.3.2)未経験のSubvendorに主要機器製作を丸投げしたので、材質間違い、寸法間違い、ワークマンシップなど不適合報告書（NCR）が多発した",
-      "zh": "（3.3.2）由于主要装备完全委托缺乏经验的转包商生产，存在材料不正确、尺寸不正确、工艺不正确等诸多问题。",
-      "en": "(3.3.2) Because the production of major equipment was completely entrusted to an inexperienced subvendor, there were many Non-Conformance Report (NCR)s such as incorrect materials, incorrect dimensions, and workmanship."
+      "zh": "(3.3.2)（3.3.2）由于主要装备完全委托缺乏经验的转包商生产，存在材料不正确、尺寸不正确、工艺不正确等诸多问题。",
+      "en": "(3.3.2)Because the production of major equipment was completely entrusted to an inexperienced subvendor, there were many Non-Conformance Report (NCR)s such as incorrect materials, incorrect dimensions, and workmanship."
     },
     "selections": [
       {
         "id": "4.3-C.1",
         "desc": {
-          "ja": "あくまでendorに管理させ、リキダメを最大限取り立てる",
+          "ja": "あくまでベンダーに管理させ、リキダメを最大限取り立てる",
           "zh": "要求供货商加强管理。至于管理不好的部分，根据合同条款，要求供货商支付赔偿金（Liquidated Damages）。",
           "en": "Let the vendor manage it, and demand the vendor pay Liquidated Damages according to the contract clauses."
         },
@@ -2117,15 +2119,15 @@ const STORY_DATA = {
   "4.3-D": {
     "chapter": "4.3-D",
     "desc": {
-      "ja": "(3.4.3)V-Doc. Review漏れで、Flange Faceの防錆不全の不適合報告書（NCR）発生",
-      "zh": "因为供应商图纸审核（Vendor Document Review）不够充分，导致供货商未按项目要求进行法兰面的防锈处理。我方已向分包商发行了不符合项报告（NCR）。之后应该怎么处理？",
-      "en": "Because the Vendor Document Review was insufficient, the vendor failed to perform rust prevention treatment on the flange face in accordance with project requirements. We issued a Non-Conformance Report (NCR) to the subcontractor. What should be done next?"
+      "ja": "(3.4.3)ベンダー図書 Review漏れで、Flange Faceの防錆不全の不適合報告書（NCR）発生した",
+      "zh": "(3.4.3)因为供应商图纸审核（Vendor Document Review）不够充分，导致供货商未按项目要求进行法兰面的防锈处理。我方已向分包商发行了不符合项报告（NCR）。之后应该怎么处理？",
+      "en": "(3.4.3)Because the Vendor Document Review was insufficient, the vendor failed to perform rust prevention treatment on the flange face in accordance with project requirements. We issued a Non-Conformance Report (NCR) to the subcontractor. What should be done next?"
     },
     "selections": [
       {
         "id": "4.3-D.1",
         "desc": {
-          "ja": "時間が無いのでそのまま出荷するが、現場受入時にサブコンによる防錆処理を依頼",
+          "ja": "時間が無いのでそのまま出荷するが、現場受入時にサブコンによる防錆処理を依頼する",
           "zh": "为了避免影响到进度，让供货商先出货。最后以【在现场进行防锈处理】的形式关闭了这个NCR。",
           "en": "To avoid delaying the project schedule, allow the vendor to ship first. Close this NCR with a plan to perform rust prevention treatment on-site."
         },
@@ -2140,7 +2142,7 @@ const STORY_DATA = {
       {
         "id": "4.3-D.2",
         "desc": {
-          "ja": "バッチを小分けにして優先順位順に適切な防錆処理をして出荷",
+          "ja": "バッチを小分けにして優先順位順に適切な防錆処理をして出荷する",
           "zh": "批量分为小批量，并按优先顺序进行适当的防腐处理后发货。",
           "en": "Batch is divided into small batches and shipped with appropriate anti-corrosion treatment in order of priority."
         },
@@ -2177,12 +2179,12 @@ const STORY_DATA = {
       {
         "id": "4.3.1",
         "desc": {
-          "ja": "時間が無いのでそのまま出荷した",
+          "ja": "時間が無いのでそのまま出荷する",
           "zh": "我没有时间，所以我就按原样发货了。",
           "en": "I didn't have time so I shipped it as is."
         },
         "influence": {
-          "ja": "技術者倫理に抵触し、客先/プロジェクト管理部（PMT）からDisqualify",
+          "ja": "技術者倫理に抵触し、客先/プロジェクト管理部からDisqualify",
           "zh": "因触犯工程师职业道德，被业主/项目管理团队（PMT）直接解雇清退。",
           "en": "Disqualified and dismissed by the client/Project Management Team (PMT) due to violation of engineering ethics."
         },
@@ -2194,12 +2196,12 @@ const STORY_DATA = {
       {
         "id": "4.3.2",
         "desc": {
-          "ja": "対象部材にPMI、硬さ試験などを実施して合格を確認して出荷",
+          "ja": "対象部材にPMI、硬さ試験などを実施して合格を確認して出荷する",
           "zh": "按照国际标准对目标零件进行PMI、硬度测试等，确认该材料符合规范要求，于是放行了这批材料。",
           "en": "We conduct PMI, hardness tests, etc. on the target parts according to international standards and confirm that they pass before shipping."
         },
         "influence": {
-          "ja": "後々、現場で客先からさらに追及を受ける",
+          "ja": "後々、現場で客先からさらに追及を受ける(5.3)",
           "zh": "在材料运抵安装现场之后，业主会针对此事对我司产生严重的不信任。",
           "en": "After the materials arrive at the site, the client will harbor serious distrust toward our company regarding this matter."
         },
@@ -2211,7 +2213,7 @@ const STORY_DATA = {
       {
         "id": "4.3.3",
         "desc": {
-          "ja": "対象材料を取替",
+          "ja": "対象材料を取り換える",
           "zh": "拒绝接收并要求更换材料。",
           "en": "Reject acceptance and demand replacement of the materials."
         },
@@ -2240,20 +2242,20 @@ const STORY_DATA = {
   "5.1-A": {
     "chapter": "5.1-A",
     "desc": {
-      "ja": "(1.2.2)新規外部委託の経験不足で、バルク材の材質証明書（MTC）が無いまま検査放行証（IRC）だけ発行した",
-      "zh": "由于新外包团队人员经验不足，在未收到材质证明书（MTC）的情况下，他就发行了检验放行证（IRC），放行了这批材料。",
-      "en": "Due to the lack of experience of the new outsourcing team, they issued the Inspection Release Certificate (IRC) without receiving the Material Test Certificate (MTC) for the bulk materials."
+      "ja": "(1.2.2)プロジェクトも終盤ですが、新規エンジニアの経験不足で、バルク材の材質証明書（MTC）が無いままIRCだけ発行した",
+      "zh": "(1.2.2)【项目已进入尾声】由于新外包团队人员经验不足，在未收到材质证明书（MTC）的情况下，他就发行了检验放行证（IRC），放行了这批材料。",
+      "en": "(1.2.2)[The Project is in its Final Stages] Due to the lack of experience of the new outsourcing team, they issued the Inspection Release Certificate (IRC) without receiving the Material Test Certificate (MTC) for the bulk materials."
     },
     "selections": [
       {
         "id": "5.1-A.1",
         "desc": {
-          "ja": "VendorがMRBを出すのを待つ",
+          "ja": "ベンダーが製造記録書（MRB）を出すのを待つ",
           "zh": "反正之后都会汇总放在竣工资料（MRB）里面，等供货商提供竣工资料（MRB）就行了。",
           "en": "Since it will be compiled into the Manufacturing Data Record (MDR) later, just wait for the vendor to submit the MDR."
         },
         "influence": {
-          "ja": "後々、現場からクレーム",
+          "ja": "後々、現場からクレーム(5.3)",
           "zh": "随后收到了来自施工现场的强烈投诉。",
           "en": "Subsequently received complaints from the construction site."
         },
@@ -2270,7 +2272,7 @@ const STORY_DATA = {
           "en": "Establish rules for sharing Material Test Certificates (MTC) with site staff, and instruct the QC team members to pay attention to this in the future."
         },
         "influence": {
-          "ja": "配管Shop Fab.開始当初は混乱したが、徐々に改善した",
+          "ja": "配管工場 Fab.開始当初は混乱したが、徐々に改善した",
           "zh": "管道工厂预制（Shop Fabrication）开始之初有些混乱，但随着规则建立已逐步改善。",
           "en": "At the beginning of piping Shop Fabrication, there was confusion, but it gradually improved."
         },
@@ -2294,15 +2296,15 @@ const STORY_DATA = {
   "5.1": {
     "chapter": "5.1",
     "desc": {
-      "ja": "IRC発行の直前になり、最終検査において多くの待整改問題（Punch）が発覚した",
-      "zh": "在发行检验放行证（IRC）之前的最终检查（final inspection）中，发现了很多待整改的问题（punch）。",
-      "en": "During the final inspection just before issuing the Inspection Release Certificate (IRC), we found many pending punch list items."
+      "ja": "プロジェクトも終盤ですが、IRC発行直前のFinal Inspectionで大量のパンチがついた",
+      "zh": "【项目已进入尾声】在发行检验放行证（IRC）之前的最终检查（final inspection）中，发现了很多待整改的问题（punch）。",
+      "en": "[The Project is in its Final Stages] During the final inspection just before issuing the Inspection Release Certificate (IRC), we found many pending punch list items."
     },
     "selections": [
       {
         "id": "5.1.1",
         "desc": {
-          "ja": "設計/建設と協議してCarry Over Wrokを決めて、最小限のパンチを潰して出荷",
+          "ja": "設計/建設と協議してCarry Over Wrokを決めて、最小限のパンチを潰して出荷する",
           "zh": "与设计和施工部门协商确定残留尾项（Carry-over Items），清理完最小限度的尾项后发货。",
           "en": "Discuss with Design and Construction to determine Carry-over Work, clear the minimum punch items, and ship."
         },
@@ -2317,7 +2319,7 @@ const STORY_DATA = {
       {
         "id": "5.1.2",
         "desc": {
-          "ja": "Vendorがパンチを潰すのを待つ",
+          "ja": "ベンダーがパンチを潰すのを待つ",
           "zh": "等待供应商解决所有的待解决事项（Punch）。",
           "en": "Wait for the vendor to clear all pending punch items."
         },
@@ -2332,7 +2334,7 @@ const STORY_DATA = {
       {
         "id": "5.1.3",
         "desc": {
-          "ja": "追加の検査員を投入して、集中的にパンチを潰して出荷",
+          "ja": "追加の検査員を投入して、集中的にパンチを潰して出荷する",
           "zh": "增派检验员协助，集中力量清理尾项（punch list）后发货。",
           "en": "Deploy additional inspectors to intensively clear the punch items and ship."
         },
@@ -2361,7 +2363,7 @@ const STORY_DATA = {
   "5.2": {
     "chapter": "5.2",
     "desc": {
-      "ja": "JOBの終盤を迎えるもVendorが中々MRBを提出しない",
+      "ja": "ジョブの終盤を迎えるもベンダーが中々製造記録書（MRB）を提出しない",
       "zh": "即使作业已接近最后阶段，供应商也不会提交 MRB。",
       "en": "Vendor does not submit MRB even though the JOB is nearing its final stage."
     },
@@ -2369,12 +2371,12 @@ const STORY_DATA = {
       {
         "id": "5.2.1",
         "desc": {
-          "ja": "Vendorが提出するのを待つ",
+          "ja": "ベンダーが提出するのを待つ",
           "zh": "等待供应商提交。",
           "en": "Wait for vendor to submit"
         },
         "influence": {
-          "ja": "いつまでもMRBが終わらず、プロジェクト管理部（PMT）からクレームを受ける",
+          "ja": "いつまでも製造記録書（MRB）が終わらず、プロジェクト管理部からクレームを受けた",
           "zh": "MRB永无休止并收到项目管理部（PMT）的投诉",
           "en": "MRB never ends and receives complaints from Project Management Team (PMT)"
         },
@@ -2389,7 +2391,7 @@ const STORY_DATA = {
           "en": "Expedite the vendor from multiple angles with support from Design and Procurement."
         },
         "influence": {
-          "ja": "何とか全MRBを取り寄せる",
+          "ja": "何とか全製造記録書（MRB）を取り寄せた",
           "zh": "最终在各方努力下，顺利完成了竣工资料（MRB）的提交。",
           "en": "In the end, through everyone's efforts, the Manufacturing Data Record (MDR) was successfully compiled."
         },
@@ -2399,12 +2401,12 @@ const STORY_DATA = {
       {
         "id": "5.2.3",
         "desc": {
-          "ja": "これまでの検査記録からMRBを自主制作する",
+          "ja": "これまでの検査記録から製造記録書（MRB）を自主制作する",
           "zh": "根据过去收集的检验记录，尝试自行编制竣工资料（MRB）。",
           "en": "Independently create MRB from past inspection records."
         },
         "influence": {
-          "ja": "足りない記録もあるが、とりあえず全数提出する",
+          "ja": "足りない記録もあるが、とりあえず全数提出した",
           "zh": "虽然缺失部分检验记录，但还是先将已有的文件全部提交。",
           "en": "Submit all available records first, even if some parts are missing."
         },
@@ -2428,15 +2430,15 @@ const STORY_DATA = {
   "5.3-A": {
     "chapter": "5.3-A",
     "desc": {
-      "ja": "(4.2-F.3)IR Review不足により現場に届いたVesselにClipが取り付けられていない事例が散見された",
-      "zh": "由于检验报告（Inspection Report）审批得不够充分，导致某些压力容器（vessel）运抵施工现场后，发现上面缺少了支撑管卡（clip）。",
-      "en": "Due to insufficient review of the Inspection Report (IR), there were cases where clips were not attached to the vessels that arrived at the construction site."
+      "ja": "(4.2-F.3)現場サポートもPQCMの仕事です。IR Review不足により現場に届いたVesselにClipが取り付けられていない事例が散見された",
+      "zh": "(4.2-F.3)【现场支持也是PQCM的职责】由于检验报告（Inspection Report）审批得不够充分，导致某些压力容器（vessel）运抵施工现场后，发现上面缺少了支撑管卡（clip）。",
+      "en": "(4.2-F.3)[Site Support is also PQCM's Job] Due to insufficient review of the Inspection Report (IR), there were cases where clips were not attached to the vessels that arrived at the construction site."
     },
     "selections": [
       {
         "id": "5.3-A.1",
         "desc": {
-          "ja": "VesselをVendorに送り返して補修させる",
+          "ja": "Vesselをベンダーに送り返して補修させる",
           "zh": "将容器（Vessel）送回供应商工厂，责令供应商进行修补整改。",
           "en": "Send the Vessel back to the Vendor's factory for repair."
         },
@@ -2495,9 +2497,9 @@ const STORY_DATA = {
   "5.3-B": {
     "chapter": "5.3-B",
     "desc": {
-      "ja": "(4.2-G.1)検査の無いまま出荷したので、現場でルーズパーツなどがどこにあるか分からない",
-      "zh": "由于发货前未进行检验，导致在施工现场不清楚散供件（loose parts）的具体位置。",
-      "en": "Since it was shipped without inspection, it is unclear where the loose parts are located on site."
+      "ja": "(4.2-G.1)現場サポートもPQCMの仕事です。検査の無いまま出荷したので、現場でルーズパーツなどがどこにあるか分からない",
+      "zh": "(4.2-G.1)【现场支持也是PQCM的职责】由于发货前未进行检验，导致在施工现场不清楚散供件（loose parts）的具体位置。",
+      "en": "(4.2-G.1)[Site Support is also PQCM's Job] Since it was shipped without inspection, it is unclear where the loose parts are located on site."
     },
     "selections": [
       {
@@ -2508,7 +2510,7 @@ const STORY_DATA = {
           "en": "Invite the Vendor Supervisor to the site to manage the loose parts."
         },
         "influence": {
-          "ja": "Vendorとの関係が完全に冷え込み、まともな対応をしてもらえずプロジェクトが大混乱となった",
+          "ja": "ベンダーとの関係が完全に冷え込み、まともな対応をしてもらえずプロジェクトが大混乱となった",
           "zh": "因为和供应商的关系很差。因此在发出邀请后，过了很久，供应商才做出回复。在此期间，混乱的现场管理已经在工期上对项目造成了影响。",
           "en": "The relationship with the vendor completely cooled down, and the project schedule was affected as they did not respond for a long time during chaotic site management."
         },
@@ -2518,12 +2520,12 @@ const STORY_DATA = {
       {
         "id": "5.3-B.2",
         "desc": {
-          "ja": "Vendorと現場に人を派遣してパーツの有無を管理する",
+          "ja": "ベンダーと現場にエンジニアを派遣してパーツの有無を管理する",
           "zh": "要求供货商的人员指导我方现场人员进行散供件管理的指导。",
           "en": "Instruct our site staff to perform loose parts management under the vendor's guidance."
         },
         "influence": {
-          "ja": "非協力的なVendorとの界面を調整しつつ何とか取りまとめるが甚大なスケジュールインパクトと追加工数が発生した",
+          "ja": "非協力的なベンダーとの界面を調整しつつ何とか取りまとめるが甚大なスケジュールインパクトと追加工数が発生した",
           "zh": "在与不合作的供应商艰苦协调界面的同时，勉强理顺了工作，但已经造成了巨大的工期延误与额外的工时开支。",
           "en": "Somehow coordinated the interfaces with the uncooperative vendor, but it resulted in a huge schedule delay and additional man-hours."
         },
@@ -2533,12 +2535,12 @@ const STORY_DATA = {
       {
         "id": "5.3-B.3",
         "desc": {
-          "ja": "不明なパーツは全て現場で再購入",
+          "ja": "不明なパーツは全て現場で再購入する",
           "zh": "所有未知零件将在现场重新购买。",
           "en": "All unknown parts will be repurchased on site."
         },
         "influence": {
-          "ja": "膨大な追加コストが発生するもVendorから回収できず",
+          "ja": "膨大な追加コストが発生するもベンダーから回収できなかった",
           "zh": "产生了巨额的追加费用，且无法向供应商成功索赔收回。",
           "en": "Huge additional costs were incurred and could not be recovered from the vendor."
         },
@@ -2562,9 +2564,9 @@ const STORY_DATA = {
   "5.3-C": {
     "chapter": "5.3-C",
     "desc": {
-      "ja": "(4.3-A.3)バルク品の不適合報告書（NCR）が出荷前に処理しきれず、現場でも同様に発見される",
-      "zh": "散装材料的不符合项报告（NCR）在出厂发货前未能处理完毕，在施工现场同样被发现了。",
-      "en": "The Non-Conformance Report (NCR) for bulk materials could not be fully resolved before shipment, and the same issues were discovered on site."
+      "ja": "(4.3-A.3)現場サポートもPQCMの仕事です。バルク品の不適合報告書（NCR）が出荷前に処理しきれず、現場でも同様に発見される",
+      "zh": "(4.3-A.3)【现场支持也是PQCM的职责】散装材料的不符合项报告（NCR）在出厂发货前未能处理完毕，在施工现场同样被发现了。",
+      "en": "(4.3-A.3)[Site Support is also PQCM's Job] The Non-Conformance Report (NCR) for bulk materials could not be fully resolved before shipment, and the same issues were discovered on site."
     },
     "selections": [
       {
@@ -2575,7 +2577,7 @@ const STORY_DATA = {
           "en": "Invite the Vendor Supervisor to the site to resolve all non-conformances."
         },
         "influence": {
-          "ja": "現場工事が止まってサブコンからクレームを受ける",
+          "ja": "現場工事が止まってサブコンからクレームを受けた",
           "zh": "导致现场施工停滞，遭到了安装分包商（subcontractor）的强烈投诉。",
           "en": "Site construction was halted, and we received complaints from the subcontractor."
         },
@@ -2590,7 +2592,7 @@ const STORY_DATA = {
           "en": "Assign site trainees to perform a 100% check on all materials."
         },
         "influence": {
-          "ja": "現場工事を止めずに何とか対応するが現場研修生がデモチ",
+          "ja": "現場工事を止めずに何とか対応するが現場研修生がデモチベートした",
           "zh": "勉强在不中断现场施工的情况下完成了处理，但现场实习生的积极性受到了严重打击（Demotivated）。",
           "en": "Managed to handle the issue without stopping site works, but the site trainees were demotivated."
         },
@@ -2605,7 +2607,7 @@ const STORY_DATA = {
           "en": "Have the subcontractor deal with each nonconforming product found."
         },
         "influence": {
-          "ja": "サブコンからクレームを受ける",
+          "ja": "サブコンからクレームを受けた",
           "zh": "遭到分包商（Subcontractor）的强烈投诉并索赔。",
           "en": "Received complaints and claims from the subcontractor."
         },
@@ -2629,9 +2631,9 @@ const STORY_DATA = {
   "5.3-D": {
     "chapter": "5.3-D",
     "desc": {
-      "ja": "(4.3.2)偽造材質証明書（MTC）に関して現場客先担当者から材料のTraceabiltyに関してコメントを受ける",
-      "zh": "收到现场业主代表关于伪造材质证明书（MTC）材料追溯性的质疑意见。",
-      "en": "Received comments from the on-site client representative regarding material traceability concerns due to the forged Material Test Certificate (MTC)."
+      "ja": "(4.3.2)現場サポートもPQCMの仕事です。偽造材質証明書（MTC）に関して現場客先担当者から材料のTraceabiltyに関してコメントを受ける",
+      "zh": "(4.3.2)【现场支持也是PQCM的职责】收到现场业主代表关于伪造材质证明书（MTC）材料追溯性的质疑意见。",
+      "en": "(4.3.2)[Site Support is also PQCM's Job] Received comments from the on-site client representative regarding material traceability concerns due to the forged Material Test Certificate (MTC)."
     },
     "selections": [
       {
@@ -2652,7 +2654,7 @@ const STORY_DATA = {
       {
         "id": "5.3-D.2",
         "desc": {
-          "ja": "客先にDeviationを出し、VendorにConfirmation Letterを出させてUse-as-isとする",
+          "ja": "客先にDeviationを出し、ベンダーにConfirmation Letterを出させてUse-as-isとする",
           "zh": "向业主提交项目偏离（deviation）申请，并让供应商出具确认信，要求按现状接收（Use-as-is）。",
           "en": "Submit a project deviation request to the client and have the vendor issue a confirmation letter to accept it Use-as-is."
         },
@@ -2681,9 +2683,9 @@ const STORY_DATA = {
   "5.3-E": {
     "chapter": "5.3-E",
     "desc": {
-      "ja": "(5.1-A.1)いつまで経っても材質証明書（MTC）が来ないので、現場でサブコンに配管材料を払い出せない",
-      "zh": "无论过了多久，材质证明书（MTC）都没有送达，所以我们无法在现场向分包商（Subcontractor）发放管道材料。",
-      "en": "No matter how much time passes, the Material Test Certificate (MTC) does not arrive, so we cannot release piping materials to the subcontractor on site."
+      "ja": "(5.1-A.1)現場サポートもPQCMの仕事です。いつまで経っても材質証明書（MTC）が来ないので、現場でサブコンに配管材料を払い出せない",
+      "zh": "(5.1-A.1)【现场支持也是PQCM的职责】无论过了多久，材质证明书（MTC）都没有送达，所以我们无法在现场向分包商（Subcontractor）发放管道材料。",
+      "en": "(5.1-A.1)[Site Support is also PQCM's Job] No matter how much time passes, the Material Test Certificate (MTC) does not arrive, so we cannot release piping materials to the subcontractor on site."
     },
     "selections": [
       {
@@ -2704,7 +2706,7 @@ const STORY_DATA = {
       {
         "id": "5.3-E.2",
         "desc": {
-          "ja": "大至急検査員をVendorに派遣し、材質証明書（MTC）を集めて現場に共有",
+          "ja": "大至急検査員をベンダーに派遣し、材質証明書（MTC）を集めて現場に共有する",
           "zh": "大至急派人前往供应商工厂，收集材质证明书（MTC）并发送至现场共享。",
           "en": "Immediately dispatch inspectors to the vendor's shop to collect MTCs and share them on-site."
         },
@@ -2733,9 +2735,9 @@ const STORY_DATA = {
   "5.3": {
     "chapter": "5.3",
     "desc": {
-      "ja": "現場受入時にノズルの曲がりが報告される",
-      "zh": "现场开箱检验（Material Receipt Inspection）时，发现设备的接管（nozzle）弯曲偏位。",
-      "en": "During Material Receipt Inspection at site, a bent nozzle was reported."
+      "ja": "現場サポートもPQCMの仕事です。現場受入時に機器のノズルの曲がりが報告される",
+      "zh": "【现场支持也是PQCM的职责】现场开箱检验（Material Receipt Inspection）时，发现设备的接管（nozzle）弯曲偏位。",
+      "en": "[Site Support is also PQCM's Job] During Material Receipt Inspection at site, a bent nozzle was reported."
     },
     "selections": [
       {
@@ -2746,7 +2748,7 @@ const STORY_DATA = {
           "en": "Due to tight schedule, have the subcontractor repair it on site."
         },
         "influence": {
-          "ja": "サブコンからのクレームを受ける",
+          "ja": "サブコンからクレームを受けた",
           "zh": "遭到分包商（subcontractor）的强烈投诉并索赔。",
           "en": "Received complaints and claims from the subcontractor."
         },
@@ -2756,7 +2758,7 @@ const STORY_DATA = {
       {
         "id": "5.3.2",
         "desc": {
-          "ja": "取り合う配管で調整してもらう",
+          "ja": "機器と取り合う配管で調整してもらう",
           "zh": "让配管工程师调整连接管路以进行匹配适配。",
           "en": "Have the piping team adjust the connecting pipes to fit."
         },
@@ -2771,12 +2773,12 @@ const STORY_DATA = {
       {
         "id": "5.3.3",
         "desc": {
-          "ja": "IRを見直して出荷時の状況を確認し、輸送中のダメージであることを突き止めて保険求償",
+          "ja": "IRを見直して出荷時の状況を確認し、輸送中のダメージであることを突き止めて保険求償する",
           "zh": "复查检验报告（IR）确认发货出厂时的状况，查明该损坏发生于物流运输过程中，并据此进行保险索赔。",
           "en": "Review the Inspection Report (IR) to confirm the shop status, identify that the damage occurred during transportation, and file an insurance claim."
         },
         "influence": {
-          "ja": "現場で追加作業は発生するも全て保険で補う",
+          "ja": "現場で追加作業は発生するも全て保険で補った",
           "zh": "虽然在现场产生了额外的修补作业，但所有费用均由保险赔付覆盖。",
           "en": "Although additional work was generated on site, all costs were fully covered by insurance."
         },
