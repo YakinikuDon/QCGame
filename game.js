@@ -401,7 +401,7 @@ function selectChoice(selectionId) {
 function nextStoryStep() {
     // Check if the last selection triggered GameOver
     const lastSel = findSelectionById(gameState.path[gameState.path.length - 1]);
-    if (lastSel && lastSel.flags && lastSel.flags.includes("GameOver")) {
+    if (lastSel && lastSel.flags && (lastSel.flags.includes("GameOver") || lastSel.flags.includes("Game Over"))) {
         showSettlement(true);
         return;
     }
@@ -871,7 +871,8 @@ function switchLanguage(newLang) {
         renderGameStep();
     } else {
         // Update settlement texts on lang change
-        const isGameOver = findSelectionById(gameState.path[gameState.path.length - 1])?.flags?.includes("GameOver");
+        const flags = findSelectionById(gameState.path[gameState.path.length - 1])?.flags || [];
+        const isGameOver = flags.includes("GameOver") || flags.includes("Game Over");
         showSettlement(isGameOver);
     }
 }
