@@ -386,9 +386,12 @@ function selectChoice(selectionId) {
     // Track path
     gameState.path.push(selectionId);
     
-    // Display influence page if text exists
+    // Check if the choice has branching flags that lead to another chapter (excluding Game Over)
+    const hasBranchingFlags = sel.flags && sel.flags.some(fl => fl !== "GameOver" && fl !== "Game Over");
+
+    // Display influence page if text exists and does not lead to a future chapter branch
     const influenceText = sel.influence[gameState.lang] || "";
-    if (influenceText.trim().length > 0) {
+    if (influenceText.trim().length > 0 && !hasBranchingFlags) {
         gameState.currentId = "influence";
         gameState.currentSelectionId = selectionId;
         renderGameStep();
