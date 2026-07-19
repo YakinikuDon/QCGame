@@ -533,6 +533,19 @@ function showSettlement(isGameOver) {
     els.optionsPanel.classList.add("hidden");
     els.settlementScreen.classList.remove("hidden");
 
+    // Dynamic certificate avatars depending on Game Over state
+    const certQchan = document.getElementById("certQchanAvatar");
+    const certKatsuda = document.getElementById("certKatsudaAvatar");
+    if (certQchan && certKatsuda) {
+        if (isGameOver) {
+            certQchan.src = "assets/qchan_crying.png";
+            certKatsuda.src = "assets/katsuda_strict.png";
+        } else {
+            certQchan.src = "assets/qchan_happy.png";
+            certKatsuda.src = "assets/katsuda_smiling.png";
+        }
+    }
+
     let totalScore = 0;
     
     // Score Calculation: Average scores for concurrent branches, default is 10
