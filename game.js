@@ -300,9 +300,9 @@ function renderInfluenceStep() {
         els.npcImg.src = `assets/katsuda_smiling.png`;
         els.npcSprite.classList.remove("hidden");
     } else {
-        els.qchanImg.src = `assets/qchan_panicked.png`;
+        els.qchanImg.src = `assets/qchan_thinking.png`;
         els.qchanSprite.classList.remove("hidden");
-        els.qchanSprite.classList.add("sprite-shake");
+        // Calm thinking state - no sprite-shake animation added
         els.npcImg.src = `assets/katsuda_strict.png`;
         els.npcSprite.classList.remove("hidden");
     }

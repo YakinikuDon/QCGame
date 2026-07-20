@@ -332,7 +332,7 @@ const STORY_DATA = {
       "ja": "引き合い要求書レビュー (危機 A)",
       "en": "Requisition Review (Crisis A)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -470,7 +470,7 @@ const STORY_DATA = {
       "ja": "技術評価 (危機 A)",
       "en": "Technical Evaluation (Crisis A)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -541,7 +541,7 @@ const STORY_DATA = {
       "ja": "技術評価 (危機 B)",
       "en": "Technical Evaluation (Crisis B)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -666,7 +666,7 @@ const STORY_DATA = {
       "ja": "キックオフミーティング (危機 A)",
       "en": "Kick-off Meeting (Crisis A)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -720,7 +720,7 @@ const STORY_DATA = {
       "ja": "キックオフミーティング (危機 B)",
       "en": "Kick-off Meeting (Crisis B)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -858,7 +858,7 @@ const STORY_DATA = {
       "ja": "ベンダー図書レビュー (危機 A)",
       "en": "Vendor Document Review (Crisis A)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -1065,7 +1065,7 @@ const STORY_DATA = {
       "ja": "検査前打合せ (危機 A)",
       "en": "Pre-Inspection Meeting (Crisis A)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -1134,7 +1134,7 @@ const STORY_DATA = {
       "ja": "検査前打合せ (危機 B)",
       "en": "Pre-Inspection Meeting (Crisis B)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -1201,7 +1201,7 @@ const STORY_DATA = {
       "ja": "検査前打合せ (危機 C)",
       "en": "Pre-Inspection Meeting (Crisis C)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -1270,7 +1270,7 @@ const STORY_DATA = {
       "ja": "検査前打合せ (危機 D)",
       "en": "Pre-Inspection Meeting (Crisis D)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -1406,7 +1406,7 @@ const STORY_DATA = {
       "ja": "検査調整 (危機 A)",
       "en": "Inspection Coordination (Crisis A)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -1458,7 +1458,7 @@ const STORY_DATA = {
       "ja": "検査調整 (危機 B)",
       "en": "Inspection Coordination (Crisis B)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -1525,7 +1525,7 @@ const STORY_DATA = {
       "ja": "検査調整 (危機 C)",
       "en": "Inspection Coordination (Crisis C)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -1577,7 +1577,7 @@ const STORY_DATA = {
       "ja": "検査調整 (危機 D)",
       "en": "Inspection Coordination (Crisis D)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -1644,7 +1644,7 @@ const STORY_DATA = {
       "ja": "検査調整 (危機 E)",
       "en": "Inspection Coordination (Crisis E)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -1713,7 +1713,7 @@ const STORY_DATA = {
       "ja": "検査調整 (危機 F)",
       "en": "Inspection Coordination (Crisis F)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -1784,7 +1784,7 @@ const STORY_DATA = {
       "ja": "検査調整 (危機 G)",
       "en": "Inspection Coordination (Crisis G)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -1853,7 +1853,7 @@ const STORY_DATA = {
       "ja": "検査調整 (危機 H)",
       "en": "Inspection Coordination (Crisis H)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -1974,7 +1974,7 @@ const STORY_DATA = {
       "ja": "不適合管理 (危機 A)",
       "en": "Non-Conformance Report (Crisis A)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -2041,7 +2041,7 @@ const STORY_DATA = {
       "ja": "不適合管理 (危機 B)",
       "en": "Non-Conformance Report (Crisis B)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -2108,7 +2108,7 @@ const STORY_DATA = {
       "ja": "不適合管理 (危機 C)",
       "en": "Non-Conformance Report (Crisis C)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -2160,7 +2160,7 @@ const STORY_DATA = {
       "ja": "不適合管理 (危機 D)",
       "en": "Non-Conformance Report (Crisis D)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -2285,7 +2285,7 @@ const STORY_DATA = {
       "ja": "検査放行証発行 (危機 A)",
       "en": "Inspection Release Certificate (Crisis A)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -2486,7 +2486,7 @@ const STORY_DATA = {
       "ja": "現場対応 (危機 A)",
       "en": "Site Response (Crisis A)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -2553,7 +2553,7 @@ const STORY_DATA = {
       "ja": "現場対応 (危機 B)",
       "en": "Site Response (Crisis B)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -2620,7 +2620,7 @@ const STORY_DATA = {
       "ja": "現場対応 (危機 C)",
       "en": "Site Response (Crisis C)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -2672,7 +2672,7 @@ const STORY_DATA = {
       "ja": "現場対応 (危機 D)",
       "en": "Site Response (Crisis D)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
@@ -2724,7 +2724,7 @@ const STORY_DATA = {
       "ja": "現場対応 (危機 E)",
       "en": "Site Response (Crisis E)"
     },
-    "avatar": "panicked",
+    "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
       "zh": "胜田前辈",
