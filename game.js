@@ -291,6 +291,9 @@ function renderGameStep() {
             els.optionsList.appendChild(btn);
         });
     }
+
+    // Update progress road visualization
+    updateProgressRoad();
 }
 
 // Special render for Selection Influence slide
@@ -547,6 +550,10 @@ function showSettlement(isGameOver) {
     els.dialoguePanel.classList.add("hidden");
     els.optionsPanel.classList.add("hidden");
     els.settlementScreen.classList.remove("hidden");
+
+    // Hide progress road on settlement screen
+    const road = document.getElementById("progressRoadContainer");
+    if (road) road.classList.add("hidden");
 
     // Dynamic certificate avatars depending on Game Over state
     const certQchan = document.getElementById("certQchanAvatar");
@@ -959,6 +966,55 @@ els.settlementTreeBtn.addEventListener("click", () => {
     els.treeDialog.showModal();
 });
 els.settlementShareBtn.addEventListener("click", shareCertificate);
+
+// --- 12. PROGRESS ROAD VISUALIZATION ---
+function updateProgressRoad() {
+    const container = document.getElementById("progressRoadContainer");
+    if (!container) return;
+
+    // Hide road on start, welcome, or if settlement screen is showing
+    if (gameState.currentId === "start" || 
+        gameState.currentId === "welcome" || 
+        !els.settlementScreen.classList.contains("hidden")) {
+        container.classList.add("hidden");
+        return;
+    }
+
+    let targetId = gameState.currentId;
+    if (targetId === "influence") {
+        targetId = gameState.currentSelectionId || "";
+    }
+
+    // Try to parse chapter number from node ID (e.g. "1.1" -> 1, "3.1-A" -> 3)
+    const match = targetId.match(/^([1-5])/);
+    if (!match) {
+        container.classList.add("hidden");
+        return;
+    }
+
+    container.classList.remove("hidden");
+    const currentChapter = parseInt(match[1], 10);
+
+    // Update milestones styling
+    const milestones = container.querySelectorAll(".milestone");
+    milestones.forEach(stone => {
+        const ch = parseInt(stone.getAttribute("data-chapter"), 10);
+        stone.classList.remove("active", "passed");
+        if (ch === currentChapter) {
+            stone.classList.add("active");
+        } else if (ch < currentChapter) {
+            stone.classList.add("passed");
+        }
+    });
+
+    // Position mini Q-chan
+    // There are 5 milestones, positioned at 0%, 25%, 50%, 75%, 100% of the road width
+    const percent = (currentChapter - 1) * 25;
+    const miniQ = document.getElementById("miniQchan");
+    if (miniQ) {
+        miniQ.style.left = `${percent}%`;
+    }
+}
 
 // Load the start welcome node
 renderGameStep();

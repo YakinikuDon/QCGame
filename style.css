@@ -1176,3 +1176,84 @@ body {
     height: calc(100% - 20px) !important;
     width: calc(100% - 20px) !important;
 }
+
+/* --- Chapter Progress Road (Visual Aid overlay) --- */
+.progress-road-container {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 420px;
+    background-color: rgba(30, 30, 36, 0.85); /* Manga style dark translucent background */
+    border: 3px solid var(--color-manga-border);
+    border-radius: 12px;
+    padding: 8px 16px;
+    z-index: 100;
+    box-shadow: 4px 4px 0px rgba(30, 30, 36, 0.4);
+    transition: opacity 0.3s;
+}
+
+.progress-road-container.hidden {
+    display: none !important;
+}
+
+.progress-road {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: repeating-linear-gradient(90deg, #ffd166, #ffd166 4px, transparent 4px, transparent 8px); /* dashed gold path */
+    height: 4px;
+    margin: 15px 10px;
+}
+
+.milestone {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: #e2e8f0;
+    border: 2px solid var(--color-manga-border);
+    border-radius: 50%;
+    z-index: 2;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.milestone.active {
+    background-color: var(--color-pastel-green);
+    transform: scale(1.3);
+    box-shadow: 0 0 8px var(--color-pastel-green);
+}
+
+.milestone.passed {
+    background-color: var(--color-pastel-blue);
+}
+
+.milestone-label {
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-heading);
+    font-size: 0.65rem;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 0px #000000;
+    white-space: nowrap;
+}
+
+.mini-qchan {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    top: -14px;
+    transform: translateX(-50%);
+    transition: left 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    z-index: 5;
+    filter: drop-shadow(1px 1px 0px rgba(0,0,0,0.5));
+}
+
