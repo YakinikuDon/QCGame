@@ -576,6 +576,74 @@ function restartGame() {
 }
 
 // --- 7. SETTLEMENT SCREEN & CERTIFICATE GENERATION ---
+const ENDING_DATA = {
+  "Perfect PQCM": {
+    "score_range": "150",
+    "title": {
+      "zh": "🏆 完美品质管理经理 (Perfect PQCM)",
+      "ja": "🏆 完璧なクオリティマネージャー (Perfect PQCM)",
+      "en": "🏆 Perfect PQCM"
+    },
+    "desc": {
+      "zh": "质量、交期、成本方面都取得了巨大的成功！为公司利益做出重大贡献，获得了巨额年终奖！你从质量角度完美引导了项目的成功，卓越功绩得到全员认可。请继续作为 Perfect PQCM 迈进！",
+      "ja": "品質/納期/コストともにPJは大成功を収めました！会社の利益にも大きく貢献し、巨額のボーナスを得ることが出来ました。あなたはPQCMとして品質面からプロジェクトを正しくリードし、顕著な功績が認められました。これからも Perfect PQCM として邁進してください！",
+      "en": "The project was a huge success in terms of quality, schedule, and cost! You made a significant contribution to the company's profit and received a huge bonus. You correctly led the project from the quality perspective as a PQCM, and your remarkable achievements were highly recognized. Continue to strive as a Perfect PQCM!"
+    }
+  },
+  "Great PQCM": {
+    "score_range": "131-149",
+    "title": {
+      "zh": "🥈 优秀品质管理经理 (Great PQCM)",
+      "ja": "🥈 優秀なクオリティマネージャー (Great PQCM)",
+      "en": "🥈 Great PQCM"
+    },
+    "desc": {
+      "zh": "虽然在工期 and 成本上受到了一定影响，但项目成员精诚团结共同应对，项目最终成功结束！你作为PQCM做出了正确的应对，项目组给予了极高评价。下一次请以 Perfect PQCM 为目标！",
+      "ja": "納期/コストに影響は出るもプロジェクトメンバー一体となって対応し、プロジェクトは成功裏に終わりました。あなたはPQCMとして正しく対応し、プロジェクトからも良い評価を得ました。次は Perfect PQCM を目指してください！",
+      "en": "Although there were impacts on schedule and cost, the project members worked together to respond, and the project ended successfully. You responded correctly as a PQCM and received good evaluations. Aim for Perfect PQCM next time!"
+    }
+  },
+  "Standard PQCM": {
+    "score_range": "101-130",
+    "title": {
+      "zh": "🥉 合格品质管理经理 (Standard PQCM)",
+      "ja": "🥉 标准的なクオリティマネージャー (Standard PQCM)",
+      "en": "🥉 Standard PQCM"
+    },
+    "desc": {
+      "zh": "一路上克服了各种大大小小的麻烦，项目总算以确保盈余的成绩顺利结束了。你作为PQCM坚守岗位，积累了极为宝贵的项目实战经验。请活用这段宝贵的经历，下一次向 Great PQCM 发起挑战！",
+      "ja": "色々なトラブルを乗り越えながら、何とか黒字確保でプロジェクトを終えることができました。あなたはPQCMとして何とかやり遂げ、貴重な経験を積み増しました。この経験を活かして次は Great PQCM を目指してください！",
+      "en": "Overcoming various troubles, you managed to finish the project with a surplus. You managed to accomplish the task as a PQCM and gained valuable experience. Use this experience to aim for Great PQCM next time!"
+    }
+  },
+  "To be enhanced": {
+    "score_range": "<=100",
+    "title": {
+      "zh": "⚠️ 需持续提升的品质管理经理 (To be enhanced)",
+      "ja": "⚠️ 要改善なクオリティマネージャー (To be enhanced)",
+      "en": "⚠️ To be enhanced"
+    },
+    "desc": {
+      "zh": "项目执行陷入极度混乱，最终工期严重延误、成本大幅超支，给公司利益带来了巨大的负面冲击。你在品质管理和项目平衡上还有极大的学习 and 提升空间，请为了成为真正的 PQCM 而努力！",
+      "ja": "プロジェクトは混迷を極めて大きく採算が悪化し、会社の利益を大きく压迫しました。あなたもまだまだ勉強の余地があるので、真のPQCMを目指して頑張ってください。",
+      "en": "The project was extremely chaotic, the profitability deteriorated significantly, and the company's profit was heavily squeezed. You still have room for study, please work hard to become a true PQCM!"
+    }
+  },
+  "Game Over": {
+    "score_range": "Game Over",
+    "title": {
+      "zh": "💥 项目资格被取消 (Game Over)",
+      "ja": "💥 プロジェクト出禁 (Game Over)",
+      "en": "💥 Client Disqualification (Game Over)"
+    },
+    "desc": {
+      "zh": "抱歉，你在作为品质管理经理之前，连一名工程师最基本的职业操守和基本准则都未能坚守。项目被业主直接 Disqualify（取消资格）并清退，你的职业生涯遭遇了重大挫折！",
+      "ja": "あなたはPQCM以前にエンジニアとして基本的に守るべき事柄が守られていません。客先からクレームを受けDisqualifyされました。",
+      "en": "We are sorry, but before being a PQCM, you have not followed the basic principles that an engineer must follow. The client has disqualified the project due to ethical/technical issues. Work hard to rebuild your engineering basics!"
+    }
+  }
+};
+
 function showSettlement(isGameOver) {
     els.dialoguePanel.classList.add("hidden");
     els.optionsPanel.classList.add("hidden");
