@@ -466,10 +466,18 @@ function nextStoryStep() {
         if (STORY_DATA[level]) {
             let nextSub = level;
 
-            // Randomness logic: detour default/good levels 4.2 and 5.3 to sudden incidents (40% probability)
-            if ((level === "4.2" || level === "5.3") && Math.random() < 0.4) {
-                const randomIncidentId = level + "-R1";
-                if (STORY_DATA[randomIncidentId]) {
+            // Randomness logic: detour default/good levels 4.1, 4.2, 4.3, and 5.3 to sudden incidents (75% probability)
+            if (["4.1", "4.2", "4.3", "5.3"].includes(level) && Math.random() < 0.75) {
+                // Dynamically find all available random incidents for this level (e.g., 4.2-R1, 4.2-R2...)
+                const availableIncidents = [];
+                let idx = 1;
+                while (STORY_DATA[level + "-R" + idx]) {
+                    availableIncidents.push(level + "-R" + idx);
+                    idx++;
+                }
+
+                if (availableIncidents.length > 0) {
+                    const randomIncidentId = availableIncidents[Math.floor(Math.random() * availableIncidents.length)];
                     // Queue default level to play immediately after resolving the detour incident
                     gameState.pendingSubChapters.unshift(level);
                     nextSub = randomIncidentId;
