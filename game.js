@@ -454,18 +454,7 @@ function nextStoryStep() {
 
     if (activeSubs.length > 0) {
         gameState.pendingSubChapters = activeSubs;
-        let firstSub = gameState.pendingSubChapters.shift();
-
-        // Randomness logic: detour 4.2-A and 5.3-A to sudden incidents (40% probability)
-        if ((firstSub === "4.2-A" || firstSub === "5.3-A") && Math.random() < 0.4) {
-            const randomIncidentId = firstSub + "-R1";
-            if (STORY_DATA[randomIncidentId]) {
-                // Re-insert original sub-chapter to pending list so it runs right after detour
-                gameState.pendingSubChapters.unshift(firstSub);
-                firstSub = randomIncidentId;
-            }
-        }
-
+        const firstSub = gameState.pendingSubChapters.shift();
         gameState.currentId = firstSub;
         if (!gameState.visitedNodes.includes(firstSub)) {
             gameState.visitedNodes.push(firstSub);
@@ -475,11 +464,23 @@ function nextStoryStep() {
     } else {
         // Play default chapter
         if (STORY_DATA[level]) {
-            gameState.currentId = level;
-            if (!gameState.visitedNodes.includes(level)) {
-                gameState.visitedNodes.push(level);
+            let nextSub = level;
+
+            // Randomness logic: detour default/good levels 4.2 and 5.3 to sudden incidents (40% probability)
+            if ((level === "4.2" || level === "5.3") && Math.random() < 0.4) {
+                const randomIncidentId = level + "-R1";
+                if (STORY_DATA[randomIncidentId]) {
+                    // Queue default level to play immediately after resolving the detour incident
+                    gameState.pendingSubChapters.unshift(level);
+                    nextSub = randomIncidentId;
+                }
             }
-            gameState.path.push(level);
+
+            gameState.currentId = nextSub;
+            if (!gameState.visitedNodes.includes(nextSub)) {
+                gameState.visitedNodes.push(nextSub);
+            }
+            gameState.path.push(nextSub);
             renderGameStep();
         } else {
             // Level data missing (safety skip)
