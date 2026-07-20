@@ -175,6 +175,7 @@ const els = {
     scoreLabelText: document.getElementById("scoreLabelText"),
     scoreValueText: document.getElementById("scoreValueText"),
     certDateText: document.getElementById("certDateText"),
+    certSeal: document.getElementById("certSeal"),
     settlementRestartText: document.getElementById("settlementRestartText"),
     settlementTreeText: document.getElementById("settlementTreeText"),
     settlementShareText: document.getElementById("settlementShareText"),
@@ -632,6 +633,7 @@ function showSettlement(isGameOver) {
     const labels = {
         zh: {
             certCongrats: "恭喜新进质量经理：",
+            playerName: "小Q (Q-chan)",
             scoreLabel: "最终得分：",
             seal: "Mr.K导师批准",
             date: "颁发日期：",
@@ -642,6 +644,7 @@ function showSettlement(isGameOver) {
         },
         ja: {
             certCongrats: "新任クオリティマネージャー：",
+            playerName: "Qちゃん",
             scoreLabel: "最終得点：",
             seal: "Mr.K指導官承認",
             date: "授与日：",
@@ -652,6 +655,7 @@ function showSettlement(isGameOver) {
         },
         en: {
             certCongrats: "Congratulations to new QC Manager:",
+            playerName: "Q-chan",
             scoreLabel: "Final Score:",
             seal: "APPROVED BY MR.K",
             date: "Date Issued:",
@@ -665,6 +669,7 @@ function showSettlement(isGameOver) {
     els.certMainTitle.textContent = ending.title[gameState.lang];
     els.certBadge.textContent = `${endingKey} (Score: ${ending.score_range})`;
     els.certCongrats.textContent = labels[gameState.lang].certCongrats;
+    els.playerNameText.textContent = labels[gameState.lang].playerName;
     els.certEvaluation.textContent = ending.desc[gameState.lang];
     
     els.scoreLabelText.textContent = labels[gameState.lang].scoreLabel;
@@ -672,6 +677,7 @@ function showSettlement(isGameOver) {
     
     const today = new Date().toISOString().split('T')[0];
     els.certDateText.textContent = `${labels[gameState.lang].date} ${today}`;
+    els.certSeal.textContent = labels[gameState.lang].seal;
 
     // Update buttons language
     els.settlementRestartText.textContent = labels[gameState.lang].restart;
