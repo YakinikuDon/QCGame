@@ -397,6 +397,7 @@ function selectChoice(selectionId) {
         gameState.stageScores[baseLevel] = [];
     }
     gameState.stageScores[baseLevel].push(sel.score);
+    console.log(`[QCGame Debug] selectChoice: ${selectionId}, score: ${sel.score}, baseLevel: ${baseLevel}, stageScores:`, JSON.stringify(gameState.stageScores));
 
     // Apply flags
     if (sel.flags) {
@@ -600,18 +601,22 @@ function showSettlement(isGameOver) {
     let totalScore = 0;
     
     // Score Calculation: Average scores for concurrent branches, default is 10
+    console.log("[QCGame Debug] showSettlement called. Initial stageScores:", JSON.stringify(gameState.stageScores));
     LEVELS.forEach(level => {
         const scores = gameState.stageScores[level];
         if (scores && scores.length > 0) {
             const avg = scores.reduce((sum, s) => sum + s, 0) / scores.length;
             totalScore += avg;
+            console.log(`[QCGame Debug] Level ${level}: scores = ${JSON.stringify(scores)}, avg = ${avg}, running totalScore = ${totalScore}`);
         } else {
             // Default perfect score if level was skipped/passed without scoring
             totalScore += 10;
+            console.log(`[QCGame Debug] Level ${level}: no scores (skipped), added 10, running totalScore = ${totalScore}`);
         }
     });
 
     totalScore = Math.min(150, Math.round(totalScore));
+    console.log("[QCGame Debug] showSettlement final totalScore:", totalScore);
 
     // Determine ending type
     let endingKey = "Standard PQCM";
