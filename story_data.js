@@ -335,9 +335,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "3.1": {
@@ -473,9 +473,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "3.2-B": {
@@ -544,9 +544,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "3.2": {
@@ -669,9 +669,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "3.3-B": {
@@ -723,9 +723,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "3.3": {
@@ -861,9 +861,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "3.4": {
@@ -1068,9 +1068,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "4.1-B": {
@@ -1137,9 +1137,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "4.1-C": {
@@ -1204,9 +1204,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "4.1-D": {
@@ -1273,9 +1273,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "4.1": {
@@ -1409,9 +1409,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "4.2-B": {
@@ -1461,9 +1461,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "4.2-C": {
@@ -1528,9 +1528,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "4.2-D": {
@@ -1580,9 +1580,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "4.2-E": {
@@ -1647,9 +1647,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "4.2-F": {
@@ -1716,9 +1716,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "4.2-G": {
@@ -1787,9 +1787,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "4.2-H": {
@@ -1856,9 +1856,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "4.2": {
@@ -1977,9 +1977,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "4.3-B": {
@@ -2044,9 +2044,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "4.3-C": {
@@ -2111,9 +2111,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "4.3-D": {
@@ -2163,9 +2163,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "4.3": {
@@ -2288,9 +2288,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "5.1": {
@@ -2489,9 +2489,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "5.3-B": {
@@ -2556,9 +2556,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "5.3-C": {
@@ -2623,9 +2623,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "5.3-D": {
@@ -2675,9 +2675,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "5.3-E": {
@@ -2727,9 +2727,9 @@ const STORY_DATA = {
     "avatar": "thinking",
     "npcAvatar": "strict",
     "charName": {
-      "zh": "胜田前辈",
-      "ja": "勝田先輩",
-      "en": "Katsuda-senpai"
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
     }
   },
   "5.3": {

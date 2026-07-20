@@ -47,22 +47,22 @@ STORY_DATA["welcome"] = {
     avatar: "normal",
     npcAvatar: "smiling",
     charName: {
-        zh: "胜田前辈",
-        ja: "勝田先輩",
-        en: "Katsuda-senpai"
+        zh: "K前辈",
+        ja: "K先輩",
+        en: "K-senpai"
     },
     desc: {
-        zh: "小Q，欢迎来到品质管理部！我是你的导师胜田。从今天起，你将作为 QC Engineer 接手新项目。项目千头万绪，但只要牢记我们的【QC 7 Golden Rules】，你就一定能克服困难，成为一名伟大的质量经理！现在，让我们开始第一项工作吧！",
-        ja: "小Q（キューちゃん）、品質管理部へようこそ！私は君の指導員、勝田だ。今日から君はQCエンジニアとして新プロジェクトを担当してもらう。色々と大変なこともあるが、我々の【QC 7 Golden Rules】をしっかりと胸に刻んでおけば、どんな困難も乗り越え、偉大なクオリティマネージャーになれるはずだ！さあ、最初の業務に取り掛かろう！",
-        en: "Q-chan, welcome to the Quality Control Department! I am your mentor Katsuda. From today, you will take over the new project as a Project QC Engineer. A project is complex, but as long as you remember our 【QC 7 Golden Rules】, you will overcome any difficulties and become a great QC Manager! Now, let's start our first task!"
+        zh: "小Q，欢迎来到品质管理部！我是你的导师 Mr.K。从今天起，你将作为 PQCM 接手新项目。项目千头万绪，但只要牢记我们的【7 Golden Rules for PQCM】，你就一定能克服困难，成为一名伟大的 PQCM！现在，让我们开始第一项工作吧！",
+        ja: "Qちゃん、私は君の指導員Mr.Kだ。今日から君はPQCMとして新プロジェクトを担当してもらう。色々と大変なこともあるが、我々の【7 Golden Rules for PQCM】をしっかりと胸に刻んでおけば、どんな困難も乗り越え、偉大なPQCMになれるはずだ！さあ、最初の業務に取り掛かろう！",
+        en: "Q-chan, welcome to the Quality Control Department! I am your mentor Mr.K. From today, you will take over the new project as a PQCM. A project is complex, but as long as you remember our 【7 Golden Rules for PQCM】, you will overcome any difficulties and become a great PQCM! Now, let's start our first task!"
     },
     selections: [
         {
             id: "start_btn",
             desc: {
-                zh: "出发！接手新项目",
-                ja: "スタート！新プロジェクトを担当する",
-                en: "Let's go! Take over the new project"
+                zh: "新项目，启动！",
+                ja: "新プロジェクト、スタート！",
+                en: "New project, start!"
             },
             influence: { zh: "", ja: "", en: "" },
             flags: [],
@@ -264,7 +264,7 @@ function renderGameStep() {
 
     // NPC Avatar
     if (node.npcAvatar && node.npcAvatar !== 'hidden') {
-        els.npcImg.src = `assets/katsuda_${node.npcAvatar}.png`;
+        els.npcImg.src = `assets/k_${node.npcAvatar}.png`;
         els.npcSprite.classList.remove("hidden");
         setTimeout(() => els.npcSprite.classList.add("active"), 50);
     }
@@ -309,13 +309,13 @@ function renderInfluenceStep() {
         els.qchanImg.src = `assets/qchan_happy.png`;
         els.qchanSprite.classList.remove("hidden");
         els.qchanSprite.classList.add("sprite-bounce");
-        els.npcImg.src = `assets/katsuda_smiling.png`;
+        els.npcImg.src = `assets/k_smiling.png`;
         els.npcSprite.classList.remove("hidden");
     } else {
         els.qchanImg.src = `assets/qchan_thinking.png`;
         els.qchanSprite.classList.remove("hidden");
         // Calm thinking state - no sprite-shake animation added
-        els.npcImg.src = `assets/katsuda_strict.png`;
+        els.npcImg.src = `assets/k_strict.png`;
         els.npcSprite.classList.remove("hidden");
     }
     setTimeout(() => {
@@ -550,14 +550,14 @@ function showSettlement(isGameOver) {
 
     // Dynamic certificate avatars depending on Game Over state
     const certQchan = document.getElementById("certQchanAvatar");
-    const certKatsuda = document.getElementById("certKatsudaAvatar");
-    if (certQchan && certKatsuda) {
+    const certK = document.getElementById("certKAvatar");
+    if (certQchan && certK) {
         if (isGameOver) {
             certQchan.src = "assets/qchan_crying.png";
-            certKatsuda.src = "assets/katsuda_strict.png";
+            certK.src = "assets/k_strict.png";
         } else {
             certQchan.src = "assets/qchan_happy.png";
-            certKatsuda.src = "assets/katsuda_smiling.png";
+            certK.src = "assets/k_smiling.png";
         }
     }
 
@@ -598,7 +598,7 @@ function showSettlement(isGameOver) {
         zh: {
             certCongrats: "恭喜新进质量经理：",
             scoreLabel: "最终得分：",
-            seal: "胜田导师批准",
+            seal: "Mr.K导师批准",
             date: "颁发日期：",
             restart: "重新开始",
             tree: "剧情树",
@@ -607,7 +607,7 @@ function showSettlement(isGameOver) {
         ja: {
             certCongrats: "新任クオリティマネージャー：",
             scoreLabel: "最終得点：",
-            seal: "勝田指導官承認",
+            seal: "Mr.K指導官承認",
             date: "授与日：",
             restart: "リスタート",
             tree: "ストーリーツリー",
@@ -616,7 +616,7 @@ function showSettlement(isGameOver) {
         en: {
             certCongrats: "Congratulations to new QC Manager:",
             scoreLabel: "Final Score:",
-            seal: "APPROVED BY KATSUDA",
+            seal: "APPROVED BY MR.K",
             date: "Date Issued:",
             restart: "Restart",
             tree: "Story Tree",
