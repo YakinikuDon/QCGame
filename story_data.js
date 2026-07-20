@@ -2803,7 +2803,7 @@ const STORY_DATA = {
   "chapter": "4.1-R1",
   "desc": {
     "zh": "【检验前会议突发事件】在检验前会议（PIM）上，业主代表突然提出了一项合同外的新规范解释，供货商表示配合该解释需要额外的工时和补偿费用。",
-    "ja": "【PIM突发事件】PIM会議において、オーナー代表が突然契約外の新たな仕様解釈を提示し、ベンダーはこれに対応するために追加工数と費用補填を要求した。",
+    "ja": "【PIM突発事態】PIM会議において、オーナー代表が突然契約外の新たな仕様解釈を提示し、ベンダーはこれに対応するために追加工数と費用補填を要求した。",
     "en": "[PIM Sudden Event] During the PIM meeting, the Owner representative suddenly presented a new specification interpretation outside the contract, and the vendor requested additional man-hours and cost compensation to comply."
   },
   "selections": [
@@ -2842,23 +2842,23 @@ const STORY_DATA = {
     {
       "id": "4.1-R1.3",
       "desc": {
-        "ja": "客先のDeviaitionを出してベンダー標準を認めてもらう",
-        "zh": "向业主提出【项目偏离（deviation）】，让业主接受供应商按供应商标准执行。",
-        "en": "Submit a project deviation request to the client to accept the vendor executing according to vendor standards."
+        "zh": "同项目管理部（PMT）商量，向业主提出变更单（change order）的申请。",
+        "ja": "プロジェクト管理部（PMT）と相談し、オーナーに設計変更（change order）を申請する。",
+        "en": "Consult with the Project Management Team (PMT) and submit a change order request to the Owner."
       },
       "influence": {
-        "ja": "いくつかは認めてもらえたが、否認された分は追加コストを払って履行させた",
-        "zh": "业主同意了一些项目偏离（deviation），但对于被否决的偏离，最终还是追加了预算，让供应商按项目要求执行。",
-        "en": "The client approved some project deviations, but for the rejected ones, additional costs were paid to have the vendor execute them."
+        "zh": "业主最终同意了变更单（change order），使用变更单的资金支付给了厂家，并且我司借此还赚取了一笔额外的利润。",
+        "ja": "オーナーが最終的に設計変更（change order）を承認し、その資金でベンダーへの支払いを賄うことができ、さらに追加の利益を得ることができた。",
+        "en": "The Owner ultimately approved the change order, allowing us to pay the vendor using those funds while earning an extra profit for our company."
       },
       "flags": [],
       "score": 10
     }
   ],
   "title": {
-    "zh": "突发事件：检验前会议 (危机 A)",
-    "ja": "突発事態：検査前打合せ (危機 A)",
-    "en": "Sudden Event: Pre-Inspection Meeting (Crisis A)"
+    "zh": "突发事件：对合同的理解 (危机 A)",
+    "ja": "突発事態：契約の理解 (危機 A)",
+    "en": "Sudden Event: Contract Understanding (Crisis A)"
   },
   "avatar": "thinking",
   "npcAvatar": "strict",
@@ -2871,82 +2871,13 @@ const STORY_DATA = {
   "4.1-R2": {
   "chapter": "4.1-R2",
   "desc": {
-    "zh": "【检验前会议突发事件】PIM会议前夕，检验协调员因突发紧急伤病无法参会，此时供应商的制造图纸还有一小部分关键变更尚未最终确认，会议面临延期或带伤强行开会的危机。",
-    "ja": "【PIM突发事件】PIM会議の直前、検査コーディネーターが急病で不参加となり、ベンダーの製作図面の重要な一部が未確認のまま会議を延期するか強行するかの判断を迫られた。",
-    "en": "[PIM Sudden Event] On the eve of the PIM, the inspection coordinator suddenly fell ill and was hospitalized. A key section of the vendor's fabrication drawing has not yet been finalized. We must decide whether to delay the meeting or proceed understaffed."
+    "zh": "【检验前会议突发事件】供应商由于产能负荷过重，无暇在会前处理完所有制造文件（vendor document）。为了不延误工期，供应商建议先召开检验前会议（PIM），之后再补齐相关文件。",
+    "ja": "【PIM突発事態】ベンダーの負荷が高すぎるため、会議前に製造図書（vendor document）をすべて処理する余裕がないとして、スケジュール遅延を防ぐためにPIM会議を先に行い、後から図書を補正することを提案してきた。",
+    "en": "[PIM Sudden Event] The vendor is overloaded and has no time to process all vendor documents before the meeting. To avoid schedule delays, they suggest holding the PIM first and completing the vendor documents later."
   },
   "selections": [
     {
       "id": "4.1-R2.1",
-      "desc": {
-        "ja": "引き合い要求書には盛り込まれてるので、ベンダーの落ち度として素材を再調達させる",
-        "zh": "因为询价书（Requisition）里面写明了该项要求，所以这完全是供货商的错，坚决要求他们重新采购符合Type-3.2要求的材料。",
-        "en": "Since it was specified in the Requisition, it is entirely the vendor's fault. Force them to procure Type-3.2 materials immediately."
-      },
-      "influence": {
-        "ja": "大きなスケジュールインパクトが発生した",
-        "zh": "发生了重大的进度影响。",
-        "en": "A major schedule impact occurred."
-      },
-      "flags": [],
-      "score": 6
-    },
-    {
-      "id": "4.1-R2.2",
-      "desc": {
-        "ja": "客先にDeviaitonを出して、要求事項を取り下げてもらう",
-        "zh": "向业主提交项目偏离（deviation）申请，要求业主缓和该项材料要求。",
-        "en": "Submit a project deviation request to the client to relax the requirements."
-      },
-      "influence": {
-        "ja": "一部の素材は認めてもらえたが、概ね否認され再調達、スケジュールインパクトが発生した",
-        "zh": "部分材料获得业主批准，但其余材料必须重新采购，这对项目进度产生了负面影响。",
-        "en": "Some materials were approved by the client, but the rest had to be re-procured, affecting the project schedule."
-      },
-      "flags": [],
-      "score": 10
-    },
-    {
-      "id": "4.1-R2.3",
-      "desc": {
-        "ja": "スケジュールが間に合わないので、要求を無視して進める",
-        "zh": "重新采购必然影响进度。因此无视Type 3.2材料的要求，继续进行项目。",
-        "en": "Re-procurement will definitely affect the schedule, so ignore the Type-3.2 material requirement and proceed."
-      },
-      "influence": {
-        "ja": "客先からクレームを受けDisqualify",
-        "zh": "收到业主严重投诉，直接导致撤职清退（取消资格）。",
-        "en": "Scolded by the client and was disqualified from the project."
-      },
-      "flags": [
-        "Game Over"
-      ],
-      "score": 1
-    }
-  ],
-  "title": {
-    "zh": "突发事件：检验前会议 (危机 B)",
-    "ja": "突発事態：検査前打合せ (危機 B)",
-    "en": "Sudden Event: Pre-Inspection Meeting (Crisis B)"
-  },
-  "avatar": "thinking",
-  "npcAvatar": "strict",
-  "charName": {
-    "zh": "K前辈",
-    "ja": "K先輩",
-    "en": "K-senpai"
-  }
-},
-  "4.1-R3": {
-  "chapter": "4.1-R3",
-  "desc": {
-    "zh": "【检验前会议突发事件】在PIM会议中，供应商代表态度消极，声称由于他们产能负荷过重，要求将大部分主要见证点（Witness Point）降级为文件审查（Review Point），以防阻碍进度。",
-    "ja": "【PIM突发事件】PIM会議中、ベンダーは生産能力の過負荷を理由に、スケジュール遅延を防ぐため、主要な立会ポイント（Witness Point）の多くを書類確認（Review Point）にダウングレードするよう強く要求してきた。",
-    "en": "[PIM Sudden Event] During the PIM, the vendor representative claimed they were overloaded and strongly requested to downgrade major Witness Points to Review (document check) Points to prevent schedule delay."
-  },
-  "selections": [
-    {
-      "id": "4.1-R3.1",
       "desc": {
         "ja": "時間が無いので、ベンダー図書が固まらないまま検査前打合せ（PIM）を実施する",
         "zh": "因为时间不够，在供应商图纸（vendor document）未冻结的情况下先召开检验前会议（PIM），以符合项目的进度计划。",
@@ -2961,7 +2892,7 @@ const STORY_DATA = {
       "score": 3
     },
     {
-      "id": "4.1-R3.2",
+      "id": "4.1-R2.2",
       "desc": {
         "ja": "ベンダー図書が固まるまで議論を続ける",
         "zh": "继续讨论，直到供应商图纸（vendor document）符合项目要求并冻结。",
@@ -2976,7 +2907,7 @@ const STORY_DATA = {
       "score": 5
     },
     {
-      "id": "4.1-R3.3",
+      "id": "4.1-R2.3",
       "desc": {
         "ja": "ベンダーに乗り込んでF2Fでベンダー図書 Review Meetingを開催し、承認してから検査前打合せ（PIM）を実施する",
         "zh": "在执行检验前会议（PIM）之前，让负责的质量控制工程师出差去供货商办公室，尽快冻结供应商图纸（vendor document）。",
@@ -2992,9 +2923,9 @@ const STORY_DATA = {
     }
   ],
   "title": {
-    "zh": "突发事件：检验前会议 (危机 C)",
-    "ja": "突発事態：検査前打合せ (危機 C)",
-    "en": "Sudden Event: Pre-Inspection Meeting (Crisis C)"
+    "zh": "突发事件：对合同的理解 (危机 C)",
+    "ja": "突発事態：契約の理解 (危機 C)",
+    "en": "Sudden Event: Contract Understanding (Crisis C)"
   },
   "avatar": "thinking",
   "npcAvatar": "strict",
@@ -3004,16 +2935,16 @@ const STORY_DATA = {
     "en": "K-senpai"
   }
 },
-  "4.1-R4": {
-  "chapter": "4.1-R4",
+  "4.1-R3": {
+  "chapter": "4.1-R3",
   "desc": {
-    "zh": "【检验前会议突发事件】在PIM会议审查质量控制计划（ITP）时，供货商代表以保护商业机密为由，拒绝向我们披露其外协关键分包商的内部检验记录。",
-    "ja": "【PIM突发事件】PIM会議での検査試験計画書（ITP）レビュー時、ベンダーは企業秘密保持を理由に、キーとなるサブベンダーの内部検査記録の開示を拒否した。",
-    "en": "[PIM Sudden Event] During the ITP review in the PIM, the vendor representative refused to disclose the internal inspection records of their key subvendors, claiming proprietary business confidentiality."
+    "zh": "【检验前会议突发事件】受地缘政治因素影响，供应商所在国与我国的关系急剧恶化。在当地社会舆论的影响下，供应商管理层和工厂人员对我们的态度变得十分冷淡且消极配合。",
+    "ja": "【PIM突発事態】地政学的要因により、ベンダー所在国と我が国との関係が急速に悪化した。現地の世論の影響を受け、ベンダーの管理職や工場スタッフの弊社に対する態度が極めて冷淡になり、非協力的な姿勢を示している。",
+    "en": "[PIM Sudden Event] Due to geopolitical factors, the relationship between the vendor's country and ours has deteriorated rapidly. Under the influence of local public opinion, the vendor's management and shop personnel have become cold and uncooperative toward us."
   },
   "selections": [
     {
-      "id": "4.1-R4.1",
+      "id": "4.1-R3.1",
       "desc": {
         "ja": "契約に則って彼らにすべての要求事項を履行させる",
         "zh": "邀请采购部门合作，强硬地要求分包商履行合同中的所有要求。",
@@ -3030,7 +2961,7 @@ const STORY_DATA = {
       "score": 2
     },
     {
-      "id": "4.1-R4.2",
+      "id": "4.1-R3.2",
       "desc": {
         "ja": "検査前打合せ（PIM）前にAlignment Meetingを開催して、これまでの関係に関するLLを議論して、今後の関係改善に繋げる",
         "zh": "在检验前会议（PIM）之前召开协调会议，共同反省在项目上沟通不到位的情况，尽量和供货商改善关系。",
@@ -3045,7 +2976,7 @@ const STORY_DATA = {
       "score": 10
     },
     {
-      "id": "4.1-R4.3",
+      "id": "4.1-R3.3",
       "desc": {
         "ja": "今後、機器製作時に手抜きをされるリスクを考慮して、検査員を増やすなど対策を取る",
         "zh": "未来，考虑到制造设备时存在偷工减料的风险，我们将采取增加检验人员数量等措施。",
@@ -3061,9 +2992,9 @@ const STORY_DATA = {
     }
   ],
   "title": {
-    "zh": "突发事件：检验前会议 (危机 D)",
-    "ja": "突発事態：検査前打合せ (危機 D)",
-    "en": "Sudden Event: Pre-Inspection Meeting (Crisis D)"
+    "zh": "突发事件：对合同的理解 (危机 D)",
+    "ja": "突発事態：契約の理解 (危機 D)",
+    "en": "Sudden Event: Contract Understanding (Crisis D)"
   },
   "avatar": "thinking",
   "npcAvatar": "strict",
@@ -3076,132 +3007,13 @@ const STORY_DATA = {
   "4.2-R1": {
   "chapter": "4.2-R1",
   "desc": {
-    "zh": "【检验协调突发事件】由于海关通关系统故障，原本安排好的客方见证检验员行程受阻，无法在30天前完成出入境通知流程，业主要求重新排程并可能拒绝见证。",
-    "ja": "【検査調整突发事件】税関システムの突発的な障害により、手配していたオーナー側検査員のビザ/渡航プロセスが滞り、30日前通知の要件を満たせないため見合わされそうになっている。",
-    "en": "[Inspection Coordination Sudden Event] Due to a sudden customs system outage, the owner's witness inspector's travel schedule was blocked, failing the 30-day notice requirement. The owner demands a reschedule."
-  },
-  "selections": [
-    {
-      "id": "4.2-R1.1",
-      "desc": {
-        "ja": "要求事項なのでそのまま運用する",
-        "zh": "因为是合同要求，所以必须遵守。跟我方见证人员与供货商强调，必须提前30天提交检验通知。",
-        "en": "Since it is a contract requirement, we must comply with it. Emphasize to our witness inspectors and the vendor that the inspection notice must be submitted 30 days in advance."
-      },
-      "influence": {
-        "ja": "検査コーディネーションが混乱しベンダーからクレームを受けた",
-        "zh": "发生了重大的进度影响，并收到了 项目管理部（PMT） 的投诉。",
-        "en": "A major schedule impact occurred and a complaint was received from the Project Management Team (PMT)."
-      },
-      "flags": [],
-      "score": 3
-    },
-    {
-      "id": "4.2-R1.2",
-      "desc": {
-        "ja": "今から客先にDevitionを出して、申請期間を短縮してもらう",
-        "zh": "立即向客户提交 Devition，并要求他们缩短申请周期。",
-        "en": "Submit Devition to customers now and ask them to shorten the application period."
-      },
-      "influence": {
-        "ja": "部分的に認めてもらいインパクトを低減できた",
-        "zh": "部分要求获得了业主批准，降低了进度方面的影响。",
-        "en": "We obtained partial approval from the client, reducing the schedule impact."
-      },
-      "flags": [],
-      "score": 10
-    },
-    {
-      "id": "4.2-R1.3",
-      "desc": {
-        "ja": "ベンダーに駐在検査員を派遣するなど機器製作を徹底管理する",
-        "zh": "让检验员驻场，这样不管什么时候检验，都有人在。",
-        "en": "Station the inspector at the vendor's shop so that someone is always present whenever inspections occur."
-      },
-      "influence": {
-        "ja": "スケジュールインパクトは小さくできたが大きな追加コストが発生した",
-        "zh": "对进度的影响减少了，但产生了大量的额外成本。",
-        "en": "The schedule impact was reduced, but large additional costs were incurred."
-      },
-      "flags": [],
-      "score": 6
-    }
-  ],
-  "title": {
-    "zh": "突发事件：检验协调 (危机 A)",
-    "ja": "突発事態：検査調整 (危機 A)",
-    "en": "Sudden Event: Inspection Coordination (Crisis A)"
-  },
-  "avatar": "thinking",
-  "npcAvatar": "strict",
-  "charName": {
-    "zh": "K前辈",
-    "ja": "K先輩",
-    "en": "K-senpai"
-  }
-},
-  "4.2-R2": {
-  "chapter": "4.2-R2",
-  "desc": {
-    "zh": "【检验协调突发事件】业主的质量管理部突然发布了临时的内部新审计条例，要求接下来所有特种设备的试验通知期由原约定的2周紧急延长为30天，导致正在准备的检验陷入被动。",
-    "ja": "【検査調整突发事件】オーナーの品質管理部門が突如臨時の新監査規則を発行し、特殊機器の検査通知期間を従来の2週間から30日間に緊急延長するよう要求し、准备中の検査が立ち行かなくなった。",
-    "en": "[Inspection Coordination Sudden Event] The Owner's QA department suddenly issued a temporary internal regulation requiring the notice period for all special equipment tests to be extended from 2 weeks to 30 days, disrupting the ongoing inspection plan."
-  },
-  "selections": [
-    {
-      "id": "4.2-R2.1",
-      "desc": {
-        "ja": "契約要求の30日前に検査申請に切り替える",
-        "zh": "将检验通知周期切换为合同要求的【在检验日一个月前提交检验通知】，并通知各分包商（subcontractor）执行。",
-        "en": "Switch to the contractually required 'submitting inspection notice one month in advance' and notify all subcontractors to execute it."
-      },
-      "influence": {
-        "ja": "検査コーディネーションが混乱しベンダーからクレームを受けた",
-        "zh": "检查协调受到干扰，并收到了供应商的投诉。",
-        "en": "Inspection coordination was disrupted and complaints were received from vendors."
-      },
-      "flags": [],
-      "score": 5
-    },
-    {
-      "id": "4.2-R2.2",
-      "desc": {
-        "ja": "今から客先にDevitionを出して、申請期間を短縮してもらう",
-        "zh": "立即向客户提交 Devition，并要求他们缩短申请周期。",
-        "en": "Submit Devition to customers now and ask them to shorten the application period."
-      },
-      "influence": {
-        "ja": "部分的に客先に認めてもらい、インパクトを低減できた",
-        "zh": "部分材料获得业主批准，减小了对项目进度的影响。",
-        "en": "Obtained partial approval from the client, reducing the schedule impact."
-      },
-      "flags": [],
-      "score": 10
-    }
-  ],
-  "title": {
-    "zh": "突发事件：检验协调 (危机 B)",
-    "ja": "突発事態：検査調整 (危機 B)",
-    "en": "Sudden Event: Inspection Coordination (Crisis B)"
-  },
-  "avatar": "thinking",
-  "npcAvatar": "strict",
-  "charName": {
-    "zh": "K前辈",
-    "ja": "K先輩",
-    "en": "K-senpai"
-  }
-},
-  "4.2-R3": {
-  "chapter": "4.2-R3",
-  "desc": {
     "zh": "【检验协调突发事件】由于地区大暴雪导致交通中断，我们原定的资深驻厂检验员被困机场，而次日的压力试验必须有我方代表见证。我们必须寻找应急替代方案。",
-    "ja": "【検査調整突发事件】現地の記録的な大雪により交通網が遮断され、手配していたシニア常駐検査員が空港で足止めされたが、翌日には代表立ち会い必須の耐圧試験が控えている。",
+    "ja": "【検査調整突発事態】現地の記録的な大雪により交通網が遮断され、手配していたシニア常駐検査員が空港で足止めされたが、翌日には代表立ち会い必須の耐圧試験が控えている。",
     "en": "[Inspection Coordination Sudden Event] Due to a record blizzard, our senior resident inspector is stranded at the airport, while a mandatory witness pressure test is scheduled for tomorrow."
   },
   "selections": [
     {
-      "id": "4.2-R3.1",
+      "id": "4.2-R1.1",
       "desc": {
         "ja": "検査日時をリスケしてもらう",
         "zh": "让制造厂重新安排检验，另约时间。",
@@ -3216,7 +3028,7 @@ const STORY_DATA = {
       "score": 6
     },
     {
-      "id": "4.2-R3.2",
+      "id": "4.2-R1.2",
       "desc": {
         "ja": "検査の立会をWaiveする",
         "zh": "考虑到对项目工期的影响，豁免（waive）这个见证点（Hold point）。",
@@ -3231,7 +3043,7 @@ const STORY_DATA = {
       "score": 4
     },
     {
-      "id": "4.2-R3.3",
+      "id": "4.2-R1.3",
       "desc": {
         "ja": "急遽担当品質管理エンジニアが出張して検査に立ち会う",
         "zh": "让负责这个设备的质量控制工程师赶快出差去现场参加检验见证。",
@@ -3259,20 +3071,20 @@ const STORY_DATA = {
     "en": "K-senpai"
   }
 },
-  "4.2-R4": {
-  "chapter": "4.2-R4",
+  "4.2-R2": {
+  "chapter": "4.2-R2",
   "desc": {
-    "zh": "【检验协调突发事件】因当地临时公共卫生管控政策，供应商工厂所在的工业区实施了封闭式生产，我方检验员无法进入厂区，而关键阀门的低温泄漏试验即将进行。",
-    "ja": "【検査調整突发事件】現地の臨時的な公衆衛生管理規制により、ベンダー工場のある工業区が急遽ロックダウンされ、弊社検査員の立ち入りが制限されたが、バルブの極低温リーク試験が直前に迫っている。",
-    "en": "[Inspection Coordination Sudden Event] Due to a sudden local public health quarantine, the industrial zone housing the vendor's shop was locked down, preventing our inspector from entering while cryogenic valve leak tests are imminent."
+    "zh": "【检验协调突发事件】供应商的主要分包商所在地突发严重自然灾害，导致整体工期受到严重波及。为了现场催交，我方派遣的驻厂检验员工作时间大幅增加，工时数（man-hours）即将超出预算。",
+    "ja": "【検査調整突発事態】ベンダーの主要なサブベンダーの地域で深刻な自然災害が発生し、全体の工期に大きな影響が出た。現地での催促のため、弊社が派遣した常駐検査員の稼働時間が大幅に増え、工数（man-hours）が予算オーバー寸前となっている。",
+    "en": "[Inspection Coordination Sudden Event] A severe natural disaster struck the area of the vendor's main subvendor, heavily impacting the overall schedule. Due to intense expediting, the man-hours of our resident inspector are about to exceed the budget."
   },
   "selections": [
     {
-      "id": "4.2-R4.1",
+      "id": "4.2-R2.1",
       "desc": {
-        "ja": "プロジェクト管理部から指摘されるまで検査を続ける",
-        "zh": "反正是项目管理部（PMT）强加给我的工时预算，他们应该知道已经超支了，不需要我另外告诉他们，继续进行检验工作。",
-        "en": "Since the man-hour budget was imposed on me by the Project Management Team (PMT), they should already know it has run out. There is no need for me to inform them separately; just continue the inspections."
+        "zh": "因为这次自然灾害的影响非常广泛且众所周知，项目人员应该都心知肚明，没必要特意告知项目管理部（PMT），毕竟后续想办法追赶还是有挽回余地的。",
+        "ja": "今回の自然災害の影響は非常に大きく周知の事実であるため、プロジェクトメンバーも当然把握しているはずである。わざわざPMTに報告する必要はなく、後から挽回する余地もあるため、そのまま検査を継続する。",
+        "en": "Since the impact of the natural disaster is widespread and well-known, project members should already be aware of it. There is no need to specifically inform the PMT, especially since there is still a chance to recover the schedule later."
       },
       "influence": {
         "ja": "プロジェクト管理部からクレームを受けて大きく信頼を損ねた",
@@ -3283,7 +3095,7 @@ const STORY_DATA = {
       "score": 3
     },
     {
-      "id": "4.2-R4.2",
+      "id": "4.2-R2.2",
       "desc": {
         "ja": "直ちにプロジェクト管理部に追加検査工数を申請する",
         "zh": "立即向项目管理部（PMT）申请追加检验工时。",
@@ -3311,16 +3123,16 @@ const STORY_DATA = {
     "en": "K-senpai"
   }
 },
-  "4.2-R5": {
-  "chapter": "4.2-R5",
+  "4.2-R3": {
+  "chapter": "4.2-R3",
   "desc": {
-    "zh": "【检验协调突发事件】在检验执行前夕，当地特种设备安全监督局突然抽查供应商工厂，指出该批设备采用的焊接标准与最新的当地法规存在微小定义偏差，要求给出澄清解释。",
-    "ja": "【検査調整突发事件】検査実施の直前、現地の特殊設備安全監督局がベンダー工場を抜き打ち検査し、最新の現地法規制と溶接基準の定義に軽微なズレがあると指摘し、説明を要求してきた。",
-    "en": "[Inspection Coordination Sudden Event] On the eve of the inspection, the local pressure vessel safety bureau conducted a spot audit at the vendor's shop and pointed out a minor discrepancy between the welding standards used and the latest local laws."
+    "zh": "【检验协调突发事件】项目质量规定中明确禁止仅持有 SNT-TC-1A 资质的人员批准无损检测（NDT）报告。厂家虽然在质量程序书（procedure）中做出了相应承诺，但在实际操作中仍然指派了仅有 SNT-TC-1A 资质的检验员签署报告。我方在批阅检验报告时发现了这一违规行为。",
+    "ja": "【検査調整突発事態】プロジェクトの品質規定では、SNT-TC-1Aの資格しか持たない者が非破壊検査（NDT）報告書を承認することは明確に禁止されている。ベンダーは手順書（procedure）ではその旨を約束していたものの、実務上はSNT-TC-1A資格のみの検査員に報告書を署名させており、弊社が報告書をレビューした際にこれを発見した。",
+    "en": "[Inspection Coordination Sudden Event] The project quality specification explicitly prohibits NDT reports from being approved by personnel holding only SNT-TC-1A qualification. Although the vendor committed to this in their procedures, in practice they still assigned an inspector with only SNT-TC-1A qualification to sign the reports, which we discovered during our report review."
   },
   "selections": [
     {
-      "id": "4.2-R5.1",
+      "id": "4.2-R3.1",
       "desc": {
         "ja": "少なくともSNT-TC-1Aの検査員が実施しているので、そのまま承認する",
         "zh": "SNT-TC-1A资格也是正规资格，考虑对工期和成本的影响，批准并同意检验报告的结果。",
@@ -3335,7 +3147,7 @@ const STORY_DATA = {
       "score": 3
     },
     {
-      "id": "4.2-R5.2",
+      "id": "4.2-R3.2",
       "desc": {
         "ja": "ISO9712の検査員による再NDEを実施する",
         "zh": "让供货商寻找ISO 9712的检验员重新进行检验。",
@@ -3350,7 +3162,7 @@ const STORY_DATA = {
       "score": 10
     },
     {
-      "id": "4.2-R5.3",
+      "id": "4.2-R3.3",
       "desc": {
         "ja": "客先にDeviaitonを出して、SNT-TC-1Aの検査員による記録を認めてもらう",
         "zh": "向业主提交项目偏离（deviation）申请，要求认可SNT-TC-1A体系下的检验报告有效性。",
@@ -3378,16 +3190,16 @@ const STORY_DATA = {
     "en": "K-senpai"
   }
 },
-  "4.2-R6": {
-  "chapter": "4.2-R6",
+  "4.2-R4": {
+  "chapter": "4.2-R4",
   "desc": {
-    "zh": "【检验协调突发事件】在最终组装（Final Assembly）前的最后一次关键见证试验中，供应商使用的第三方压力表突然在试验中途损坏失效，数值偏差严重，这导致已经记录的部分试验数据失效。",
-    "ja": "【検査調整突发事件】最終組立前の重要立会試験中、ベンダーのサードパーティ製圧力計が突如故障し、数値が大きく狂ってしまった。これにより、すでに記録された一部の試験データの有効性が疑われている。",
-    "en": "[Inspection Coordination Sudden Event] During the critical witness test prior to final assembly, the third-party pressure gauge used by the vendor suddenly malfunctioned and gave erratic readings, invalidating some recorded test data."
+    "zh": "【检验协调突发事件】由于出差预算限制，我们在北非当地聘用了一名本地检验员进行驻厂。然而，此人专业水平相当有限，我们收到的检验报告中充斥着各类常识性错误，导致我们根本无法掌握厂里的真实生产与质量状况。",
+    "ja": "【検査調整突発事態】出張予算制限のため、北アフリカ現地でローカル検査員を採用し常駐させた。しかし、この検査員の技術レベルが極めて低く、送られてくる検査報告書は多くの間違いだらけで、現地の実際の生産や品質状況が全く把握できない状態に陥った。",
+    "en": "[Inspection Coordination Sudden Event] Due to travel budget constraints, we hired a local inspector in North Africa. However, this inspector's technical competence is extremely limited, and the reports we receive are riddled with common errors, making it impossible to know the actual shop production and quality status."
   },
   "selections": [
     {
-      "id": "4.2-R6.1",
+      "id": "4.2-R4.1",
       "desc": {
         "ja": "直ちに検査員を交代する",
         "zh": "立即更换检验员。",
@@ -3402,7 +3214,7 @@ const STORY_DATA = {
       "score": 6
     },
     {
-      "id": "4.2-R6.2",
+      "id": "4.2-R4.2",
       "desc": {
         "ja": "IRの書き方を検査員に指導する",
         "zh": "亲自下场指导检验员如何写检验报告（Inspection Report）。",
@@ -3417,7 +3229,7 @@ const STORY_DATA = {
       "score": 10
     },
     {
-      "id": "4.2-R6.3",
+      "id": "4.2-R4.3",
       "desc": {
         "ja": "検査員の力量を尊重してそのまま継続する",
         "zh": "考虑到工时 and 成本，维持现有的检验员不变，要求检验公司多加指导督促该检验员。",
@@ -3447,91 +3259,20 @@ const STORY_DATA = {
     "en": "K-senpai"
   }
 },
-  "4.2-R7": {
-  "chapter": "4.2-R7",
+  "4.2-R5": {
+  "chapter": "4.2-R5",
   "desc": {
-    "zh": "【检验协调突发事件】在无损检测（NDT）见证前，供应商厂区突然遭遇大范围停电，其主控电脑和NDT底片数字扫描仪无法启动，但业主见证人员已经到达现场。",
-    "ja": "【検査調整突发事件】非破壊検査（NDT）立ち会い直前、ベンダー工場一帯で広範囲な停電が発生し、主制御PCやNDTフィルムのデジタルスキャナーが起動できなくなったが、オーナー立会人は既に現着している。",
-    "en": "[Inspection Coordination Sudden Event] Right before the NDT witness, a major power outage hit the vendor's factory, shutting down the digital film scanners while the owner's witness team had already arrived."
+    "zh": "【检验协调突发事件】在进行射线检测底片审查（RT Film Review）时，我们发现大量底片显影模糊且存在大量水渍伪像。经核实，这可能是近期极端潮湿闷热天气对暗室胶片冲洗和保存环境造成的湿度影响导致的。",
+    "ja": "【検査調整突発事態】放射線透過検査のフィルムレビュー（RT Film Review）において、現像が不鮮明で水滴によるノイズが大量に発生しているフィルムが多数見つかった。調査の結果、近年の極端な高温多湿の気候が暗室での現像・保管環境に悪影響を及ぼした可能性が高いと判明した。",
+    "en": "[Inspection Coordination Sudden Event] During RT Film Review, we found many films were blurry with significant water artifacts. Investigation showed this was likely caused by the humidity impact of recent extreme hot and humid weather on the darkroom film processing and storage environment."
   },
   "selections": [
     {
-      "id": "4.2-R7.1",
+      "id": "4.2-R5.1",
       "desc": {
-        "ja": "検査員を帰宅させて検査をWaiveする",
-        "zh": "因为不是见证点（Hold point），豁免此处检验见证的要求。",
-        "en": "Since it is not a Hold point, waive the requirement for inspection witness here."
-      },
-      "influence": {
-        "ja": "検査をしないまま出荷して、現場でトラブル発生",
-        "zh": "因为发货前未进行检验，导致在安装现场出现状况。",
-        "en": "Because no inspection was performed before shipment, problems arose at the construction site."
-      },
-      "flags": [
-        "5.3-B"
-      ],
-      "score": 3
-    },
-    {
-      "id": "4.2-R7.2",
-      "desc": {
-        "ja": "検査員に強引に入場させ検査を実施する",
-        "zh": "供货商瞒着我方，肯定是做了违规操作，强行让检验员进入厂房实施检验。",
-        "en": "The vendor is hiding things from us, which means they must have performed non-conforming operations. Force the inspector to enter and conduct the inspection."
-      },
-      "influence": {
-        "ja": "検査員が工場でケガをした",
-        "zh": "检验员因强行进入厂房，在车间内意外受伤。",
-        "en": "The inspector was unexpectedly injured in the shop while forcing entry for inspection."
-      },
-      "flags": [
-        "Game Over"
-      ],
-      "score": 1
-    },
-    {
-      "id": "4.2-R7.3",
-      "desc": {
-        "ja": "プロジェクト管理部/プロキュアと協力してベンダーマネジメントを通して検査を実施してもらう",
-        "zh": "与项目管理部（PMT）、采购部门配合，通过对供应商的高层管理施压来实施检验。",
-        "en": "Cooperate with the Project Management Team (PMT) and Procurement department to conduct the inspection through vendor management."
-      },
-      "influence": {
-        "ja": "何とか検査を実施するがプロジェクト管理部から大きなクレームを受ける",
-        "zh": "虽然最终在我方检验员见证下完成了检验并出货，但事后收到了项目管理部（PMT）的强烈投诉。",
-        "en": "Although we managed to witness the inspection and ship it, we subsequently received heavy complaints from the Project Management Team."
-      },
-      "flags": [],
-      "score": 10
-    }
-  ],
-  "title": {
-    "zh": "突发事件：检验协调 (危机 G)",
-    "ja": "突発事態：検査調整 (危機 G)",
-    "en": "Sudden Event: Inspection Coordination (Crisis G)"
-  },
-  "avatar": "thinking",
-  "npcAvatar": "strict",
-  "charName": {
-    "zh": "K前辈",
-    "ja": "K先輩",
-    "en": "K-senpai"
-  }
-},
-  "4.2-R8": {
-  "chapter": "4.2-R8",
-  "desc": {
-    "zh": "【检验协调突发事件】在压力容器最终水压试验时，封头处的接管焊缝边缘突然出现轻微的微小渗漏（Sweating），试验被迫中止，需要立刻商定修复与重新试验方案。",
-    "ja": "【検査調整突发事件】圧力容器の最終水圧試験中、鏡板ノズル溶接部の境界から微小な滲み（Sweating）が突如発生して試験が中断され、補修および再試験計画を即座に策定する必要が生じた。",
-    "en": "[Inspection Coordination Sudden Event] During the final hydrostatic test of the pressure vessel, a tiny sweating leak suddenly appeared at the nozzle weld edge, forcing the test to abort. We need an immediate repair and retest plan."
-  },
-  "selections": [
-    {
-      "id": "4.2-R8.1",
-      "desc": {
-        "ja": "全て溶接補修して健全な機材を出荷する",
-        "zh": "我们通过焊接修复一切并运送健康的设备。",
-        "en": "We repair everything by welding and ship healthy equipment."
+        "zh": "认为这只是表面的伪像，不影响实际焊接质量，要求检验员继续使用现有暗室设备完成底片评定。",
+        "ja": "これは表面上の疑似模様に過ぎず、実際の溶接品質には影響しないと判断し、検査員に現行の暗室設備を用いてフィルム評価を継続するよう指示する。",
+        "en": "Deem it as surface artifacts that do not affect the actual weld quality, and instruct the inspector to continue film evaluation using the current darkroom equipment."
       },
       "influence": {
         "ja": "スケジュールインパクトはあったが何とか出荷した",
@@ -3542,11 +3283,11 @@ const STORY_DATA = {
       "score": 6
     },
     {
-      "id": "4.2-R8.2",
+      "id": "4.2-R5.2",
       "desc": {
-        "ja": "時間が無いからそのまま出荷する",
-        "zh": "由于项目的工期非常紧，且一定的缺陷是ASME标准允许的，因此决定先发货再说。",
-        "en": "Due to the extremely tight project schedule and because certain defects are permissible under ASME standards, we decided to ship it as is."
+        "zh": "为了彻底查清原因，下令关停供应商所有的焊接和检测工作，要求全面重做并更换整套暗室显影设备。",
+        "ja": "原因を徹底究明するため、ベンダーのすべての溶接および検査作業の一時停止を命じ、全面的にやり直した上で、暗室の現像設備一式を交換するよう要求する。",
+        "en": "To thoroughly investigate the cause, order a complete shutdown of all welding and inspection work at the vendor's shop, demanding a full remake and replacement of the entire darkroom equipment."
       },
       "influence": {
         "ja": "客先に発見され不適合報告書（NCR）を出されるとともにDisqualify",
@@ -3559,11 +3300,11 @@ const STORY_DATA = {
       "score": 1
     },
     {
-      "id": "4.2-R8.3",
+      "id": "4.2-R5.3",
       "desc": {
-        "ja": "運転条件などを確認して、重み付けをして、Criteriaを客先と見直す",
-        "zh": "根据ASME标准确认哪条焊缝是重要的，哪条焊缝是不重要。劝说供货商修补重要焊缝中缺陷较多的部分。",
-        "en": "Identify which welds are critical based on ASME standards. Persuade the vendor to repair the critical welds containing more defects."
+        "zh": "紧急派遣公司高级无损检测（NDT）专家驻厂指导，协助分析极端天气的湿度影响，并重新规范暗室的温湿度控制和冲洗流程。",
+        "ja": "本社のシニア非破壊検査（NDT）専門家を緊急派遣して現地指導にあたらせ、極端な気候の湿度影響を分析し、暗室の温湿度管理とフィルム現像プロセスを再規定する。",
+        "en": "Urgently dispatch a senior NDT expert to the shop to guide the team, analyze the humidity impact of the extreme weather, and re-standardize the temperature/humidity control and processing procedures in the darkroom."
       },
       "influence": {
         "ja": "客先と合意した最小限の補修をして出荷できた",
@@ -3590,9 +3331,9 @@ const STORY_DATA = {
   "4.3-R1": {
   "chapter": "4.3-R1",
   "desc": {
-    "zh": "【出运前夕突发事件】在出运前的最终油漆检查时，供应商的防腐分包商发生油漆调配比例失误，导致有一小批次管道在出厂前涂层未完全固化，现场需要大面积返工。",
-    "ja": "【出荷前夕突发事件】出荷前の最終塗装検査時、塗装サブベンダーの調合ミスにより、一部配管のコーティングが十分に硬化していないことが判明し、出荷直前の大規模な手直しが必要となった。",
-    "en": "[Pre-shipping Sudden Event] During final paint inspection before shipping, the coating subvendor made a mixing ratio mistake, causing a batch of piping coatings to fail to cure properly, requiring extensive rework."
+    "zh": "【出运前夕突发事件】在设备装船出运前夕，供应商的文档管理服务器突然遭遇勒索软件病毒攻击，导致之前所有已经签署审核意见（comment）的关键制造文件丢失。部分文件必须在发货前重新进行审查和签署意见。",
+    "ja": "【出荷前夕突発事態】機器の船積み直前、ベンダーの図書管理サーバーが突如ランサムウェア攻撃を受け、以前に承認コメントを付与したすべての主要製造図書が消失した。一部の図書は出荷前に再レビューし、コメントを付与し直す必要がある。",
+    "en": "[Pre-shipping Sudden Event] On the eve of shipment, the vendor's document server suffered a ransomware attack, losing all previously reviewed manufacturing documents. Some documents must be re-reviewed and re-commented before shipping."
   },
   "selections": [
     {
@@ -3644,8 +3385,8 @@ const STORY_DATA = {
     }
   ],
   "title": {
-    "zh": "突发事件：不符合项处理 (危机 A)",
-    "ja": "突発事態：不適合管理 (危機 A)",
+    "zh": "突发事件：不符合项报告 (危机 A)",
+    "ja": "突発事態：不適合報告書 (危機 A)",
     "en": "Sudden Event: Non-Conformance Report (Crisis A)"
   },
   "avatar": "thinking",
@@ -3659,9 +3400,9 @@ const STORY_DATA = {
   "4.3-R2": {
   "chapter": "4.3-R2",
   "desc": {
-    "zh": "【出运前夕突发事件】在装船前，船东代表突然指出，供应商准备的防雨包装（Tarpaulin）规格与本航程所经风浪带的特殊要求不符，拒绝这批高敏感电气控制柜上船。",
-    "ja": "【出荷前夕突发事件】船積みの直前、船主代表からベンダーが用意した防水シート（Tarpaulin）の仕様が、本航路で想定される悪天候帯の要件を満たしていないと指摘され、精密電気制御盤の積み込みを拒否された。",
-    "en": "[Pre-shipping Sudden Event] Right before loading, the shipowner's representative claimed that the tarpaulin packaging prepared by the vendor did not meet the storm protection requirements for this specific sea route, refusing to load sensitive control panels."
+    "zh": "【出运前夕突发事件】受地缘政治因素影响，当地政府突然发布紧急通告，要求对在该国生产并出口的特定工业设备强制增加一项政府官厅的官方见证检查，否则不予放行出运。",
+    "ja": "【出荷前夕突発事態】地政学的要因により、現地政府が突如緊急通達を出し、当該国で製造・輸出される特定の工業設備に対し、政府官庁による公式立会検査の追加を義務付け、これを受けなければ出荷を許可しないとした。",
+    "en": "[Pre-shipping Sudden Event] Due to geopolitical factors, the local government suddenly issued an emergency decree requiring a mandatory official government witness inspection for specific industrial equipment manufactured in that country before granting export clearance."
   },
   "selections": [
     {
@@ -3711,8 +3452,8 @@ const STORY_DATA = {
     }
   ],
   "title": {
-    "zh": "突发事件：不符合项处理 (危机 B)",
-    "ja": "突発事態：不適合管理 (危機 B)",
+    "zh": "突发事件：不符合项报告 (危机 B)",
+    "ja": "突発事態：不適合報告書 (危機 B)",
     "en": "Sudden Event: Non-Conformance Report (Crisis B)"
   },
   "avatar": "thinking",
@@ -3726,9 +3467,9 @@ const STORY_DATA = {
   "4.3-R3": {
   "chapter": "4.3-R3",
   "desc": {
-    "zh": "【出运前夕突发事件】在海关出运报关单据审查时，由于海关出台了新的临时编码分类标准，供应商填写的海关编码被判定不符，这批关键换热器面临被暂扣在港口的危险。",
-    "ja": "【出荷前夕突发事件】通関書類の審査中、税关が新たに導入したHSコード分类基準により、ベンダーが記載したコードが不適合と判定され、熱交換器が港で差し押さえられるリスクが発生した。",
-    "en": "[Pre-shipping Sudden Event] During customs export documentation audit, a newly introduced HS code classification caused the vendor's submitted code to be rejected, risking detention of critical heat exchangers at the port."
+    "zh": "【出运前夕突发事件】关键分包商的创始老板因为炒股投机破产，被迫将工厂转手。然而，买下该厂的新老板整天也沉迷于炒股，对工厂的实际生产和催交事务不管不问，导致零件制造进度失控。",
+    "ja": "【出荷前夕突発事態】重要なサブベンダーの元オーナーが株取引で破産し、工場を譲渡せざるを得なくなった。しかし、新しく工場を買収した新オーナーも毎日株取引に没頭し、工場の製造進捗や管理に全く関心を示さず、部品製造スケジュールが制御不能に陥った。",
+    "en": "[Pre-shipping Sudden Event] The original owner of a key subvendor went bankrupt due to stock speculation and sold the shop. The new owner, however, also spends all day trading stocks and completely ignores the production floor, leaving the manufacturing schedule out of control."
   },
   "selections": [
     {
@@ -3778,8 +3519,8 @@ const STORY_DATA = {
     }
   ],
   "title": {
-    "zh": "突发事件：不符合项处理 (危机 C)",
-    "ja": "突発事態：不適合管理 (危機 C)",
+    "zh": "突发事件：不符合项报告 (危机 C)",
+    "ja": "突発事態：不適合報告書 (危機 C)",
     "en": "Sudden Event: Non-Conformance Report (Crisis C)"
   },
   "avatar": "thinking",
@@ -3793,9 +3534,9 @@ const STORY_DATA = {
   "4.3-R4": {
   "chapter": "4.3-R4",
   "desc": {
-    "zh": "【出运前夕突发事件】在海运集装箱装箱完毕后，码头工会突然宣布举行无限期大罢工，港口作业全部停摆，这批急需出运的常压容器面临船期被无限延误的危险。",
-    "ja": "【出荷前夕突发事件】海上コンテナへの梱包完了直後、港湾労働組合が突如無期限ストライキを宣言して港湾業務が全面停止し、出荷予定の常圧容器の船積みが大幅に遅れるリスクが生じた。",
-    "en": "[Pre-shipping Sudden Event] Just as container packing was completed, the port union suddenly declared an indefinite strike, shutting down all port operations and threatening to delay shipment of pressure vessels."
+    "zh": "【出运前夕突发事件】我们收到可靠情报，出运港口的码头工会计划举行大规模罢工，且罢工的起始日期比我们原定的设备出货船期还要早。这批常压容器面临被无限期积压在港口的重大延误危机。",
+    "ja": "【出荷前夕突発事態】出荷港の港湾労組が大規模ストライキを計画しており、その開始日が我々の当初の出荷予定日よりも早いという確実な情報を得た。これにより、常圧容器が港で長期滞留するリスクが極めて高くなった。",
+    "en": "[Pre-shipping Sudden Event] We received reliable intelligence that the port union plans a major strike, and the strike start date is earlier than our scheduled shipping date, risking indefinite delay of the pressure vessels at the port."
   },
   "selections": [
     {
@@ -3830,8 +3571,8 @@ const STORY_DATA = {
     }
   ],
   "title": {
-    "zh": "突发事件：不符合项处理 (危机 D)",
-    "ja": "突発事態：不適合管理 (危機 D)",
+    "zh": "突发事件：不符合项报告 (危机 D)",
+    "ja": "突発事態：不適合報告書 (危機 D)",
     "en": "Sudden Event: Non-Conformance Report (Crisis D)"
   },
   "avatar": "thinking",
@@ -3845,9 +3586,9 @@ const STORY_DATA = {
   "5.3-R1": {
   "chapter": "5.3-R1",
   "desc": {
-    "zh": "【现场移交突发事件】在现场将设备最终移交给业主开车团队的前夕，夜间突降大暴雨，暴雨导致部分仪表接线盒的临时密封胶条脱落发生进水，移交工作被迫紧急叫停。",
-    "ja": "【現地引渡突发事件】機器の最終引き渡しを翌日に控えた夜間、想定外の豪雨により一部計装ジャンクションボックスの仮養生が外れて浸水が発生し、引き渡し作業が急遽ストップした。",
-    "en": "[Site Handover Sudden Event] On the eve of transferring the equipment to the Owner's operations team, a severe overnight rainstorm caused temporary sealing tape on instrument junction boxes to peel off, leading to water ingress."
+    "zh": "【现场移交突发事件】在对现场压力容器（Vessel）进行就位前最终检查时，我们赫然发现由于运输中的剧烈颠簸和挤压，容器外壁焊接的几处支撑管卡（Clip）发生了断裂脱落，且现场缺少备用件。",
+    "ja": "【現地引渡突発事態】現地で圧力容器（Vessel）を据え付ける前の最終検査中、輸送中の激しい振動と衝撃により、容器外壁に溶接されていたサポート用管カ（Clip）が数箇所破断して脱落しており、現場に予備部品もないことが判明した。",
+    "en": "[Site Handover Sudden Event] During the final inspection of the pressure vessel before installation at the site, we discovered that several support clips welded to the outer wall of the vessel had fractured and fallen off due to severe vibrations and impact during transit, and there are no spare parts on site."
   },
   "selections": [
     {
@@ -3912,80 +3653,13 @@ const STORY_DATA = {
   "5.3-R2": {
   "chapter": "5.3-R2",
   "desc": {
-    "zh": "【现场移交突发事件】在对现场压力容器进行开车前的最终气密试验（Leak Test）时，法兰连接处由于出厂垫片在运输途中受微小震动移位，发生了轻微的氦气泄漏。",
-    "ja": "【現地引渡突发事件】試運転前の最終気密試験（Leak Test）中、長距離輸送中の微小な振動により工場装着のガスケットがずれたため、フランジ接続部から軽微なヘリウムリークが検出された。",
-    "en": "[Site Handover Sudden Event] During the pre-commissioning leak test of the pressure vessel, a minor helium leak was detected at a flange connection due to the factory-installed gasket shifting slightly during transport."
-  },
-  "selections": [
-    {
-      "id": "5.3-R2.1",
-      "desc": {
-        "ja": "ベンスペを現場に招聘してパーツを管理させる",
-        "zh": "邀请供应商现场代表（Vendor Supervisor）到施工现场进行散供件管理指导。",
-        "en": "Invite the Vendor Supervisor to the site to manage the loose parts."
-      },
-      "influence": {
-        "ja": "ベンダーとの関係が完全に冷え込み、まともな対応をしてもらえずプロジェクトが大混乱となった",
-        "zh": "因为和供应商的关系很差。因此在发出邀请后，过了很久，供应商才做出回复。在此期间，混乱的现场管理已经在工期上对项目造成了影响。",
-        "en": "The relationship with the vendor completely cooled down, and the project schedule was affected as they did not respond for a long time during chaotic site management."
-      },
-      "flags": [],
-      "score": 4
-    },
-    {
-      "id": "5.3-R2.2",
-      "desc": {
-        "ja": "ベンダーと現場にエンジニアを派遣してパーツの有無を管理する",
-        "zh": "要求供货商的人员指导我方现场人员进行散供件管理的指导。",
-        "en": "Instruct our site staff to perform loose parts management under the vendor's guidance."
-      },
-      "influence": {
-        "ja": "非協力的なベンダーとの界面を調整しつつ何とか取りまとめるが甚大なスケジュールインパクトと追加工数が発生した",
-        "zh": "在与不合作的供应商艰苦协调界面的同时，勉强理顺了工作，但已经造成了巨大的工期延误与额外的工时开支。",
-        "en": "Somehow coordinated the interfaces with the uncooperative vendor, but it resulted in a huge schedule delay and additional man-hours."
-      },
-      "flags": [],
-      "score": 7
-    },
-    {
-      "id": "5.3-R2.3",
-      "desc": {
-        "ja": "不明なパーツは全て現場で再購入する",
-        "zh": "所有未知零件将在现场重新购买。",
-        "en": "All unknown parts will be repurchased on site."
-      },
-      "influence": {
-        "ja": "膨大な追加コストが発生するもベンダーから回収できなかった",
-        "zh": "产生了巨额的追加费用，且无法向供应商成功索赔收回。",
-        "en": "Huge additional costs were incurred and could not be recovered from the vendor."
-      },
-      "flags": [],
-      "score": 10
-    }
-  ],
-  "title": {
-    "zh": "突发事件：现场响应 (危机 B)",
-    "ja": "突発事態：現場対応 (危機 B)",
-    "en": "Sudden Event: Site Response (Crisis B)"
-  },
-  "avatar": "thinking",
-  "npcAvatar": "strict",
-  "charName": {
-    "zh": "K前辈",
-    "ja": "K先輩",
-    "en": "K-senpai"
-  }
-},
-  "5.3-R3": {
-  "chapter": "5.3-R3",
-  "desc": {
     "zh": "【现场移交突发事件】在现场开箱检查时，我们发现一台高压电机的轴承在海运途中由于防潮干燥剂失效，发生了轻微的锈蚀。这导致业主拒绝在该电机的试运转申请单上签字。",
-    "ja": "【現地引渡突发事件】現地開梱検査時、海上輸送中の防湿乾燥剤の機能喪失により、高圧モーターのベアリングに軽微な発錆が確認され、オーナーが試運転の承認署名を拒否した。",
+    "ja": "【現地引渡突発事態】現地開梱検査時、海上輸送中の防湿乾燥剤の機能喪失により、高圧モーターのベアリングに軽微な発錆が確認され、オーナーが試運転の承認署名を拒否した。",
     "en": "[Site Handover Sudden Event] During site unpacking inspection, we found minor rust on a high-voltage motor bearing due to desiccant failure during sea transport, and the Owner refused to sign the run-test permit."
   },
   "selections": [
     {
-      "id": "5.3-R3.1",
+      "id": "5.3-R2.1",
       "desc": {
         "ja": "ベンスペを現場に招聘して全数対応させる",
         "zh": "邀请供应商现场代表（Vendor Supervisor）到施工现场对所有不合格品进行处理。",
@@ -4000,7 +3674,7 @@ const STORY_DATA = {
       "score": 7
     },
     {
-      "id": "5.3-R3.2",
+      "id": "5.3-R2.2",
       "desc": {
         "ja": "現場研修生に全数確認させる",
         "zh": "安排现场实习生对所有散装材料进行全数确认。",
@@ -4015,7 +3689,7 @@ const STORY_DATA = {
       "score": 10
     },
     {
-      "id": "5.3-R3.3",
+      "id": "5.3-R2.3",
       "desc": {
         "ja": "不適合品が見つかるたびにサブコンに処理させる",
         "zh": "让分包商（Subcontractor）处理发现的每个不合格产品。",
@@ -4043,40 +3717,40 @@ const STORY_DATA = {
     "en": "K-senpai"
   }
 },
-  "5.3-R4": {
-  "chapter": "5.3-R4",
+  "5.3-R3": {
+  "chapter": "5.3-R3",
   "desc": {
-    "zh": "【现场移交突发事件】在设备就位大合拢前，业主的安全监理指出，设备底座上的接地极（Earthing Boss）的防腐漆在运输和吊装中被磕碰刮花，若不重新打磨涂漆，则禁止接线。",
-    "ja": "【現地引渡突发事件】機器据え付けの直前、オーナーの安全監査官から、機器ベースの接地ボス（Earthing Boss）の防錆塗装が輸送・吊り上げ中に剥がれており、再塗装しなければ配線接続を認めないと指摘された。",
-    "en": "[Site Handover Sudden Event] Just before final installation, the Owner's safety auditor noted that the anti-corrosive coating on the earthing boss was scratched during transport and lifting, and refused connection until re-painted."
+    "zh": "【现场移交突发事件】在设备最终移交前，现场安装团队在进行接地系统测试时，发现设备底座上的接地极（Earthing Boss）在工厂制造时被错误地涂上了防腐漆，导致接地导通性不合格。若不进行处理，业主监理将禁止接线。",
+    "ja": "【現地引渡突発事態】機器の最終引き渡し前、現地施工チームが接地システムのテストを行った際、機器ベースの接地ボス（Earthing Boss）に工場製造時に誤って防錆塗装が施されており、接地導通試験が不合格となった。このままではオーナーの監理官から配線接続を禁止される。",
+    "en": "[Site Handover Sudden Event] Before final handover, the installation team tested the grounding system and found that the earthing boss on the equipment base had been mistakenly painted with anti-corrosive paint at the factory, causing the grounding continuity test to fail. If left unresolved, the Owner's inspector will prohibit wiring connection."
   },
   "selections": [
     {
-      "id": "5.3-R4.1",
+      "id": "5.3-R3.1",
       "desc": {
-        "ja": "客先立会で全対象部材に追加検査を実施した",
-        "zh": "在业主在场的情况下对所有目标零部件进行了追加检验。",
-        "en": "Conducted additional inspections on all target components in the presence of the client."
+        "zh": "安排现场分包商彻底打磨剥落接地极表面的防腐漆，暴露出金属导电面，并在业主代表见证下重新进行接地电阻测试。",
+        "ja": "現地サブコンに指示して接地ボス表面の防錆塗装を完全に削り落とし、金属導電面を露出させ、オーナー代表の立ち会いのもとで接地抵抗試験を再実施する。",
+        "en": "Instruct the site subcontractor to completely grind off the anti-corrosive paint from the earthing boss surface to expose the metal, and re-test the grounding resistance in the presence of the client representative."
       },
       "influence": {
-        "ja": "甚大なスケジュールインパクトが発生した",
-        "zh": "造成了极其巨大的项目进度拖延。",
-        "en": "A huge schedule impact occurred."
+        "zh": "虽然进行了额外的工作，但彻底解决了接地不导电的安全隐患，项目最终顺利完成移交。",
+        "ja": "追加の作業は発生したものの、接地不良という安全上の重大な懸念を完全に解決し、プロジェクトは最終的に無事引き渡された。",
+        "en": "Although additional work occurred, the grounding conductivity issue was resolved, and the project was successfully handed over."
       },
       "flags": [],
       "score": 10
     },
     {
-      "id": "5.3-R4.2",
+      "id": "5.3-R3.2",
       "desc": {
-        "ja": "客先にDeviationを出し、ベンダーにConfirmation Letterを出させてUse-as-isとする",
-        "zh": "向业主提交项目偏离（deviation）申请，并让供应商出具确认信，要求按现状接收（Use-as-is）。",
-        "en": "Submit a project deviation request to the client and have the vendor issue a confirmation letter to accept it Use-as-is."
+        "zh": "为了不增加现场工时，向业主提交项目偏离（deviation）申请，要求按现状接收（Use-as-is）或使用金属螺栓强行压接导电。",
+        "ja": "現地の追加工数を避けるため、オーナーにプロジェクト偏差（deviation）を申請し、現状のまま受領（Use-as-is）するか、金属ボルトで強制的に圧着して導通させることを提案する。",
+        "en": "To avoid additional on-site man-hours, submit a project deviation request to the client to accept the earthing boss Use-as-is, or attempt to force electrical continuity using metal bolts."
       },
       "influence": {
-        "ja": "客先から否認され再製作、甚大なスケジュール・コストインパクトが発生した",
-        "zh": "该申请被业主直接拒绝，不得不重新制造，导致巨大的进度和成本影响。",
-        "en": "The request was rejected by the client and had to be remanufactured, causing huge schedule and cost impacts."
+        "zh": "该申请被业主安全监理直接拒绝，指出这是严重的防雷与电气安全隐患，并要求对全场设备接地逐一进行重新检查，造成严重的进度和成本影响。",
+        "ja": "申請はオーナーの安全監査官から一蹴された。重大な雷撃・電気保安上のリスクであると指摘され、全設備の接地ボスの再監査を命令され、甚大なスケジュールとコストインパクトが発生した。",
+        "en": "The request was rejected by the client safety auditor as a severe safety risk, demanding a full audit of all equipment earthing bosses, causing huge schedule and cost impacts."
       },
       "flags": [],
       "score": 3
@@ -4095,16 +3769,16 @@ const STORY_DATA = {
     "en": "K-senpai"
   }
 },
-  "5.3-R5": {
-  "chapter": "5.3-R5",
+  "5.3-R4": {
+  "chapter": "5.3-R4",
   "desc": {
     "zh": "【现场移交突发事件】在设备最终交接文档审查中，由于供应商的文档服务器被勒索软件攻击，其补交的部分材料制造厂检验证书（MTR）签名清晰度不足，业主文控拒绝归档。",
-    "ja": "【現地引渡突发事件】最終図書レビュー時、ベンダーのサーバーがランサムウェア攻撃を受けた影響で、再提出された材料検査証明書（MTR）の署名が一部不鮮明になり、オーナーの図書管理部門が受領を拒否した。",
+    "ja": "【現地引渡突発事態】最終図書レビュー時、ベンダーのサーバーがランサムウェア攻撃を受けた影響で、再提出された材料検査証明書（MTR）の署名が一部不鮮明になり、オーナーの図書管理部門が受領を拒否した。",
     "en": "[Site Handover Sudden Event] During final documentation review, some Mill Test Reports (MTRs) re-submitted by the vendor were slightly blurry due to a ransomware attack on the vendor's server, and the Owner's document control refused to file them."
   },
   "selections": [
     {
-      "id": "5.3-R5.1",
+      "id": "5.3-R4.1",
       "desc": {
         "ja": "待てないので材質証明書（MTC）無しのままPacking Listをベースに配管材料を払い出してもらう",
         "zh": "等不及材质证明书（MTC）了，直接根据装箱单（Packing List）向分包商发放管道材料。",
@@ -4119,7 +3793,7 @@ const STORY_DATA = {
       "score": 3
     },
     {
-      "id": "5.3-R5.2",
+      "id": "5.3-R4.2",
       "desc": {
         "ja": "大至急検査員をベンダーに派遣し、材質証明書（MTC）を集めて現場に共有する",
         "zh": "大至急派人前往供应商工厂，收集材质证明书（MTC）并发送至现场共享。",
@@ -4147,72 +3821,4 @@ const STORY_DATA = {
     "en": "K-senpai"
   }
 }
-};
-
-const ENDING_DATA = {
-  "Perfect PQCM": {
-    "score_range": "150",
-    "title": {
-      "zh": "🏆 完美品质管理经理 (Perfect PQCM)",
-      "ja": "🏆 完璧なクオリティマネージャー (Perfect PQCM)",
-      "en": "🏆 Perfect PQCM"
-    },
-    "desc": {
-      "zh": "质量、交期、成本方面都取得了巨大的成功！为公司利益做出重大贡献，获得了巨额年终奖！你从质量角度完美引导了项目的成功，卓越功绩得到全员认可。请继续作为 Perfect PQCM 迈进！",
-      "ja": "品質/納期/コストともにPJは大成功を収めました！会社の利益にも大きく貢献し、巨額のボーナスを得ることが出来ました。あなたはPQCMとして品質面からプロジェクトを正しくリードし、顕著な功績が認められました。これからも Perfect PQCM として邁進してください！",
-      "en": "The project was a huge success in terms of quality, schedule, and cost! You made a significant contribution to the company's profit and received a huge bonus. You correctly led the project from the quality perspective as a PQCM, and your remarkable achievements were highly recognized. Continue to strive as a Perfect PQCM!"
-    }
-  },
-  "Great PQCM": {
-    "score_range": "131-149",
-    "title": {
-      "zh": "🥈 优秀品质管理经理 (Great PQCM)",
-      "ja": "🥈 優秀なクオリティマネージャー (Great PQCM)",
-      "en": "🥈 Great PQCM"
-    },
-    "desc": {
-      "zh": "虽然在工期 and 成本上受到了一定影响，但项目成员精诚团结共同应对，项目最终成功结束！你作为PQCM做出了正确的应对，项目组给予了极高评价。下一次请以 Perfect PQCM 为目标！",
-      "ja": "納期/コストに影響は出るもプロジェクトメンバー一体となって対応し、プロジェクトは成功裏に終わりました。あなたはPQCMとして正しく対応し、プロジェクトからも良い評価を得ました。次は Perfect PQCM を目指してください！",
-      "en": "Although there were impacts on schedule and cost, the project members worked together to respond, and the project ended successfully. You responded correctly as a PQCM and received good evaluations. Aim for Perfect PQCM next time!"
-    }
-  },
-  "Standard PQCM": {
-    "score_range": "101-130",
-    "title": {
-      "zh": "🥉 合格品质管理经理 (Standard PQCM)",
-      "ja": "🥉 标准的なクオリティマネージャー (Standard PQCM)",
-      "en": "🥉 Standard PQCM"
-    },
-    "desc": {
-      "zh": "一路上克服了各种大大小小的麻烦，项目总算以确保盈余的成绩顺利结束了。你作为PQCM坚守岗位，积累了极为宝贵的项目实战经验。请活用这段宝贵的经历，下一次向 Great PQCM 发起挑战！",
-      "ja": "色々なトラブルを乗り越えながら、何とか黒字確保でプロジェクトを終えることができました。あなたはPQCMとして何とかやり遂げ、貴重な経験を積み増しました。この経験を活かして次は Great PQCM を目指してください！",
-      "en": "Overcoming various troubles, you managed to finish the project with a surplus. You managed to accomplish the task as a PQCM and gained valuable experience. Use this experience to aim for Great PQCM next time!"
-    }
-  },
-  "To be enhanced": {
-    "score_range": "<=100",
-    "title": {
-      "zh": "⚠️ 需持续提升的品质管理经理 (To be enhanced)",
-      "ja": "⚠️ 要改善なクオリティマネージャー (To be enhanced)",
-      "en": "⚠️ To be enhanced"
-    },
-    "desc": {
-      "zh": "项目执行陷入极度混乱，最终工期严重延误、成本大幅超支，给公司利益带来了巨大的负面冲击。你在品质管理和项目平衡上还有极大的学习 and 提升空间，请为了成为真正的 PQCM 而努力！",
-      "ja": "プロジェクトは混迷を極めて大きく採算が悪化し、会社の利益を大きく圧迫しました。あなたもまだまだ勉強の余地があるので、真のPQCMを目指して頑張ってください。",
-      "en": "The project was extremely chaotic, the profitability deteriorated significantly, and the company's profit was heavily squeezed. You still have room for study, please work hard to become a true PQCM!"
-    }
-  },
-  "Game Over": {
-    "score_range": "Game Over",
-    "title": {
-      "zh": "💥 项目资格被取消 (Game Over)",
-      "ja": "💥 プロジェクト出禁 (Game Over)",
-      "en": "💥 Client Disqualification (Game Over)"
-    },
-    "desc": {
-      "zh": "抱歉，你在作为品质管理经理之前，连一名工程师最基本的职业操守和基本准则都未能坚守。项目被业主直接 Disqualify（取消资格）并清退，你的职业生涯遭遇了重大挫折！",
-      "ja": "あなたはPQCM以前にエンジニアとして基本的に守るべき事柄が守られていません。客先からクレームを受けDisqualifyされました。",
-      "en": "We are sorry, but before being a PQCM, you have not followed the basic principles that an engineer must follow. The client has disqualified the project due to ethical/technical issues. Work hard to rebuild your engineering basics!"
-    }
-  }
 };
