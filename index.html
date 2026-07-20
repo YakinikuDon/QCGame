@@ -143,6 +143,32 @@
                 <button id="settlementShareBtn" class="action-btn share-btn">
                     <span>📸</span> <span id="settlementShareText">生成分享图</span>
                 </button>
+                <button id="settlementExplanationBtn" class="action-btn info-btn">
+                    <span>📖</span> <span id="settlementExplanationText">观看解说</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Explanation Screen -->
+        <section class="settlement-screen hidden" id="explanationScreen">
+            <div class="settlement-card explanation-card">
+                <div class="certificate-border">
+                    <div class="certificate-content">
+                        <div class="cert-header">
+                            <span class="cert-star">★</span>
+                            <h2 class="cert-title-main" id="explanationTitle">未获得满分问题的答题解说</h2>
+                            <span class="cert-star">★</span>
+                        </div>
+                        <div class="explanation-list" id="explanationList">
+                            <!-- Dynamically populated -->
+                        </div>
+                    </div>
+                </div>
+                <div class="settlement-actions" style="margin-top: 15px;">
+                    <button id="explanationBackBtn" class="action-btn">
+                        <span>⬅️</span> <span id="explanationBackText">返回证书</span>
+                    </button>
+                </div>
             </div>
         </section>
     </main>

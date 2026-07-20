@@ -1260,3 +1260,78 @@ body {
     filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.6));
 }
 
+/* --- Explanation Screen & Review Review --- */
+.explanation-card {
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.explanation-list {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin: 15px 0;
+    padding-right: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-height: 55vh;
+}
+
+.explanation-item {
+    border: 2px solid var(--color-manga-border);
+    border-radius: 12px;
+    padding: 12px;
+    background-color: #fafafa;
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+}
+
+.explanation-item-title {
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    color: var(--color-pastel-pink);
+    margin-bottom: 6px;
+    border-bottom: 1px dashed var(--color-manga-border);
+    padding-bottom: 4px;
+}
+
+.explanation-item-choice {
+    font-size: 0.85rem;
+    color: #444;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.explanation-score-tag {
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    background-color: var(--color-pastel-pink);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 10px;
+    border: 1px solid var(--color-manga-border);
+}
+
+.explanation-item-text {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    background-color: #fff9ea;
+    border-left: 4px solid var(--color-pastel-yellow);
+    padding: 8px;
+    border-radius: 4px;
+    color: var(--color-manga-border);
+    white-space: pre-line;
+}
+
+.explanation-perfect-msg {
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: #2ecc71;
+    margin: 40px 0;
+    text-shadow: 1px 1px 0 #000;
+}
+
+

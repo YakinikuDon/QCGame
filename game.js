@@ -180,7 +180,14 @@ const els = {
     settlementShareText: document.getElementById("settlementShareText"),
     settlementRestartBtn: document.getElementById("settlementRestartBtn"),
     settlementTreeBtn: document.getElementById("settlementTreeBtn"),
-    settlementShareBtn: document.getElementById("settlementShareBtn")
+    settlementShareBtn: document.getElementById("settlementShareBtn"),
+    settlementExplanationBtn: document.getElementById("settlementExplanationBtn"),
+    settlementExplanationText: document.getElementById("settlementExplanationText"),
+    explanationScreen: document.getElementById("explanationScreen"),
+    explanationTitle: document.getElementById("explanationTitle"),
+    explanationList: document.getElementById("explanationList"),
+    explanationBackBtn: document.getElementById("explanationBackBtn"),
+    explanationBackText: document.getElementById("explanationBackText")
 };
 
 // Helper: Find selection by its ID across all chapters
@@ -217,6 +224,7 @@ function renderGameStep() {
 
     // Hide settlement screen by default during gameplay
     els.settlementScreen.classList.add("hidden");
+    els.explanationScreen.classList.add("hidden");
     els.dialoguePanel.classList.remove("hidden");
     els.optionsPanel.classList.remove("hidden");
     
@@ -629,7 +637,8 @@ function showSettlement(isGameOver) {
             date: "颁发日期：",
             restart: "重新开始",
             tree: "剧情树",
-            share: "生成分享图"
+            share: "生成分享图",
+            explanationBtn: "观看解说"
         },
         ja: {
             certCongrats: "新任クオリティマネージャー：",
@@ -638,7 +647,8 @@ function showSettlement(isGameOver) {
             date: "授与日：",
             restart: "リスタート",
             tree: "ストーリーツリー",
-            share: "認定証を保存"
+            share: "認定証を保存",
+            explanationBtn: "解説を見る"
         },
         en: {
             certCongrats: "Congratulations to new QC Manager:",
@@ -647,7 +657,8 @@ function showSettlement(isGameOver) {
             date: "Date Issued:",
             restart: "Restart",
             tree: "Story Tree",
-            share: "Share Certificate"
+            share: "Share Certificate",
+            explanationBtn: "View Explanations"
         }
     };
 
@@ -666,6 +677,7 @@ function showSettlement(isGameOver) {
     els.settlementRestartText.textContent = labels[gameState.lang].restart;
     els.settlementTreeText.textContent = labels[gameState.lang].tree;
     els.settlementShareText.textContent = labels[gameState.lang].share;
+    els.settlementExplanationText.textContent = labels[gameState.lang].explanationBtn;
 
     // Trigger confetti if good ending
     if (!isGameOver && totalScore >= 101) {
@@ -986,6 +998,8 @@ els.settlementTreeBtn.addEventListener("click", () => {
     els.treeDialog.showModal();
 });
 els.settlementShareBtn.addEventListener("click", shareCertificate);
+els.settlementExplanationBtn.addEventListener("click", showExplanationsPage);
+els.explanationBackBtn.addEventListener("click", hideExplanationsPage);
 
 // --- 12. PROGRESS ROAD VISUALIZATION ---
 function updateProgressRoad() {
@@ -1034,6 +1048,195 @@ function updateProgressRoad() {
     if (miniQ) {
         miniQ.style.left = `${percent}%`;
     }
+}
+
+// --- 13. EXPLANATION PAGE LOGIC & DATA ---
+const EXPLANATIONS = {
+    "1.1.1": {
+        zh: "合同文件中的要求（特别是带有“shall”字样的条款）是必须遵守的强制要求，无法擅自更改。但在工程中，必然存在向业主提交偏差申请（Deviation）或澄清说明（Clarification）的沟通流程。因此，对于那些死守反倒会导致项目混乱的苛刻合同条款，应尽早与业主及项目内部协商达成一致的解决办法。",
+        ja: "契約図書の要求事項（特に”shall”で書かれている個所）は必須の要求なので、勝手に変更することはできませんが、必ずDeviationやClarificationなど客先と確認するプロトコールがあるはずなので、遵守することが余計にプロジェクトを混乱させるような要求事項は、早めに客先およびプロジェクト内で対応方法を合意しましょう。",
+        en: "Contractual requirements (especially those marked with \"shall\") are mandatory and cannot be changed arbitrarily. However, there is always a protocol like Deviation or Clarification to align with the client. For requirements where strict compliance would unnecessarily disrupt the project, we should agree on a resolution with both the client and the internal project team early on."
+    },
+    "1.1.3": {
+        zh: "合同文件中的要求（特别是带有“shall”字样的条款）是必须遵守的强制要求，无法擅自更改。但在工程中，必然存在向业主提交偏差申请（Deviation）或澄清说明（Clarification）的沟通流程。因此，对于那些死守反倒会导致项目混乱的苛刻合同条款，应尽早与业主及项目内部协商达成一致的解决办法。",
+        ja: "契約図書の要求事項（特に”shall”で書かれている個所）は必須の要求なので、勝手に変更することはできませんが、必ずDeviationやClarificationなど客先と確認するプロトコールがあるはずなので、遵守することが余計にプロジェクトを混乱させるような要求事項は、早めに客先およびプロジェクト内で対応方法を合意しましょう。",
+        en: "Contractual requirements (especially those marked with \"shall\") are mandatory and cannot be changed arbitrarily. However, there is always a protocol like Deviation or Clarification to align with the client. For requirements where strict compliance would unnecessarily disrupt the project, we should agree on a resolution with both the client and the internal project team early on."
+    },
+    "1.2.1": {
+        zh: "组建一个便于自己管理的高效且强有力的团队，是 PQCM 在项目初期的关键任务。然而，现实中很难在刚开始就组建起百分之百完美的团队。如何在有限的时间内高效召集人手（匹配的能力与人数），并构建起合理的组织结构进行有效运营，最能体现 PQCM 的管理水平。",
+        ja: "自分が運営しやすい強固なチームを組織するのは、PQCMにとって初期の重要なタスクですが、100点満点のチームは中々できません。\nそんな時に、どうやってタイムリーに人財（能力×人数）を集めるかと、それをどういう組織にして効果的に運営するかがPQCMの腕の見せ所です。",
+        en: "Building a strong team that is easy to manage is a key early task for a PQCM, but a 100-point perfect team is rarely possible from the start. How to timely gather resources (capability x headcount) and structure them into an effective organization is where the PQCM's true skills are tested."
+    },
+    "1.2.2": {
+        zh: "组建一个便于自己管理的高效且强有力的团队，是 PQCM 在项目初期的关键任务。然而，现实中很难在刚开始就组建起百分之百完美的团队。如何在有限的时间内高效召集人手（匹配的能力与人数），并构建起合理的组织结构进行有效运营，最能体现 PQCM 的管理水平。",
+        ja: "自分が運営しやすい強固なチームを組織するのは、PQCMにとって初期の重要なタスクですが、100点満点のチームは中々できません。\nそんな時に、どうやってタイムリーに人財（能力×人数）を集めるかと、それをどういう組織にして効果的に運営するかがPQCMの腕の見せ所です。",
+        en: "Building a strong team that is easy to manage is a key early task for a PQCM, but a 100-point perfect team is rarely possible from the start. How to timely gather resources (capability x headcount) and structure them into an effective organization is where the PQCM's true skills are tested."
+    },
+    "1.3.2": {
+        zh: "虽然我们需要尊重项目管理部（PMT）分配的预算，但 PQCM 的核心任务是带领团队确保质量合格的设备和材料能够按时运抵现场或模块场地。因此，即使需要与 PMT 沟通协商追加必要的工时预算，也必须确保质量控制任务的切实履行。",
+        ja: "PMTから配賦されるBudgetはリスペクトする必要はありますが、PQCMのタスクは、チームを指揮して品質の担保された資機材をタイムリーに現場/モジュールヤードに届けることなので、それに必要なMHはPMTの合意を得ながら追加してでも、確実にタスクをこなさなければなりません。",
+        en: "While we should respect the budget allocated by the PMT, the PQCM's primary task is to lead the team to deliver quality-assured equipment and materials to the site or module yard on time. Therefore, even if we must negotiate with the PMT to add necessary man-hour budget, we must secure the execution of our tasks."
+    },
+    "3.1-A.1": {
+        zh: "没有足够的人手，业务便无法开展，但如果不认真审查应当审查的图纸也是极大的失职。如果从项目一开始就强行让有限的团队成员过度加班，会严重影响后续团队的长久运营。因此，应当及时配备业务所需的资源，并根据风险大小实施高效的团队运营。",
+        ja: "必要なチーム員が居ないと業務が進みません、かといってReviewすべき図書をReviewしないのは大問題であり、序盤から限られたチーム員に無理を強いるのは後々のチームの運営に影響するので、業務に必要な人財はタイムリーに備えつつ、リスクに応じた効率的なチーム運営を心がけましょう。",
+        en: "Without necessary team members, work cannot proceed; however, skipping document reviews is a major issue. Forcing limited team members to overwork from the start will hurt team dynamics later. You should secure necessary resources in a timely manner while aiming for risk-based, efficient team operations."
+    },
+    "3.1-A.2": {
+        zh: "没有足够的人手，业务便无法开展，但如果不认真审查应当审查的图纸也是极大的失职。如果从项目一开始就强行让有限的团队成员过度加班，会严重影响后续团队的长久运营。因此，应当及时配备业务所需的资源，并根据风险大小实施高效的团队运营。",
+        ja: "必要なチーム員が居ないと業務が進みません、かといってReviewすべき図書をReviewしないのは大問題であり、序盤から限られたチーム員に無理を強いるのは後々のチームの運営に影響するので、業務に必要な人財はタイムリーに備えつつ、リスクに応じた効率的なチーム運営を心がけましょう。",
+        en: "Without necessary team members, work cannot proceed; however, skipping document reviews is a major issue. Forcing limited team members to overwork from the start will hurt team dynamics later. You should secure necessary resources in a timely manner while aiming for risk-based, efficient team operations."
+    },
+    "3.1.1": {
+        zh: "标准的流程通常是先由项目管理部（PMT）委托对询价书（Requisition）模板进行审查，随后由各专业部委托对具体的询价书进行个别审查。因此，首先应当将项目共性的要求纳入询价书的空白模板中，同时提炼出质量控制（QC）的特殊要求并在团队内共享，以便在个别审查时能够毫无遗漏地将特殊要求融入其中。",
+        ja: "Req.のFormat ReviewがPMTから依頼され、それを用いて個別のReq. Reviewが専門部から依頼されるのが通常の流れなので、まずはプロジェクト共通の要求事項はReq.のBlank Formに盛り込んでもらい、並行してQCとして特殊要求を取り出してチーム内で共有した上で、個別のReq. Review時にもれなく特殊要求を盛り込むようにしましょう。",
+        en: "The standard workflow is that the PMT requests a Blank Form/Template Review first, followed by individual Requisition Reviews from engineering disciplines. Thus, common project requirements should first be incorporated into the Blank Requisition Form. Concurrently, QC special requirements should be extracted and shared in the team so they can be seamlessly built into individual discipline reviews."
+    },
+    "3.1.2": {
+        zh: "标准的流程通常是先由项目管理部（PMT）委托对询价书（Requisition）模板进行审查，随后由各专业部委托对具体的询价书进行个别审查。因此，首先应当将项目共性的要求纳入询价书的空白模板中，同时提炼出质量控制（QC）的特殊要求并在团队内共享，以便在个别审查时能够毫无遗漏地将特殊要求融入其中。",
+        ja: "Req.のFormat ReviewがPMTから依頼され、それを用いて個別のReq. Reviewが専門部から依頼されるのが通常の流れなので、まずはプロジェクト共通の要求事項はReq.のBlank Formに盛り込んでもらい、並行してQCとして特殊要求を取り出してチーム内で共有した上で、個別のReq. Review時にもれなく特殊要求を盛り込むようにしましょう。",
+        en: "The standard workflow is that the PMT requests a Blank Form/Template Review first, followed by individual Requisition Reviews from engineering disciplines. Thus, common project requirements should first be incorporated into the Blank Requisition Form. Concurrently, QC special requirements should be extracted and shared in the team so they can be seamlessly built into individual discipline reviews."
+    },
+    "3.2-A.1": {
+        zh: "缺少团队成员会导致工作无法运转，但不进行必要的技术评审（TBE）是严重的安全隐患。如果从前期就开始勉强有限的人手过度负荷，会拖累团队后续的健康运行。因此，要在合适的时间节点配备人员，并积极借助资深专家的经验，根据风险程度来进行高效的运营管理。",
+        ja: "必要なチーム員が居ないと業務が進みません、かといって必要なテクエバをしないのは大問題であり、序盤から限られたチーム員に無理を強いるのは後々のチームの運営に影響するので、業務に必要な人財はタイムリーに備えつつ、シニアの知見なども借りてリスクに応じた効率的なチーム運営を心がけましょう。",
+        en: "Without necessary team members, work stalls; however, failing to perform required Technical Bid Evaluations (TBE) is a major quality risk. Forcing limited members to stretch too thin early on will impact team health later. Secure required headcount timely and leverage senior expertise to run efficient, risk-based operations."
+    },
+    "3.2-A.2": {
+        zh: "缺少团队成员会导致工作无法运转，但不进行必要的技术评审（TBE）是严重的安全隐患。如果从前期就开始勉强有限的人手过度负荷，会拖累团队后续的健康运行。因此，要在合适的时间节点配备人员，并积极借助资深专家的经验，根据风险程度来进行高效的运营管理。",
+        ja: "必要なチーム員が居ないと業務が進みません、かといって必要なテクエバをしないのは大問題であり、序盤から限られたチーム員に無理を強いるのは後々のチームの運営に影響するので、業務に必要な人財はタイムリーに備えつつ、シニアの知見なども借りてリスクに応じた効率的なチーム運営を心がけましょう。",
+        en: "Without necessary team members, work stalls; however, failing to perform required Technical Bid Evaluations (TBE) is a major quality risk. Forcing limited members to stretch too thin early on will impact team health later. Secure required headcount timely and leverage senior expertise to run efficient, risk-based operations."
+    },
+    "3.2-B.1": {
+        zh: "在技术评审（TBE）阶段就由 QC 深入介入并向投标人详细确认质量要求的做法在工程承包商中较为少见。因此，一些新加入的契约工程师虽然 QC 经验丰富，但也可能是第一次接触 TBE。为了切实做好这一工作，不能完全依赖个人发挥，在团队内统一评审标准和质量要求也至关重要。",
+        ja: "テクエバからQCが入り込んで品質要求事項を深くBidderを確認するコントラクターは珍しいので、新規ASエンジニアの中にはQCの経験は豊富でもテクエバは初めてという人も居る可能性があります。\n確実に必要なテクエバを実施するために、個人任せにせずに、チーム内でレベル感を調整することも重要です。",
+        en: "Contractors that involve QC deep in the TBE stage to verify quality requirements with bidders are rare. Some new contract engineers might have rich QC experience but be new to TBE. To ensure execution, do not leave it to individuals; aligning the technical standards and levels within the team is key."
+    },
+    "3.2-B.2": {
+        zh: "在技术评审（TBE）阶段就由 QC 深入介入并向投标人详细确认质量要求的做法在工程承包商中较为少见。因此，一些新加入的契约工程师虽然 QC 经验丰富，但也可能是第一次接触 TBE。为了切实做好这一工作，不能完全依赖个人发挥，在团队内统一评审标准和质量要求也至关重要。",
+        ja: "テクエバからQCが入り込んで品質要求事項を深くBidderを確認するコントラクターは珍しいので、新規ASエンジニアの中にはQCの経験は豊富でもテクエバは初めてという人も居る可能性があります。\n確実に必要なテクエバを実施するために、個人任せにせずに、チーム内でレベル感を調整することも重要です。",
+        en: "Contractors that involve QC deep in the TBE stage to verify quality requirements with bidders are rare. Some new contract engineers might have rich QC experience but be new to TBE. To ensure execution, do not leave it to individuals; aligning the technical standards and levels within the team is key."
+    },
+    "3.2.1": {
+        zh: "原材料的特殊材料要求如果拖到设备制造期间或发货前才被发现，最坏的情况可能需要重新采购原材料，从而对项目进度造成不可估量的重大延误。因此，凡是涉及成本和质量的重大要求，必须在下达采购订单（PO）前由投标人确认并纳入合同中，务必在技术评审（TBE）阶段彻底确认清楚。",
+        ja: "素材の特殊要求は、後々機器製作中や出荷前に見つかると、最悪の場合、素材の再調達まで遡って大きなスケジュールインパクトに繋がり、さらにコストに影響する要求事項はPO.発行までに確実にBidderに取り込んでもらう必要があるので、テクエバ時に確実に確認しましょう。",
+        en: "Special material requirements discovered late during fabrication or pre-shipping can, at worst, require re-procuring raw materials, causing huge schedule and cost impacts. All cost-impacting requirements must be secured in the vendor's scope before PO award, so confirm them thoroughly during TBE."
+    },
+    "3.2.2": {
+        zh: "原材料的特殊材料要求如果拖到设备制造期间或发货前才被发现，最坏的情况可能需要重新采购原材料，从而对项目进度造成不可估量的重大延误。因此，凡是涉及成本和质量的重大要求，必须在下达采购订单（PO）前由投标人确认并纳入合同中，务必在技术评审（TBE）阶段彻底确认清楚。",
+        ja: "素材の特殊要求は、後々機器製作中や出荷前に見つかると、最悪の場合、素材の再調達まで遡って大きなスケジュールインパクトに繋がり、さらにコストに影響する要求事項はPO.発行までに確実にBidderに取り込んでもらう必要があるので、テクエバ時に確実に確認しましょう。",
+        en: "Special material requirements discovered late during fabrication or pre-shipping can, at worst, require re-procuring raw materials, causing huge schedule and cost impacts. All cost-impacting requirements must be secured in the vendor's scope before PO award, so confirm them thoroughly during TBE."
+    },
+    "3.3-A.1": {
+        zh: "对于供应商（Vendor）而言，凡是前期在询价书（Req.）中漏掉的质量条款都属于额外的合同变更。但如果直接违反质量规范，对业主来说就是严重的不符合项。因此，即使是事后补救，那些必须遵守的核心规范依然不可妥协。不过，通过与业主积极谈判，部分辅助性的条款或许能获得一定的豁免或缓和。",
+        ja: "Req.に載せ忘れた要求事項は全てVendorにとって追加です。\nかといって要求事項からの逸脱は客先からすれば不適合なので、後出しになったとしても、遵守しなければならない要求事項は遵守しなければなりません。　ただし客先との交渉次第では、ある部分の要求事項が緩和される場合もあるかもしれません。",
+        en: "Any requirement forgotten in the Requisition will be treated as an extra cost variation by the Vendor. However, deviations from specifications are unacceptable non-conformances to the client. Even if it is a late addition, mandatory quality requirements must be enforced. Depending on client negotiation, some items may be relaxed."
+    },
+    "3.3-A.2": {
+        zh: "对于供应商（Vendor）而言，凡是前期在询价书（Req.）中漏掉的质量条款都属于额外的合同变更。但如果直接违反质量规范，对业主来说就是严重的不符合项。因此，即使是事后补救，那些必须遵守的核心规范依然不可妥协。不过，通过与业主积极谈判，部分辅助性的条款或许能获得一定的豁免或缓和。",
+        ja: "Req.に載せ忘れた要求事項は全てVendorにとって追加です。\nかといって要求事項からの逸脱は客先からすれば不適合なので、後出しになったとしても、遵守しなければならない要求事項は遵守しなければなりません。　ただし客先との交渉次第では、ある部分の要求事項が緩和される場合もあるかもしれません。",
+        en: "Any requirement forgotten in the Requisition will be treated as an extra cost variation by the Vendor. However, deviations from specifications are unacceptable non-conformances to the client. Even if it is a late addition, mandatory quality requirements must be enforced. Depending on client negotiation, some items may be relaxed."
+    }
+};
+
+function showExplanationsPage() {
+    const lang = gameState.lang;
+    const pageLabels = {
+        zh: {
+            title: "未获得满分问题的答题解说",
+            back: "返回证书",
+            perfect: "恭喜！您获得了满分，没有任何答错的选项！",
+            yourChoice: "您的选择",
+            score: "得分"
+        },
+        ja: {
+            title: "クオリティマネジメント解説",
+            back: "認定証へ戻る",
+            perfect: "おめでとうございます！満点のため、解説が必要な誤選択はありません！",
+            yourChoice: "あなたの選択",
+            score: "得点"
+        },
+        en: {
+            title: "Quality Review & Explanations",
+            back: "Back to Certificate",
+            perfect: "Congratulations! You got a perfect score! There are no incorrect choices to review.",
+            yourChoice: "Your Choice",
+            score: "Score"
+        }
+    };
+
+    els.explanationTitle.textContent = pageLabels[lang].title;
+    els.explanationBackText.textContent = pageLabels[lang].back;
+    els.explanationList.innerHTML = "";
+
+    // Find all selections where score was not 10
+    const incorrectSelections = [];
+    gameState.path.forEach(nodeId => {
+        const sel = findSelectionById(nodeId);
+        // Only show actual question selections that scored less than 10 points
+        if (sel && sel.score < 10) {
+            incorrectSelections.push(sel);
+        }
+    });
+
+    if (incorrectSelections.length === 0) {
+        const perfectMsg = document.createElement("div");
+        perfectMsg.className = "explanation-perfect-msg";
+        perfectMsg.textContent = pageLabels[lang].perfect;
+        els.explanationList.appendChild(perfectMsg);
+    } else {
+        incorrectSelections.forEach(sel => {
+            const chId = getChapterIdOfSelection(sel.id);
+            const ch = STORY_DATA[chId];
+            if (!ch) return;
+
+            const item = document.createElement("div");
+            item.className = "explanation-item";
+
+            // Title (Chapter title)
+            const title = document.createElement("h3");
+            title.className = "explanation-item-title";
+            title.textContent = `${ch.chapter} ${ch.title[lang] || ""}`;
+            item.appendChild(title);
+
+            // Choice details
+            const choiceDiv = document.createElement("div");
+            choiceDiv.className = "explanation-item-choice";
+            choiceDiv.innerHTML = `<span><strong>${pageLabels[lang].yourChoice}:</strong> ${sel.desc[lang]}</span>
+                                  <span class="explanation-score-tag">${pageLabels[lang].score}: ${sel.score} / 10</span>`;
+            item.appendChild(choiceDiv);
+
+            // Explanation text
+            const expText = document.createElement("div");
+            expText.className = "explanation-item-text";
+            
+            // Fetch explanation or fall back to placeholders
+            let exp = EXPLANATIONS[sel.id];
+            let expString = "";
+            if (exp && exp[lang]) {
+                expString = exp[lang];
+            } else {
+                const placeholders = {
+                    zh: "【暂无该选项解说】请继续努力，尝试选择满分选项！",
+                    ja: "【この選択肢の解説は現在準備中です】引き続き満点を目指して挑戦してください！",
+                    en: "[No explanation available for this option yet] Please keep trying to find the perfect choice!"
+                };
+                expString = placeholders[lang];
+            }
+            expText.textContent = expString;
+            item.appendChild(expText);
+
+            els.explanationList.appendChild(item);
+        });
+    }
+
+    els.settlementScreen.classList.add("hidden");
+    els.explanationScreen.classList.remove("hidden");
+}
+
+function hideExplanationsPage() {
+    els.explanationScreen.classList.add("hidden");
+    els.settlementScreen.classList.remove("hidden");
 }
 
 // Load the start welcome node
