@@ -3,6 +3,8 @@
    Aesthetic: Japanese Cute Manga / Pastel Comic Style
    ========================================================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 /* --- Custom Fonts & Variables --- */
 :root {
     --color-bg-primary: #fff5f8;
@@ -1065,4 +1067,112 @@ body {
         transition: none !important;
         animation: none !important;
     }
+}
+
+/* --- Dragon Quest Retro Mode (First Screen) --- */
+.dq-start-mode {
+    background-color: #000000 !important;
+}
+
+/* Make the game container look like a retro arcade frame */
+.dq-start-mode .game-container {
+    background-color: #000000 !important;
+    border: 6px double #ffffff !important;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Dialogue panel in DQ mode */
+.dq-start-mode .dialogue-panel {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border-top: 4px double #ffffff !important;
+}
+
+.dq-start-mode .dialogue-box {
+    background-color: #000000 !important;
+    border: 4px double #ffffff !important;
+    border-radius: 4px !important;
+    box-shadow: 0 0 0 4px #000000 !important;
+    color: #ffffff !important;
+}
+
+.dq-start-mode .dialogue-text {
+    font-family: 'Press Start 2P', monospace !important;
+    font-size: 0.75rem !important;
+    line-height: 2 !important;
+    letter-spacing: 1px !important;
+    color: #ffffff !important;
+}
+
+/* Float Name tag in DQ mode */
+.dq-start-mode .character-name-tag {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border: 4px double #ffffff !important;
+    border-radius: 4px !important;
+    box-shadow: 0 0 0 4px #000000 !important;
+    font-family: 'Press Start 2P', monospace !important;
+    font-size: 0.75rem !important;
+}
+
+/* Options panel in DQ mode */
+.dq-start-mode .options-panel {
+    background-color: #000000 !important;
+    border-top: 4px double #ffffff !important;
+}
+
+.dq-start-mode .options-list {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+/* Pixel Start Button */
+.dq-pixel-start-btn {
+    font-family: 'Press Start 2P', monospace !important;
+    font-size: 1.2rem !important;
+    color: #ffd166 !important;
+    background-color: #000000 !important;
+    border: 4px double #ffffff !important;
+    border-radius: 4px !important;
+    box-shadow: 0 0 0 4px #000000 !important;
+    padding: 15px 40px !important;
+    cursor: pointer !important;
+    text-transform: uppercase !important;
+    animation: dq-flash 1.2s infinite !important;
+    text-align: center !important;
+    transition: none !important;
+    transform: none !important;
+}
+
+.dq-pixel-start-btn:hover {
+    color: #ffffff !important;
+    background-color: #111111 !important;
+    transform: scale(1.05) !important;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5) !important;
+}
+
+.dq-pixel-start-btn:active {
+    transform: scale(0.95) !important;
+}
+
+@keyframes dq-flash {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+}
+
+.dq-start-mode .game-stage {
+    background-color: #000000 !important;
+}
+.dq-start-mode .stage-bg {
+    border: 4px double #ffffff !important;
+    border-radius: 4px !important;
+    box-shadow: 0 0 0 4px #000000 !important;
+    margin: 10px !important;
+    height: calc(100% - 20px) !important;
+    width: calc(100% - 20px) !important;
 }

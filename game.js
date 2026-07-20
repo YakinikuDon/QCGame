@@ -208,6 +208,13 @@ function getChapterIdOfSelection(selId) {
 
 // --- 4. RENDER GAME STEP ---
 function renderGameStep() {
+    // Toggle Dragon Quest retro mode for the start screen
+    if (gameState.currentId === "start") {
+        document.body.classList.add("dq-start-mode");
+    } else {
+        document.body.classList.remove("dq-start-mode");
+    }
+
     // Hide settlement screen by default during gameplay
     els.settlementScreen.classList.add("hidden");
     els.dialoguePanel.classList.remove("hidden");
@@ -273,8 +280,13 @@ function renderGameStep() {
     if (node.selections && node.selections.length > 0) {
         node.selections.forEach(sel => {
             const btn = document.createElement("button");
-            btn.className = "option-btn";
-            btn.textContent = sel.desc[gameState.lang];
+            if (gameState.currentId === "start") {
+                btn.className = "dq-pixel-start-btn";
+                btn.textContent = "START";
+            } else {
+                btn.className = "option-btn";
+                btn.textContent = sel.desc[gameState.lang];
+            }
             btn.addEventListener("click", () => selectChoice(sel.id));
             els.optionsList.appendChild(btn);
         });
