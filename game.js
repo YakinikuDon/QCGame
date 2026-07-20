@@ -705,7 +705,7 @@ function showSettlement(isGameOver) {
     // Render Certificate Details
     const labels = {
         zh: {
-            certCongrats: "恭喜新进质量经理：",
+            certCongrats: isGameOver ? "新进质量经理评估：" : "恭喜新进质量经理：",
             playerName: "小Q (Q-chan)",
             scoreLabel: "最终得分：",
             seal: "Mr.K导师批准",
@@ -716,7 +716,7 @@ function showSettlement(isGameOver) {
             explanationBtn: "观看解说"
         },
         ja: {
-            certCongrats: "新任クオリティマネージャー：",
+            certCongrats: isGameOver ? "新任クオリティマネージャー評価：" : "新任クオリティマネージャー：",
             playerName: "Qちゃん",
             scoreLabel: "最終得点：",
             seal: "Mr.K指導官承認",
@@ -727,7 +727,7 @@ function showSettlement(isGameOver) {
             explanationBtn: "解説を見る"
         },
         en: {
-            certCongrats: "Congratulations to new QC Manager:",
+            certCongrats: isGameOver ? "QC Manager Evaluation:" : "Congratulations to new QC Manager:",
             playerName: "Q-chan",
             scoreLabel: "Final Score:",
             seal: "APPROVED BY MR.K",
