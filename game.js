@@ -454,7 +454,18 @@ function nextStoryStep() {
 
     if (activeSubs.length > 0) {
         gameState.pendingSubChapters = activeSubs;
-        const firstSub = gameState.pendingSubChapters.shift();
+        let firstSub = gameState.pendingSubChapters.shift();
+
+        // Randomness logic: detour 4.2-A and 5.3-A to sudden incidents (40% probability)
+        if ((firstSub === "4.2-A" || firstSub === "5.3-A") && Math.random() < 0.4) {
+            const randomIncidentId = firstSub + "-R1";
+            if (STORY_DATA[randomIncidentId]) {
+                // Re-insert original sub-chapter to pending list so it runs right after detour
+                gameState.pendingSubChapters.unshift(firstSub);
+                firstSub = randomIncidentId;
+            }
+        }
+
         gameState.currentId = firstSub;
         if (!gameState.visitedNodes.includes(firstSub)) {
             gameState.visitedNodes.push(firstSub);

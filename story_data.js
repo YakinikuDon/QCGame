@@ -2798,6 +2798,140 @@ const STORY_DATA = {
       "ja": "ナレーション",
       "en": "Narrator"
     }
+  }  ,
+  "4.2-A-R1": {
+    "chapter": "4.2-A-R1",
+    "title": {
+      "zh": "突发状况：材料证书缺陷",
+      "ja": "突発事態：材料証明書の不備",
+      "en": "Sudden Incident: Material Certificate Defect"
+    },
+    "avatar": "thinking",
+    "npcAvatar": "strict",
+    "charName": {
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
+    },
+    "desc": {
+      "zh": "在制作开始前，检查人员突然发现，焊接材料（焊条/焊剂）的质量证明书上缺少第三方检验员的签字，若等待重新签字将导致开工延迟。K前辈看着你，询问你的应对策略。",
+      "ja": "製作開始直前、溶接材料（溶接棒/フラックス）の品質証明書に第三者検査官の署名が漏れていることが突然判明しました。再署名を待つと着工が遅れます。K先輩はあなたを見て、対応策を求めています。",
+      "en": "Just before manufacturing starts, the inspector suddenly discovers that the quality certificate for the welding materials (electrodes/flux) is missing the third-party inspector's signature. Waiting for a re-signature will delay the start. K-senpai looks at you and asks for your strategy."
+    },
+    "selections": [
+      {
+        "id": "4.2-A-R1.1",
+        "desc": {
+          "zh": "立即核对批号并协调第三方检验员通过数字化在线确认，出具临时放行单以避免延误，同时限期补正证书。",
+          "ja": "直ちにバッチ番号を確認し、第三者検査官とデジタルオンラインでの一時確認を調整し、仮のリリース証を発行して遅延を防ぎつつ、期限内に正式な証明書を補正させる。",
+          "en": "Verify batch numbers immediately, coordinate with the third-party inspector for digital online verification, and issue a temporary release note to avoid delays while correcting the certificate within a deadline."
+        },
+        "influence": {
+          "zh": "处理得当！既严守了质量追溯性，又避免了停工延迟，赢得了团队的信任。",
+          "ja": "見事な対応です！品質の追跡可能性を厳守しつつ、稼働停止による遅延も防ぎ、チームの信頼を獲得しました。",
+          "en": "Well handled! This strictly maintains quality traceability while avoiding idle delays, earning the team's trust."
+        },
+        "flags": [],
+        "score": 10
+      },
+      {
+        "id": "4.2-A-R1.2",
+        "desc": {
+          "zh": "全面停工，坚持必须等待正式的纸质改正证书送达后才能开始焊接，即使会耽误2天工期。",
+          "ja": "全面着工を停止し、たとえ2日間の工期遅延が発生したとしても、正式な修正済み紙の証明書が届くまで溶接開始を待つと主張する。",
+          "en": "Halt welding completely and insist on waiting for the official corrected hardcopy certificate to arrive, even if it delays the schedule by 2 days."
+        },
+        "influence": {
+          "zh": "虽然确保了合规性，但由于决策过于僵化，导致项目出现了不必要的工期延误。",
+          "ja": "コンプライアンスは確保されましたが、あまりにも硬直した意思決定のため、プロジェクトに不必要な工期遅延を招きました。",
+          "en": "Although compliance is ensured, the overly rigid decision leads to unnecessary project schedule delays."
+        },
+        "flags": [],
+        "score": 5
+      },
+      {
+        "id": "4.2-A-R1.3",
+        "desc": {
+          "zh": "让车间直接开始焊接，把证书问题搁置一旁，计划等全部焊接完成后再设法补办签字。",
+          "ja": "ショップにそのまま溶接を開始させ、証明書の問題は後回しにして、すべての溶接が完了した後に署名を補正する方法を考える。",
+          "en": "Allow the shop to start welding immediately, setting the certificate issue aside, and plan to get the signature sorted out after welding is fully completed."
+        },
+        "influence": {
+          "zh": "危险的选择！一旦后期证书无法补办或材料被判定为不合格，将导致所有已焊焊缝全部返工报废。",
+          "ja": "危険な選択です！後から証明書が補正できない、または材料が不合格と判定された場合、溶接済みのすべての箇所が手直し・廃棄処分になります。",
+          "en": "A risky choice! If the certificate cannot be resolved later or the material is rejected, all completed welds will require total rework and scrap."
+        },
+        "flags": [],
+        "score": 0
+      }
+    ]
+  },
+  "5.3-A-R1": {
+    "chapter": "5.3-A-R1",
+    "title": {
+      "zh": "突发状况：设计变更遗漏",
+      "ja": "突発事態：設計変更の漏れ",
+      "en": "Sudden Incident: Missed Design Change"
+    },
+    "avatar": "thinking",
+    "npcAvatar": "strict",
+    "charName": {
+      "zh": "K前辈",
+      "ja": "K先輩",
+      "en": "K-senpai"
+    },
+    "desc": {
+      "zh": "在进行气体处理单元的最终联合检查（Walkdown）前，业主运营团队突然投诉：某个容器的检修平台钢梯与最新版3D模型不符（现场少焊了转角平台）。K前辈询问你如何解决该突发偏差。",
+      "ja": "ガス処理ユニットの最終合同検査（ウォークダウン）直前、オーナーの運転チームから「ある容器のメンテナンスステージの鋼製はしごが最新の3Dモデルと一致していない（現場に踊り場が足りない）」と突然指摘されました。K先輩は対応策を求めています。",
+      "en": "Right before the final walkdown of the gas processing unit, the owner's operations team suddenly complains that a vessel's maintenance platform ladder does not match the latest 3D model (a landing platform was missed in fabrication). K-senpai asks how you will resolve this deviation."
+    },
+    "selections": [
+      {
+        "id": "5.3-A-R1.1",
+        "desc": {
+          "zh": "立即开具不合格项报告（NCR），组织设计和安全工程评估当前钢梯的合规性，并向业主运营经理提交正式偏差审批报告。",
+          "ja": "直ちに不適合報告書（NCR）を発行し、設計および安全エンジニアリング部門に現在のラダーの安全性を評価させ、オーナーの運転マネージャーに正式な偏差承認報告書を提出する。",
+          "en": "Issue a Non-Conformance Report (NCR) immediately, organize engineering and safety reviews of the current ladder, and submit a formal deviation approval report to the owner's operations manager."
+        },
+        "influence": {
+          "zh": "非常专业！严格遵守了不合格项管理流程，通过工程评估 and 正式审批打消了业主的顾虑，避免了盲目整改。",
+          "ja": "極めてプロフェッショナルな対応です！不適合管理プロセスを厳守し、エンジニアリング評価と正式な承認手続きを通じて、オーナーの懸念を払拭し、的外れな手直しを防ぎました。",
+          "en": "Highly professional! Strictly followed the non-conformance management workflow, resolving the owner's concerns via engineering review and formal approval without blind rework."
+        },
+        "flags": [],
+        "score": 10
+      },
+      {
+        "id": "5.3-A-R1.2",
+        "desc": {
+          "zh": "不进行工程评估，直接命令分包商按3D模型现场切割并重新改建钢梯，以确保业主完全满意。",
+          "ja": "エンジニアリング評価を行わずに、オーナーを完全に満足させるためだけに、下請業者にラダーの現場切断と再改築を直接指示する。",
+          "en": "Order the subcontractor to cut and reconstruct the ladder immediately to match the 3D model, without doing an engineering safety evaluation, to satisfy the owner."
+        },
+        "influence": {
+          "zh": "虽然业主表示满意，但未经工程评估的现场野蛮修改存在安全隐患，且造成了额外的项目成本 and 工期浪费。",
+          "ja": "オーナーは満足しましたが、エンジニアリング評価なしの現場での強引な変更は安全上のリスクを伴い、さらに追加のコストと時間を浪費しました。",
+          "en": "Although the owner is satisfied, the field modification without engineering safety review introduces hazards and wastes project cost and schedule."
+        },
+        "flags": [],
+        "score": 5
+      },
+      {
+        "id": "5.3-A-R1.3",
+        "desc": {
+          "zh": "以施工检查员之前已签字验收为由，拒绝整改或申请偏差，强行推进气体处理单元的最终移交。",
+          "ja": "施工検査官が以前に検査・合格の署名をしていることを理由に、手直しや偏差申請を拒否し、ガス処理ユニットの最終引き渡しを強行する。",
+          "en": "Refuse to modify or apply for a deviation, arguing that the construction inspector had already signed off the work, and push for final handover."
+        },
+        "influence": {
+          "zh": "错误决策！不尊重业主的运营诉求和安全反馈，将导致业主拒绝签署移交证书，甚至使项目关系彻底恶化。",
+          "ja": "誤った決定です！オーナーの運転上の要望や安全に関するフィードバックを無視したため、オーナーが引き渡し証書への署名を拒否し、プロジェクトの関係が致命的に悪化しました。",
+          "en": "A poor decision! Disregarding the owner's operational and safety concerns will lead to their refusal to sign the handover certificate, severely damaging relations."
+        },
+        "flags": [],
+        "score": 0
+      }
+    ]
   }
 };
 
