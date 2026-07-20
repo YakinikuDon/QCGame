@@ -1955,8 +1955,8 @@ const STORY_DATA = {
         "id": "4.3-A.3",
         "desc": {
           "ja": "全数見直す時間が無いので、抜き取りでチェックする",
-          "zh": "由于是抽样检查，所以现场发生了很多不符合项报告（NCR）。",
-          "en": "Since it was a sampling inspection, many Non-Conformance Reports (NCRs) occurred on site."
+          "zh": "没有时间全部重新审查，因此进行抽样检查。",
+          "en": "Since there is no time to review all of them, perform a sampling check."
         },
         "influence": {
           "ja": "抜き取り漏れがあり、現場でさらに不適合報告書（NCR）発生",
@@ -3370,8 +3370,8 @@ const STORY_DATA = {
       "id": "4.3-R1.3",
       "desc": {
         "ja": "全数見直す時間が無いので、抜き取りでチェックする",
-        "zh": "由于是抽样检查，所以现场发生了很多不符合项报告（NCR）。",
-        "en": "Since it was a sampling inspection, many Non-Conformance Reports (NCRs) occurred on site."
+        "zh": "没有时间全部重新审查，因此进行抽样检查。",
+        "en": "Since there is no time to review all of them, perform a sampling check."
       },
       "influence": {
         "ja": "抜き取り漏れがあり、現場でさらに不適合報告書（NCR）発生",
