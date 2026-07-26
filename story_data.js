@@ -329,8 +329,8 @@ const STORY_DATA = {
             "ja": "引き合い要求書レビュー (危機 A)",
             "en": "Requisition Review (Crisis A)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -467,8 +467,8 @@ const STORY_DATA = {
             "ja": "技術評価 (危機 A)",
             "en": "Technical Evaluation (Crisis A)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -538,8 +538,8 @@ const STORY_DATA = {
             "ja": "技術評価 (危機 B)",
             "en": "Technical Evaluation (Crisis B)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -663,8 +663,8 @@ const STORY_DATA = {
             "ja": "キックオフミーティング (危機 A)",
             "en": "Kick-off Meeting (Crisis A)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -717,8 +717,8 @@ const STORY_DATA = {
             "ja": "キックオフミーティング (危機 B)",
             "en": "Kick-off Meeting (Crisis B)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -855,8 +855,8 @@ const STORY_DATA = {
             "ja": "ベンダー図書レビュー (危機 A)",
             "en": "Vendor Document Review (Crisis A)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -1062,8 +1062,8 @@ const STORY_DATA = {
             "ja": "検査前打合せ (危機 A)",
             "en": "Pre-Inspection Meeting (Crisis A)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -1131,8 +1131,8 @@ const STORY_DATA = {
             "ja": "検査前打合せ (危機 B)",
             "en": "Pre-Inspection Meeting (Crisis B)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -1198,8 +1198,8 @@ const STORY_DATA = {
             "ja": "検査前打合せ (危機 C)",
             "en": "Pre-Inspection Meeting (Crisis C)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -1267,8 +1267,8 @@ const STORY_DATA = {
             "ja": "検査前打合せ (危機 D)",
             "en": "Pre-Inspection Meeting (Crisis D)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -1403,8 +1403,8 @@ const STORY_DATA = {
             "ja": "検査調整 (危機 A)",
             "en": "Inspection Coordination (Crisis A)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -1455,8 +1455,8 @@ const STORY_DATA = {
             "ja": "検査調整 (危機 B)",
             "en": "Inspection Coordination (Crisis B)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -1522,8 +1522,8 @@ const STORY_DATA = {
             "ja": "検査調整 (危機 C)",
             "en": "Inspection Coordination (Crisis C)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -1574,8 +1574,8 @@ const STORY_DATA = {
             "ja": "検査調整 (危機 D)",
             "en": "Inspection Coordination (Crisis D)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -1641,8 +1641,8 @@ const STORY_DATA = {
             "ja": "検査調整 (危機 E)",
             "en": "Inspection Coordination (Crisis E)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -1710,8 +1710,8 @@ const STORY_DATA = {
             "ja": "検査調整 (危機 F)",
             "en": "Inspection Coordination (Crisis F)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -1781,8 +1781,8 @@ const STORY_DATA = {
             "ja": "検査調整 (危機 G)",
             "en": "Inspection Coordination (Crisis G)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -1850,8 +1850,8 @@ const STORY_DATA = {
             "ja": "検査調整 (危機 H)",
             "en": "Inspection Coordination (Crisis H)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -1971,8 +1971,8 @@ const STORY_DATA = {
             "ja": "不適合管理 (危機 A)",
             "en": "Non-Conformance Report (Crisis A)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -2038,8 +2038,8 @@ const STORY_DATA = {
             "ja": "不適合管理 (危機 B)",
             "en": "Non-Conformance Report (Crisis B)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -2105,8 +2105,8 @@ const STORY_DATA = {
             "ja": "不適合管理 (危機 C)",
             "en": "Non-Conformance Report (Crisis C)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -2157,8 +2157,8 @@ const STORY_DATA = {
             "ja": "不適合管理 (危機 D)",
             "en": "Non-Conformance Report (Crisis D)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -2282,8 +2282,8 @@ const STORY_DATA = {
             "ja": "検査放行証発行 (危機 A)",
             "en": "Inspection Release Certificate (Crisis A)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -2483,8 +2483,8 @@ const STORY_DATA = {
             "ja": "現場対応 (危機 A)",
             "en": "Site Response (Crisis A)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -2550,8 +2550,8 @@ const STORY_DATA = {
             "ja": "現場対応 (危機 B)",
             "en": "Site Response (Crisis B)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -2617,8 +2617,8 @@ const STORY_DATA = {
             "ja": "現場対応 (危機 C)",
             "en": "Site Response (Crisis C)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -2669,8 +2669,8 @@ const STORY_DATA = {
             "ja": "現場対応 (危機 D)",
             "en": "Site Response (Crisis D)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -2721,8 +2721,8 @@ const STORY_DATA = {
             "ja": "現場対応 (危機 E)",
             "en": "Site Response (Crisis E)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -2857,8 +2857,8 @@ const STORY_DATA = {
             "ja": "突発事態：契約の理解 (危機 A)",
             "en": "Sudden Event: Contract Understanding (Crisis A)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -2924,8 +2924,8 @@ const STORY_DATA = {
             "ja": "突発事態：契約の理解 (危機 C)",
             "en": "Sudden Event: Contract Understanding (Crisis C)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -2993,8 +2993,8 @@ const STORY_DATA = {
             "ja": "突発事態：契約の理解 (危機 D)",
             "en": "Sudden Event: Contract Understanding (Crisis D)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -3060,8 +3060,8 @@ const STORY_DATA = {
             "ja": "突発事態：検査調整 (危機 C)",
             "en": "Sudden Event: Inspection Coordination (Crisis C)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -3112,8 +3112,8 @@ const STORY_DATA = {
             "ja": "突発事態：検査調整 (危機 D)",
             "en": "Sudden Event: Inspection Coordination (Crisis D)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -3179,8 +3179,8 @@ const STORY_DATA = {
             "ja": "突発事態：検査調整 (危機 E)",
             "en": "Sudden Event: Inspection Coordination (Crisis E)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -3248,8 +3248,8 @@ const STORY_DATA = {
             "ja": "突発事態：検査調整 (危機 F)",
             "en": "Sudden Event: Inspection Coordination (Crisis F)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -3317,8 +3317,8 @@ const STORY_DATA = {
             "ja": "突発事態：検査調整 (危機 H)",
             "en": "Sudden Event: Inspection Coordination (Crisis H)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -3386,8 +3386,8 @@ const STORY_DATA = {
             "ja": "突発事態：不適合報告書 (危機 A)",
             "en": "Sudden Event: Non-Conformance Report (Crisis A)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -3453,8 +3453,8 @@ const STORY_DATA = {
             "ja": "突発事態：不適合報告書 (危機 B)",
             "en": "Sudden Event: Non-Conformance Report (Crisis B)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -3520,8 +3520,8 @@ const STORY_DATA = {
             "ja": "突発事態：不適合報告書 (危機 C)",
             "en": "Sudden Event: Non-Conformance Report (Crisis C)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -3572,8 +3572,8 @@ const STORY_DATA = {
             "ja": "突発事態：不適合報告書 (危機 D)",
             "en": "Sudden Event: Non-Conformance Report (Crisis D)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -3639,8 +3639,8 @@ const STORY_DATA = {
             "ja": "突発事態：現場対応 (危機 A)",
             "en": "Sudden Event: Site Response (Crisis A)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -3706,8 +3706,8 @@ const STORY_DATA = {
             "ja": "突発事態：現場対応 (危機 C)",
             "en": "Sudden Event: Site Response (Crisis C)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -3758,8 +3758,8 @@ const STORY_DATA = {
             "ja": "突発事態：現場対応 (危機 D)",
             "en": "Sudden Event: Site Response (Crisis D)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
@@ -3810,8 +3810,8 @@ const STORY_DATA = {
             "ja": "突発事態：現場対応 (危機 E)",
             "en": "Sudden Event: Site Response (Crisis E)"
         },
-        "avatar": "normal",
-        "npcAvatar": "hidden",
+        "avatar": "thinking",
+        "npcAvatar": "strict",
         "charName": {
             "zh": "旁白",
             "ja": "ナレーション",
