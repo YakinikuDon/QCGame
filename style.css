@@ -1295,6 +1295,17 @@ body {
     padding-bottom: 4px;
 }
 
+.explanation-item-question {
+    font-size: 0.85rem;
+    color: var(--color-manga-border);
+    margin-bottom: 8px;
+    background-color: #f0f4f8;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border-left: 4px solid var(--color-pastel-blue);
+    white-space: pre-line;
+}
+
 .explanation-item-choice {
     font-size: 0.85rem;
     color: #444;

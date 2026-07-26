@@ -1131,90 +1131,300 @@ function updateProgressRoad() {
 
 // --- 13. EXPLANATION PAGE LOGIC & DATA ---
 const EXPLANATIONS = {
-    "1.1.1": {
-        zh: "合同文件中的要求（特别是带有“shall”字样的条款）是必须遵守的强制要求，无法擅自更改。但在工程中，必然存在向业主提交偏差申请（Deviation）或澄清说明（Clarification）的沟通流程。因此，对于那些死守反倒会导致项目混乱的苛刻合同条款，应尽早与业主及项目内部协商达成一致的解决办法。",
-        ja: "契約図書の要求事項（特に”shall”で書かれている個所）は必須の要求なので、勝手に変更することはできませんが、必ずDeviationやClarificationなど客先と確認するプロトコールがあるはずなので、遵守することが余計にプロジェクトを混乱させるような要求事項は、早めに客先およびプロジェクト内で対応方法を合意しましょう。",
-        en: "Contractual requirements (especially those marked with \"shall\") are mandatory and cannot be changed arbitrarily. However, there is always a protocol like Deviation or Clarification to align with the client. For requirements where strict compliance would unnecessarily disrupt the project, we should agree on a resolution with both the client and the internal project team early on."
+    "1.1": {
+        "zh": "合同文件的要求事项（特别是写有“shall”的条款）属于强制要求，不得擅自修改。但在合同执行中必然存在偏离（Deviation）或澄清（Clarification）等与业主沟通的协议流程。对于严格遵守反而会引发项目混乱的条款，应尽早与业主及项目内部达成解决共识。",
+        "ja": "契約図書の要求事項（特に”shall”で書かれている個所）は必須の要求なので、勝手に変更することはできませんが、必ずDeviationやClarificationなど客先と確認するプロトコルがあるはずなので、遵守することが余計にプロジェクトを混乱させるような要求事項は、早めに客先およびプロジェクト内で対応方法を合意しましょう。",
+        "en": "Requirements in contract documents (especially clauses with \"shall\") are mandatory and cannot be altered arbitrarily. However, there are established protocols such as Deviations or Clarifications to align with the client. For requirements where strict compliance creates unnecessary project chaos, agree on a handling approach with the client and project team early."
     },
-    "1.1.3": {
-        zh: "合同文件中的要求（特别是带有“shall”字样的条款）是必须遵守的强制要求，无法擅自更改。但在工程中，必然存在向业主提交偏差申请（Deviation）或澄清说明（Clarification）的沟通流程。因此，对于那些死守反倒会导致项目混乱的苛刻合同条款，应尽早与业主及项目内部协商达成一致的解决办法。",
-        ja: "契約図書の要求事項（特に”shall”で書かれている個所）は必須の要求なので、勝手に変更することはできませんが、必ずDeviationやClarificationなど客先と確認するプロトコールがあるはずなので、遵守することが余計にプロジェクトを混乱させるような要求事項は、早めに客先およびプロジェクト内で対応方法を合意しましょう。",
-        en: "Contractual requirements (especially those marked with \"shall\") are mandatory and cannot be changed arbitrarily. However, there is always a protocol like Deviation or Clarification to align with the client. For requirements where strict compliance would unnecessarily disrupt the project, we should agree on a resolution with both the client and the internal project team early on."
+    "1.2": {
+        "zh": "组建一支易于管理且高效坚固的团队是 PQCM 初期最重要的任务之一，但现实中很难做到 100 分的完美配置。如何在关键节点及时调配所需人才（能力与人数的匹配），并将其构建为高效运转的组织，正是考验 PQCM 领导力与管理水平的核心所在。",
+        "ja": "自分が運営しやすい強固なチームを組織するのは、PQCMにとって初期の重要なタスクですが、100点満点のチームは中々できません。そんな時に、どうやってタイムリーに人財（能力×人数）を集めるかと、それをどういう組織にして効果的に運営するかがPQCMの腕の見せ所です。",
+        "en": "Building a strong, manageable team is a critical initial task for a PQCM, but achieving a perfect 100-point team is rare. The true test of a PQCM's capability lies in how effectively you mobilize required talent (competency x capacity) in a timely manner and structure the organization for efficient execution."
     },
-    "1.2.1": {
-        zh: "组建一个便于自己管理的高效且强有力的团队，是 PQCM 在项目初期的关键任务。然而，现实中很难在刚开始就组建起百分之百完美的团队。如何在有限的时间内高效召集人手（匹配的能力与人数），并构建起合理的组织结构进行有效运营，最能体现 PQCM 的管理水平。",
-        ja: "自分が運営しやすい強固なチームを組織するのは、PQCMにとって初期の重要なタスクですが、100点満点のチームは中々できません。\nそんな時に、どうやってタイムリーに人財（能力×人数）を集めるかと、それをどういう組織にして効果的に運営するかがPQCMの腕の見せ所です。",
-        en: "Building a strong team that is easy to manage is a key early task for a PQCM, but a 100-point perfect team is rarely possible from the start. How to timely gather resources (capability x headcount) and structure them into an effective organization is where the PQCM's true skills are tested."
+    "1.3": {
+        "zh": "虽然应当尊重项目管理团队（PMT）拨付的预算，但 PQCM 的核心职责是统筹团队，确保将质量达标的设备材料按时交付至施工现场或模块场地。因此，只要是确保质量交付所必需的工时（MH），即便需要向 PMT 申请追加，也必须在沟通达成共识的前提下切实完成质量管控任务。",
+        "ja": "PMTから配賦されるBudgetはリスペクトする必要はありますが、PQCMのタスクは、チームを指揮して品質の担保された資機材をタイムリーに現場/モジュールヤードに届けることなので、それに必要なMHはPMTの合意を得ながら追加してでも、確実にタスクをこなさなければなりません。",
+        "en": "While PMT-allocated budgets must be respected, the PQCM's core mission is to lead the team in delivering quality-assured equipment and materials to the site or module yard on time. Necessary man-hours (MH) required to accomplish this must be secured and added with PMT alignment to reliably fulfill quality obligations."
     },
-    "1.2.2": {
-        zh: "组建一个便于自己管理的高效且强有力的团队，是 PQCM 在项目初期的关键任务。然而，现实中很难在刚开始就组建起百分之百完美的团队。如何在有限的时间内高效召集人手（匹配的能力与人数），并构建起合理的组织结构进行有效运营，最能体现 PQCM 的管理水平。",
-        ja: "自分が運営しやすい強固なチームを組織するのは、PQCMにとって初期の重要なタスクですが、100点満点のチームは中々できません。\nそんな時に、どうやってタイムリーに人財（能力×人数）を集めるかと、それをどういう組織にして効果的に運営するかがPQCMの腕の見せ所です。",
-        en: "Building a strong team that is easy to manage is a key early task for a PQCM, but a 100-point perfect team is rarely possible from the start. How to timely gather resources (capability x headcount) and structure them into an effective organization is where the PQCM's true skills are tested."
+    "2.1": {
+        "zh": "所给出的选项都是项目质量方针（Quality Policy）的核心要义，并无绝对的对错之分。作为 PQCM，在履行基本质量职责的同时，时刻明确自己的关注侧重点与管理理念，并在实践中不断锤炼与提升自身作为优秀质量经理的胜任力。",
+        "ja": "すべて重要なPolicyになり得る選択肢で、どれかが正解でどれかが間違いというものではありません。当然、PQCMとしてやるべきことをやりながら、そんな中で何に重きを置くかを常に意識しながら、自分のPQCM像を磨いてください。",
+        "en": "All options represent important quality policies, with no single choice being purely right or wrong. As a PQCM, while executing fundamental duties, continuously focus on your core priorities and refine your leadership identity as a Quality Control Manager."
     },
-    "1.3.2": {
-        zh: "虽然我们需要尊重项目管理部（PMT）分配的预算，但 PQCM 的核心任务是带领团队确保质量合格的设备和材料能够按时运抵现场或模块场地。因此，即使需要与 PMT 沟通协商追加必要的工时预算，也必须确保质量控制任务的切实履行。",
-        ja: "PMTから配賦されるBudgetはリスペクトする必要はありますが、PQCMのタスクは、チームを指揮して品質の担保された資機材をタイムリーに現場/モジュールヤードに届けることなので、それに必要なMHはPMTの合意を得ながら追加してでも、確実にタスクをこなさなければなりません。",
-        en: "While we should respect the budget allocated by the PMT, the PQCM's primary task is to lead the team to deliver quality-assured equipment and materials to the site or module yard on time. Therefore, even if we must negotiate with the PMT to add necessary man-hour budget, we must secure the execution of our tasks."
+    "3.1-A": {
+        "zh": "缺少必要的人员会导致业务停滞，但未经审核即放行图纸更是重大质量事故。若在项目初期就对有限的团队成员过度压榨，将严重损害团队的可持续运转。因此，应在及时补齐业务所需人才的同时，采取基于风险分级的防范措施与高效团队运营策略。",
+        "ja": "必要なチーム員が居ないと業務が進みません、かといってReviewすべき図書をReviewしないのは大問題であり、序盤から限られたチーム員に無理を強いるのは後々のチームの運営に影響するので、業務に必要な人財はタイムリーに備えつつ、リスクに応じた効率的なチーム運営を心がけましょう。",
+        "en": "Work stalls without essential team members, yet skipping required document reviews is a major quality failure. Overburdening a small team early on negatively impacts long-term team sustainability. Ensure timely staffing while practicing efficient, risk-proportionate quality management."
     },
-    "3.1-A.1": {
-        zh: "没有足够的人手，业务便无法开展，但如果不认真审查应当审查的图纸也是极大的失职。如果从项目一开始就强行让有限的团队成员过度加班，会严重影响后续团队的长久运营。因此，应当及时配备业务所需的资源，并根据风险大小实施高效的团队运营。",
-        ja: "必要なチーム員が居ないと業務が進みません、かといってReviewすべき図書をReviewしないのは大問題であり、序盤から限られたチーム員に無理を強いるのは後々のチームの運営に影響するので、業務に必要な人財はタイムリーに備えつつ、リスクに応じた効率的なチーム運営を心がけましょう。",
-        en: "Without necessary team members, work cannot proceed; however, skipping document reviews is a major issue. Forcing limited team members to overwork from the start will hurt team dynamics later. You should secure necessary resources in a timely manner while aiming for risk-based, efficient team operations."
+    "3.1": {
+        "zh": "接受 PMT 的委托先制定采购要求（Req.）的标准格式，再据此开展具体设备的要求审查，这是合理合规的流程。然而在实际项目中必须兼顾进度节点。若 QC 审查时间受限，则必须思考如何按设备重要度分级，高效把控核心关键设备的技术质量要求。",
+        "ja": "Req.のFormat ReviewがPMTから依頼され、それを用いて個別のReq. Reviewを実施するのは理にかなった進め方ですが、当然スケジュールも考慮する必要があり、QCのReq. Reviewにあまり時間をかけられない場合は、どうやって効率的に重要な機器の要求事項をチェックするか考える必要があります。",
+        "en": "Reviewing a general Req. template at PMT's request and using it for individual Req. reviews is a logical approach. However, schedule constraints must be factored in. When QC review time is limited, prioritize and develop efficient strategies to focus checks on critical equipment requirements."
     },
-    "3.1-A.2": {
-        zh: "没有足够的人手，业务便无法开展，但如果不认真审查应当审查的图纸也是极大的失职。如果从项目一开始就强行让有限的团队成员过度加班，会严重影响后续团队的长久运营。因此，应当及时配备业务所需的资源，并根据风险大小实施高效的团队运营。",
-        ja: "必要なチーム員が居ないと業務が進みません、かといってReviewすべき図書をReviewしないのは大問題であり、序盤から限られたチーム員に無理を強いるのは後々のチームの運営に影響するので、業務に必要な人財はタイムリーに備えつつ、リスクに応じた効率的なチーム運営を心がけましょう。",
-        en: "Without necessary team members, work cannot proceed; however, skipping document reviews is a major issue. Forcing limited team members to overwork from the start will hurt team dynamics later. You should secure necessary resources in a timely manner while aiming for risk-based, efficient team operations."
+    "3.2-A": {
+        "zh": "缺少关键人员会导致采购技术评价（Tech-Eval）无法推进，但跳过必要的技术评价将埋下巨大质量隐患。在初期对有限的人手强行加压会破坏团队长期稳定性。应在争取及时补充人员的同时，实施基于风险的高效评估与团队运营策略。",
+        "ja": "必要なチーム員が居ないと業務が進みません、かといって必要なテクエバをしないのは大問題であり、序盤から限られたチーム員に無理を強いるのは後々のチームの運営に影響するので、業務に必要な人財はタイムリーに備えつつ、リスクに応じた効率的なチーム運営を心がけましょう。",
+        "en": "Without necessary personnel, Technical Evaluations cannot proceed, yet failing to conduct required evaluations creates massive risk. Overworking limited staff early harms long-term operations. Secure required resources in a timely manner while ensuring risk-based efficient evaluation management."
     },
-    "3.1.1": {
-        zh: "标准的流程通常是先由项目管理部（PMT）委托对询价书（Requisition）模板进行审查，随后由各专业部委托对具体的询价书进行个别审查。因此，首先应当将项目共性的要求纳入询价书的空白模板中，同时提炼出质量控制（QC）的特殊要求并在团队内共享，以便在个别审查时能够毫无遗漏地将特殊要求融入其中。",
-        ja: "Req.のFormat ReviewがPMTから依頼され、それを用いて個別のReq. Reviewが専門部から依頼されるのが通常の流れなので、まずはプロジェクト共通の要求事項はReq.のBlank Formに盛り込んでもらい、並行してQCとして特殊要求を取り出してチーム内で共有した上で、個別のReq. Review時にもれなく特殊要求を盛り込むようにしましょう。",
-        en: "The standard workflow is that the PMT requests a Blank Form/Template Review first, followed by individual Requisition Reviews from engineering disciplines. Thus, common project requirements should first be incorporated into the Blank Requisition Form. Concurrently, QC special requirements should be extracted and shared in the team so they can be seamlessly built into individual discipline reviews."
+    "3.2-B": {
+        "zh": "在工程总承包实践中，有的承包商主张 QC 从技术评价阶段就深度参与、严格复核投标厂商的质量要求；也有的承包商选择将技术评价交由设计部门，QC 直到下发订单后的 PIM 会议才接入。选择哪种模式取决于项目的总体管理策略，PQCM 需明确团队策略并高效推进。",
+        "ja": "テクエバからQCが入り込んで品質要求事項を深くBidderを確認するコントラクターも居れば、テクエバは設計に任せて、オーダー後のPIMまでQCは関与しないコントラクターも存在し、どちらのスタイルを取るかはプロジェクトのPolicyによります。自分たちのスタイルを理解して業務を進めましょう。",
+        "en": "Contractor strategies vary: some involve QC deeply during Technical Evaluation to rigorously check bidder quality compliance, while others leave evaluation to Engineering and defer QC involvement until post-order PIM. Understand your project policy and execute quality controls accordingly."
     },
-    "3.1.2": {
-        zh: "标准的流程通常是先由项目管理部（PMT）委托对询价书（Requisition）模板进行审查，随后由各专业部委托对具体的询价书进行个别审查。因此，首先应当将项目共性的要求纳入询价书的空白模板中，同时提炼出质量控制（QC）的特殊要求并在团队内共享，以便在个别审查时能够毫无遗漏地将特殊要求融入其中。",
-        ja: "Req.のFormat ReviewがPMTから依頼され、それを用いて個別のReq. Reviewが専門部から依頼されるのが通常の流れなので、まずはプロジェクト共通の要求事項はReq.のBlank Formに盛り込んでもらい、並行してQCとして特殊要求を取り出してチーム内で共有した上で、個別のReq. Review時にもれなく特殊要求を盛り込むようにしましょう。",
-        en: "The standard workflow is that the PMT requests a Blank Form/Template Review first, followed by individual Requisition Reviews from engineering disciplines. Thus, common project requirements should first be incorporated into the Blank Requisition Form. Concurrently, QC special requirements should be extracted and shared in the team so they can be seamlessly built into individual discipline reviews."
+    "3.2": {
+        "zh": "若原材料的特殊质量要求（如抗湿硫化氢、高温蠕变等）直到设备制造中或出厂前才被发现纰漏，最坏情况下将导致原材料重新采购，产生极其严重的工期延误与成本飙升。因此在合同前期的文件审查（V-Doc. Review）及技术评价阶段彻底澄清并消除隐患至关重要。",
+        "ja": "素材の特殊要求は、後々機器製作中や出荷前に見つかると、最悪の場合、素材の再調達まで発展して甚大なスケジュール・コストインパクトが発生します。\n要求事項は契約初期のV-Doc. Reviewやテクエバ時に確実に潰すことが非常に重要です。",
+        "en": "Unresolved special material requirements discovered mid-fabrication or prior to shipping can force raw material re-procurement, leading to catastrophic schedule delays and cost overruns. Resolving all special material requirements during early V-Doc. reviews and Technical Evaluations is paramount."
     },
-    "3.2-A.1": {
-        zh: "缺少团队成员会导致工作无法运转，但不进行必要的技术评审（TBE）是严重的安全隐患。如果从前期就开始勉强有限的人手过度负荷，会拖累团队后续的健康运行。因此，要在合适的时间节点配备人员，并积极借助资深专家的经验，根据风险程度来进行高效的运营管理。",
-        ja: "必要なチーム員が居ないと業務が進みません、かといって必要なテクエバをしないのは大問題であり、序盤から限られたチーム員に無理を強いるのは後々のチームの運営に影響するので、業務に必要な人財はタイムリーに備えつつ、シニアの知見なども借りてリスクに応じた効率的なチーム運営を心がけましょう。",
-        en: "Without necessary team members, work stalls; however, failing to perform required Technical Bid Evaluations (TBE) is a major quality risk. Forcing limited members to stretch too thin early on will impact team health later. Secure required headcount timely and leverage senior expertise to run efficient, risk-based operations."
+    "3.3-A": {
+        "zh": "遗漏在采购要求（Req.）之外的任何质量标准，对供应商而言都属于范围追加（Change Order）。但若直接放弃这些要求，项目质量将无法保证。因此，必须与采购、设计等关联部门密切协商，确立合理的变更澄清与合同补遗流程。",
+        "ja": "Req.に載せ忘れた要求事項は全てVendorにとって追加です。\nかといって要求事項を全てドロップするとプロジェクトの品質が担保できなくなるので、どのようなプロセスで契約要求に盛り込むか、関連部署と協議してプロトコルを合意しましょう。",
+        "en": "Any requirement omitted from the initial Req. constitutes a change order for the Vendor. However, dropping essential quality requirements compromises project integrity. Collaborate with engineering and procurement to establish agreed protocols for incorporating missing requirements cleanly."
     },
-    "3.2-A.2": {
-        zh: "缺少团队成员会导致工作无法运转，但不进行必要的技术评审（TBE）是严重的安全隐患。如果从前期就开始勉强有限的人手过度负荷，会拖累团队后续的健康运行。因此，要在合适的时间节点配备人员，并积极借助资深专家的经验，根据风险程度来进行高效的运营管理。",
-        ja: "必要なチーム員が居ないと業務が進みません、かといって必要なテクエバをしないのは大問題であり、序盤から限られたチーム員に無理を強いるのは後々のチームの運営に影響するので、業務に必要な人財はタイムリーに備えつつ、シニアの知見なども借りてリスクに応じた効率的なチーム運営を心がけましょう。",
-        en: "Without necessary team members, work stalls; however, failing to perform required Technical Bid Evaluations (TBE) is a major quality risk. Forcing limited members to stretch too thin early on will impact team health later. Secure required headcount timely and leverage senior expertise to run efficient, risk-based operations."
+    "3.3-B": {
+        "zh": "以人员不足为由推诿技术评价等关键环节，本质上只是在积累并延后风险。问题暴露得越晚，后期可采取的补救措施就越少、代价就越大。PQCM 必须坚持在项目初期严控隐患。",
+        "ja": "人財不足を理由にテクエバなどやるべきことをやらないのはリスクを先送りしているだけです。\n後になればなるほど打てる対策の手数が限られてくるので、初期段階でリスクをコントロールすることを心がけましょう。",
+        "en": "Skipping mandatory tasks like Technical Evaluations due to resource shortages merely postpones risk. The later a defect is identified, the fewer remedial options remain. Strive to control and mitigate risks at the earliest stages."
     },
-    "3.2-B.1": {
-        zh: "在技术评审（TBE）阶段就由 QC 深入介入并向投标人详细确认质量要求的做法在工程承包商中较为少见。因此，一些新加入的契约工程师虽然 QC 经验丰富，但也可能是第一次接触 TBE。为了切实做好这一工作，不能完全依赖个人发挥，在团队内统一评审标准和质量要求也至关重要。",
-        ja: "テクエバからQCが入り込んで品質要求事項を深くBidderを確認するコントラクターは珍しいので、新規ASエンジニアの中にはQCの経験は豊富でもテクエバは初めてという人も居る可能性があります。\n確実に必要なテクエバを実施するために、個人任せにせずに、チーム内でレベル感を調整することも重要です。",
-        en: "Contractors that involve QC deep in the TBE stage to verify quality requirements with bidders are rare. Some new contract engineers might have rich QC experience but be new to TBE. To ensure execution, do not leave it to individuals; aligning the technical standards and levels within the team is key."
+    "3.4-A": {
+        "zh": "招聘新工程师时通常看重其过往经验，但若新人在未透彻理解本项目特定要求的情况下盲目开展图纸审查（V-Doc. Review），极易凭主观经验产生误判。应在初期开展系统的项目标准与要求交底，确保质量审核成果的准确性。",
+        "ja": "新規のエンジニアは当然それまでの実績や経験を元に採用しますが、V-Doc. Reviewなどプロジェクトの要求事項を理解しないまま業務を進めると、思い込みで判定して問題が発生する場合があります。\n早い段階でプロジェクトの要求事項をインプットして、成果物の品質を担保しましょう。",
+        "en": "New engineers are hired for their past experience, but conducting V-Doc. reviews without mastering project-specific requirements leads to dangerous assumptions. Brief team members early on project standards to safeguard quality deliverable standards."
     },
-    "3.2-B.2": {
-        zh: "在技术评审（TBE）阶段就由 QC 深入介入并向投标人详细确认质量要求的做法在工程承包商中较为少见。因此，一些新加入的契约工程师虽然 QC 经验丰富，但也可能是第一次接触 TBE。为了切实做好这一工作，不能完全依赖个人发挥，在团队内统一评审标准和质量要求也至关重要。",
-        ja: "テクエバからQCが入り込んで品質要求事項を深くBidderを確認するコントラクターは珍しいので、新規ASエンジニアの中にはQCの経験は豊富でもテクエバは初めてという人も居る可能性があります。\n確実に必要なテクエバを実施するために、個人任せにせずに、チーム内でレベル感を調整することも重要です。",
-        en: "Contractors that involve QC deep in the TBE stage to verify quality requirements with bidders are rare. Some new contract engineers might have rich QC experience but be new to TBE. To ensure execution, do not leave it to individuals; aligning the technical standards and levels within the team is key."
+    "3.3": {
+        "zh": "供应商作为商业实体，为提升成本竞争力使用新型分包商（Subvendor）属于正常商业行为。但这本身虽无可厚非，若选用缺乏履约信誉的分包商则会引发连锁质量事故。对于关键设备与材料，PQCM 必须指导督促供应商建立严格的分包商评价与监控机制。",
+        "ja": "Vendorも営利企業なので競争力を出すために新規のSubvendorを使うことがあります。\nそれ自体は悪いことではありませんが、信頼性に欠けるSubvendorを使うとトラブルの元になるので、重要な機器や素材に関しては、しっかりとSubvendorの管理をするようにVendorを指導しましょう。",
+        "en": "Vendors utilize new subvendors to remain commercially competitive, which is acceptable. However, unvetted subvendors pose severe risks. Guide vendors to rigorously audit and manage subvendors supplying critical equipment and raw materials."
     },
-    "3.2.1": {
-        zh: "原材料的特殊材料要求如果拖到设备制造期间或发货前才被发现，最坏的情况可能需要重新采购原材料，从而对项目进度造成不可估量的重大延误。因此，凡是涉及成本和质量的重大要求，必须在下达采购订单（PO）前由投标人确认并纳入合同中，务必在技术评审（TBE）阶段彻底确认清楚。",
-        ja: "素材の特殊要求は、後々機器製作中や出荷前に見つかると、最悪の場合、素材の再調達まで遡って大きなスケジュールインパクトに繋がり、さらにコストに影響する要求事項はPO.発行までに確実にBidderに取り込んでもらう必要があるので、テクエバ時に確実に確認しましょう。",
-        en: "Special material requirements discovered late during fabrication or pre-shipping can, at worst, require re-procuring raw materials, causing huge schedule and cost impacts. All cost-impacting requirements must be secured in the vendor's scope before PO award, so confirm them thoroughly during TBE."
+    "3.4": {
+        "zh": "在任何大型工程中，制造图纸与文件审查（V-Doc. Review）在高峰期都会不可避免地出现积压。试图面面俱到地齐头并进是不现实的，应建立基于风险分级的优先审理机制或抽查协议，确保高效推进文件审核。",
+        "ja": "どんなプロジェクトでもピーク時にはV-Doc. Reviewのバックログが溜まってきます。\nすべてを平坦に処理するのは不可能なので、リスクに応じて優先順位をつけたり、抜き取りでReviewするなどのプロトコルを確立して、効率的にV-Doc. Reviewを進めましょう。",
+        "en": "V-Doc. review backlogs inevitably peak on complex projects. Processing every document uniformly is impossible; establish risk-based prioritization and sampling protocols to maintain efficient, targeted V-Doc. review workflows."
     },
-    "3.2.2": {
-        zh: "原材料的特殊材料要求如果拖到设备制造期间或发货前才被发现，最坏的情况可能需要重新采购原材料，从而对项目进度造成不可估量的重大延误。因此，凡是涉及成本和质量的重大要求，必须在下达采购订单（PO）前由投标人确认并纳入合同中，务必在技术评审（TBE）阶段彻底确认清楚。",
-        ja: "素材の特殊要求は、後々機器製作中や出荷前に見つかると、最悪の場合、素材の再調達まで遡って大きなスケジュールインパクトに繋がり、さらにコストに影響する要求事項はPO.発行までに確実にBidderに取り込んでもらう必要があるので、テクエバ時に確実に確認しましょう。",
-        en: "Special material requirements discovered late during fabrication or pre-shipping can, at worst, require re-procuring raw materials, causing huge schedule and cost impacts. All cost-impacting requirements must be secured in the vendor's scope before PO award, so confirm them thoroughly during TBE."
+    "3.5": {
+        "zh": "第三方驻厂检验员（Inspector）是品质部门在供应商工厂的“眼睛与耳朵”。及时派遣能力过硬、客观公正的检验员直接关系到设备的制造质量。对于检查能力或履职态度存在重大缺陷的检验员，必须果断调整更换。",
+        "ja": "JGC検査員はVendor Shopにおける我々の目であり耳なので、信頼できる検査員をタイムリーにアサインすることはプロジェクトの成功に直結します。\n能力に疑問のある検査員は早めに交代させるなどの対応が必要です。",
+        "en": "Inspectors act as our eyes and ears in vendor shops. Assigning trusted, highly competent inspectors directly drives project success. Swiftly replace any inspectors whose capabilities or performance fall short of required standards."
     },
-    "3.3-A.1": {
-        zh: "对于供应商（Vendor）而言，凡是前期在询价书（Req.）中漏掉的质量条款都属于额外的合同变更。但如果直接违反质量规范，对业主来说就是严重的不符合项。因此，即使是事后补救，那些必须遵守的核心规范依然不可妥协。不过，通过与业主积极谈判，部分辅助性的条款或许能获得一定的豁免或缓和。",
-        ja: "Req.に載せ忘れた要求事項は全てVendorにとって追加です。\nかといって要求事項からの逸脱は客先からすれば不適合なので、後出しになったとしても、遵守しなければならない要求事項は遵守しなければなりません。　ただし客先との交渉次第では、ある部分の要求事項が緩和される場合もあるかもしれません。",
-        en: "Any requirement forgotten in the Requisition will be treated as an extra cost variation by the Vendor. However, deviations from specifications are unacceptable non-conformances to the client. Even if it is a late addition, mandatory quality requirements must be enforced. Depending on client negotiation, some items may be relaxed."
+    "4.1-A": {
+        "zh": "以人力不足为理由削减采购要求审查（Req. Review）等关键工作，只是将隐患推迟到未来爆发。越到项目后程，纠偏手段就越受限。务必坚持在前期阶段将质量风险控制在萌芽状态。",
+        "ja": "人財不足を理由にReq. Reviewなどやるべきことをやらないのはリスクを先送りしているだけです。\n後になればなるほど打てる対策の手数が限られてくるので、初期段階でリスクをコントロールすることを心がけましょう。",
+        "en": "Neglecting foundational tasks like Req. Reviews due to resource constraints is mere risk deferral. As execution progresses, corrective options shrink rapidly. Focus on proactively managing risks during early project phases."
     },
-    "3.3-A.2": {
-        zh: "对于供应商（Vendor）而言，凡是前期在询价书（Req.）中漏掉的质量条款都属于额外的合同变更。但如果直接违反质量规范，对业主来说就是严重的不符合项。因此，即使是事后补救，那些必须遵守的核心规范依然不可妥协。不过，通过与业主积极谈判，部分辅助性的条款或许能获得一定的豁免或缓和。",
-        ja: "Req.に載せ忘れた要求事項は全てVendorにとって追加です。\nかといって要求事項からの逸脱は客先からすれば不適合なので、後出しになったとしても、遵守しなければならない要求事項は遵守しなければなりません。　ただし客先との交渉次第では、ある部分の要求事項が緩和される場合もあるかもしれません。",
-        en: "Any requirement forgotten in the Requisition will be treated as an extra cost variation by the Vendor. However, deviations from specifications are unacceptable non-conformances to the client. Even if it is a late addition, mandatory quality requirements must be enforced. Depending on client negotiation, some items may be relaxed."
+    "4.1-B": {
+        "zh": "原材料的特殊技术要求若未在前期落实，直到制造或检验环节才暴露，极易引发材料报废与重新采购，造成灾难性的工期与成本损失。务必在前期技术评价和图纸审定阶段彻底敲定并落实所有特殊材料要求。",
+        "ja": "素材の特殊要求は、後々機器製作中や出荷前に見つかると、最悪の場合、素材の再調達まで発展して甚大なスケジュール・コストインパクトが発生します。\n要求事項は契約初期のV-Doc. Reviewやテクエバ時に確実に潰すことが非常に重要です。",
+        "en": "Overlooking special raw material specifications until fabrication or inspection leads to material replacement, causing devastating delays and costs. Eliminate all material requirement ambiguities during early V-Doc. reviews and technical evaluations."
+    },
+    "4.1-C": {
+        "zh": "检验前会议（PIM）是设备正式开工制造的“质量闸门”。如果在 PIM 上暴露前期图纸审核或检验试验计划（ITP）未敲定等缺陷，设备将无法如期开工，直接拖垮进度。必须高度重视 PIM，确保前置文件与 ITP 提前达成一致。",
+        "ja": "PIMはまさに機器製作が開始されるゲート、そこでそれまでの不備が表面化すると直ちに製作を開始することが出来ず、プロジェクトに遅れが発生します。\nPIMの重要性を認識して、前段階のV-Doc. ReviewやITPの合意を確実に実施しましょう。",
+        "en": "Pre-Inspection Meetings (PIM) serve as the formal quality gate for fabrication release. Unresolved issues surfacing at PIM halt manufacturing start, causing immediate schedule slippage. Finalize all V-Doc. reviews and ITP agreements ahead of PIM."
+    },
+    "4.1-D": {
+        "zh": "在商务合作中，虽然我们是买方客户，但在推进工程业务时必须将供应商视为合作伙伴，在相互尊重的基础上共赢。若采取居高临下的高压态度，不仅无法建立信任，一旦后续发生突发质量危机，将很难争取到厂商的全力配合。",
+        "ja": "Vendorにとって顧客はJGCだけど、業務を進める上ではビジネスパートナーと考えて、お互いにリスペクトしながら業務を進めることが重要です。\n高圧的な態度でVendorに接すると、良好な関係が築けず、トラブルが発生した時に協力が得られなくなります。",
+        "en": "While we are the client, vendors must be treated as strategic business partners with mutual respect. Heavy-handed tactics prevent solid relationship building and alienate vendor cooperation when unexpected troubleshooting support is required."
+    },
+    "4.1": {
+        "zh": "在 PIM 期间考察工厂（Shop Visit）时，由于本项目设备尚未正式开工，即便观察到工厂其他项目的违规操作，也不能直接开具不符合项报告（NCR）。但必须将发现的问题（Finding）准确反馈给厂商与检验员，作为本项目开工前的防范重点。",
+        "ja": "PIMのShop Visit時は、まだ自プロジェクトの機器は製作してないので、何か不適合があってもその場でNCRを出すことは出来ません。\nFindingは確実にVendorとJGC検査員にフィードバックして、自プロジェクトの機器製作時の再発防止に努めてください。",
+        "en": "During a PIM Shop Visit, our project equipment has not yet started fabrication; thus, non-conformance reports (NCRs) cannot be issued for general shop observations. Document all findings and brief the Vendor and Inspector to prevent recurrence on our equipment."
+    },
+    "4.2-A": {
+        "zh": "要求所有供应商一律提前 30 天提交确定的检验申请（Notice）在实际操作中难度极大。更务实做法是仅针对官厅法定见证等需要漫长审批协调的关键检验执行严格预告，而普通常规检验则按行业通行的 2 周预告期灵活安排。",
+        "ja": "すべてのVendorに30日前にFirmな検査申請を出させるのは難しい。\n例えば官庁の立会があるなど調整に時間を要するものに限って厳密に管理するのは現実的ですが、他の一般的な検査はJGCの標準である2週間程度でアレンジするのが通常です。",
+        "en": "Requiring a strict 30-day firm inspection notice from every Vendor is impractical. Rigorously enforce advance notice for complex inspections requiring official government witness, while managing standard routine inspections within normal 2-week notice windows."
+    },
+    "4.2-B": {
+        "zh": "虽然提前 30 天申请确实存在客观困难，但未经业主书面同意擅自缩短申请预告期属于违约行为。必须通过正式的项目变更与澄清程序获得业主认可，建立契合实际的检验协调与见证机制。",
+        "ja": "30日前の検査申請を出すのが難しいからといって、客先との合意も無く勝手に申請期間を短縮するのは契約違反です。\nプロジェクトの正しい手続きに則って客先の合意を得て、無理のない検査コーディネーションを進めましょう。",
+        "en": "Even if 30-day notice is challenging, unilaterally shortening the notice period without client agreement constitutes a contract breach. Obtain official client consent through proper project procedures to establish workable inspection coordination."
+    },
+    "4.2-C": {
+        "zh": "Hold Point（停工待检点/见证点）绝不能随意取消。业主通常认为见证点非常重要，突然变更会严重损害信任，因此应努力安排参加。",
+        "ja": "Hold Pointは勝手にキャンセルすることはできません。\n客先もHold Pointは重要と考えていることが多く、突然の変更は信頼を損ねるので、参加を努力すべき",
+        "en": "Hold Points cannot be cancelled arbitrarily. Clients view Hold Points as vital, and sudden changes will erode trust, so every effort should be made to participate."
+    },
+    "4.2-D": {
+        "zh": "只要坚持按月开展 QC 检验工时（MH）的精细化盘点与更新，就不会出现检验工时忽然耗尽的困境。未经预警突然向 PMT 索要工时追加会损害管理信任，凡有工时变动，应及时说明合理解释并按程序审批。",
+        "ja": "少なくとも毎月のQC MHのUpdateを確実に実施していたら、ある日突然、検査MHが枯渇することはありません。\n突然の追加MHはPMTの信頼を損ねるので、追加が発生したら、適切な理由を説明して、都度追加MHを合意してください。",
+        "en": "Monthly QC man-hour (MH) tracking prevents sudden MH depletion. Abrupt demands for additional man-hours alienate PMT trust; justify any scope changes clearly and secure formal agreements whenever extra MH is needed."
+    },
+    "4.2-E": {
+        "zh": "部分严格的业主并不认可偏向于企业内部认证的 ASNT SNT-TC-1A 无损检测人员资质。必须在合同初期仔细研读技术规范要求，避免出现资质否决风险。对于明确排除 SNT-TC-1A 的业主，后期试图强行沟通认可极其困难。",
+        "ja": "社内資格に近いASNTのSNT-TC-1Aの認証プロセスを認めない客先も居るので、契約要求をシッカリ読み込んで、漏れの無いQC遂行を心がけてください。\n意識的にSNT-TC-1Aを排除したい客先に認めてもらうのはかなり難しいです。",
+        "en": "Certain clients strictly reject employer-based ASNT SNT-TC-1A NDT certifications. Thoroughly review contract specifications early to avoid execution gaps. Persuading clients who explicitly exclude SNT-TC-1A to grant exceptions is exceptionally difficult."
+    },
+    "4.2-F": {
+        "zh": "第三方驻厂检验员是品质部门在工厂的眼睛和耳朵。如果检验员出具的检验报告（IR）表述不清、缺少追溯依据，一旦施工现场发现质量隐患，将无法追溯工厂当时的制造状况，甚至在索赔谈判中陷于被动。必须指导规范检验员出具高质量的报告。",
+        "ja": "JGC検査員はVendor Shopにおける我々の目であり耳です。\nプロジェクト関係者が理解できるIRを作成してもらわないと、建設現場で何か問題が見つかった時に、Vendor Shopでの状況が追いかけられず、最悪の場合、Vendorと不利な交渉に持ち込まれますので、適切なレベルのIRが作成できるよう検査員を指導しましょう。",
+        "en": "Inspectors are our eyes and ears in vendor shops. If Inspection Reports (IRs) lack detail, site troubleshooting cannot trace shop fabrication status, leaving us vulnerable in vendor negotiations. Guide inspectors to produce professional, clear, and traceable IRs."
+    },
+    "4.2-G": {
+        "zh": "与供应商关系僵化会在设备制造、检验、交货等各个环节衍生次生麻烦。在设备顺利出厂并完成制造记录簿（MRB）最终签署前，应始终保持建设性的合作关系。此外，让检验员在工厂承受人身安全风险是绝不可接受的底线问题。",
+        "ja": "Vendorの関係がこじれると、色々な場面で問題が派生します。\n機器を出荷してMRBを承認するまで良好な関係を辞しましょう。\nJGC検査員をVendor Shopで危険にさらすのは問題外です。",
+        "en": "Sour vendor relations trigger compounding problems across fabrication phases. Maintain a constructive relationship until equipment ships and Manufacturing Record Books (MRBs) are signed. Exposing inspectors to safety hazards at vendor shops is unacceptable."
+    },
+    "4.2-H": {
+        "zh": "在供应商工厂检查中发现的问题如果未能及时形成闭环反馈，必然会导致缺陷延伸至本项目设备中。对于已发现的质量隐患必须严肃处理，隐瞒缺陷强行出厂属于严重触犯工程师职业道德的红线行为。",
+        "ja": "Vendor ShopでのFindingを確実にフィードバックしないと、自プロジェクトの製品にもトラブルが発生します。\n見つかったトラブルに対しては適切に対応しましょう、欠陥を隠して出荷するのは技術者倫理に抵触する大問題です。",
+        "en": "Failing to feed back shop inspection findings guarantees quality issues on our equipment. Address all identified defects properly; concealing defects to force equipment shipment violates fundamental engineering ethics."
+    },
+    "4.2": {
+        "zh": "现实中许多主设备厂商对二级分包商（Subvendor）的管理能力相当薄弱。对于包含复杂分包链条的成套成组设备（Package Equipment），若缺乏精细监控，单一零配件的制造滞后就可能拖垮整台设备的出货，进而导致现场施工全面瘫痪。",
+        "ja": "Subvendor管理がPoorなVendorは多々存在し、複雑なSubvendor構成で機器製作するパッケージ品などは特に綿密に管理しないと、1つの部品の遅れが機器全体の出荷、ひいては建設工事の遅れに直結する場合があります。",
+        "en": "Many vendors suffer from poor subvendor oversight. For complex package equipment with intricate sub-vendor supply chains, a delay in a single component directly threatens overall equipment shipment and site construction schedules."
+    },
+    "4.3-A": {
+        "zh": "批量散件（Bulk Materials）发生不符合项（NCR）后的全面水平展开排查往往耗时巨大。但必须深入追溯问题的根本原因，凡存在系统性重现风险的，哪怕耗费精力也必须全面追溯复核，否则未来会在现场酿成更大的事故。",
+        "ja": "バルク品のNCRの水平展開は膨大な時間を要する場合があります。\nトラブルの根本原因を追究して、再現性がある場合は時間をかけてでもバックチェックしないと、後日もっと大きな問題に発展する可能性があります。",
+        "en": "Horizontally expanding bulk material non-conformance reports (NCRs) requires significant time. However, investigating root causes is mandatory; if systemic defects exist, thorough back-checking is essential to prevent massive site failures later."
+    },
+    "4.3-B": {
+        "zh": "政府官厅检验员本质上是执法人员或其法定代表，与业主有着本质区别。他们绝不会为了工程进度而承担任何违规风险，完全遵循法定程序。如果到了项目后期才发现遗漏了官厅见证要求，补救手段极其有限。务必在项目初期彻底梳理并纳入官厅法定检验要求。",
+        "ja": "官庁検査員は基本的に役人かその代理人で客先とは異なり、リスクを取ってでもプロジェクトを進めようというマインドが乏しく、決められたルール通りに進める指向が強い場合が多いので、後になって官庁検査の要求漏れが見つかっても打てる対策が限られてきます。\nプロジェクトの初期から確実に官庁要求を取り込んでください。",
+        "en": "Government inspectors are officials or legal deputies who strictly follow statutory rules with zero appetite for risk-taking to preserve schedule. If missing statutory inspection requirements are uncovered late, remedies are minimal. Incorporate government requirements from day one."
+    },
+    "4.3-C": {
+        "zh": "视工厂质量危机的严重程度而定，有时即便投入海量人力驻厂补救并将设备强行送达现场，后续依然会在施工现场引发大量的追加返修。工程历史上不乏因未能及时果断取消订单换厂（Re-ordering）而追受巨大损失的教训。项目团队应保持透明沟通，果断决策。",
+        "ja": "トラブルの量と程度によりますが、徹底的に人財を投入してVendor Shopでトラブルを出来るだけ解決して現場に機器を収めても、現場でも追加の補修工事などが発生し、振り返ってみれば、ある時期に発注替えを決断するべきだった反省する事例もあります。\nプロジェクト関係者で常に状況を共有しながら適切な判断をしましょう。",
+        "en": "Depending on shop trouble severity, pouring in massive manpower to patch equipment before site delivery may still result in heavy site rework. In hindsight, early order cancellation and re-sourcing is sometimes the correct call. Maintain transparent communication to make decisive project calls."
+    },
+    "4.3-D": {
+        "zh": "法兰密封面（Flange Face）的锈蚀与划伤是各类工程项目中最常见的质量通病。由于数量庞大，在工厂做到 100% 检验确实困难，但至少要确保合同防护要求被严格履行，并通过抽查留痕，确保即便未来现场出现争议，也能清晰说明工厂出厂时的合格状态。",
+        "ja": "フランジ面の錆とキズは、どのプロジェクトでも大なり小なり問題が発生します。\n物量が多いのでVendor Shopで100%チェックをするのも難しいが、少なくともプロジェクトの要求事項は確実に履行させた上で、抜き取りで確認し、将来問題が起きた場合でも、Vendor Shopでなされたことが確実に説明でき状態にしておきましょう。",
+        "en": "Flange face rust and scratches occur on virtually every project. Given high quantities, 100% shop inspection is tough, but ensure project preservation specs are strictly executed and spot-checked, so shop inspection status can be documented if disputes arise later."
+    },
+    "4.3": {
+        "zh": "材质证明书（MTC）造假属于行业 Lessons Learned（CLL）中极其严重的违规事件。这种行为会彻底摧毁材料可追溯性（Traceability）的信任根基，PQCM 必须保持高度警惕，依法依规严厉调查与处理。",
+        "ja": "偽造MTCはCLLにも挙げられている重大な問題です。\n材料のTraceabilityの信頼性を根底から覆す事象なので慎重かつ適切に対応しましょう。",
+        "en": "Forged Material Test Certificates (MTCs) represent critical lessons-learned (CLL) violations. Fraud destroys material traceability credibility; PQCMs must handle suspected certificate falsifications with utmost gravity, thoroughness, and procedural compliance."
+    },
+    "5.1-A": {
+        "zh": "管道散件材料若缺乏可追溯的材质证明书（MTC），建设现场将无法向施工分包商领料发放，直接面临管道预制全面停工的巨大风险。在签发检验放行证书（IRC）时，必须建立将合格 MTC 同步高效移交现场的保障协议。",
+        "ja": "特に配管バルク材はMTCが無いと建設現場でサブコンに材料を払い出すことができず、工事が止まるリスクがあります。\nIRC発行時にはTraceableなMTCを確実に現場に届けるプロトコルを確立してください。",
+        "en": "Piping bulk materials cannot be issued to site subcontractors without traceable MTCs, creating immediate risk of construction standstills. When issuing Inspection Release Certificates (IRCs), establish protocols to ensure verified MTCs arrive on site concurrently."
+    },
+    "5.1": {
+        "zh": "出厂前最终检验（Final Inspection）若遗留大量尾项（Punch Items），最坏情况会导致海运船舶在港口滞留，产生极其昂贵的滞期费。若将未完工作（Carry-over Work）带到施工现场，又会引发分包商索赔。必须对存在疑虑的厂商提早介入，督促在工厂高效清理尾项。",
+        "ja": "Final Inspectionで大量にパンチがつくと、最悪の場合、輸送船を港に滞留させることになり、莫大な追加の費用が発生します。　かといって現場にCarry Over Workを持ち込むと、サブコンの追加工事が発生します。\nVendor Shopで効率的にパンチを潰すために、疑義のあるVendorに対しては早めにチェックする必要があります。",
+        "en": "Heavy punch lists at Final Inspection risk delaying shipping vessels and incurring exorbitant demurrage fees. Conversely, carrying over unfinished shop work to site triggers costly subcontractor claims. Intervene early with struggling vendors to clear punch items efficiently in the shop."
+    },
+    "5.2": {
+        "zh": "设备出货前项目各方都会高度关注，但一旦设备离厂只剩制造记录簿（MRB）交尾工作时，往往变成 QC 孤军奋战催促厂商，直到竣工关单阶段突然面临项目部督催。应在设备刚出厂、厂商团队对本项目记忆犹新时，联合相关部门迅速倒逼厂商完成 MRB 归档。",
+        "ja": "機器を出荷するまではプロジェクト関係者も注目しますが、MRBだけになるとQCだけがVendorを追いかけることになり、V-Doc.のCloseの段階になって急にプロジェクトから督促される場合があります。\nVendorがまだ自プロジェクトに関して新鮮な情報を持ってる内に、関連部門と協力しながらMRBを完了させましょう。",
+        "en": "Project teams lose focus after equipment ships, leaving QC alone to chase Manufacturing Record Books (MRBs) until final project closeout pressure hits. Expedite and close out MRBs in collaboration with engineering while vendor teams still have fresh project context."
+    },
+    "5.3-A": {
+        "zh": "协助处理施工现场发现的调达设备质量缺陷与损坏也是 PQCM 的重要职责。当现场发生争议时，必须能够清晰还原设备在工厂出厂时的检验状况，从而精准判定质量责任究竟属于制造厂商、物流运输商还是现场安装分包商。",
+        "ja": "現場で発見される調達機材のトラブル対応をサポートするのもPQCMの役務です。\n何かあった時にVendor Shopでの状況を確実に説明できる状態にしておき、トラブルの責任がVendorにあるのか、Forwarderにあるのか、サブコンにあるのか、正しい判断ができるようにしましょう。",
+        "en": "Supporting site teams on procured equipment defects is a core PQCM duty. Maintain complete shop inspection history so you can accurately explain fabrication status and determine whether fault lies with the Vendor, Logistics Forwarder, or Site Subcontractor."
+    },
+    "5.3-B": {
+        "zh": "对于包含海量散件零配件的成套设备（Package Equipment），仅靠装箱单（Packing List）往往难以在现场快速定位物件。PQCM 应深入了解施工现场的材料管理与开箱流程，在工厂打包出货阶段就推行便于现场接收与管理的标记打包标准。",
+        "ja": "膨大なルーズパーツを含むようなパッケージ機器などでは、Packing Listだけでは何がどこにあるのか分からない場合があるので、建設現場でどのように材料管理をするのか理解した上で、現場に優しい機器の出荷を心がけましょう。",
+        "en": "For complex packaged equipment with extensive loose parts, packing lists alone are insufficient for site material tracking. Understand site storage and handling workflows to enforce vendor packing and labeling standards that support smooth site material control."
+    },
+    "5.3-C": {
+        "zh": "在工厂阶段就已经暴露不符合项（NCR），却因处置不彻底、带病出厂，最终导致质量隐患在施工现场被成倍放大爆发。作为对项目质量负责的团队，这是极其沉痛的教训。务必揪出问题的根本原因，切实落实纠正预防措施（CAPA）。",
+        "ja": "出荷前にNCRが発生していたにも関わらず、十分な対応を怠ったため現場でさらに問題が拡大する場合があります。\n品質に責任を負うチームとしては恥ずべき事象なので、問題の根本原因を確実に捉えて、再発防止に心掛けてください。",
+        "en": "Allowing known shop NCRs to be poorly resolved creates catastrophic, expanded failures once equipment reaches the site. For a quality team, this is unacceptable. Always identify true root causes and enforce robust corrective actions to prevent site escalation."
+    },
+    "5.3-D": {
+        "zh": "材质证明书（MTC）造假是行业教训（CLL）中性质极其恶劣的质量事故。此类行为会从根本上颠覆工程材料可追溯性的信任体系，必须采取极其严谨、严肃且合规的手段进行复查与整改。",
+        "ja": "偽造MTCはCLLにも挙げられている重大な問題です。\n材料のTraceabilityの信頼性を根底から覆す事象なので慎重かつ適切に対応しましょう。",
+        "en": "Forged Material Test Certificates (MTCs) represent critical lessons-learned (CLL) violations that undermine the foundation of material traceability. Address any suspected certificate falsifications with utmost rigor, diligence, and formal compliance."
+    },
+    "5.3-E": {
+        "zh": "特别是对于管道散件材料，如果缺乏完备可追溯的材质证书（MTC），建设现场将无法向分包商发放材料，直接引发现场施工停摆风险。在签发放行证书（IRC）时，必须确立将合格 MTC 及时送达现场的刚性保障机制。",
+        "ja": "特に配管バルク材はMTCが無いと建設現場でサブコンに材料を払い出すことができず、工事が止まるリスクがあります。\nIRC発行時にはTraceableなMTCを確実に現場に届けるプロトコルを確立してください。",
+        "en": "Without verifiable MTCs, piping bulk materials cannot be released to site subcontractors, risking construction halts. When issuing Inspection Release Certificates (IRCs), establish rigid protocols ensuring traceable MTCs arrive on site in parallel."
+    },
+    "5.3": {
+        "zh": "协助现场解决设备到货后的各类质量异常也是 PQCM 的职责所在。当发生质量争议时，应能清楚说明工厂出厂时的检验履历与状态，客观公正地界定属于厂商制造责任、海运运输责任还是现场分包商安装责任。",
+        "ja": "現場で発見される調達機材のトラブル対応をサポートするのもPQCMの役務です。\n何かあった時にVendor Shopでの状況を確実に説明できる状態にしておき、トラブルの責任がVendorにあるのか、Forwarderにあるのか、サブコンにあるのか、正しい判断ができるようにしましょう。",
+        "en": "Supporting site resolution of equipment receipt defects is a vital PQCM responsibility. Maintain clear shop inspection traceability so you can definitively determine whether defects stem from vendor shop errors, shipping transit damage, or site handling."
+    },
+    "4.1-R1": {
+        "zh": "以人力不足为理由削减采购要求审查（Req. Review）等关键工作，只是将隐患推迟到未来爆发。越到项目后程，纠偏手段就越受限。务必坚持在前期阶段将质量风险控制在萌芽状态。",
+        "ja": "人財不足を理由にReq. Reviewなどやるべきことをやらないのはリスクを先送りしているだけです。\n後になればなるほど打てる対策の手数が限られてくるので、初期段階でリスクをコントロールすることを心がけましょう。",
+        "en": "Neglecting foundational tasks like Req. Reviews due to resource constraints is mere risk deferral. As execution progresses, corrective options shrink rapidly. Focus on proactively managing risks during early project phases."
+    },
+    "4.1-R2": {
+        "zh": "以人力不足为理由削减采购要求审查（Req. Review）等关键工作，只是将隐患推迟到未来爆发。越到项目后程，纠偏手段就越受限。务必坚持在前期阶段将质量风险控制在萌芽状态。",
+        "ja": "人財不足を理由にReq. Reviewなどやるべきことをやらないのはリスクを先送りしているだけです。\n後になればなるほど打てる対策の手数が限られてくるので、初期段階でリスクをコントロールすることを心がけましょう。",
+        "en": "Neglecting foundational tasks like Req. Reviews due to resource constraints is mere risk deferral. As execution progresses, corrective options shrink rapidly. Focus on proactively managing risks during early project phases."
+    },
+    "4.1-R3": {
+        "zh": "以人力不足为理由削减采购要求审查（Req. Review）等关键工作，只是将隐患推迟到未来爆发。越到项目后程，纠偏手段就越受限。务必坚持在前期阶段将质量风险控制在萌芽状态。",
+        "ja": "人財不足を理由にReq. Reviewなどやるべきことをやらないのはリスクを先送りしているだけです。\n後になればなるほど打てる対策の手数が限られてくるので、初期段階でリスクをコントロールすることを心がけましょう。",
+        "en": "Neglecting foundational tasks like Req. Reviews due to resource constraints is mere risk deferral. As execution progresses, corrective options shrink rapidly. Focus on proactively managing risks during early project phases."
+    },
+    "4.2-R1": {
+        "zh": "Hold Point（停工待检点/见证点）绝不能随意取消。业主通常认为见证点非常重要，突然变更会严重损害信任，因此应努力安排参加。",
+        "ja": "Hold Pointは勝手にキャンセルすることはできません。\n客先もHold Pointは重要と考えていることが多く、突然の変更は信頼を損ねるので、参加を努力すべき",
+        "en": "Hold Points cannot be cancelled arbitrarily. Clients view Hold Points as vital, and sudden changes will erode trust, so every effort should be made to participate."
+    },
+    "4.2-R2": {
+        "zh": "只要坚持按月开展 QC 检验工时（MH）的精细化盘点与更新，就不会出现检验工时忽然耗尽的困境。未经预警突然向 PMT 索要工时追加会损害管理信任，凡有工时变动，应及时说明合理解释并按程序审批。",
+        "ja": "少なくとも毎月のQC MHのUpdateを確実に実施していたら、ある日突然、検査MHが枯渇することはありません。\n突然の追加MHはPMTの信頼を損ねるので、追加が発生したら、適切な理由を説明して、都度追加MHを合意してください。",
+        "en": "Monthly QC man-hour (MH) tracking prevents sudden MH depletion. Abrupt demands for additional man-hours alienate PMT trust; justify any scope changes clearly and secure formal agreements whenever extra MH is needed."
+    },
+    "4.2-R3": {
+        "zh": "部分严格的业主并不认可偏向于企业内部认证的 ASNT SNT-TC-1A 无损检测人员资质。必须在合同初期仔细研读技术规范要求，避免出现资质否决风险。对于明确排除 SNT-TC-1A 的业主，后期试图强行沟通认可极其困难。",
+        "ja": "社内資格に近いASNTのSNT-TC-1Aの認証プロセスを認めない客先も居るので、契約要求をシッカリ読み込んで、漏れの無いQC遂行を心がけてください。\n意識的にSNT-TC-1Aを排除したい客先に認めてもらうのはかなり難しいです。",
+        "en": "Certain clients strictly reject employer-based ASNT SNT-TC-1A NDT certifications. Thoroughly review contract specifications early to avoid execution gaps. Persuading clients who explicitly exclude SNT-TC-1A to grant exceptions is exceptionally difficult."
+    },
+    "4.2-R4": {
+        "zh": "第三方驻厂检验员是品质部门在工厂的眼睛和耳朵。如果检验员出具的检验报告（IR）表述不清、缺少追溯依据，一旦施工现场发现质量隐患，将无法追溯工厂当时的制造状况，甚至在索赔谈判中陷于被动。必须指导规范检验员出具高质量的报告。",
+        "ja": "JGC検査員はVendor Shopにおける我々の目であり耳です。\nプロジェクト関係者が理解できるIRを作成してもらわないと、建設現場で何か問題が見つかった時に、Vendor Shopでの状況が追いかけられず、最悪の場合、Vendorと不利な交渉に持ち込まれますので、適切なレベルのIRが作成できるよう検査員を指導しましょう。",
+        "en": "Inspectors are our eyes and ears in vendor shops. If Inspection Reports (IRs) lack detail, site troubleshooting cannot trace shop fabrication status, leaving us vulnerable in vendor negotiations. Guide inspectors to produce professional, clear, and traceable IRs."
+    },
+    "4.2-R5": {
+        "zh": "在供应商工厂检查中发现的问题如果未能及时形成闭环反馈，必然会导致缺陷延伸至本项目设备中。对于已发现的质量隐患必须严肃处理，隐瞒缺陷强行出厂属于严重触犯工程师职业道德的红线行为。",
+        "ja": "Vendor ShopでのFindingを確実にフィードバックしないと、自プロジェクトの製品にもトラブルが発生します。\n見つかったトラブルに対しては適切に対応しましょう、欠陥を隠して出荷するのは技術者倫理に抵触する大問題です。",
+        "en": "Failing to feed back shop inspection findings guarantees quality issues on our equipment. Address all identified defects properly; concealing defects to force equipment shipment violates fundamental engineering ethics."
+    },
+    "4.3-R1": {
+        "zh": "批量散件（Bulk Materials）发生不符合项（NCR）后的全面水平展开排查往往耗时巨大。但必须深入追溯问题的根本原因，凡存在系统性重现风险的，哪怕耗费精力也必须全面追溯复核，否则未来会在现场酿成更大的事故。",
+        "ja": "バルク品のNCRの水平展開は膨大な時間を要する場合があります。\nトラブルの根本原因を追究して、再現性がある場合は時間をかけてでもバックチェックしないと、後日もっと大きな問題に発展する可能性があります。",
+        "en": "Horizontally expanding bulk material non-conformance reports (NCRs) requires significant time. However, investigating root causes is mandatory; if systemic defects exist, thorough back-checking is essential to prevent massive site failures later."
+    },
+    "4.3-R2": {
+        "zh": "政府官厅检验员本质上是执法人员或其法定代表，与业主有着本质区别。他们绝不会为了工程进度而承担任何违规风险，完全遵循法定程序。如果到了项目后期才发现遗漏了官厅见证要求，补救手段极其有限。务必在项目初期彻底梳理并纳入官厅法定检验要求。",
+        "ja": "官庁検査員は基本的に役人かその代理人で客先とは異なり、リスクを取ってでもプロジェクトを進めようというマインドが乏しく、決められたルール通りに進める指向が強い場合が多いので、後になって官庁検査の要求漏れが見つかっても打てる対策が限られてきます。\nプロジェクトの初期から確実に官庁要求を取り込んでください。",
+        "en": "Government inspectors are officials or legal deputies who strictly follow statutory rules with zero appetite for risk-taking to preserve schedule. If missing statutory inspection requirements are uncovered late, remedies are minimal. Incorporate government requirements from day one."
+    },
+    "4.3-R3": {
+        "zh": "视工厂质量危机的严重程度而定，有时即便投入海量人力驻厂补救并将设备强行送达现场，后续依然会在施工现场引发大量的追加返修。工程历史上不乏因未能及时果断取消订单换厂（Re-ordering）而追受巨大损失的教训。项目团队应保持透明沟通，果断决策。",
+        "ja": "トラブルの量と程度によりますが、徹底的に人財を投入してVendor Shopでトラブルを出来るだけ解決して現場に機器を収めても、現場でも追加の補修工事などが発生し、振り返ってみれば、ある時期に発注替えを決断するべきだった反省する事例もあります。\nプロジェクト関係者で常に状況を共有しながら適切な判断をしましょう。",
+        "en": "Depending on shop trouble severity, pouring in massive manpower to patch equipment before site delivery may still result in heavy site rework. In hindsight, early order cancellation and re-sourcing is sometimes the correct call. Maintain transparent communication to make decisive project calls."
+    },
+    "4.3-R4": {
+        "zh": "法兰密封面（Flange Face）的锈蚀与划伤是各类工程项目中最常见的质量通病。由于数量庞大，在工厂做到 100% 检验确实困难，但至少要确保合同防护要求被严格履行，并通过抽查留痕，确保即便未来现场出现争议，也能清晰说明工厂出厂时的合格状态。",
+        "ja": "フランジ面の錆とキズは、どのプロジェクトでも大なり小なり問題が発生します。\n物量が多いのでVendor Shopで100%チェックをするのも難しいが、少なくともプロジェクトの要求事項は確実に履行させた上で、抜き取りで確認し、将来問題が起きた場合でも、Vendor Shopでなされたことが確実に説明でき状態にしておきましょう。",
+        "en": "Flange face rust and scratches occur on virtually every project. Given high quantities, 100% shop inspection is tough, but ensure project preservation specs are strictly executed and spot-checked, so shop inspection status can be documented if disputes arise later."
+    },
+    "5.3-R1": {
+        "zh": "协助处理施工现场发现的调达设备质量缺陷与损坏也是 PQCM 的重要职责。当现场发生争议时，必须能够清晰还原设备在工厂出厂时的检验状况，从而精准判定质量责任究竟属于制造厂商、物流运输商还是现场安装分包商。",
+        "ja": "現場で発見される調達機材のトラブル対応をサポートするのもPQCMの役務です。\n何かあった時にVendor Shopでの状況を確実に説明できる状態にしておき、トラブルの責任がVendorにあるのか、Forwarderにあるのか、サブコンにあるのか、正しい判断ができるようにしましょう。",
+        "en": "Supporting site teams on procured equipment defects is a core PQCM duty. Maintain complete shop inspection history so you can accurately explain fabrication status and determine whether fault lies with the Vendor, Logistics Forwarder, or Site Subcontractor."
+    },
+    "5.3-R2": {
+        "zh": "对于包含海量散件零配件的成套设备（Package Equipment），仅靠装箱单（Packing List）往往难以在现场快速定位物件。PQCM 应深入了解施工现场的材料管理与开箱流程，在工厂打包出货阶段就推行便于现场接收与管理的标记打包标准。",
+        "ja": "膨大なルーズパーツを含むようなパッケージ機器などでは、Packing Listだけでは何がどこにあるのか分からない場合があるので、建設現場でどのように材料管理をするのか理解した上で、現場に優しい機器の出荷を心がけましょう。",
+        "en": "For complex packaged equipment with extensive loose parts, packing lists alone are insufficient for site material tracking. Understand site storage and handling workflows to enforce vendor packing and labeling standards that support smooth site material control."
+    },
+    "5.3-R3": {
+        "zh": "在工厂阶段就已经暴露不符合项（NCR），却因处置不彻底、带病出厂，最终导致质量隐患在施工现场被成倍放大爆发。作为对项目质量负责的团队，这是极其沉痛的教训。务必揪出问题的根本原因，切实落实纠正预防措施（CAPA）。",
+        "ja": "出荷前にNCRが発生していたにも関わらず、十分な対応を怠ったため現場でさらに問題が拡大する場合があります。\n品質に責任を負うチームとしては恥ずべき事象なので、問題の根本原因を確実に捉えて、再発防止に心掛けてください。",
+        "en": "Allowing known shop NCRs to be poorly resolved creates catastrophic, expanded failures once equipment reaches the site. For a quality team, this is unacceptable. Always identify true root causes and enforce robust corrective actions to prevent site escalation."
+    },
+    "5.3-R4": {
+        "zh": "特别是对于管道散件材料，如果缺乏完备可追溯的材质证书（MTC），建设现场将无法向分包商发放材料，直接引发现场施工停摆风险。在签发放行证书（IRC）时，必须确立将合格 MTC 及时送达现场的刚性保障机制。",
+        "ja": "特に配管バルク材はMTCが無いと建設現場でサブコンに材料を払い出すことができず、工事が止まるリスクがあります。\nIRC発行時にはTraceableなMTCを確実に現場に届けるプロトコルを確立してください。",
+        "en": "Without verifiable MTCs, piping bulk materials cannot be released to site subcontractors, risking construction halts. When issuing Inspection Release Certificates (IRCs), establish rigid protocols ensuring traceable MTCs arrive on site in parallel."
     }
 };
 
@@ -1222,25 +1432,25 @@ function showExplanationsPage() {
     const lang = gameState.lang;
     const pageLabels = {
         zh: {
-            title: "未获得满分问题的答题解说",
+            title: "全关卡答题解说与质量评析",
             back: "返回证书",
-            perfect: "恭喜！您获得了满分，没有任何答错的选项！",
-            yourChoice: "您的选择",
-            score: "得分"
+            noQuestions: "您在本次故事线中尚未回答任何问题。",
+            questionBg: "题目背景",
+            yourChoice: "您的选择"
         },
         ja: {
-            title: "クオリティマネジメント解説",
+            title: "全問題の解説と振り返り",
             back: "認定証へ戻る",
-            perfect: "おめでとうございます！満点のため、解説が必要な誤選択はありません！",
-            yourChoice: "あなたの選択",
-            score: "得点"
+            noQuestions: "回答された問題がありません。",
+            questionBg: "問題背景",
+            yourChoice: "選択した回答"
         },
         en: {
-            title: "Quality Review & Explanations",
+            title: "Storyline Explanations & Quality Review",
             back: "Back to Certificate",
-            perfect: "Congratulations! You got a perfect score! There are no incorrect choices to review.",
-            yourChoice: "Your Choice",
-            score: "Score"
+            noQuestions: "No answered questions to display.",
+            questionBg: "Question Background",
+            yourChoice: "Your Selection"
         }
     };
 
@@ -1248,23 +1458,22 @@ function showExplanationsPage() {
     els.explanationBackText.textContent = pageLabels[lang].back;
     els.explanationList.innerHTML = "";
 
-    // Find all selections where score was not 10
-    const incorrectSelections = [];
+    // Collect all answered selections across the storyline path (regardless of score!)
+    const answeredSelections = [];
     gameState.path.forEach(nodeId => {
         const sel = findSelectionById(nodeId);
-        // Only show actual question selections that scored less than 10 points
-        if (sel && sel.score < 10) {
-            incorrectSelections.push(sel);
+        if (sel && sel.id !== "start_to_welcome" && sel.id !== "start_btn") {
+            answeredSelections.push(sel);
         }
     });
 
-    if (incorrectSelections.length === 0) {
-        const perfectMsg = document.createElement("div");
-        perfectMsg.className = "explanation-perfect-msg";
-        perfectMsg.textContent = pageLabels[lang].perfect;
-        els.explanationList.appendChild(perfectMsg);
+    if (answeredSelections.length === 0) {
+        const emptyMsg = document.createElement("div");
+        emptyMsg.className = "explanation-perfect-msg";
+        emptyMsg.textContent = pageLabels[lang].noQuestions;
+        els.explanationList.appendChild(emptyMsg);
     } else {
-        incorrectSelections.forEach(sel => {
+        answeredSelections.forEach(sel => {
             const chId = getChapterIdOfSelection(sel.id);
             const ch = STORY_DATA[chId];
             if (!ch) return;
@@ -1272,33 +1481,37 @@ function showExplanationsPage() {
             const item = document.createElement("div");
             item.className = "explanation-item";
 
-            // Title (Chapter title)
+            // Title (Chapter Header)
             const title = document.createElement("h3");
             title.className = "explanation-item-title";
-            title.textContent = `${ch.chapter} ${ch.title[lang] || ""}`;
+            title.textContent = `${ch.chapter} ${ch.title ? ch.title[lang] || "" : ""}`;
             item.appendChild(title);
 
-            // Choice details
+            // Question Description (题目的文字)
+            const questionDiv = document.createElement("div");
+            questionDiv.className = "explanation-item-question";
+            questionDiv.innerHTML = `<strong>${pageLabels[lang].questionBg}:</strong> ${ch.desc ? ch.desc[lang] || "" : ""}`;
+            item.appendChild(questionDiv);
+
+            // Selected Choice Text (选择的选项的文字) - NO SCORE DISPLAY!
             const choiceDiv = document.createElement("div");
             choiceDiv.className = "explanation-item-choice";
-            choiceDiv.innerHTML = `<span><strong>${pageLabels[lang].yourChoice}:</strong> ${sel.desc[lang]}</span>
-                                  <span class="explanation-score-tag">${pageLabels[lang].score}: ${sel.score} / 10</span>`;
+            choiceDiv.innerHTML = `<span><strong>${pageLabels[lang].yourChoice}:</strong> ${sel.desc ? sel.desc[lang] || "" : ""}</span>`;
             item.appendChild(choiceDiv);
 
-            // Explanation text
+            // Explanation Text (解说)
             const expText = document.createElement("div");
             expText.className = "explanation-item-text";
             
-            // Fetch explanation or fall back to placeholders
-            let exp = EXPLANATIONS[sel.id];
+            let exp = EXPLANATIONS[chId] || EXPLANATIONS[sel.id];
             let expString = "";
             if (exp && exp[lang]) {
                 expString = exp[lang];
             } else {
                 const placeholders = {
-                    zh: "【暂无该选项解说】请继续努力，尝试选择满分选项！",
-                    ja: "【この選択肢の解説は現在準備中です】引き続き満点を目指して挑戦してください！",
-                    en: "[No explanation available for this option yet] Please keep trying to find the perfect choice!"
+                    zh: "【暂无解说】",
+                    ja: "【解説準備中】",
+                    en: "[No explanation available]"
                 };
                 expString = placeholders[lang];
             }
