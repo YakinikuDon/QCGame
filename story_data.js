@@ -3,8 +3,8 @@ const STORY_DATA = {
         "chapter": "1.1",
         "desc": {
             "ja": "プロジェクトQCセットアップの第一歩、契約図書のReview時に検査申請の30日前Noticeの要求を見つけた",
-            "zh": "【项目质量策划第一步】在审查合同时，我发现要求在检验前30天通知。",
-            "en": "[The First Step of Project QC Setup] When design review and revisioning the contract, I found a request for a notice 30 days before the inspection."
+            "zh": "在审查合同时，我发现要求在检验前30天通知。",
+            "en": "When design review and revisioning the contract, I found a request for a notice 30 days before the inspection."
         },
         "selections": [
             {
@@ -204,8 +204,8 @@ const STORY_DATA = {
         "chapter": "2.1",
         "desc": {
             "ja": "セットアップは完成しました。これからチームを運営するにあたって、Quality Policyとして何に重きを置きますか？",
-            "zh": "【项目质量策划完成】在今后运营团队时， 您想要强调什么质量方针？",
-            "en": "[Project Setup Completed] When running the team from now on, What do you place emphasis on as a quality policy?"
+            "zh": "在今后运营团队时， 您想要强调什么质量方针？",
+            "en": "When running the team from now on, What do you place emphasis on as a quality policy?"
         },
         "selections": [
             {
@@ -271,8 +271,8 @@ const STORY_DATA = {
         "chapter": "3.1-A",
         "desc": {
             "ja": "プロジェクトの序盤です。設計から引き合い要求書 Reviewが来たがチーム員不足で対応できない",
-            "zh": "【项目初期阶段】由于团队成员不足而无法及时回复设计团队发起的询价要求书审查要求。",
-            "en": "[Early Stage of Project] Requisition Review came from the design team, but it could not be responded to due to lack of team members."
+            "zh": "由于团队成员不足而无法及时回复设计团队发起的询价要求书审查要求。",
+            "en": "Requisition Review came from the design team, but it could not be responded to due to lack of team members."
         },
         "selections": [
             {
@@ -341,8 +341,8 @@ const STORY_DATA = {
         "chapter": "3.1",
         "desc": {
             "ja": "プロジェクトの序盤です。早速設計から引き合い要求書 Reviewが来始めたが、社内標準のままでProject固有の要求が取り込まれていない",
-            "zh": "【项目初期阶段】其他部门已经开始让我们审批询价书了，但询价书上并没有反映项目要求。仅采用了我们公司的标准格式。",
-            "en": "[Early Stage of Project] Requisition Reviews have started coming in, but the company standard remains the same and project-specific requests are not incorporated."
+            "zh": "其他部门已经开始让我们审批询价书了，但询价书上并没有反映项目要求。仅采用了我们公司的标准格式。",
+            "en": "Requisition Reviews have started coming in, but the company standard remains the same and project-specific requests are not incorporated."
         },
         "selections": [
             {
@@ -550,8 +550,8 @@ const STORY_DATA = {
         "chapter": "3.2",
         "desc": {
             "ja": "技術評価（Technical Evaluation）が始まり、本プロジェクトでは耐圧部材のType-3.2の素材要求があることを認識していた",
-            "zh": "【技术评估已开始】技术评估（Technical Evaluation） 已经开始，该项目认识到耐压构件需要 Type-3.2 材料。",
-            "en": "[Technical Evaluation Begun] Technical Evaluation has begun, and this project recognizes that there is a requirement for Type-3.2 materials for pressure-resistant members."
+            "zh": "技术评估（Technical Evaluation） 已经开始，该项目认识到耐压构件需要 Type-3.2 材料。",
+            "en": "Technical Evaluation has begun, and this project recognizes that there is a requirement for Type-3.2 materials for pressure-resistant members."
         },
         "selections": [
             {
@@ -936,8 +936,8 @@ const STORY_DATA = {
         "chapter": "3.5",
         "desc": {
             "ja": "今後の検査に向けて品質管理検査員を配員しますが、対象POのカテゴリーでベンダー 工場のエリアにCapableな検査員が見つからない",
-            "zh": "【为后续检验做准备】在为后续检验调配检验员时， 在目标 采购订单 类别的供应商制造厂区域中找不到有能力的检验员。",
-            "en": "[Preparing for Future Inspections] Although we are assigning inspectors for future inspections, Capable inspectors cannot be found in the Vendor Shop area in the target Purchase Order (PO) category."
+            "zh": "在为后续检验调配检验员时， 在目标 采购订单 类别的供应商制造厂区域中找不到有能力的检验员。",
+            "en": "Although we are assigning inspectors for future inspections, Capable inspectors cannot be found in the Vendor Shop area in the target Purchase Order (PO) category."
         },
         "selections": [
             {
@@ -1005,8 +1005,8 @@ const STORY_DATA = {
         "chapter": "4.1-A",
         "desc": {
             "ja": "プロジェクトの最盛期で検査前打合せ（PIM）が始まりました。引き合い要求書に盛り込み忘れた要求事項を協議するも、ベンダーから追加だとクレームを受けた",
-            "zh": "【项目高峰期，PIM已启动】我们跟供应商讨论了一些忘了加在询价要求书（Requisition）里面的项目要求。供货商说可以满足，但是必须要加钱。",
-            "en": "[Peak of Project, PIM Begun] We discussed some project requirements forgotten to be included in the Requisition with the vendor. The vendor said they could meet them, but additional costs would be required."
+            "zh": "我们跟供应商讨论了一些忘了加在询价要求书（Requisition）里面的项目要求。供货商说可以满足，但是必须要加钱。",
+            "en": "We discussed some project requirements forgotten to be included in the Requisition with the vendor. The vendor said they could meet them, but additional costs would be required."
         },
         "selections": [
             {
@@ -1074,8 +1074,8 @@ const STORY_DATA = {
         "chapter": "4.1-B",
         "desc": {
             "ja": "プロジェクトの最盛期で検査前打合せ（PIM）が始まりました。その場で技術評価（Technical Evaluation）不足でType-3.2の素材要求の見逃しが発覚した",
-            "zh": "【项目高峰期，PIM已启动】因为在技术评估（Technical Evaluation）阶段没有提醒供货商，导致供货商没有采购符合Type-3.2材质证明书（MTC）要求的材料。",
-            "en": "[Peak of Project, PIM Begun] Because the vendor was not reminded during the Technical Evaluation, the vendor failed to purchase materials with Type-3.2 Material Test Certificates (MTC)."
+            "zh": "因为在技术评估（Technical Evaluation）阶段没有提醒供货商，导致供货商没有采购符合Type-3.2材质证明书（MTC）要求的材料。",
+            "en": "Because the vendor was not reminded during the Technical Evaluation, the vendor failed to purchase materials with Type-3.2 Material Test Certificates (MTC)."
         },
         "selections": [
             {
@@ -1143,8 +1143,8 @@ const STORY_DATA = {
         "chapter": "4.1-C",
         "desc": {
             "ja": "プロジェクトの最盛期で検査前打合せ（PIM）の時期が来ましたが、技術評価（Technical Evaluation）不足からベンダー図書が固まらず、いつまで経っても検査前打合せ（PIM）が開催できない",
-            "zh": "【项目高峰期，PIM已到期】由于技术评估（Technical Evaluation）进行得不充分，导致在项目正式进行时，供应商提交了好几版图纸（vendor document）也没法满足项目要求，检验前会议（PIM）迟迟无法召开。",
-            "en": "[Peak of Project, PIM Due] Because the Technical Evaluation was insufficient, the vendor submitted multiple revisions of vendor documents (V-Docs) but still could not satisfy the project requirements, and the Pre-Inspection Meeting (PIM) could not be held."
+            "zh": "由于技术评估（Technical Evaluation）进行得不充分，导致在项目正式进行时，供应商提交了好几版图纸（vendor document）也没法满足项目要求，检验前会议（PIM）迟迟无法召开。",
+            "en": "Because the Technical Evaluation was insufficient, the vendor submitted multiple revisions of vendor documents (V-Docs) but still could not satisfy the project requirements, and the Pre-Inspection Meeting (PIM) could not be held."
         },
         "selections": [
             {
@@ -1210,8 +1210,8 @@ const STORY_DATA = {
         "chapter": "4.1-D",
         "desc": {
             "ja": "プロジェクトの最盛期で検査前打合せ（PIM）の時期が来ましたが、ベンダー図書 Review時からベンダーとの関係が悪化し、検査前打合せ（PIM）でも非協力的な態度を取られた",
-            "zh": "【项目高峰期，PIM已到期】在供应商图纸审核（Vendor Document Review）阶段，和供货商的关系搞得很差，导致供货商修改文件不积极，马上要赶不上召开检验前会议（PIM）了。",
-            "en": "[Peak of Project, PIM Due] During the Vendor Document Review stage, the relationship with the vendor became very poor, leading to a lack of active document revision by the vendor, making it almost impossible to hold the Pre-Inspection Meeting (PIM) on schedule."
+            "zh": "在供应商图纸审核（Vendor Document Review）阶段，和供货商的关系搞得很差，导致供货商修改文件不积极，马上要赶不上召开检验前会议（PIM）了。",
+            "en": "During the Vendor Document Review stage, the relationship with the vendor became very poor, leading to a lack of active document revision by the vendor, making it almost impossible to hold the Pre-Inspection Meeting (PIM) on schedule."
         },
         "selections": [
             {
@@ -1279,8 +1279,8 @@ const STORY_DATA = {
         "chapter": "4.1",
         "desc": {
             "ja": "プロジェクトの最盛期で検査前打合せ（PIM）が始まりました。検査前打合せ（PIM）の工場 Visit時に、溶接棒が適切に管理されていない状況が確認された",
-            "zh": "【项目高峰期，PIM已启动】在走访 检验前会议（PIM） 车间期间，证实焊条没有得到妥善管理。",
-            "en": "[Peak of Project, PIM Begun] During a Pre-Inspection Meeting (PIM) shop visit, it was confirmed that welding rods were not being managed properly."
+            "zh": "在走访 检验前会议（PIM） 车间期间，证实焊条没有得到妥善管理。",
+            "en": "During a Pre-Inspection Meeting (PIM) shop visit, it was confirmed that welding rods were not being managed properly."
         },
         "selections": [
             {
@@ -1348,8 +1348,8 @@ const STORY_DATA = {
         "chapter": "4.2-A",
         "desc": {
             "ja": "検査コーディネーションにおいて、ベンダーが30日前の検査申請を出せず、立会検査がたびたび客先からRejectされた",
-            "zh": "【检验协调阶段】由于供应商未能提前30天提交检验申请，立会检验屡次被业主驳回。",
-            "en": "[Inspection Coordination Stage] The vendor failed to submit the inspection notice 30 days prior, and the witness inspections were repeatedly rejected by the client."
+            "zh": "由于供应商未能提前30天提交检验申请，立会检验屡次被业主驳回。",
+            "en": "The vendor failed to submit the inspection notice 30 days prior, and the witness inspections were repeatedly rejected by the client."
         },
         "selections": [
             {
@@ -1415,8 +1415,8 @@ const STORY_DATA = {
         "chapter": "4.2-B",
         "desc": {
             "ja": "検査コーディネーションにおいて、契約要求に反して2週間前の検査申請を出していたため客先から不適合報告書（NCR）が発行された",
-            "zh": "【检验协调阶段】由于违反合同要求在检验前2周才提交检验申请，业主开具了不符合项报告（NCR）。",
-            "en": "[Inspection Coordination Stage] An NCR was issued by the client because the inspection application was submitted only 2 weeks prior, in violation of the contract requirements."
+            "zh": "由于违反合同要求在检验前2周才提交检验申请，业主开具了不符合项报告（NCR）。",
+            "en": "An NCR was issued by the client because the inspection application was submitted only 2 weeks prior, in violation of the contract requirements."
         },
         "selections": [
             {
@@ -1862,8 +1862,8 @@ const STORY_DATA = {
         "chapter": "4.2",
         "desc": {
             "ja": "検査コーディネーションにおいて、ベンダーによるSubvendor管理不足でタイムリーに検査申請が出ない",
-            "zh": "【检验协调阶段】由于供应商缺乏对转包商的管理，未及时提交验货申请。",
-            "en": "[Inspection Coordination Stage] Inspection applications are not submitted in a timely manner due to lack of subvendor management by the vendor."
+            "zh": "由于供应商缺乏对转包商的管理，未及时提交验货申请。",
+            "en": "Inspection applications are not submitted in a timely manner due to lack of subvendor management by the vendor."
         },
         "selections": [
             {
@@ -2240,8 +2240,8 @@ const STORY_DATA = {
         "chapter": "5.1-A",
         "desc": {
             "ja": "プロジェクトも終盤ですが、新規エンジニアの経験不足で、バルク材の材質証明書（MTC）が無いままIRCだけ発行した",
-            "zh": "【项目已进入尾声】由于新外包团队人员经验不足，在未收到材质证明书（MTC）的情况下，他就发行了检验放行证（IRC），放行了这批材料。",
-            "en": "[The Project is in its Final Stages] Due to the lack of experience of the new outsourcing team, they issued the Inspection Release Certificate (IRC) without receiving the Material Test Certificate (MTC) for the bulk materials."
+            "zh": "由于新外包团队人员经验不足，在未收到材质证明书（MTC）的情况下，他就发行了检验放行证（IRC），放行了这批材料。",
+            "en": "Due to the lack of experience of the new outsourcing team, they issued the Inspection Release Certificate (IRC) without receiving the Material Test Certificate (MTC) for the bulk materials."
         },
         "selections": [
             {
@@ -2294,8 +2294,8 @@ const STORY_DATA = {
         "chapter": "5.1",
         "desc": {
             "ja": "プロジェクトも終盤ですが、IRC発行直前のFinal Inspectionで大量のパンチがついた",
-            "zh": "【项目已进入尾声】在发行检验放行证（IRC）之前的最终检查（final inspection）中，发现了很多待整改的问题（punch）。",
-            "en": "[The Project is in its Final Stages] During the final inspection just before issuing the Inspection Release Certificate (IRC), we found many pending punch list items."
+            "zh": "在发行检验放行证（IRC）之前的最终检查（final inspection）中，发现了很多待整改的问题（punch）。",
+            "en": "During the final inspection just before issuing the Inspection Release Certificate (IRC), we found many pending punch list items."
         },
         "selections": [
             {
@@ -2428,8 +2428,8 @@ const STORY_DATA = {
         "chapter": "5.3-A",
         "desc": {
             "ja": "現場サポートもPQCMの仕事です。IR Review不足により現場に届いたVesselにClipが取り付けられていない事例が散見された",
-            "zh": "【现场支持也是PQCM的职责】由于检验报告（Inspection Report）审批得不够充分，导致某些压力容器（vessel）运抵施工现场后，发现上面缺少了支撑管卡（clip）。",
-            "en": "[Site Support is also PQCM's Job] Due to insufficient review of the Inspection Report (IR), there were cases where clips were not attached to the vessels that arrived at the construction site."
+            "zh": "由于检验报告（Inspection Report）审批得不够充分，导致某些压力容器（vessel）运抵施工现场后，发现上面缺少了支撑管卡（clip）。",
+            "en": "Due to insufficient review of the Inspection Report (IR), there were cases where clips were not attached to the vessels that arrived at the construction site."
         },
         "selections": [
             {
@@ -2495,8 +2495,8 @@ const STORY_DATA = {
         "chapter": "5.3-B",
         "desc": {
             "ja": "現場サポートもPQCMの仕事です。検査の無いまま出荷したので、現場でルーズパーツなどがどこにあるか分からない",
-            "zh": "【现场支持也是PQCM的职责】由于发货前未进行检验，导致在施工现场不清楚散供件（loose parts）的具体位置。",
-            "en": "[Site Support is also PQCM's Job] Since it was shipped without inspection, it is unclear where the loose parts are located on site."
+            "zh": "由于发货前未进行检验，导致在施工现场不清楚散供件（loose parts）的具体位置。",
+            "en": "Since it was shipped without inspection, it is unclear where the loose parts are located on site."
         },
         "selections": [
             {
@@ -2562,8 +2562,8 @@ const STORY_DATA = {
         "chapter": "5.3-C",
         "desc": {
             "ja": "現場サポートもPQCMの仕事です。バルク品の不適合報告書（NCR）が出荷前に処理しきれず、現場でも同様に発見される",
-            "zh": "【现场支持也是PQCM的职责】散装材料的不符合项报告（NCR）在出厂发货前未能处理完毕，在施工现场同样被发现了。",
-            "en": "[Site Support is also PQCM's Job] The Non-Conformance Report (NCR) for bulk materials could not be fully resolved before shipment, and the same issues were discovered on site."
+            "zh": "散装材料的不符合项报告（NCR）在出厂发货前未能处理完毕，在施工现场同样被发现了。",
+            "en": "The Non-Conformance Report (NCR) for bulk materials could not be fully resolved before shipment, and the same issues were discovered on site."
         },
         "selections": [
             {
@@ -2629,8 +2629,8 @@ const STORY_DATA = {
         "chapter": "5.3-D",
         "desc": {
             "ja": "現場サポートもPQCMの仕事です。偽造材質証明書（MTC）に関して現場客先担当者から材料のTraceabiltyに関してコメントを受ける",
-            "zh": "【现场支持也是PQCM的职责】收到现场业主代表关于伪造材质证明书（MTC）材料追溯性的质疑意见。",
-            "en": "[Site Support is also PQCM's Job] Received comments from the on-site client representative regarding material traceability concerns due to the forged Material Test Certificate (MTC)."
+            "zh": "收到现场业主代表关于伪造材质证明书（MTC）材料追溯性的质疑意见。",
+            "en": "Received comments from the on-site client representative regarding material traceability concerns due to the forged Material Test Certificate (MTC)."
         },
         "selections": [
             {
@@ -2681,8 +2681,8 @@ const STORY_DATA = {
         "chapter": "5.3-E",
         "desc": {
             "ja": "現場サポートもPQCMの仕事です。いつまで経っても材質証明書（MTC）が来ないので、現場でサブコンに配管材料を払い出せない",
-            "zh": "【现场支持也是PQCM的职责】无论过了多久，材质证明书（MTC）都没有送达，所以我们无法在现场向分包商（Subcontractor）发放管道材料。",
-            "en": "[Site Support is also PQCM's Job] No matter how much time passes, the Material Test Certificate (MTC) does not arrive, so we cannot release piping materials to the subcontractor on site."
+            "zh": "无论过了多久，材质证明书（MTC）都没有送达，所以我们无法在现场向分包商（Subcontractor）发放管道材料。",
+            "en": "No matter how much time passes, the Material Test Certificate (MTC) does not arrive, so we cannot release piping materials to the subcontractor on site."
         },
         "selections": [
             {
@@ -2733,8 +2733,8 @@ const STORY_DATA = {
         "chapter": "5.3",
         "desc": {
             "ja": "現場サポートもPQCMの仕事です。現場受入時に機器のノズルの曲がりが報告される",
-            "zh": "【现场支持也是PQCM的职责】现场开箱检验（Material Receipt Inspection）时，发现设备的接管（nozzle）弯曲偏位。",
-            "en": "[Site Support is also PQCM's Job] During Material Receipt Inspection at site, a bent nozzle was reported."
+            "zh": "现场开箱检验（Material Receipt Inspection）时，发现设备的接管（nozzle）弯曲偏位。",
+            "en": "During Material Receipt Inspection at site, a bent nozzle was reported."
         },
         "selections": [
             {
@@ -2799,9 +2799,9 @@ const STORY_DATA = {
     "4.1-R1": {
         "chapter": "4.1-R1",
         "desc": {
-            "zh": "【检验前会议突发事件】在检验前会议（PIM）上，业主代表突然提出了一项合同外的新规范解释，供货商表示配合该解释需要额外的工时和补偿费用。",
-            "ja": "【PIM突発事態】PIM会議において、オーナー代表が突然契約外の新たな仕様解釈を提示し、ベンダーはこれに対応するために追加工数と費用補填を要求した。",
-            "en": "[PIM Sudden Event] During the PIM meeting, the Owner representative suddenly presented a new specification interpretation outside the contract, and the vendor requested additional man-hours and cost compensation to comply."
+            "zh": "在检验前会议（PIM）上，业主代表突然提出了一项合同外的新规范解释，供货商表示配合该解释需要额外的工时和补偿费用。",
+            "ja": "PIM会議において、オーナー代表が突然契約外の新たな仕様解釈を提示し、ベンダーはこれに対応するために追加工数と費用補填を要求した。",
+            "en": "During the PIM meeting, the Owner representative suddenly presented a new specification interpretation outside the contract, and the vendor requested additional man-hours and cost compensation to comply."
         },
         "selections": [
             {
@@ -2868,9 +2868,9 @@ const STORY_DATA = {
     "4.1-R2": {
         "chapter": "4.1-R2",
         "desc": {
-            "zh": "【检验前会议突发事件】供应商由于产能负荷过重，无暇在会前处理完所有制造文件（vendor document）。为了不延误工期，供应商建议先召开检验前会议（PIM），之后再补齐相关文件。",
-            "ja": "【PIM突発事態】ベンダーの負荷が高すぎるため、会議前に製造図書（vendor document）をすべて処理する余裕がないとして、スケジュール遅延を防ぐためにPIM会議を先に行い、後から図書を補正することを提案してきた。",
-            "en": "[PIM Sudden Event] The vendor is overloaded and has no time to process all vendor documents before the meeting. To avoid schedule delays, they suggest holding the PIM first and completing the vendor documents later."
+            "zh": "供应商由于产能负荷过重，无暇在会前处理完所有制造文件（vendor document）。为了不延误工期，供应商建议先召开检验前会议（PIM），之后再补齐相关文件。",
+            "ja": "ベンダーの負荷が高すぎるため、会議前に製造図書（vendor document）をすべて処理する余裕がないとして、スケジュール遅延を防ぐためにPIM会議を先に行い、後から図書を補正することを提案してきた。",
+            "en": "The vendor is overloaded and has no time to process all vendor documents before the meeting. To avoid schedule delays, they suggest holding the PIM first and completing the vendor documents later."
         },
         "selections": [
             {
@@ -2935,9 +2935,9 @@ const STORY_DATA = {
     "4.1-R3": {
         "chapter": "4.1-R3",
         "desc": {
-            "zh": "【检验前会议突发事件】受地缘政治因素影响，供应商所在国与我国的关系急剧恶化。在当地社会舆论的影响下，供应商管理层和工厂人员对我们的态度变得十分冷淡且消极配合。",
-            "ja": "【PIM突発事態】地政学的要因により、ベンダー所在国と我が国との関係が急速に悪化した。現地の世論の影響を受け、ベンダーの管理職や工場スタッフの弊社に対する態度が極めて冷淡になり、非協力的な姿勢を示している。",
-            "en": "[PIM Sudden Event] Due to geopolitical factors, the relationship between the vendor's country and ours has deteriorated rapidly. Under the influence of local public opinion, the vendor's management and shop personnel have become cold and uncooperative toward us."
+            "zh": "受地缘政治因素影响，供应商所在国与我国的关系急剧恶化。在当地社会舆论的影响下，供应商管理层和工厂人员对我们的态度变得十分冷淡且消极配合。",
+            "ja": "地政学的要因により、ベンダー所在国と我が国との関係が急速に悪化した。現地の世論の影響を受け、ベンダーの管理職や工場スタッフの弊社に対する態度が極めて冷淡になり、非協力的な姿勢を示している。",
+            "en": "Due to geopolitical factors, the relationship between the vendor's country and ours has deteriorated rapidly. Under the influence of local public opinion, the vendor's management and shop personnel have become cold and uncooperative toward us."
         },
         "selections": [
             {
@@ -3004,9 +3004,9 @@ const STORY_DATA = {
     "4.2-R1": {
         "chapter": "4.2-R1",
         "desc": {
-            "zh": "【检验协调突发事件】由于地区大暴雪导致交通中断，我们原定的资深驻厂检验员被困机场，而次日的压力试验必须有我方代表见证。我们必须寻找应急替代方案。",
-            "ja": "【検査調整突発事態】現地の記録的な大雪により交通網が遮断され、手配していたシニア常駐検査員が空港で足止めされたが、翌日には代表立ち会い必須の耐圧試験が控えている。",
-            "en": "[Inspection Coordination Sudden Event] Due to a record blizzard, our senior resident inspector is stranded at the airport, while a mandatory witness pressure test is scheduled for tomorrow."
+            "zh": "由于地区大暴雪导致交通中断，我们原定的资深驻厂检验员被困机场，而次日的压力试验必须有我方代表见证。我们必须寻找应急替代方案。",
+            "ja": "現地の記録的な大雪により交通網が遮断され、手配していたシニア常駐検査員が空港で足止めされたが、翌日には代表立ち会い必須の耐圧試験が控えている。",
+            "en": "Due to a record blizzard, our senior resident inspector is stranded at the airport, while a mandatory witness pressure test is scheduled for tomorrow."
         },
         "selections": [
             {
@@ -3071,9 +3071,9 @@ const STORY_DATA = {
     "4.2-R2": {
         "chapter": "4.2-R2",
         "desc": {
-            "zh": "【检验协调突发事件】供应商的主要分包商所在地突发严重自然灾害，导致整体工期受到严重波及。为了现场催交，我方派遣的驻厂检验员工作时间大幅增加，工时数（man-hours）即将超出预算。",
-            "ja": "【検査調整突発事態】ベンダーの主要なサブベンダーの地域で深刻な自然災害が発生し、全体の工期に大きな影響が出た。現地での催促のため、弊社が派遣した常駐検査員の稼働時間が大幅に増え、工数（man-hours）が予算オーバー寸前となっている。",
-            "en": "[Inspection Coordination Sudden Event] A severe natural disaster struck the area of the vendor's main subvendor, heavily impacting the overall schedule. Due to intense expediting, the man-hours of our resident inspector are about to exceed the budget."
+            "zh": "供应商的主要分包商所在地突发严重自然灾害，导致整体工期受到严重波及。为了现场催交，我方派遣的驻厂检验员工作时间大幅增加，工时数（man-hours）即将超出预算。",
+            "ja": "ベンダーの主要なサブベンダーの地域で深刻な自然災害が発生し、全体の工期に大きな影響が出た。現地での催促のため、弊社が派遣した常駐検査員の稼働時間が大幅に増え、工数（man-hours）が予算オーバー寸前となっている。",
+            "en": "A severe natural disaster struck the area of the vendor's main subvendor, heavily impacting the overall schedule. Due to intense expediting, the man-hours of our resident inspector are about to exceed the budget."
         },
         "selections": [
             {
@@ -3123,9 +3123,9 @@ const STORY_DATA = {
     "4.2-R3": {
         "chapter": "4.2-R3",
         "desc": {
-            "zh": "【检验协调突发事件】项目质量规定中明确禁止仅持有 SNT-TC-1A 资质的人员批准无损检测（NDT）报告。厂家虽然在质量程序书（procedure）中做出了相应承诺，但在实际操作中仍然指派了仅有 SNT-TC-1A 资质的检验员签署报告。我方在批阅检验报告时发现了这一违规行为。",
-            "ja": "【検査調整突発事態】プロジェクトの品質規定では、SNT-TC-1Aの資格しか持たない者が非破壊検査（NDT）報告書を承認することは明確に禁止されている。ベンダーは手順書（procedure）ではその旨を約束していたものの、実務上はSNT-TC-1A資格のみの検査員に報告書を署名させており、弊社が報告書をレビューした際にこれを発見した。",
-            "en": "[Inspection Coordination Sudden Event] The project quality specification explicitly prohibits NDT reports from being approved by personnel holding only SNT-TC-1A qualification. Although the vendor committed to this in their procedures, in practice they still assigned an inspector with only SNT-TC-1A qualification to sign the reports, which we discovered during our report review."
+            "zh": "项目质量规定中明确禁止仅持有 SNT-TC-1A 资质的人员批准无损检测（NDT）报告。厂家虽然在质量程序书（procedure）中做出了相应承诺，但在实际操作中仍然指派了仅有 SNT-TC-1A 资质的检验员签署报告。我方在批阅检验报告时发现了这一违规行为。",
+            "ja": "プロジェクトの品質規定では、SNT-TC-1Aの資格しか持たない者が非破壊検査（NDT）報告書を承認することは明確に禁止されている。ベンダーは手順書（procedure）ではその旨を約束していたものの、実務上はSNT-TC-1A資格のみの検査員に報告書を署名させており、弊社が報告書をレビューした際にこれを発見した。",
+            "en": "The project quality specification explicitly prohibits NDT reports from being approved by personnel holding only SNT-TC-1A qualification. Although the vendor committed to this in their procedures, in practice they still assigned an inspector with only SNT-TC-1A qualification to sign the reports, which we discovered during our report review."
         },
         "selections": [
             {
@@ -3190,9 +3190,9 @@ const STORY_DATA = {
     "4.2-R4": {
         "chapter": "4.2-R4",
         "desc": {
-            "zh": "【检验协调突发事件】由于出差预算限制，我们在北非当地聘用了一名本地检验员进行驻厂。然而，此人专业水平相当有限，我们收到的检验报告中充斥着各类常识性错误，导致我们根本无法掌握厂里的真实生产与质量状况。",
-            "ja": "【検査調整突発事態】出張予算制限のため、北アフリカ現地でローカル検査員を採用し常駐させた。しかし、この検査員の技術レベルが極めて低く、送られてくる検査報告書は多くの間違いだらけで、現地の実際の生産や品質状況が全く把握できない状態に陥った。",
-            "en": "[Inspection Coordination Sudden Event] Due to travel budget constraints, we hired a local inspector in North Africa. However, this inspector's technical competence is extremely limited, and the reports we receive are riddled with common errors, making it impossible to know the actual shop production and quality status."
+            "zh": "由于出差预算限制，我们在北非当地聘用了一名本地检验员进行驻厂。然而，此人专业水平相当有限，我们收到的检验报告中充斥着各类常识性错误，导致我们根本无法掌握厂里的真实生产与质量状况。",
+            "ja": "出張予算制限のため、北アフリカ現地でローカル検査員を採用し常駐させた。しかし、この検査員の技術レベルが極めて低く、送られてくる検査報告書は多くの間違いだらけで、現地の実際の生産や品質状況が全く把握できない状態に陥った。",
+            "en": "Due to travel budget constraints, we hired a local inspector in North Africa. However, this inspector's technical competence is extremely limited, and the reports we receive are riddled with common errors, making it impossible to know the actual shop production and quality status."
         },
         "selections": [
             {
@@ -3259,9 +3259,9 @@ const STORY_DATA = {
     "4.2-R5": {
         "chapter": "4.2-R5",
         "desc": {
-            "zh": "【检验协调突发事件】在进行射线检测底片审查（RT Film Review）时，我们发现大量底片显影模糊且存在大量水渍伪像。经核实，这可能是近期极端潮湿闷热天气对暗室胶片冲洗和保存环境造成的湿度影响导致的。",
-            "ja": "【検査調整突発事態】放射線透過検査のフィルムレビュー（RT Film Review）において、現像が不鮮明で水滴によるノイズが大量に発生しているフィルムが多数見つかった。調査の結果、近年の極端な高温多湿の気候が暗室での現像・保管環境に悪影響を及ぼした可能性が高いと判明した。",
-            "en": "[Inspection Coordination Sudden Event] During RT Film Review, we found many films were blurry with significant water artifacts. Investigation showed this was likely caused by the humidity impact of recent extreme hot and humid weather on the darkroom film processing and storage environment."
+            "zh": "在进行射线检测底片审查（RT Film Review）时，我们发现大量底片显影模糊且存在大量水渍伪像。经核实，这可能是近期极端潮湿闷热天气对暗室胶片冲洗和保存环境造成的湿度影响导致的。",
+            "ja": "放射線透過検査のフィルムレビュー（RT Film Review）において、現像が不鮮明で水滴によるノイズが大量に発生しているフィルムが多数見つかった。調査の結果、近年の極端な高温多湿の気候が暗室での現像・保管環境に悪影響を及ぼした可能性が高いと判明した。",
+            "en": "During RT Film Review, we found many films were blurry with significant water artifacts. Investigation showed this was likely caused by the humidity impact of recent extreme hot and humid weather on the darkroom film processing and storage environment."
         },
         "selections": [
             {
@@ -3328,9 +3328,9 @@ const STORY_DATA = {
     "4.3-R1": {
         "chapter": "4.3-R1",
         "desc": {
-            "zh": "【出运前夕突发事件】在设备装船出运前夕，供应商的文档管理服务器突然遭遇勒索软件病毒攻击，导致之前所有已经签署审核意见（comment）的关键制造文件丢失。部分文件必须在发货前重新进行审查和签署意见。",
-            "ja": "【出荷前夕突発事態】機器の船積み直前、ベンダーの図書管理サーバーが突如ランサムウェア攻撃を受け、以前に承認コメントを付与したすべての主要製造図書が消失した。一部の図書は出荷前に再レビューし、コメントを付与し直す必要がある。",
-            "en": "[Pre-shipping Sudden Event] On the eve of shipment, the vendor's document server suffered a ransomware attack, losing all previously reviewed manufacturing documents. Some documents must be re-reviewed and re-commented before shipping."
+            "zh": "在设备装船出运前夕，供应商的文档管理服务器突然遭遇勒索软件病毒攻击，导致之前所有已经签署审核意见（comment）的关键制造文件丢失。部分文件必须在发货前重新进行审查和签署意见。",
+            "ja": "機器の船積み直前、ベンダーの図書管理サーバーが突如ランサムウェア攻撃を受け、以前に承認コメントを付与したすべての主要製造図書が消失した。一部の図書は出荷前に再レビューし、コメントを付与し直す必要がある。",
+            "en": "On the eve of shipment, the vendor's document server suffered a ransomware attack, losing all previously reviewed manufacturing documents. Some documents must be re-reviewed and re-commented before shipping."
         },
         "selections": [
             {
@@ -3397,9 +3397,9 @@ const STORY_DATA = {
     "4.3-R2": {
         "chapter": "4.3-R2",
         "desc": {
-            "zh": "【出运前夕突发事件】受地缘政治因素影响，当地政府突然发布紧急通告，要求对在该国生产并出口的特定工业设备强制增加一项政府官厅的官方见证检查，否则不予放行出运。",
-            "ja": "【出荷前夕突発事態】地政学的要因により、現地政府が突如緊急通達を出し、当該国で製造・輸出される特定の工業設備に対し、政府官庁による公式立会検査の追加を義務付け、これを受けなければ出荷を許可しないとした。",
-            "en": "[Pre-shipping Sudden Event] Due to geopolitical factors, the local government suddenly issued an emergency decree requiring a mandatory official government witness inspection for specific industrial equipment manufactured in that country before granting export clearance."
+            "zh": "受地缘政治因素影响，当地政府突然发布紧急通告，要求对在该国生产并出口的特定工业设备强制增加一项政府官厅的官方见证检查，否则不予放行出运。",
+            "ja": "地政学的要因により、現地政府が突如緊急通達を出し、当該国で製造・輸出される特定の工業設備に対し、政府官庁による公式立会検査の追加を義務付け、これを受けなければ出荷を許可しないとした。",
+            "en": "Due to geopolitical factors, the local government suddenly issued an emergency decree requiring a mandatory official government witness inspection for specific industrial equipment manufactured in that country before granting export clearance."
         },
         "selections": [
             {
@@ -3464,9 +3464,9 @@ const STORY_DATA = {
     "4.3-R3": {
         "chapter": "4.3-R3",
         "desc": {
-            "zh": "【出运前夕突发事件】关键分包商的创始老板因为炒股投机破产，被迫将工厂转手。然而，买下该厂的新老板整天也沉迷于炒股，对工厂的实际生产和催交事务不管不问，导致零件制造进度失控。",
-            "ja": "【出荷前夕突発事態】重要なサブベンダーの元オーナーが株取引で破産し、工場を譲渡せざるを得なくなった。しかし、新しく工場を買収した新オーナーも毎日株取引に没頭し、工場の製造進捗や管理に全く関心を示さず、部品製造スケジュールが制御不能に陥った。",
-            "en": "[Pre-shipping Sudden Event] The original owner of a key subvendor went bankrupt due to stock speculation and sold the shop. The new owner, however, also spends all day trading stocks and completely ignores the production floor, leaving the manufacturing schedule out of control."
+            "zh": "关键分包商的创始老板因为炒股投机破产，被迫将工厂转手。然而，买下该厂的新老板整天也沉迷于炒股，对工厂的实际生产和催交事务不管不问，导致零件制造进度失控。",
+            "ja": "重要なサブベンダーの元オーナーが株取引で破産し、工場を譲渡せざるを得なくなった。しかし、新しく工場を買収した新オーナーも毎日株取引に没頭し、工場の製造進捗や管理に全く関心を示さず、部品製造スケジュールが制御不能に陥った。",
+            "en": "The original owner of a key subvendor went bankrupt due to stock speculation and sold the shop. The new owner, however, also spends all day trading stocks and completely ignores the production floor, leaving the manufacturing schedule out of control."
         },
         "selections": [
             {
@@ -3531,9 +3531,9 @@ const STORY_DATA = {
     "4.3-R4": {
         "chapter": "4.3-R4",
         "desc": {
-            "zh": "【出运前夕突发事件】我们收到可靠情报，出运港口的码头工会计划举行大规模罢工，且罢工的起始日期比我们原定的设备出货船期还要早。这批常压容器面临被无限期积压在港口的重大延误危机。",
-            "ja": "【出荷前夕突発事態】出荷港の港湾労組が大規模ストライキを計画しており、その開始日が我々の当初の出荷予定日よりも早いという確実な情報を得た。これにより、常圧容器が港で長期滞留するリスクが極めて高くなった。",
-            "en": "[Pre-shipping Sudden Event] We received reliable intelligence that the port union plans a major strike, and the strike start date is earlier than our scheduled shipping date, risking indefinite delay of the pressure vessels at the port."
+            "zh": "我们收到可靠情报，出运港口的码头工会计划举行大规模罢工，且罢工的起始日期比我们原定的设备出货船期还要早。这批常压容器面临被无限期积压在港口的重大延误危机。",
+            "ja": "出荷港の港湾労組が大規模ストライキを計画しており、その開始日が我々の当初の出荷予定日よりも早いという確実な情報を得た。これにより、常圧容器が港で長期滞留するリスクが極めて高くなった。",
+            "en": "We received reliable intelligence that the port union plans a major strike, and the strike start date is earlier than our scheduled shipping date, risking indefinite delay of the pressure vessels at the port."
         },
         "selections": [
             {
@@ -3583,9 +3583,9 @@ const STORY_DATA = {
     "5.3-R1": {
         "chapter": "5.3-R1",
         "desc": {
-            "zh": "【现场移交突发事件】在对现场压力容器（Vessel）进行就位前最终检查时，我们赫然发现由于运输中的剧烈颠簸和挤压，容器外壁焊接的几处支撑管卡（Clip）发生了断裂脱落，且现场缺少备用件。",
-            "ja": "【現地引渡突発事態】現地で圧力容器（Vessel）を据え付ける前の最終検査中、輸送中の激しい振動と衝撃により、容器外壁に溶接されていたサポート用管カ（Clip）が数箇所破断して脱落しており、現場に予備部品もないことが判明した。",
-            "en": "[Site Handover Sudden Event] During the final inspection of the pressure vessel before installation at the site, we discovered that several support clips welded to the outer wall of the vessel had fractured and fallen off due to severe vibrations and impact during transit, and there are no spare parts on site."
+            "zh": "在对现场压力容器（Vessel）进行就位前最终检查时，我们赫然发现由于运输中的剧烈颠簸和挤压，容器外壁焊接的几处支撑管卡（Clip）发生了断裂脱落，且现场缺少备用件。",
+            "ja": "現地で圧力容器（Vessel）を据え付ける前の最終検査中、輸送中の激しい振動と衝撃により、容器外壁に溶接されていたサポート用管カ（Clip）が数箇所破断して脱落しており、現場に予備部品もないことが判明した。",
+            "en": "During the final inspection of the pressure vessel before installation at the site, we discovered that several support clips welded to the outer wall of the vessel had fractured and fallen off due to severe vibrations and impact during transit, and there are no spare parts on site."
         },
         "selections": [
             {
@@ -3650,9 +3650,9 @@ const STORY_DATA = {
     "5.3-R2": {
         "chapter": "5.3-R2",
         "desc": {
-            "zh": "【现场移交突发事件】在现场开箱检查时，我们发现一台高压电机的轴承在海运途中由于防潮干燥剂失效，发生了轻微的锈蚀。这导致业主拒绝在该电机的试运转申请单上签字。",
-            "ja": "【現地引渡突発事態】現地開梱検査時、海上輸送中の防湿乾燥剤の機能喪失により、高圧モーターのベアリングに軽微な発錆が確認され、オーナーが試運転の承認署名を拒否した。",
-            "en": "[Site Handover Sudden Event] During site unpacking inspection, we found minor rust on a high-voltage motor bearing due to desiccant failure during sea transport, and the Owner refused to sign the run-test permit."
+            "zh": "在现场开箱检查时，我们发现一台高压电机的轴承在海运途中由于防潮干燥剂失效，发生了轻微的锈蚀。这导致业主拒绝在该电机的试运转申请单上签字。",
+            "ja": "現地開梱検査時、海上輸送中の防湿乾燥剤の機能喪失により、高圧モーターのベアリングに軽微な発錆が確認され、オーナーが試運転の承認署名を拒否した。",
+            "en": "During site unpacking inspection, we found minor rust on a high-voltage motor bearing due to desiccant failure during sea transport, and the Owner refused to sign the run-test permit."
         },
         "selections": [
             {
@@ -3717,9 +3717,9 @@ const STORY_DATA = {
     "5.3-R3": {
         "chapter": "5.3-R3",
         "desc": {
-            "zh": "【现场移交突发事件】在设备最终移交前，现场安装团队在进行接地系统测试时，发现设备底座上的接地极（Earthing Boss）在工厂制造时被错误地涂上了防腐漆，导致接地导通性不合格。若不进行处理，业主监理将禁止接线。",
-            "ja": "【現地引渡突発事態】機器の最終引き渡し前、現地施工チームが接地システムのテストを行った際、機器ベースの接地ボス（Earthing Boss）に工場製造時に誤って防錆塗装が施されており、接地導通試験が不合格となった。このままではオーナーの監理官から配線接続を禁止される。",
-            "en": "[Site Handover Sudden Event] Before final handover, the installation team tested the grounding system and found that the earthing boss on the equipment base had been mistakenly painted with anti-corrosive paint at the factory, causing the grounding continuity test to fail. If left unresolved, the Owner's inspector will prohibit wiring connection."
+            "zh": "在设备最终移交前，现场安装团队在进行接地系统测试时，发现设备底座上的接地极（Earthing Boss）在工厂制造时被错误地涂上了防腐漆，导致接地导通性不合格。若不进行处理，业主监理将禁止接线。",
+            "ja": "機器の最終引き渡し前、現地施工チームが接地システムのテストを行った際、機器ベースの接地ボス（Earthing Boss）に工場製造時に誤って防錆塗装が施されており、接地導通試験が不合格となった。このままではオーナーの監理官から配線接続を禁止される。",
+            "en": "Before final handover, the installation team tested the grounding system and found that the earthing boss on the equipment base had been mistakenly painted with anti-corrosive paint at the factory, causing the grounding continuity test to fail. If left unresolved, the Owner's inspector will prohibit wiring connection."
         },
         "selections": [
             {
@@ -3769,9 +3769,9 @@ const STORY_DATA = {
     "5.3-R4": {
         "chapter": "5.3-R4",
         "desc": {
-            "zh": "【现场移交突发事件】在设备最终交接文档审查中，由于供应商的文档服务器被勒索软件攻击，其补交的部分材料制造厂检验证书（MTR）签名清晰度不足，业主文控拒绝归档。",
-            "ja": "【現地引渡突発事態】最終図書レビュー時、ベンダーのサーバーがランサムウェア攻撃を受けた影響で、再提出された材料検査証明書（MTR）の署名が一部不鮮明になり、オーナーの図書管理部門が受領を拒否した。",
-            "en": "[Site Handover Sudden Event] During final documentation review, some Mill Test Reports (MTRs) re-submitted by the vendor were slightly blurry due to a ransomware attack on the vendor's server, and the Owner's document control refused to file them."
+            "zh": "在设备最终交接文档审查中，由于供应商的文档服务器被勒索软件攻击，其补交的部分材料制造厂检验证书（MTR）签名清晰度不足，业主文控拒绝归档。",
+            "ja": "最終図書レビュー時、ベンダーのサーバーがランサムウェア攻撃を受けた影響で、再提出された材料検査証明書（MTR）の署名が一部不鮮明になり、オーナーの図書管理部門が受領を拒否した。",
+            "en": "During final documentation review, some Mill Test Reports (MTRs) re-submitted by the vendor were slightly blurry due to a ransomware attack on the vendor's server, and the Owner's document control refused to file them."
         },
         "selections": [
             {
