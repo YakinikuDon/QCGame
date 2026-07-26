@@ -1352,14 +1352,14 @@ const EXPLANATIONS = {
         "en": "Neglecting foundational tasks like Req. Reviews due to resource constraints is mere risk deferral. As execution progresses, corrective options shrink rapidly. Focus on proactively managing risks during early project phases."
     },
     "4.1-R2": {
-        "zh": "以人力不足为理由削减采购要求审查（Req. Review）等关键工作，只是将隐患推迟到未来爆发。越到项目后程，纠偏手段就越受限。务必坚持在前期阶段将质量风险控制在萌芽状态。",
-        "ja": "人財不足を理由にReq. Reviewなどやるべきことをやらないのはリスクを先送りしているだけです。\n後になればなるほど打てる対策の手数が限られてくるので、初期段階でリスクをコントロールすることを心がけましょう。",
-        "en": "Neglecting foundational tasks like Req. Reviews due to resource constraints is mere risk deferral. As execution progresses, corrective options shrink rapidly. Focus on proactively managing risks during early project phases."
+        "zh": "检验前会议（PIM）是设备正式开工制造的“质量闸门”。如果在 PIM 上暴露前期图纸审核或检验试验计划（ITP）未敲定等缺陷，设备将无法如期开工，直接拖垮进度。必须高度重视 PIM，确保前置文件与 ITP 提前达成一致。",
+        "ja": "PIMはまさに機器製作が開始されるゲート、そこでそれまでの不備が表面化すると直ちに製作を開始することが出来ず、プロジェクトに遅れが発生します。\nPIMの重要性を認識して、前段階のV-Doc. ReviewやITPの合意を確実に実施しましょう。",
+        "en": "Pre-Inspection Meetings (PIM) serve as the formal quality gate for fabrication release. Unresolved issues surfacing at PIM halt manufacturing start, causing immediate schedule slippage. Finalize all V-Doc. reviews and ITP agreements ahead of PIM."
     },
     "4.1-R3": {
-        "zh": "以人力不足为理由削减采购要求审查（Req. Review）等关键工作，只是将隐患推迟到未来爆发。越到项目后程，纠偏手段就越受限。务必坚持在前期阶段将质量风险控制在萌芽状态。",
-        "ja": "人財不足を理由にReq. Reviewなどやるべきことをやらないのはリスクを先送りしているだけです。\n後になればなるほど打てる対策の手数が限られてくるので、初期段階でリスクをコントロールすることを心がけましょう。",
-        "en": "Neglecting foundational tasks like Req. Reviews due to resource constraints is mere risk deferral. As execution progresses, corrective options shrink rapidly. Focus on proactively managing risks during early project phases."
+        "zh": "在商务合作中，虽然我们是买方客户，但在推进工程业务时必须将供应商视为合作伙伴，在相互尊重的基础上共赢。若采取居高临下的高压态度，不仅无法建立信任，一旦后续发生突发质量危机，将很难争取到厂商的全力配合。",
+        "ja": "Vendorにとって顧客はJGCだけど、業務を進める上ではビジネスパートナーと考えて、お互いにリスペクトしながら業務を進めることが重要です。\n高圧的な態度でVendorに接すると、良好な関係が築けず、トラブルが発生した時に協力が得られなくなります。",
+        "en": "While we are the client, vendors must be treated as strategic business partners with mutual respect. Heavy-handed tactics prevent solid relationship building and alienate vendor cooperation when unexpected troubleshooting support is required."
     },
     "4.2-R1": {
         "zh": "Hold Point（停工待检点/见证点）绝不能随意取消。业主通常认为见证点非常重要，突然变更会严重损害信任，因此应努力安排参加。",
