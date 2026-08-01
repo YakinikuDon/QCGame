@@ -1436,21 +1436,24 @@ function showExplanationsPage() {
             back: "返回证书",
             noQuestions: "您在本次故事线中尚未回答任何问题。",
             questionBg: "题目背景",
-            yourChoice: "您的选择"
+            yourChoice: "您的选择",
+            score: "得分"
         },
         ja: {
             title: "全問題の解説と振り返り",
             back: "認定証へ戻る",
             noQuestions: "回答された問題がありません。",
             questionBg: "問題背景",
-            yourChoice: "選択した回答"
+            yourChoice: "選択した回答",
+            score: "得点"
         },
         en: {
             title: "Storyline Explanations & Quality Review",
             back: "Back to Certificate",
             noQuestions: "No answered questions to display.",
             questionBg: "Question Background",
-            yourChoice: "Your Selection"
+            yourChoice: "Your Selection",
+            score: "Score"
         }
     };
 
@@ -1493,10 +1496,13 @@ function showExplanationsPage() {
             questionDiv.innerHTML = `<strong>${pageLabels[lang].questionBg}:</strong> ${ch.desc ? ch.desc[lang] || "" : ""}`;
             item.appendChild(questionDiv);
 
-            // Selected Choice Text (选择的选项的文字) - NO SCORE DISPLAY!
+            // Selected Choice Text (选择的选项的文字) + Score Badge (选项得分)
             const choiceDiv = document.createElement("div");
             choiceDiv.className = "explanation-item-choice";
-            choiceDiv.innerHTML = `<span><strong>${pageLabels[lang].yourChoice}:</strong> ${sel.desc ? sel.desc[lang] || "" : ""}</span>`;
+            const isPerfect = sel.score === 10;
+            const scoreClass = isPerfect ? "explanation-score-tag score-perfect" : "explanation-score-tag score-deduct";
+            choiceDiv.innerHTML = `<span><strong>${pageLabels[lang].yourChoice}:</strong> ${sel.desc ? sel.desc[lang] || "" : ""}</span>
+                                  <span class="${scoreClass}">${pageLabels[lang].score}: ${sel.score} / 10</span>`;
             item.appendChild(choiceDiv);
 
             // Explanation Text (解说)
